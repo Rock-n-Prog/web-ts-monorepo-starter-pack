@@ -88,8 +88,8 @@ point out if there is any way to improve it. You must then pull the branch, test
 environment and call it a day. Only approve PRs that are 100% ready to merge. Otherwise, request changes explaining
 clearly what must be added for approval.
 
-`main` is our production branch. Once in a while, when `develop` is perfectly stable and operational, we merge
-`develop` into `main`.
+`main` is our production branch. Once in a while, when `develop` is perfectly stable and operational, we merge `develop`
+into `main`.
 
 ### Definition of done
 

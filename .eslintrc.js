@@ -1,9 +1,9 @@
 module.exports = {
   root: true,
-  extends: ["custom/base.js"],
+  extends: ['custom/base.js'],
   settings: {
     next: {
-      rootDir: ["apps/*/", "packages/*/"],
+      rootDir: ['apps/*/', 'packages/*/'],
     },
   },
 };

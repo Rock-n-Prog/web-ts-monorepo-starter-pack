@@ -6,9 +6,7 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 This is an official pnpm starter turborepo.
 
-Check the
-[project board](https://github.com/orgs/treeview-app/projects/1/views/1)
-for what we want to do next.
+Check the [project board](https://github.com/orgs/treeview-app/projects/1/views/1) for what we want to do next.
 
 To contribute, make sure you have read the [contribution guide](CONTRIBUTING.md).
 

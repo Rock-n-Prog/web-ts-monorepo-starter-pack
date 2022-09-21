@@ -1,15 +1,13 @@
-// TODO: Prettier (plugin)
-// TODO: Import (plugin)
 module.exports = {
-  plugins: ["functional"],
+  plugins: ['functional'],
   extends: [
     'plugin:prefer-type-alias/recommended',
     'plugin:import/recommended',
     'plugin:functional/recommended',
     'plugin:functional/stylistic',
     'eslint:recommended',
-    "prettier",
-    "turbo"
+    'prettier',
+    'turbo',
   ],
   rules: {
     curly: 'warn',

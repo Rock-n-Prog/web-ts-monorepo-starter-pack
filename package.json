@@ -11,8 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "format": "prettier \"**/*.{js,jsx,ts,tsx,md}\"",
-    "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
+    "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
+    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
