@@ -5,6 +5,7 @@ module.exports = {
     'plugin:react/recommended'
   ],
   rules: {
+    // TODO: Do we really need this?
     "react/jsx-key": "off",
   },
   settings: {
