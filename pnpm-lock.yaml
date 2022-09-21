@@ -76,6 +76,7 @@ importers:
       eslint-config-next: ^12.3.1
       eslint-config-prettier: ^8.5.0
       eslint-config-turbo: ^0.0.3
+      eslint-plugin-functional: ^4.4.0
       eslint-plugin-react: ^7.31.8
       typescript: ^4.7.4
     dependencies:
@@ -83,6 +84,7 @@ importers:
       eslint-config-next: 12.3.1_irgkl5vooow2ydyo6aokmferha
       eslint-config-prettier: 8.5.0_eslint@8.23.1
       eslint-config-turbo: 0.0.3_eslint@8.23.1
+      eslint-plugin-functional: 4.4.0_irgkl5vooow2ydyo6aokmferha
       eslint-plugin-react: 7.31.8_eslint@8.23.1
     devDependencies:
       typescript: 4.8.3
@@ -568,6 +570,10 @@ packages:
       tslib: 2.4.0
     dev: false
 
+  /@types/json-schema/7.0.11:
+    resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: false
+
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
@@ -658,6 +664,24 @@ packages:
       typescript: 4.8.3
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@typescript-eslint/utils/5.38.0_irgkl5vooow2ydyo6aokmferha:
+    resolution: {integrity: sha512-6sdeYaBgk9Fh7N2unEXGz+D+som2QCQGPAf1SxrkEr+Z32gMreQ0rparXTNGRRfYUWk/JzbGdcM8NSSd6oqnTA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@types/json-schema': 7.0.11
+      '@typescript-eslint/scope-manager': 5.38.0
+      '@typescript-eslint/types': 5.38.0
+      '@typescript-eslint/typescript-estree': 5.38.0_typescript@4.8.3
+      eslint: 8.23.1
+      eslint-scope: 5.1.1
+      eslint-utils: 3.0.0_eslint@8.23.1
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: false
 
   /@typescript-eslint/visitor-keys/5.38.0:
@@ -943,6 +967,11 @@ packages:
   /deep-is/0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
+  /deepmerge-ts/4.2.2:
+    resolution: {integrity: sha512-Ka3Kb21tiWjvQvS9U+1Dx+aqFAHsdTnMdYptLTmC2VAmDFMugWMY1e15aTODstipmCun8iNuqeSfcx6rsUUk0Q==}
+    engines: {node: '>=12.4.0'}
+    dev: false
+
   /define-properties/1.1.4:
     resolution: {integrity: sha512-uckOqKcfaVvtBdsVkdPv3XjveQJsNQqmhXgRi8uhvWWuPYZCNlzT8qAyblUgNoXdHdjMTzAqeGjAoli8f+bzPA==}
     engines: {node: '>= 0.4'}
@@ -1153,6 +1182,29 @@ packages:
       - supports-color
     dev: false
 
+  /eslint-plugin-functional/4.4.0_irgkl5vooow2ydyo6aokmferha:
+    resolution: {integrity: sha512-DY/Iax9knIgzvxhVeSe+KoF9e4imLvzCvUEN1a+bWciDiBi3s1CG/1fw7AQVXoAqoNw9eYuP7C2u3OtHzMFy+A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^8.0.0
+      tsutils: ^3.0.0
+      typescript: ^3.4.1 || ^4.0.0
+    peerDependenciesMeta:
+      tsutils:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/utils': 5.38.0_irgkl5vooow2ydyo6aokmferha
+      deepmerge-ts: 4.2.2
+      escape-string-regexp: 4.0.0
+      eslint: 8.23.1
+      semver: 7.3.7
+      typescript: 4.8.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /eslint-plugin-import/2.26.0_ar2mambzda7ptwcepuhox2isnu:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
     engines: {node: '>=4'}
@@ -1252,7 +1304,6 @@ packages:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 4.3.0
-    dev: true
 
   /eslint-scope/7.1.1:
     resolution: {integrity: sha512-QKQM/UXpIiHcLqJ5AOyIW7XZmzjkzQXYE54n1++wb0u9V/abW3l9uQnxX8Z5Xd18xyKIMTUAyQ0k1e8pz6LUrw==}
@@ -1429,7 +1480,6 @@ packages:
   /estraverse/4.3.0:
     resolution: {integrity: sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==}
     engines: {node: '>=4.0'}
-    dev: true
 
   /estraverse/5.3.0:
     resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
