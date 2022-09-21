@@ -25,12 +25,12 @@ importers:
       react-dom: 18.2.0
       tsconfig: workspace:*
       typescript: ^4.5.3
-      ui: workspace:*
+      web-ui: workspace:*
     dependencies:
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
+      web-ui: link:../../packages/web-ui
     devDependencies:
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
@@ -54,12 +54,12 @@ importers:
       react-dom: 18.2.0
       tsconfig: workspace:*
       typescript: ^4.5.3
-      ui: workspace:*
+      web-ui: workspace:*
     dependencies:
       next: 12.3.0_ir3quccc6i62x6qn6jjhyjjiey
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
+      web-ui: link:../../packages/web-ui
     devDependencies:
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
@@ -90,7 +90,7 @@ importers:
   packages/tsconfig:
     specifiers: {}
 
-  packages/ui:
+  packages/web-ui:
     specifiers:
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
