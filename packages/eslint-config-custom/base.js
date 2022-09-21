@@ -3,8 +3,8 @@ module.exports = {
   extends: [
     'plugin:functional/recommended',
     'plugin:functional/stylistic',
+    'eslint:recommended',
     "prettier",
-    "next",
     "turbo"
   ],
   rules: {
@@ -12,7 +12,5 @@ module.exports = {
     'functional/no-return-void': 'off',
     'functional/no-expression-statement': 'off',
     'functional/functional-parameters': 'off',
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
   },
 };

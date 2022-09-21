@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "files": [
-    "base.js"
+    "base.js",
+    "react.js",
+    "next.js"
   ],
   "dependencies": {
     "eslint": "^8.23.1",

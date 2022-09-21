@@ -1,4 +1,6 @@
+// TODO: Parser could be set in a new custom/react-library.js
 module.exports = {
   root: true,
-  extends: ["custom/base.js"],
+  parser: "babel-eslint",
+  extends: ["custom/react.js"],
 };
