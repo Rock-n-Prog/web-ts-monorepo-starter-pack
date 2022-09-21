@@ -14,11 +14,11 @@ To contribute, make sure you have read the [contribution guide](CONTRIBUTING.md)
 
 ## Apps
 
-- [`apps/docs`](apps/docs/README.md): Next.js web app for project documentation
-- [`apps/web`](apps/docs/README.md): Next.js main web app
-- [`packages/web-ui`](packages/web-ui/README.md): React components for web apps
-- [`packages/eslint-config-custom`](packages/eslint-config-custom/README.md): Shared eslint config
-- [`packages/tsconfig`](packages/tsconfig/README.md): Shared tsconfig
+- [`apps/docs`](apps/docs): Next.js web app for project documentation
+- [`apps/web`](apps/docs): Next.js main web app
+- [`packages/web-ui`](packages/web-ui): React components for web apps
+- [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
+- [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
 ## Setup
 
