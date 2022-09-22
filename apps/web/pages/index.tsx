@@ -6,6 +6,7 @@ import Link from 'next/link';
 function Index() {
   const { switchMode } = useThemeContext();
 
+  // TODO: Link gets forwardRef error
   return (
     <>
       <Header1>TreeView</Header1>

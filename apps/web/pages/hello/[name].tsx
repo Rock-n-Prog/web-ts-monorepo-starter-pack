@@ -11,7 +11,6 @@ type PathProps = {
 
 function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { switchMode } = useThemeContext();
-  // TODO: Why does this keep refreshing? See console logs
   const { data } = trpc.hello.single.useQuery({ name });
 
   return (
