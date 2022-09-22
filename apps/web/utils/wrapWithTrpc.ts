@@ -1,6 +1,6 @@
 import { withTRPC } from '@trpc/next';
-import { AppType } from "next/dist/shared/lib/utils";
-import { AppRouter } from "../pages/api/trpc/[trpc]";
+import { AppType } from 'next/dist/shared/lib/utils';
+import { AppRouter } from '../pages/api/trpc/[trpc]';
 
 function wrapWithTrpc(app: AppType) {
   return withTRPC<AppRouter>({

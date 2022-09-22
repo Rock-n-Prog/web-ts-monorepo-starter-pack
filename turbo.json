@@ -15,7 +15,5 @@
       "cache": false
     }
   },
-  "globalEnv": [
-    "VERCEL_URL"
-  ]
+  "globalEnv": ["VERCEL_URL"]
 }

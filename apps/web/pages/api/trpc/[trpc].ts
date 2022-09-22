@@ -3,20 +3,18 @@ import * as trpcNext from '@trpc/server/adapters/next';
 import { z } from 'zod';
 
 // TODO: Move query definition to its own file
-const appRouter = trpc
-  .router()
-  .query('hello', {
-    input: z
-      .object({
-        text: z.string().nullish(),
-      })
-      .nullish(),
-    resolve({ input }) {
-      return {
-        greeting: `Hello ${input?.text ?? 'world'}`,
-      };
-    },
-  });
+const appRouter = trpc.router().query('hello', {
+  input: z
+    .object({
+      text: z.string().nullish(),
+    })
+    .nullish(),
+  resolve({ input }) {
+    return {
+      greeting: `Hello ${input?.text ?? 'world'}`,
+    };
+  },
+});
 
 type AppRouter = typeof appRouter;
 
