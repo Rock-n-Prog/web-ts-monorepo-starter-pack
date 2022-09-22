@@ -36,9 +36,6 @@
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
     ],
-    "apps/docs/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix apps/docs/**/*.{js,jsx,ts,tsx}"
-    ],
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
