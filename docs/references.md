@@ -7,7 +7,8 @@
 
 ## API communication
 
-- [Using tRPC with Next.js](https://trpc.io/docs/v9/nextjs)
+- [Using tRPC with Next.js](https://trpc.io/docs/v10/nextjs)
+- [Next.js + tRPC + Prisma example](https://github.com/trpc/examples-next-prisma-todomvc)
 
 ## Pre-commit hooks
 
