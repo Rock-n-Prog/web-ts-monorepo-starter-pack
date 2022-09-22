@@ -14,6 +14,7 @@
     "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
     "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
+  "dependencies": {},
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.7.1",
@@ -22,6 +23,5 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.9.5"
 }

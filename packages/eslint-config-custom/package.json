@@ -5,6 +5,7 @@
   "files": [
     "base.js",
     "react.js",
+    "react-library.js",
     "next.js"
   ],
   "dependencies": {
