@@ -1,10 +1,5 @@
 import { Button } from 'web-ui';
 
-// TODO: Remove this!
-const ca = () => {
-  console.log('HAHA');
-};
-
 export default function Web() {
   return (
     <div>
