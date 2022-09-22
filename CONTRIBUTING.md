@@ -4,7 +4,7 @@
 
 ## Code of conduct
 
-Before contributing to the project, please read our [code of conduct](CODE_OF_CONDUCT.md).
+Before contributing to the project, please read our [code of conduct](CODE_OF_CONDUCT.md) and [docs](docs).
 
 ## Task tracking
 
