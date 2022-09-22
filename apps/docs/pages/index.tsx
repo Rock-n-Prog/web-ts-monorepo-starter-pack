@@ -1,9 +1,9 @@
-import { Button } from "web-ui/components/inputs";
-import { Header1, Header2 } from "web-ui/components/typography";
-import { useThemeContext } from "web-ui/contexts/ThemeProvider";
+import { Button } from 'web-ui/components/inputs';
+import { Header1, Header2 } from 'web-ui/components/typography';
+import { useThemeContext } from 'web-ui/contexts/ThemeProvider';
 
 export default function Docs() {
-  const {switchMode} = useThemeContext();
+  const { switchMode } = useThemeContext();
 
   return (
     <>

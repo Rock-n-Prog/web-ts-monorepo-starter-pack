@@ -1,13 +1,13 @@
-import React, {PropsWithChildren, ReactElement} from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { Typography } from "../typography";
-import {Theme} from "../../styles/theme";
+import { Typography } from '../typography';
+import { Theme } from '../../styles/theme';
 
 type Props = {
   readonly title: string;
 };
 
-function Tooltip({ children, title }: PropsWithChildren<Props>) {
+function Tooltip({ children, title }: React.PropsWithChildren<Props>) {
   return (
     <TooltipContainer>
       {children}
@@ -17,7 +17,7 @@ function Tooltip({ children, title }: PropsWithChildren<Props>) {
 }
 
 const TooltipText = styled.span(
-  ({ theme }: { readonly theme: Theme}) => css`
+  ({ theme }: { readonly theme: Theme }) => css`
     ${Typography};
     visibility: hidden;
     min-width: ${theme.spacing.tooltip};

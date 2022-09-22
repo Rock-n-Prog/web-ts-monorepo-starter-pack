@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
-import {Theme} from "./theme";
+import { Theme } from './theme';
 
 const GlobalStyle = createGlobalStyle(
   ({ theme }: { readonly theme: Theme }) => css`

@@ -1,6 +1,6 @@
-import { modeToColors } from "./colors";
-import spacing from "./spacing";
-import fonts from "./fonts";
+import { modeToColors } from './colors';
+import spacing from './spacing';
+import fonts from './fonts';
 
 type ThemeMode = 'light' | 'dark';
 type Theme = ReturnType<typeof getTheme>;

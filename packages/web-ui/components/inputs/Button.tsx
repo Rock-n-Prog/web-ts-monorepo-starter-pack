@@ -1,7 +1,7 @@
-import React, {PropsWithChildren} from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { Tooltip } from "../data";
-import {Theme} from "../../styles/theme";
+import { Tooltip } from '../data';
+import { Theme } from '../../styles/theme';
 
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
@@ -10,7 +10,14 @@ type Props = {
   readonly variant?: ButtonVariant;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-function Button({ children, tooltipText, disabled = false, type = 'button', variant = 'outlined', ...props  }: PropsWithChildren<Props>) {
+function Button({
+  children,
+  tooltipText,
+  disabled = false,
+  type = 'button',
+  variant = 'outlined',
+  ...props
+}: React.PropsWithChildren<Props>) {
   const inner = (
     <div>
       <StyledButton $variant={variant} type={type} disabled={disabled} {...props}>
@@ -33,8 +40,8 @@ const ButtonTypography = css(
 );
 
 const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
-  text: (_) => '',
-  contained: (theme) =>
+  text: _ => '',
+  contained: theme =>
     `
     color: ${theme.colors.onPrimary};
     background-color: ${theme.colors.palette.primary.main};
@@ -43,17 +50,17 @@ const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
       background-color: ${theme.colors.palette.primary.light};
     }
   `,
-  outlined: (theme) =>
+  outlined: theme =>
     `
     :hover {
       background-color: ${theme.colors.surface};
     }
   `,
-}
+};
 
 type StyledButtonProps = {
- readonly $variant: ButtonVariant;
- readonly theme: Theme;
+  readonly $variant: ButtonVariant;
+  readonly theme: Theme;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
@@ -72,10 +79,10 @@ const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-  ${variantToStyles[$variant](theme)}
+    ${variantToStyles[$variant](theme)}
 
-  ${disabled &&
-  `
+    ${disabled &&
+    `
     cursor: not-allowed;
   `}
   `,

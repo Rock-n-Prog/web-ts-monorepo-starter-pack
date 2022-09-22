@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type { AppProps } from 'next/app';
-import { ThemeProvider } from "web-ui/contexts/ThemeProvider";
+import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
 
 function App({ Component, pageProps }: AppProps) {
   return (
