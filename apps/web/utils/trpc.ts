@@ -5,8 +5,6 @@ import type { AppRouter } from '../server/routers/_app';
 
 // TODO: Fix this in turbo.json (2022/09/22 13:37:43 [DEPRECATED] Declaring an environment variable in "dependsOn" is deprecated, found $NODE_ENV. Use the "env" key or use `npx @turbo/codemod migrate-env-var-dependencies`.)
 
-// TODO: Move utils/trpc, server/trpc and server/context to a new packages/trpc (to be re-used with expo)
-
 function getVercelUrl() {
   return process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;
 }

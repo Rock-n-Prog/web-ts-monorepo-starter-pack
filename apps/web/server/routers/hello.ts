@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { t } from '../trpc';
 
-// TODO: Use Prisma (https://github.com/trpc/examples-next-prisma-todomvc/blob/next/src/server/routers/todo.ts)
+// TODO(#14): Use Prisma (https://github.com/trpc/examples-next-prisma-todomvc/blob/next/src/server/routers/todo.ts)
 const helloRouter = t.router({
   single: t.procedure
     .input(
