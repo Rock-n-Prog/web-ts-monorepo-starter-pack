@@ -1,5 +1,9 @@
 # TreeView App
 
+[![Build Web](https://github.com/treeview-app/treeview/actions/workflows/build-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-web.yml)
+[![Build Web UI](https://github.com/treeview-app/treeview/actions/workflows/build-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-web-ui.yml)
+[![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
+
 Task management app, with a focus on tree view.
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
@@ -12,9 +16,8 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 ## Apps
 
-- [`apps/web`](apps/docs): Next.js main web app
-- [`apps/docs`](apps/docs): Next.js web app for project documentation
-- [`packages/web-ui`](packages/web-ui): React components for web apps
+- [`apps/web`](apps/docs): Next.js web app
+- [`packages/web-ui`](packages/web-ui): React components for web app
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
