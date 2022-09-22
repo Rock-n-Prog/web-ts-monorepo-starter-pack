@@ -1,6 +1,6 @@
-# TreeView Web-UI components
+# TreeView Web UI library
 
-React component library for TreeView Web app.
+React component library and theming necessities for TreeView Web app.
 
 ## Setup
 
