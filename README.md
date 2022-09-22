@@ -56,6 +56,10 @@ pnpm format
 pnpm lint:fix
 pnpm format:fix
 
+# To only apply to root
+pnpm lint:root
+pnpm lint:root:fix
+
 # Fix lint on staged files
 pnpm lint:staged
 ```
