@@ -31,7 +31,7 @@
   },
   "lint-staged": {
     "./*.{js,jsx,ts,tsx}": [
-      "pnpm run lint:root:fix"
+      "pnpm lint:root:fix"
     ],
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
