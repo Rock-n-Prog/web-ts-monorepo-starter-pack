@@ -41,7 +41,7 @@ jobs:
           key: node_modules-${{ hashFiles('pnpm-lock.json') }}
 
       - name: Install dependencies
-        run: pnpm --filter web install
+        run: pnpm --filter web... install
 
       - name: Lint
         run: pnpm --filter web lint
