@@ -1,11 +1,10 @@
 {
   "name": "web-ui",
   "version": "0.0.0",
-  "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*",
-    "lint:fix": "eslint --fix *.ts*"
+    "lint": "eslint **/*.ts*",
+    "lint:fix": "eslint --fix **/*.ts*"
   },
   "dependencies": {
     "react-dom": "18.2.0",

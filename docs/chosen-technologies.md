@@ -12,6 +12,11 @@ Here's what we decided to use.
 - [React](https://reactjs.org)
 - [Turborepo](https://turborepo.org)
 
+## API Communication
+
+- [tRPC](https://trpc.io)
+- [react-query](https://tanstack.com/query/v4/docs/adapters/react-query)
+
 ## Testing
 
 - [Jest](https://jestjs.io)

@@ -19,3 +19,5 @@ For more info, see Next.js file structure.
 - `pages`: Pages, routing automatically handled by Next.js
   - `_app.page.tsx`: Application (wrapped by providers)
   - `/**/*.page.tsx`: Pages of the application
+- `server`: Server config and routes
+- `utils`: Utility values and functions

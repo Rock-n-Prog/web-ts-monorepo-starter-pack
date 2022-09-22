@@ -5,6 +5,10 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "web#build": {
+      "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$RENDER_INTERNAL_HOSTNAME", "$PORT"],
+      "outputs": [".next/**"]
+    },
     "lint": {
       "outputs": []
     },

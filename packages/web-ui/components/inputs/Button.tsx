@@ -10,24 +10,19 @@ type Props = {
   readonly variant?: ButtonVariant;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-function Button({
-  children,
-  tooltipText,
-  disabled = false,
-  type = 'button',
-  variant = 'outlined',
-  ...props
-}: React.PropsWithChildren<Props>) {
-  const inner = (
-    <div>
-      <StyledButton $variant={variant} type={type} disabled={disabled} {...props}>
-        {children}
-      </StyledButton>
-    </div>
-  );
+const Button = React.forwardRef<HTMLButtonElement, Props>(
+  ({ children, tooltipText, disabled = false, type = 'button', variant = 'outlined', ...props }, ref) => {
+    const inner = (
+      <div>
+        <StyledButton $variant={variant} type={type} disabled={disabled} ref={ref} {...props}>
+          {children}
+        </StyledButton>
+      </div>
+    );
 
-  return tooltipText ? <Tooltip title={tooltipText}>{inner}</Tooltip> : inner;
-}
+    return tooltipText ? <Tooltip title={tooltipText}>{inner}</Tooltip> : inner;
+  },
+);
 
 const ButtonTypography = css(
   ({ theme }: { readonly theme: Theme }) => css`
