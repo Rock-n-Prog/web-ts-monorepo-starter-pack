@@ -11,17 +11,32 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
+    "lint:staged": "lint-staged",
     "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
     "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
-  "dependencies": {},
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "turbo": "^1.5.1"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@7.9.5"
+  "packageManager": "pnpm@7.9.5",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "apps/web/**/*.{js,jsx,ts,tsx}": [
+      "pnpm --filter web lint:fix"
+    ],
+    "*.{js,jsx,ts,tsx,json,css}": [
+      "pnpm run format:fix"
+    ]
+  }
 }

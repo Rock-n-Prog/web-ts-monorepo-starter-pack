@@ -2,9 +2,9 @@ module.exports = {
   extends: ['./react.js'],
   settings: {
     'import/resolver': {
-      "node": {
-        "extensions": [".ts", ".tsx"]
-      }
-    }
-  }
+      node: {
+        extensions: ['.ts', '.tsx'],
+      },
+    },
+  },
 };

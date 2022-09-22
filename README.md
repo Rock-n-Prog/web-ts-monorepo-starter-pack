@@ -47,4 +47,7 @@ pnpm run format
 # To fix lint
 pnpm run lint:fix
 pnpm run format:fix
+
+# Fix lint on staged files
+pnpm run lint:staged
 ```
