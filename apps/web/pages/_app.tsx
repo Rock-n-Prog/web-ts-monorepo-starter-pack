@@ -1,8 +1,11 @@
 import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
+import { AppType } from "next/dist/shared/lib/utils";
+import wrapWithTrpc from "../utils/wrapWithTrpc";
 
-function App({ Component, pageProps }: AppProps) {
+// TODO: Doesn't seem to like AppType
+function App({ Component, pageProps }: AppProps): AppType {
   return (
     <ThemeProvider>
       <Component {...pageProps} />
@@ -10,4 +13,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default wrapWithTrpc(App);
