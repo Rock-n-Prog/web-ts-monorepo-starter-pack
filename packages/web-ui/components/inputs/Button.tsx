@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Tooltip } from '../data';
 import { Theme } from '../../styles/theme';
