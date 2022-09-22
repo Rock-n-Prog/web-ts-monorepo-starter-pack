@@ -13,7 +13,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
+    "format": "prettier --quiet --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
     "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
@@ -42,7 +42,7 @@
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "*.{js,jsx,ts,tsx,json,css,md,yml}": [
+    "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ]
   }
