@@ -12,8 +12,8 @@ const helloRouter = t.router({
         .nullish(),
     )
     .query(({ input }) => ({
-      greeting: `Hello ${input?.text ?? "world"}`
+      greeting: `Hello ${input?.text ?? 'world'}!`,
     })),
 });
 
-export { helloRouter }
+export { helloRouter };

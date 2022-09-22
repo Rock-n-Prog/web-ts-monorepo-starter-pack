@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
-import { trpc } from "../utils/trpc";
+import { trpc } from '../utils/trpc';
 
 function App({ Component, pageProps }: AppProps) {
   return (

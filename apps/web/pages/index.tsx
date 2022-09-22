@@ -1,10 +1,11 @@
 import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2, Body1 } from 'web-ui/components/typography';
 import { useThemeContext } from 'web-ui/hooks/useThemeContext';
-import { trpc } from "../utils/trpc";
+import { trpc } from '../utils/trpc';
 
 function Index() {
   const { switchMode } = useThemeContext();
+  // TODO: Why does this keep refreshing? See console logs
   const { data } = trpc.hello.single.useQuery({ text: 'client' });
 
   return (
