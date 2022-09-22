@@ -14,9 +14,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
-    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\"",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
+    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
+    "lint": "eslint ./*.{js,jsx,ts,tsx} && turbo run lint:fix",
+    "lint:fix": "eslint --fix ./*.{js,jsx,ts,tsx} && turbo run lint:fix",
     "lint:staged": "lint-staged",
     "prepare": "husky install"
   },
@@ -28,6 +28,9 @@
     "turbo": "^1.5.1"
   },
   "lint-staged": {
+    "./*.{js,jsx,ts,tsx}": [
+      "eslint --fix ./*.{js,jsx,ts,tsx}"
+    ],
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
     ],
@@ -37,7 +40,7 @@
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "*.{js,jsx,ts,tsx,json,css}": [
+    "*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ]
   }

@@ -1,4 +1,4 @@
-name: Build Web UI
+name: Format
 
 on:
   workflow_dispatch:
@@ -6,14 +6,10 @@ on:
     branches:
       - main
       - develop
-    paths:
-      - 'packages/web-ui/**'
   pull_request:
     branches:
       - main
       - develop
-    paths:
-      - 'packages/web-ui/**'
 
 jobs:
   build:
@@ -35,10 +31,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-ui... install
+        run: pnpm install
 
-      - name: Lint
-        run: pnpm --filter web-ui lint
-
-      - name: Build
-        run: pnpm --filter web-ui build
+      - name: Format
+        run: pnpm format

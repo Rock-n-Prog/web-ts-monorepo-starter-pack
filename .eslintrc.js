@@ -6,4 +6,7 @@ module.exports = {
       rootDir: ['apps/*/', 'packages/*/'],
     },
   },
+  env: {
+    node: true,
+  },
 };
