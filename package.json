@@ -26,6 +26,11 @@
     "prettier": "^2.7.1",
     "turbo": "^1.5.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
