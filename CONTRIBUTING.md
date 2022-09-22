@@ -104,7 +104,7 @@ This requires reviewing code style, quality, tests and actual functionality of s
 ### Code style
 
 We use [eslint](https://eslint.org) and [prettier](https://prettier.io). It is checked pre-commit and during CI check.
-To format code, use `pnpm run lint:fix` and `pnpm run format:fix`.
+To format code, use `pnpm lint:fix` and `pnpm format:fix`.
 
 No comment should be in the source code. Some exceptions are small explanations. In those rare cases, comments are clear
 and tiny.

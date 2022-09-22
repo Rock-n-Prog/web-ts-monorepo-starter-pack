@@ -13,8 +13,8 @@ pnpm install
 ### Lint apps
 
 ```bash
-pnpm run lint
+pnpm lint
 
 # To fix lint
-pnpm run lint:fix
+pnpm lint:fix
 ```

@@ -1,0 +1,50 @@
+name: Build Web
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'apps/web/**'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'apps/web/**'
+
+jobs:
+  build:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.9.5
+
+      - name: Restore node_modules cache
+        uses: actions/cache@v2
+        with:
+          path: 'node_modules'
+          key: node_modules-${{ hashFiles('pnpm-lock.json') }}
+
+      - name: Install dependencies
+        run: pnpm --filter web... install
+
+      - name: Lint
+        run: pnpm --filter web lint
+
+      - name: Build
+        run: pnpm --filter web build

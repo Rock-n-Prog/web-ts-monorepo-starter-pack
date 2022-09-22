@@ -13,21 +13,21 @@ pnpm install
 ### Run apps
 
 ```bash
-pnpm run dev
-pnpm run start # server
+pnpm dev
+pnpm start # server
 ```
 
 ### Build apps
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 ### Lint apps
 
 ```bash
-pnpm run lint
+pnpm lint
 
 # To fix lint
-pnpm run lint:fix
+pnpm lint:fix
 ```
