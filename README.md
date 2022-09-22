@@ -12,16 +12,24 @@ To contribute, make sure you have read the [contribution guide](CONTRIBUTING.md)
 
 ## Apps
 
-- [`apps/docs`](apps/docs): Next.js web app for project documentation
 - [`apps/web`](apps/docs): Next.js main web app
+- [`apps/docs`](apps/docs): Next.js web app for project documentation
 - [`packages/web-ui`](packages/web-ui): React components for web apps
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
 ## Setup
 
+### Install dependencies
+
 ```bash
 pnpm install
+```
+
+### Prepare pre-commit hook
+
+```bash
+pnpm prepare
 ```
 
 ## Available scripts
@@ -47,6 +55,10 @@ pnpm format
 # To fix lint
 pnpm lint:fix
 pnpm format:fix
+
+# To only apply to root
+pnpm lint:root
+pnpm lint:root:fix
 
 # Fix lint on staged files
 pnpm lint:staged

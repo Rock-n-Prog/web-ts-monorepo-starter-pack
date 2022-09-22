@@ -13,11 +13,14 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --quiet --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
+    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
+    "lint": "pnpm run lint:root && turbo run lint",
+    "lint:fix": "pnpm run lint:root:fix && turbo run lint:fix",
+    "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
-    "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
-    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\""
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
@@ -27,6 +30,9 @@
     "turbo": "^1.5.1"
   },
   "lint-staged": {
+    "./*.{js,jsx,ts,tsx}": [
+      "pnpm lint:root:fix"
+    ],
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
     ],
@@ -36,7 +42,7 @@
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "*.{js,jsx,ts,tsx,json,css}": [
+    "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ]
   }

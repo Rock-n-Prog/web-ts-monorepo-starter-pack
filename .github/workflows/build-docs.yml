@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [16.x]
     steps:
       - uses: actions/checkout@v2
 
@@ -33,12 +33,6 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.9.5
-
-      - name: Restore node_modules cache
-        uses: actions/cache@v2
-        with:
-          path: 'node_modules'
-          key: node_modules-${{ hashFiles('pnpm-lock.json') }}
 
       - name: Install dependencies
         run: pnpm --filter docs... install
