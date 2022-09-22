@@ -14,4 +14,7 @@ pnpm install
 
 ```bash
 pnpm run lint
+
+# To fix lint
+pnpm run lint:fix
 ```
