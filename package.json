@@ -16,8 +16,8 @@
     "format": "prettier --quiet --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
-    "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:fix": "pnpm run lint:root:fix && turbo run lint:fix",
+    "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install"
