@@ -30,6 +30,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.9.5
+
       - name: Restore node_modules cache
         uses: actions/cache@v2
         with:
