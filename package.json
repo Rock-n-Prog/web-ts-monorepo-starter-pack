@@ -13,11 +13,12 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
+    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "lint:staged": "lint-staged",
-    "format": "prettier --quiet \"**/*.{js,jsx,ts,tsx,md}\"",
-    "format:fix": "prettier --quiet --write \"**/*.{js,jsx,ts,tsx,md}\""
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",

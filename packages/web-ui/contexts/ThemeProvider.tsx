@@ -34,9 +34,4 @@ const ThemeContext = React.createContext<{
   readonly switchMode: () => void;
 }>({ mode: defaultMode, setMode: () => void 0, switchMode: () => void 0 });
 
-function useThemeContext() {
-  return React.useContext(ThemeContext);
-}
-
-export { ThemeProvider };
-export { useThemeContext };
+export { ThemeContext, ThemeProvider };
