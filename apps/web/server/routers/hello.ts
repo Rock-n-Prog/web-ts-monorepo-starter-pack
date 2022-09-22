@@ -7,12 +7,12 @@ const helloRouter = t.router({
     .input(
       z
         .object({
-          text: z.string().nullish(),
+          name: z.string().nullish(),
         })
         .nullish(),
     )
     .query(({ input }) => ({
-      greeting: `Hello ${input?.text ?? 'world'}!`,
+      greeting: `Hello ${input?.name ?? 'world'}!`,
     })),
 });
 
