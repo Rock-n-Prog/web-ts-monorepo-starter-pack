@@ -12,10 +12,22 @@ Here's what we decided to use.
 - [React](https://reactjs.org)
 - [Turborepo](https://turborepo.org)
 
+## Package manager
+
+- [pnpm](https://pnpm.io)
+
 ## API Communication
 
 - [tRPC](https://trpc.io)
 - [react-query](https://tanstack.com/query/v4/docs/adapters/react-query)
+
+## ORM
+
+- [Prisma](TODO)
+
+## Database
+
+- [PostgreSQL](TODO)
 
 ## UI Library
 
@@ -29,10 +41,6 @@ Here's what we decided to use.
 
 - [styled-components](https://styled-components.com)
 - [styled-theming](https://www.npmjs.com/package/styled-theming)
-
-## Package manager
-
-- [pnpm](https://pnpm.io)
 
 ## Linting
 

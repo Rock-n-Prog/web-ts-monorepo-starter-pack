@@ -10,6 +10,11 @@
 - [Using tRPC with Next.js](https://trpc.io/docs/v10/nextjs)
 - [Next.js + tRPC + Prisma example](https://github.com/trpc/examples-next-prisma-todomvc)
 
+## Database
+
+- [Connecting Prisma to PostgreSQL](https://www.prisma.io/docs/concepts/database-connectors/postgresql)
+- [Turborepo + prisma example](https://github.com/aiji42/turbo-with-prisma)
+
 ## Pre-commit hooks
 
-- [Diving into husky and lint-staged](https://laurieontech.com/posts/husky/)
+- [Diving into husky and lint-staged](https://laurieontech.com/posts/husky)
