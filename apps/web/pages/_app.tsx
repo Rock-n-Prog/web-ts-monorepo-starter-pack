@@ -11,5 +11,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-// TODO: Fix TS
 export default trpc.withTRPC(App);

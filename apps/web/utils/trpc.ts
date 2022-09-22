@@ -25,7 +25,6 @@ function getBaseUrl() {
   return typeof window === 'undefined' ? '' : getVercelUrl() ?? getRenderInternalHostnameUrl() ?? getLocalhostUrl();
 }
 
-// TODO: Fix TS
 const trpc = createTRPCNext<AppRouter>({
   config: () => ({
     transformer: superjson,
