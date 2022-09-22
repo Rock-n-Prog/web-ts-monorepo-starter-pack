@@ -1,0 +1,46 @@
+name: Build Docs
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'packages/web-ui/**'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'packages/web-ui/**'
+
+jobs:
+  build:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Restore node_modules cache
+        uses: actions/cache@v2
+        with:
+          path: 'node_modules'
+          key: node_modules-${{ hashFiles('pnpm-lock.json') }}
+
+      - name: Install dependencies
+        run: pnpm --filter web-ui install
+
+      - name: Lint
+        run: pnpm --filter web-ui lint
+
+      - name: Build
+        run: pnpm --filter web-ui build

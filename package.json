@@ -37,7 +37,7 @@
       "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
     "*.{js,jsx,ts,tsx,json,css}": [
-      "pnpm run format:fix"
+      "pnpm format:fix"
     ]
   }
 }

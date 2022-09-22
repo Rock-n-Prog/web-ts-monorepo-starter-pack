@@ -29,25 +29,25 @@ pnpm install
 ### Run apps
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 ### Build apps
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 ### Lint apps
 
 ```bash
-pnpm run lint
-pnpm run format
+pnpm lint
+pnpm format
 
 # To fix lint
-pnpm run lint:fix
-pnpm run format:fix
+pnpm lint:fix
+pnpm format:fix
 
 # Fix lint on staged files
-pnpm run lint:staged
+pnpm lint:staged
 ```
