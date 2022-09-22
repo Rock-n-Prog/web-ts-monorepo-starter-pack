@@ -1,7 +1,7 @@
 import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2, Body1 } from 'web-ui/components/typography';
 import { useThemeContext } from 'web-ui/hooks/useThemeContext';
-import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { trpc } from '../../utils/trpc';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 
@@ -23,9 +23,8 @@ function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   );
 }
 
-function getStaticPaths(): GetStaticPaths<PathProps> {
+function getStaticPaths() {
   return {
-    // TODO: Fix TS
     paths: [],
     fallback: 'blocking',
   };
