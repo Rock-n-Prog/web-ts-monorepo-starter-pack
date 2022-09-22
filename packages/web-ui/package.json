@@ -1,7 +1,6 @@
 {
   "name": "web-ui",
   "version": "0.0.0",
-  "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*",
