@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint **/*.ts*",
-    "lint:fix": "eslint --fix **/*.ts*",
+    "lint": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "storybook:smoke-test": "start-storybook --smoke-test"

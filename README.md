@@ -43,6 +43,15 @@ pnpm prepare
 pnpm dev
 ```
 
+### Start storybook
+
+Storybook will be running on [http://localhost:6006](http://localhost:6006);
+
+```bash
+# For Web UI library
+pnpm storybook:web-ui
+```
+
 ### Build apps
 
 ```bash
@@ -65,4 +74,10 @@ pnpm lint:root:fix
 
 # Fix lint on staged files
 pnpm lint:staged
+```
+
+### Cleanup files
+
+```bash
+pnpm yeet
 ```
