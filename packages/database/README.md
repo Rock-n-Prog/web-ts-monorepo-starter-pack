@@ -18,3 +18,7 @@ pnpm lint
 # To fix lint
 pnpm lint:fix
 ```
+
+TODO: Add more commands
+
+TODO: Do we want db:migrate:deploy?

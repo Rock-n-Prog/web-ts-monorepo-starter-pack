@@ -24,6 +24,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -37,3 +38,6 @@ storybook-static
 
 # JetBrains
 .idea
+
+# Prisma
+packages/database/generated

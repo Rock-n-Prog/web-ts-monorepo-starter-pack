@@ -1,17 +1,19 @@
 version: '3.8'
 
-services:
-  database:
-    image: postgres:14.1-alpine
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - '5432:5432'
-    volumes:
-      - database:/var/lib/postgresql/data
-
 volumes:
   database:
     driver: local
+
+services:
+  mysql:
+    platform: linux/amd64
+    image: mysql:8.0.28
+    container_name: treeview_mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: treeview
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+      - database:/var/lib/mysql

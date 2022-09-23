@@ -9,6 +9,9 @@
       "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$RENDER_INTERNAL_HOSTNAME", "$PORT"],
       "outputs": [".next/**"]
     },
+    "database#db:migrate:*": {
+      "env": ["DATABASE_URL"]
+    },
     "lint": {
       "outputs": []
     },
