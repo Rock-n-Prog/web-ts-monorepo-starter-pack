@@ -25,6 +25,9 @@ const parameters = {
       date: /Date$/,
     },
   },
+  darkMode: {
+    current: 'dark',
+  },
 };
 
 function withGlobalStyle(Story) {
