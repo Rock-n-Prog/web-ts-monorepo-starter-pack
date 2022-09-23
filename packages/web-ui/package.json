@@ -5,8 +5,9 @@
   "scripts": {
     "lint": "eslint **/*.ts*",
     "lint:fix": "eslint --fix **/*.ts*",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "storybook:build": "build-storybook -s ./public"
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "storybook:smoke-test": "start-storybook --smoke-test"
   },
   "dependencies": {
     "react-dom": "18.2.0",

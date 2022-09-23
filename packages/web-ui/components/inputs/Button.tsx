@@ -5,12 +5,12 @@ import { Theme } from '../../styles/theme';
 
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
-type Props = {
+type ButtonProps = {
   readonly tooltipText?: string;
   readonly variant?: ButtonVariant;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = React.forwardRef<HTMLButtonElement, Props>(
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, tooltipText, disabled = false, type = 'button', variant = 'outlined', ...props }, ref) => {
     const inner = (
       <div>
@@ -84,4 +84,4 @@ const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
 );
 
 export { Button };
-export type { ButtonVariant };
+export type { ButtonProps, ButtonVariant };

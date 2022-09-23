@@ -41,5 +41,8 @@ jobs:
       # - name: Lint
       #   run: pnpm --filter web-ui lint
 
+      - name: Storybook smoke test
+        run: pnpm --filter web-ui storybook:smoke-test
+
       - name: Build
         run: pnpm --filter web-ui build

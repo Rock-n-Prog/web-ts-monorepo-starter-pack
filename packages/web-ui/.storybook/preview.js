@@ -1,5 +1,5 @@
 import React from 'react';
-import { withContexts } from '@storybook/addon-contexts/react';
+// import { withContexts } from '@storybook/addon-contexts/react';
 import { contexts } from './contexts';
 import * as NextImage from 'next/image';
 import GlobalStyle from '../styles/GlobalStyle';
@@ -28,7 +28,7 @@ const decorators = [
       <Story />
     </>
   ),
-  withContexts(contexts),
+  // withContexts(contexts),
 ];
 
 export { parameters, decorators };
