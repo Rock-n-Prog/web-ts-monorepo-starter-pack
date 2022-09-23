@@ -1,8 +1,10 @@
 import { t } from '../trpc';
 import { helloRouter } from './hello';
+import { usersRouter } from './users';
 
 const appRouter = t.router({
   hello: helloRouter,
+  users: usersRouter,
 });
 
 type AppRouter = typeof appRouter;

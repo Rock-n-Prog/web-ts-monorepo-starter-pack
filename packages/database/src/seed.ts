@@ -8,7 +8,7 @@ const defaultUsers = [
   },
   {
     name: 'Marc du Prelore',
-    email: 'timarc@.com',
+    email: 'timarc@letsgo.com',
   },
 ] as Partial<User>[];
 
