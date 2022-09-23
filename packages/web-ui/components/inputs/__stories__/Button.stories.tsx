@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, ButtonProps } from '../Button';
 
 const config = {
-  title: 'Components/Common/Inputs/Button',
+  title: 'Inputs/Button',
   component: Button,
   argTypes: { onClick: { action: 'clicked' } },
 };
