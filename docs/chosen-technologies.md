@@ -17,6 +17,10 @@ Here's what we decided to use.
 - [tRPC](https://trpc.io)
 - [react-query](https://tanstack.com/query/v4/docs/adapters/react-query)
 
+## UI Library
+
+- [Storybook](https://storybook.js.org)
+
 ## Testing
 
 - [Jest](https://jestjs.io)
