@@ -47,6 +47,8 @@ const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
   `,
   outlined: theme =>
     `
+    border: 1px solid ${theme.colors.palette.primary.main};
+
     :hover {
       background-color: ${theme.colors.surface};
     }

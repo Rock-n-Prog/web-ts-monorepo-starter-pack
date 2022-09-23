@@ -1,15 +1,21 @@
 import React from 'react';
-// import { withContexts } from '@storybook/addon-contexts/react';
-import { contexts } from './contexts';
-import * as NextImage from 'next/image';
+import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/GlobalStyle';
+import { getTheme } from '../styles/theme';
 
-const OriginalNextImage = NextImage.default;
-
-Object.defineProperty(NextImage, 'default', {
-  configurable: true,
-  value: props => <OriginalNextImage {...props} unoptimized />,
-});
+const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'dark',
+    toolbar: {
+      icon: 'circlehollow',
+      items: ['light', 'dark'],
+      showName: true,
+      dynamicTitle: true,
+    },
+  },
+};
 
 const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -21,14 +27,25 @@ const parameters = {
   },
 };
 
-const decorators = [
-  Story => (
+function withGlobalStyle(Story) {
+  return (
     <>
       <GlobalStyle />
       <Story />
     </>
-  ),
-  // withContexts(contexts),
-];
+  );
+}
 
-export { parameters, decorators };
+function withThemeProvider(Story, context) {
+  const theme = getTheme(context.globals.theme);
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Story />
+    </ThemeProvider>
+  );
+}
+
+const decorators = [withGlobalStyle, withThemeProvider];
+
+export { globalTypes, parameters, decorators };

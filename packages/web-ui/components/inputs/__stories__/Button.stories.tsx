@@ -13,31 +13,33 @@ function Template(props: ButtonProps) {
 
 const Contained = Template.bind({}) as any;
 Contained.args = {
-  title: 'This appears in the tooltip!',
   children: 'Button text',
   variant: 'contained',
 };
 
 const Outlined = Template.bind({}) as any;
 Outlined.args = {
-  title: 'This appears in the tooltip!',
   children: 'Button text',
   variant: 'outlined',
 };
 
 const Text = Template.bind({}) as any;
 Text.args = {
-  title: 'This appears in the tooltip!',
   children: 'Button text',
   variant: 'text',
 };
 
 const Disabled = Template.bind({}) as any;
 Disabled.args = {
-  title: 'This appears in the tooltip!',
   children: 'Button text',
   disabled: true,
 };
 
+const WithTooltip = Template.bind({}) as any;
+WithTooltip.args = {
+  tooltipText: 'This appears in the tooltip!',
+  children: 'Button text',
+};
+
 export default config;
-export { Contained, Outlined, Text, Disabled };
+export { Contained, Outlined, Text, Disabled, WithTooltip };
