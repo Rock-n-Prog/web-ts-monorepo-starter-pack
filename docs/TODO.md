@@ -1,5 +1,6 @@
-Add those to commands:
+TODO: Why does database tsconfig only work with relative paths?
 
-Run the db: docker compose up
+TODO: Add those to commands (some where already added):
 
-Migrate: pnpm -F database db:migrate:dev
+- Run the db: docker compose up
+- Migrate: pnpm -F database db:migrate:dev

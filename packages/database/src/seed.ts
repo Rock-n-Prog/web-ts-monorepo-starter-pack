@@ -1,32 +1,33 @@
-import { prisma } from ".";
-import type { Task } from "../generated/prisma-client";
+import { prisma } from '.';
+import type { User } from '../generated/prisma-client';
 
-const defaultTasks = [
+const defaultUsers = [
   {
-    name: "Wash clothes",
-    description: "Gotta wash clothes",
+    name: 'Joe Botine',
+    email: 'joe@botine.com',
   },
   {
-    name: "Hit the gym",
+    name: 'Marc du Prelore',
+    email: 'timarc@.com',
   },
-] as Partial<Task>[];
+] as Partial<User>[];
 
 (async () => {
   try {
     await Promise.all(
-      defaultTasks.map((task) =>
-        prisma.task.upsert({
+      defaultUsers.map(user =>
+        prisma.user.upsert({
           where: {
-            name: task.name!,
+            email: user.email!,
           },
           update: {
-            ...task,
+            ...user,
           },
           create: {
-            ...task,
+            ...user,
           },
-        })
-      )
+        }),
+      ),
     );
   } catch (error) {
     console.error(error);

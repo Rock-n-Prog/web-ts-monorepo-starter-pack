@@ -10,8 +10,9 @@ generator client {
   output          = "../generated/prisma-client"
 }
 
-model Task {
+model User {
   id            String    @id @default(cuid())
-  name          String
-  description   String?
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
 }

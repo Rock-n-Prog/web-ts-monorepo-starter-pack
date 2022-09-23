@@ -35,7 +35,21 @@ pnpm install
 pnpm prepare
 ```
 
+### Setup database
+
+TODO: Currently have to copy .env.example to packages/database.env. It should be read from root.
+
+```bash
+cp .env.example packages/database/.env
+```
+
 ## Available scripts
+
+### Run database
+
+```bash
+docker compose up
+```
 
 ### Run apps
 
