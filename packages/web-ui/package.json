@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint **/*.ts*",
-    "lint:fix": "eslint --fix **/*.ts*"
+    "lint:fix": "eslint --fix **/*.ts*",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "storybook:build": "build-storybook -s ./public"
   },
   "dependencies": {
     "react-dom": "18.2.0",
@@ -13,6 +15,7 @@
     "styled-theming": "^2.2.0"
   },
   "devDependencies": {
+    "@storybook/react": "^7.0.0-alpha.33",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
