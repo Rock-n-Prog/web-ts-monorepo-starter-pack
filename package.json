@@ -20,9 +20,12 @@
     "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook:web-ui": "turbo run storybook --scope web-ui --no-deps",
+    "yeet": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
+    "eslint": "^8.23.1",
     "eslint-config-custom": "workspace:*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

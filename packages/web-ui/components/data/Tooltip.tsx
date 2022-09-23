@@ -3,11 +3,11 @@ import styled, { css } from 'styled-components';
 import { Typography } from '../typography';
 import { Theme } from '../../styles/theme';
 
-type Props = {
+type TooltipProps = {
   readonly title: string;
 };
 
-function Tooltip({ children, title }: React.PropsWithChildren<Props>) {
+function Tooltip({ children, title }: React.PropsWithChildren<TooltipProps>) {
   return (
     <TooltipContainer>
       {children}
@@ -45,4 +45,5 @@ const TooltipContainer = styled.div`
   }
 `;
 
+export type { TooltipProps };
 export { Tooltip };
