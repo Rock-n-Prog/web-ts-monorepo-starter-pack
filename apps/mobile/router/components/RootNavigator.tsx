@@ -1,18 +1,18 @@
-import * as React from "react";
-import {NavigationContainer} from "@react-navigation/native";
-import RootStackNavigator from "./RootStackNavigator";
-import RootRoutes from "../RootRoutes";
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import RootStackNavigator from './RootStackNavigator';
+import RootRoutes from '../RootRoutes';
 
 const screens: Record<RootRoutes, string> = {
-  Home: "",
-  Hello: "hello"
+  Home: '',
+  Hello: 'hello',
 };
 
 const linking = {
-  prefixes: ["treeview.dev://"],
+  prefixes: ['treeview.dev://'],
   config: {
     screens,
-  }
+  },
 };
 
 export const RootNavigator = () => {

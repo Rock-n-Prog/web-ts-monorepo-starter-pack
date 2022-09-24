@@ -20,6 +20,7 @@
     "@trpc/react": "^10.0.0-proxy-beta.7",
     "@trpc/server": "^10.0.0-proxy-beta.7",
     "expo": "^46.0.10",
+    "expo-constants": "^13.2.4",
     "expo-font": "^10.2.0",
     "expo-modules-autolinking": "^0.10.3",
     "expo-splash-screen": "^0.16.2",

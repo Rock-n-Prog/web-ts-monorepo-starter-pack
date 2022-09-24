@@ -1,8 +1,8 @@
-import * as React from "react";
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import RootRoutes from "../RootRoutes";
-import HomeScreen from "../../screens/home/HomeScreen";
-import HelloScreen from "../../screens/hello/HelloScreen";
+import * as React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import RootRoutes from '../RootRoutes';
+import HomeScreen from '../../screens/home/HomeScreen';
+import HelloScreen from '../../screens/hello/HelloScreen';
 
 type RootStackParams = {
   [RootRoutes.Home]: undefined;
