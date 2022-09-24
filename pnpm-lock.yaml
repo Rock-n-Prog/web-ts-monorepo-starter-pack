@@ -85,7 +85,7 @@ importers:
 
   packages/trpc:
     specifiers:
-      '@trpc/react': ^10.0.0-proxy-beta.2
+      '@trpc/server': ^10.0.0-proxy-beta.2
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       nodemon: ^2.0.20
@@ -94,7 +94,7 @@ importers:
       typescript: ^4.5.2
       zod: ^3.19.1
     dependencies:
-      '@trpc/react': 10.0.0-proxy-beta.2
+      '@trpc/server': 10.0.0-proxy-beta.2
     devDependencies:
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
@@ -3358,16 +3358,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-ssr-prepass: 1.5.0_react@18.2.0
-    dev: false
-
-  /@trpc/react/10.0.0-proxy-beta.2:
-    resolution: {integrity: sha512-OKo6E9w/B3hQ3WyjB1SuI1GL2ksn16YxJdSwaA1D3ogP9ANF8jINptPMH3e4CGjCqunaJk4WahJh0wrei/lSJA==}
-    peerDependencies:
-      '@tanstack/react-query': ^4.3.0
-      '@trpc/client': 10.0.0-proxy-beta.2
-      '@trpc/server': 10.0.0-proxy-beta.2
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
     dev: false
 
   /@trpc/react/10.0.0-proxy-beta.2_hxauktzx6glgcpki3iyuqyldxy:
