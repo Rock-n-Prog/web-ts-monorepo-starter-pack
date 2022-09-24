@@ -1,2 +1,6 @@
-# Next
+# next.js
 .next
+build
+
+# node
+dist

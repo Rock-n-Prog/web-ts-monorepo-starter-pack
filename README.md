@@ -18,6 +18,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 - [`apps/web`](apps/docs): Next.js web app
 - [`packages/web-ui`](packages/web-ui): React components for web app
+- [`packages/trpc`](packages/trpc): tRPC routes and context definitions
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
