@@ -43,6 +43,10 @@ pnpm prepare
 
 ```bash
 pnpm dev
+
+# Running a single app and its deps
+pnpm dev:web
+pnpm dev:mobile
 ```
 
 ### Start storybook
