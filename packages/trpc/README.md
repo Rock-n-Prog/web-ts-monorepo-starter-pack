@@ -10,9 +10,20 @@ pnpm install
 
 ## Available scripts
 
-TODO: Add other scripts
+### Run app
 
-### Lint apps
+```bash
+pnpm dev
+pnpm start # server
+```
+
+### Build app
+
+```bash
+pnpm build
+```
+
+### Lint app
 
 ```bash
 pnpm lint

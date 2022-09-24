@@ -3,9 +3,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ts']
-      }
-    }
+        extensions: ['.js', '.ts'],
+      },
+    },
   },
   env: {
     node: true,

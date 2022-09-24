@@ -27,7 +27,7 @@ pnpm storybook:smoke-test
 pnpm storybook:build
 ```
 
-### Lint apps
+### Lint app
 
 ```bash
 pnpm lint

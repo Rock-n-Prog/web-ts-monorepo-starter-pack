@@ -1,4 +1,4 @@
-name: Build Web UI
+name: Build tRPC Package
 
 on:
   workflow_dispatch:
@@ -7,13 +7,13 @@ on:
       - main
       - develop
     paths:
-      - 'packages/web-ui/**'
+      - 'packages/trpc/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
-      - 'packages/web-ui/**'
+      - 'packages/trpc/**'
 
 jobs:
   build:
@@ -35,14 +35,11 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-ui... install
+        run: pnpm --filter trpc install
 
       # TODO(#35): Re-add this
       # - name: Lint
-      #   run: pnpm --filter web-ui lint
-
-      - name: Storybook smoke test
-        run: pnpm --filter web-ui storybook:smoke-test
+      #   run: pnpm --filter trpc lint
 
       - name: Build
-        run: pnpm --filter web-ui build
+        run: pnpm --filter trpc build

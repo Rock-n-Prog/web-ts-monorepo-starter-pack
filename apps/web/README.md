@@ -1,6 +1,13 @@
 # TreeView Web App
 
-Next.js app for TreeView
+Next.js app for TreeView.
+
+Contains both UI pages and API (all server-side).
+
+This package uses:
+
+- [`packages/web-ui`](../../packages/web-ui): UI library
+- [`packages/trpc`](../../packages/trpc): tRPC routers and configs
 
 ## Setup
 
@@ -10,20 +17,20 @@ pnpm install
 
 ## Available scripts
 
-### Run apps
+### Run app
 
 ```bash
 pnpm dev
 pnpm start # server
 ```
 
-### Build apps
+### Build app
 
 ```bash
 pnpm build
 ```
 
-### Lint apps
+### Lint app
 
 ```bash
 pnpm lint
