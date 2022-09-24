@@ -3,4 +3,4 @@ import type { AppRouter } from 'trpc';
 
 const trpc = createTRPCReact<AppRouter>();
 
-export default trpc;
+export { trpc };

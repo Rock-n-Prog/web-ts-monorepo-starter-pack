@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { PropsWithChildren } from "react";
 import { httpBatchLink, loggerLink } from "@trpc/react";
 import superjson from 'superjson';
-import trpc from '../utils/trpc';
+import { trpc } from '../utils/trpc';
 
 function getVercelUrl() {
   return process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;
