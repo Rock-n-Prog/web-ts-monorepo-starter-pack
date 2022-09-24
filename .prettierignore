@@ -2,6 +2,9 @@
 .next
 build
 
+# expo
+.expo
+
 # node
 dist
 

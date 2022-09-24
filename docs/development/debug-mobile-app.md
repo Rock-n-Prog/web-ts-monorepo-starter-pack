@@ -4,7 +4,7 @@ How to run the app locally, simulating production environment with dev tools.
 
 You will need to link expo-cli to your account first.
 
-**In all the following cases, Metro will link the running app. You should be able to debug using your IDE.
+\*\*In all the following cases, Metro will link the running app. You should be able to debug using your IDE.
 
 ## Web
 
@@ -26,8 +26,8 @@ You can either use an Android phone with [Expo Go app](https://expo.dev/client) 
 Install Expo Go and link the app to your account. You should have access to all EAS builds and local apps running on
 your network.
 
-When your PC runs the local app (with `pnpm dev:mobile`), Expo Go can detect it. You can choose this app in Expo Go,
-or go to the URL `pnpm dev:mobile` provides and scan the QR code.
+When your PC runs the local app (with `pnpm dev:mobile`), Expo Go can detect it. You can choose this app in Expo Go, or
+go to the URL `pnpm dev:mobile` provides and scan the QR code.
 
 ### Emulator
 
