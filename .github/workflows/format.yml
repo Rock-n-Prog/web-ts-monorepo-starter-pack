@@ -31,7 +31,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
 
       - name: Format
         run: pnpm format
