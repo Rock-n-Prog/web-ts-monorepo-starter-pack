@@ -40,7 +40,6 @@ importers:
       tsconfig: workspace:*
       typescript: ^4.5.3
       web-ui: workspace:*
-      zod: ^3.19.1
     dependencies:
       '@tanstack/react-query': 4.3.9_biqbaboplfbrettd7655fr4n2y
       '@trpc/client': 10.0.0-proxy-beta.2_igwqil3kejdm7wdrjsuyactfdq
@@ -54,7 +53,6 @@ importers:
       superjson: 1.10.0
       trpc: link:../../packages/trpc
       web-ui: link:../../packages/web-ui
-      zod: 3.19.1
     devDependencies:
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
@@ -91,16 +89,20 @@ importers:
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       nodemon: ^2.0.20
+      superjson: ^1.10.0
       tsconfig: workspace:*
       typescript: ^4.5.2
+      zod: ^3.19.1
     dependencies:
       '@trpc/react': 10.0.0-proxy-beta.2
     devDependencies:
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       nodemon: 2.0.20
+      superjson: 1.10.0
       tsconfig: link:../tsconfig
       typescript: 4.8.3
+      zod: 3.19.1
 
   packages/tsconfig:
     specifiers: {}
@@ -4831,7 +4833,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -5281,7 +5283,6 @@ packages:
     engines: {node: '>=12.13'}
     dependencies:
       is-what: 4.1.7
-    dev: false
 
   /copy-concurrently/1.0.5:
     resolution: {integrity: sha512-f2domd9fsVDFtaFcbaRZuYXwtdmnzqbADSwhSWYxYB/Q8zsdUUFMXVRwXGDMWmbEzAn1kdRrtI1T/KTFOL4X2A==}
@@ -7885,7 +7886,6 @@ packages:
   /is-what/4.1.7:
     resolution: {integrity: sha512-DBVOQNiPKnGMxRMLIYSwERAS5MVY1B7xYiGnpgctsOFvVDz9f9PFXXxMcTOHuoqYp4NK9qFYQaIC1NRRxLMpBQ==}
     engines: {node: '>=12.13'}
-    dev: false
 
   /is-whitespace-character/1.0.4:
     resolution: {integrity: sha512-SDweEzfIZM0SJV0EUga669UTKlmL0Pq8Lno0QDQsPnvECB3IM2aP0gdx5TrU0A01MAPfViaZiI2V1QMZLaKK5w==}
@@ -9714,6 +9714,17 @@ packages:
         optional: true
     dev: true
 
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
+    dev: true
+
   /promise.allsettled/1.0.5:
     resolution: {integrity: sha512-tVDqeZPoBC0SlzJHzWGZ2NKAguVq2oiYj7gbggbiTvH2itHohijTp7njOUA0aQ/nl+0lr/r6egmhoYu63UZ/pQ==}
     engines: {node: '>= 0.4'}
@@ -11083,7 +11094,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       copy-anything: 3.0.2
-    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
@@ -12211,7 +12221,7 @@ packages:
 
   /zod/3.19.1:
     resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
-    dev: false
+    dev: true
 
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
