@@ -1,7 +1,6 @@
+/* eslint-disable */
 import { registerRootComponent } from 'expo';
 import App from './App';
-
-// TODO: This file might not be needed with package.json: "main": "node_modules/expo/AppEntry.js"
 
 // index.js has to be placed next to package.json for build to work
 
