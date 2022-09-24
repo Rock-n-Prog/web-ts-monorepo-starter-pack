@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { PropsWithChildren } from "react";
-import { httpBatchLink } from '@trpc/react';
+import { httpBatchLink, loggerLink } from "@trpc/react";
+import superjson from 'superjson';
 import trpc from '../utils/trpc';
 
 function getVercelUrl() {
@@ -27,7 +28,12 @@ function TrpcProvider({ children }: PropsWithChildren) {
   }));
   const [trpcClient] = React.useState(() =>
     trpc.createClient({
+      transformer: superjson,
       links: [
+        loggerLink({
+          enabled: opts =>
+            process.env.NODE_ENV === 'development' || (opts.direction === 'down' && opts.result instanceof Error),
+        }),
         httpBatchLink({
           url: `${getBaseUrl()}/api/trpc`,
         }),
@@ -36,7 +42,7 @@ function TrpcProvider({ children }: PropsWithChildren) {
   );
 
   return (
-    <trpc.Provider queryClient={queryClient} client={trpcClient}>
+    <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>
         {children}
       </QueryClientProvider>

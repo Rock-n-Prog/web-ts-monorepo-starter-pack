@@ -6,6 +6,7 @@ import * as trpcNext from '@trpc/server/adapters/next';
 function createContext(opts?: trpcNext.CreateNextContextOptions) {
   return {
     req: opts?.req,
+    res: opts?.res,
     // TODO(#14): Add prisma here
     // prisma,
     // task: prisma.task,

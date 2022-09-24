@@ -6,7 +6,7 @@ import trpc from '../../utils/trpc';
 function HelloScreen() {
   const { data, error } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
-  // TODO: Plug to trpc
+  // TODO: Remove error
   return (
     <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Hello!</Text>

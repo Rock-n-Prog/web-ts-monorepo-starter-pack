@@ -10,7 +10,7 @@
       "outputs": [".next/**"]
     },
     "mobile#build": {
-      "dependsOn": ["^build", "$VERCEL_URL", "$PORT"],
+      "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$PORT"],
       "outputs": ["node_modules/.cache/metro/**"]
     },
     "lint": {

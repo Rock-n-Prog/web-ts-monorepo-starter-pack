@@ -7,6 +7,9 @@ const handler = trpcNext.createNextApiHandler({
   onError({ error }) {
     console.error('Something went wrong', error);
   },
+  batching: {
+    enabled: true,
+  },
 });
 
 export default handler;
