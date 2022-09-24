@@ -11,14 +11,8 @@ function getVercelUrl() {
 }
 
 function getDebuggerHostUrl() {
-  const debuggerHostUrl = Constants.manifest?.debuggerHost
-    ? Constants.manifest.debuggerHost
-        .split(':')
-        .shift()
-        ?.concat(`:${process.env.PORT ?? defaultPort}`)
-    : undefined;
-
-  return debuggerHostUrl ? `http://${debuggerHostUrl}` : undefined;
+  const debuggerHost = Constants.manifest?.debuggerHost?.split(':').shift()?.concat(`:${process.env.PORT ?? defaultPort}`);
+  return debuggerHost ? `http://${debuggerHost}` : undefined;
 }
 
 function getLocalhostUrl() {
