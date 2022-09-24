@@ -1,13 +1,14 @@
 import { FontAwesome } from '@expo/vector-icons';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect, useState } from 'react';
+import * as React from 'react';
 
-export default function useCachedResources() {
-  const [isLoadingComplete, setLoadingComplete] = useState(false);
+function useCachedResources() {
+  const [isLoadingComplete, setLoadingComplete] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     async function loadResourcesAndDataAsync() {
+      // eslint-disable-next-line functional/no-try-statement
       try {
         SplashScreen.preventAutoHideAsync();
 
@@ -28,3 +29,5 @@ export default function useCachedResources() {
 
   return isLoadingComplete;
 }
+
+export default useCachedResources;
