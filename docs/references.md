@@ -3,12 +3,14 @@
 ## Frameworks
 
 - [Next.js docs](https://nextjs.org/docs)
-- [Turborepo + Expo + tRPC boilerplate](https://github.com/gunnnnii/turbo-expo-trpc-starter)
+- [Turborepo + Expo example](https://github.com/ericvicenti/turbo-expo-starter)
+- [Turborepo + pnpm + Expo example](https://github.com/byCedric/expo-monorepo-example)
 
 ## API communication
 
 - [Using tRPC with Next.js](https://trpc.io/docs/v10/nextjs)
 - [Next.js + tRPC + Prisma example](https://github.com/trpc/examples-next-prisma-todomvc)
+- [Turborepo + Expo + tRPC example](https://github.com/gunnnnii/turbo-expo-trpc-starter)
 
 ## Pre-commit hooks
 

@@ -2,7 +2,10 @@
 
 Documentation usage of parts of the app during development infrastructure and software architecture.
 
+- [Debug Mobile App](debug-mobile-app.md)
 - [Testing](testing/README.md)
+- [Pre-commit](pre-commit.md)
+- [Workflows](workflows.md)
 
 ## UI Components
 

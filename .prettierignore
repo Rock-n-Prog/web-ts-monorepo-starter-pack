@@ -2,5 +2,11 @@
 .next
 build
 
+# expo
+.expo
+
 # node
 dist
+
+# storybook
+storybook-static
