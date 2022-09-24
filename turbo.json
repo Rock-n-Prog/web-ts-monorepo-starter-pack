@@ -3,11 +3,15 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": ["dist/**"]
     },
     "web#build": {
       "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$RENDER_INTERNAL_HOSTNAME", "$PORT"],
       "outputs": [".next/**"]
+    },
+    "mobile#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["node_modules/.cache/metro/**"]
     },
     "lint": {
       "outputs": []
@@ -16,6 +20,7 @@
       "outputs": []
     },
     "dev": {
+      "dependsOn": ["^build"],
       "cache": false
     }
   }
