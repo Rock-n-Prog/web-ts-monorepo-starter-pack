@@ -4,13 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { trpc } from '../../utils/trpc';
 
 function HelloScreen() {
-  const { data, error } = trpc.hello.single.useQuery({ name: 'TreeView' });
+  const { data } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
   return (
     <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Hello!</Text>
       <Text>We got data: {data?.greeting ?? ''}</Text>
-      {error && <Text>{JSON.stringify(error)}</Text>}
     </SafeAreaView>
   );
 }
