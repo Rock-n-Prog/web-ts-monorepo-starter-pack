@@ -9,7 +9,9 @@ Here's what we decided to use.
 ## Frameworks
 
 - [Next.js](https://nextjs.org)
+- [Expo](https://docs.expo.dev)
 - [React](https://reactjs.org)
+- [React Native](https://reactnative.dev)
 - [Turborepo](https://turborepo.org)
 
 ## API Communication

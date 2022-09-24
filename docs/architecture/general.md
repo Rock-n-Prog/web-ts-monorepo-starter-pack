@@ -10,6 +10,7 @@ For more info, see Turborepo file structure.
 
 - `apps`: Running apps
   - `web`: Web app (see [its docs](./web.md))
+  - `mobile`: Mobile app (see [its docs](./mobile.md))
 - `docs`: Project documentation
 - `packages`: Running apps
   - `trpc`: tRPC routes and context definitions (see [its docs](./trpc.md))

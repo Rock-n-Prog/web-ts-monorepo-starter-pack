@@ -11,10 +11,13 @@ coverage
 # next.js
 .next/
 out/
-build
+build/
+
+# expo
+.expo/
 
 # node
-dist
+dist/
 
 # misc
 .DS_Store

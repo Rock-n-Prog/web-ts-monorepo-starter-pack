@@ -3,7 +3,8 @@
 ## Frameworks
 
 - [Next.js docs](https://nextjs.org/docs)
-- [Turborepo + Expo + tRPC boilerplate](https://github.com/gunnnnii/turbo-expo-trpc-starter)
+- [Turborepo + Expo example](https://github.com/ericvicenti/turbo-expo-starter)
+- [Turborepo + Expo + tRPC example](https://github.com/gunnnnii/turbo-expo-trpc-starter)
 
 ## API communication
 

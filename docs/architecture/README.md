@@ -5,6 +5,7 @@ infrastructure and software architecture.
 
 - [General](general.md)
 - [Web](web.md)
+- [Mobile](mobile.md)
 - [Web UI](web-ui.md)
 - [tRPC](trpc.md)
 - Database (TODO: missing documentation)
