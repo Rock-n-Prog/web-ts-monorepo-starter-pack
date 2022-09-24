@@ -6,6 +6,7 @@ infrastructure and software architecture.
 - [General](general.md)
 - [Web](web.md)
 - [Web UI](web-ui.md)
+- [tRPC](trpc.md)
 - Database (TODO: missing documentation)
 - Data relationships (TODO: missing documentation)
 - DevOps (TODO: missing documentation)

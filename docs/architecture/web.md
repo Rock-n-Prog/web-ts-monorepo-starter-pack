@@ -2,7 +2,10 @@
 
 App is located at [`apps/web`](../../apps/web).
 
-This app uses a UI library. For more info, read [its docs](./web-ui.md).
+This app uses shared packages. For more info, read their docs:
+
+- [`web-ui`](./web-ui.md)
+- [`trpc`](./trpc.md)
 
 ## Software architecture
 

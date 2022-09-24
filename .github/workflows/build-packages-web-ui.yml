@@ -1,0 +1,48 @@
+name: Build Web UI Package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'packages/web-ui/**'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'packages/web-ui/**'
+
+jobs:
+  build:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.9.5
+
+      - name: Install dependencies
+        run: pnpm --filter web-ui... install
+
+      # TODO(#35): Re-add this
+      # - name: Lint
+      #   run: pnpm --filter web-ui lint
+
+      - name: Storybook smoke test
+        run: pnpm --filter web-ui storybook:smoke-test
+
+      - name: Build
+        run: pnpm --filter web-ui build

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { t } from '../trpc';
+import { t } from '../config/trpc';
 
 // TODO(#14): Use Prisma (https://github.com/trpc/examples-next-prisma-todomvc/blob/next/src/server/routers/todo.ts)
 const helloRouter = t.router({

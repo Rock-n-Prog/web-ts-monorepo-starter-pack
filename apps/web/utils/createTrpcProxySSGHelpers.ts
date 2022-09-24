@@ -1,7 +1,6 @@
 import superjson from 'superjson';
 import { createProxySSGHelpers } from '@trpc/react/ssg';
-import { createContext } from '../server/context';
-import { appRouter } from '../server/routers/_app';
+import { appRouter, createContext } from 'trpc';
 
 function createTrpcProxySSGHelpers() {
   return createProxySSGHelpers({
