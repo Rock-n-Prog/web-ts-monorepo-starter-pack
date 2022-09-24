@@ -1,4 +1,4 @@
-import { t } from '../trpc';
+import { t } from '../config/trpc';
 import { helloRouter } from './hello';
 
 const appRouter = t.router({
