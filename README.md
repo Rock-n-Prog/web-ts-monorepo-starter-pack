@@ -1,7 +1,9 @@
 # TreeView App
 
-[![Build Web](https://github.com/treeview-app/treeview/actions/workflows/build-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-web.yml)
-[![Build Web UI](https://github.com/treeview-app/treeview/actions/workflows/build-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-web-ui.yml)
+[![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)
+[![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)
+[![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)
+[![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)
 [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
 
 Task management app, with a focus on tree view.
