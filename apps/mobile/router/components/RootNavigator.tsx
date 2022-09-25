@@ -16,6 +16,7 @@ const linking = {
 };
 
 function RootNavigator() {
+  // TODO: Stack navigator flashes with dark theme. Maybe we should send it a theme?
   return (
     <NavigationContainer linking={linking}>
       <RootStackNavigator />
