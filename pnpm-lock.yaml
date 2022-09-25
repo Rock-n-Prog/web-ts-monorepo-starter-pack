@@ -41,6 +41,7 @@ importers:
       expo-modules-autolinking: ^0.10.3
       expo-splash-screen: ^0.16.2
       expo-status-bar: ^1.4.0
+      mobile-ui: workspace:*
       react: ^18.2.0
       react-native: ^0.70.1
       react-native-safe-area-context: ^4.3.4
@@ -64,6 +65,7 @@ importers:
       expo-modules-autolinking: 0.10.3
       expo-splash-screen: 0.16.2_scx74wtxac2wxjbs6ttkh3cnc4
       expo-status-bar: 1.4.0
+      mobile-ui: link:../../packages/mobile-ui
       react: 18.2.0
       react-native: 0.70.1_cnhxwiof7sex5r6rlkz3tsu2be
       react-native-safe-area-context: 4.3.4_4kk6flxesec7o3ex73cqyfxqsm
@@ -5808,7 +5810,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -12008,6 +12010,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
+    dev: true
 
   /promise.allsettled/1.0.5:
     resolution: {integrity: sha512-tVDqeZPoBC0SlzJHzWGZ2NKAguVq2oiYj7gbggbiTvH2itHohijTp7njOUA0aQ/nl+0lr/r6egmhoYu63UZ/pQ==}
