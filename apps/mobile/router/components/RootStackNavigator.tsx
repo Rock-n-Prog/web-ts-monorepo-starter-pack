@@ -5,8 +5,8 @@ import HomeScreen from '../../screens/home/HomeScreen';
 import HelloScreen from '../../screens/hello/HelloScreen';
 
 type RootStackParams = {
-  [RootRoutes.Home]: undefined;
-  [RootRoutes.Hello]: undefined;
+  readonly [RootRoutes.Home]: undefined;
+  readonly [RootRoutes.Hello]: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParams>();

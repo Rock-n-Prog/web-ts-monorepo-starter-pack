@@ -2,15 +2,17 @@ import { useNavigation } from '@react-navigation/native';
 import RootRoutes from '../RootRoutes';
 
 type RootStackNavigation = {
-  navigate: (route: RootRoutes) => void;
+  readonly navigate: (route: RootRoutes) => void;
 };
 
-const useRootStackNavigation = () => {
+function useRootStackNavigation() {
   const { navigate } = useNavigation<RootStackNavigation>();
 
-  const goToHelloScreen = () => navigate(RootRoutes.Hello);
+  function goToHelloScreen() {
+    return navigate(RootRoutes.Hello);
+  }
 
   return { goToHelloScreen };
-};
+}
 
 export default useRootStackNavigation;

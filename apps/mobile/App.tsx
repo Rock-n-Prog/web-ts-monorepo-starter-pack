@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import useCachedResources from './hooks/useCachedResources';
-import { RootNavigator } from './router/components/RootNavigator';
+import RootNavigator from './router/components/RootNavigator';
 import TrpcProvider from './contexts/TrpcProvider';
 
 function App() {

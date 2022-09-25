@@ -11,6 +11,7 @@ function getVercelUrl() {
 }
 
 function getDebuggerHostUrl() {
+  // eslint-disable-next-line functional/immutable-data
   const debuggerHost = Constants.manifest?.debuggerHost
     ?.split(':')
     .shift()

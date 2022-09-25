@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import RootStackNavigator from './RootStackNavigator';
 import RootRoutes from '../RootRoutes';
+import RootStackNavigator from './RootStackNavigator';
 
 const screens: Record<RootRoutes, string> = {
   Home: '',
@@ -15,10 +15,12 @@ const linking = {
   },
 };
 
-export const RootNavigator = () => {
+function RootNavigator() {
   return (
     <NavigationContainer linking={linking}>
       <RootStackNavigator />
     </NavigationContainer>
   );
-};
+}
+
+export default RootNavigator;
