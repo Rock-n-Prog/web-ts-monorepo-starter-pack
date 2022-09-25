@@ -31,6 +31,11 @@ const ThemeContext = React.createContext<{
   readonly mode: ThemeMode;
   readonly setMode: (mode: ThemeMode) => void;
   readonly switchMode: () => void;
-}>({ theme: getTheme(defaultThemeMode), mode: defaultThemeMode, setMode: () => undefined, switchMode: () => undefined });
+}>({
+  theme: getTheme(defaultThemeMode),
+  mode: defaultThemeMode,
+  setMode: () => undefined,
+  switchMode: () => undefined,
+});
 
 export { ThemeContext, ThemeProvider };

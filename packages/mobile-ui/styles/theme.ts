@@ -1,7 +1,7 @@
 import type { ThemeMode } from 'theme';
-import { fonts } from "./fonts";
-import { spacing } from "./spacing";
-import { modeToColors } from "./colors";
+import { fonts } from './fonts';
+import { spacing } from './spacing';
+import { modeToColors } from './colors';
 
 type Theme = ReturnType<typeof getTheme>;
 

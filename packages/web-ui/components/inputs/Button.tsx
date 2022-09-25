@@ -40,19 +40,23 @@ type VariantToStylesParams = {
 };
 
 const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
-  text: ({ theme, disabled }) => disabled
-    ? `color: ${theme.colors.disabled.onBackground};` : `
+  text: ({ theme, disabled }) =>
+    disabled
+      ? `color: ${theme.colors.disabled.onBackground};`
+      : `
     color: ${theme.colors.palette.primary.main};
 
     :hover {
       color: ${theme.colors.palette.primary.light};
     }
   `,
-  contained: ({ theme, disabled }) => disabled ?
-    `
+  contained: ({ theme, disabled }) =>
+    disabled
+      ? `
       color: ${theme.colors.disabled.onBackground};
       background-color: ${theme.colors.disabled.background};
-    ` : `
+    `
+      : `
       color: ${theme.colors.onPrimary};
       background-color: ${theme.colors.palette.primary.main};
 
@@ -60,10 +64,13 @@ const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => 
         background-color: ${theme.colors.palette.primary.light};
       }
     `,
-  outlined: ({theme, disabled}) => disabled ? `
+  outlined: ({ theme, disabled }) =>
+    disabled
+      ? `
     color: ${theme.colors.disabled.onBackground};
     border: 1px solid ${theme.colors.disabled.background};
-  ` : `
+  `
+      : `
     color: ${theme.colors.palette.primary.main};
     border: 1px solid ${theme.colors.palette.primary.main};
 
