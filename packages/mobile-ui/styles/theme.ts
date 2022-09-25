@@ -14,5 +14,5 @@ function getTheme(mode: ThemeMode) {
   };
 }
 
-export type { Theme, ThemeMode };
+export type { Theme };
 export { getTheme };

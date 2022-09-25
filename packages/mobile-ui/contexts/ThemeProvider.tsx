@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components/native';
 import * as NavigationBar from 'expo-navigation-bar';
-import type { Theme, ThemeMode } from '../styles/theme';
+import type { ThemeMode } from 'theme';
+import type { Theme } from '../styles/theme';
 import { getTheme } from '../styles/theme';
 
 // TODO: Move default mode to theme package (same for web-ui)
