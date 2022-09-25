@@ -1,11 +1,11 @@
 # Web
 
-App is located at [`apps/mobile`](../../apps/mobile).
+App is located at [`apps/mobile`](../../../apps/mobile).
 
 This app uses shared packages. For more info, read their docs:
 
-- [`mobile-ui`](./mobile-ui.md)
-- [`trpc`](./trpc.md)
+- [`mobile-ui`](../packages/mobile-ui.md)
+- [`trpc`](../packages/trpc.md)
 
 ## Software architecture
 

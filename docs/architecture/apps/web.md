@@ -1,11 +1,11 @@
 # Web
 
-App is located at [`apps/web`](../../apps/web).
+App is located at [`apps/web`](../../../apps/web).
 
 This app uses shared packages. For more info, read their docs:
 
-- [`web-ui`](./web-ui.md)
-- [`trpc`](./trpc.md)
+- [`web-ui`](../packages/web-ui.md)
+- [`trpc`](../packages/trpc.md)
 
 ## Software architecture
 
@@ -16,6 +16,8 @@ TODO: How the frontend communicates with the backend
 ## File structure
 
 For more info, see Next.js file structure.
+
+TODO: Review file structure
 
 - `components`: UI Components
   - `common`: Components specific to app (not included in UI library)
