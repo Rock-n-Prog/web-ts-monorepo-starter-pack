@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Constants from 'expo-constants';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { httpBatchLink, loggerLink } from '@trpc/react';
+import { httpBatchLink } from '@trpc/react';
 import superjson from 'superjson';
 import { trpc, getBaseUrl } from '../utils/trpc';
 
@@ -21,10 +20,6 @@ function TrpcProvider({ children }: React.PropsWithChildren) {
     trpc.createClient({
       transformer: superjson,
       links: [
-        loggerLink({
-          enabled: opts =>
-            process.env.NODE_ENV === 'development' || (opts.direction === 'down' && opts.result instanceof Error),
-        }),
         httpBatchLink({
           url: `${getBaseUrl()}/api/trpc`,
         }),
