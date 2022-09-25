@@ -10,7 +10,6 @@ function HomeScreen() {
   const { goToHelloScreen } = useRootStackNavigation();
   const { switchMode } = useThemeContext();
 
-  // TODO: SafeAreaView in Screen? + SafeAreaProvider in ThemeProvider? Test with storybook first to see if it causes issues.
   return (
     <Screen>
       <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
