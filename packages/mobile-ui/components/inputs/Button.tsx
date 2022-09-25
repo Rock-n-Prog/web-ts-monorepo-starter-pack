@@ -3,8 +3,8 @@ import type { ButtonProps as RNButtonProps } from 'react-native';
 // TODO: Error in SC Native imports?
 import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
-import { fonts } from "../../styles/fonts";
-import { spacing } from "../../styles/spacing";
+import { fonts } from '../../styles/fonts';
+import { spacing } from '../../styles/spacing';
 
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
@@ -12,7 +12,7 @@ type ButtonProps = {
   readonly variant?: ButtonVariant;
 } & RNButtonProps;
 
-function Button({ disabled = false, variant = 'outlined', ...props  }: ButtonProps) {
+function Button({ disabled = false, variant = 'outlined', ...props }: ButtonProps) {
   return <StyledButton $variant={variant} disabled={disabled} {...props} />;
 }
 

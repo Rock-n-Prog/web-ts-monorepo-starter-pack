@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native';
 import { spacing } from '../../styles/spacing';
-import { Theme } from "../../styles/theme";
+import { Theme } from '../../styles/theme';
 
 const Screen = styled.View(
   ({ theme }: { readonly theme: Theme }) => css`

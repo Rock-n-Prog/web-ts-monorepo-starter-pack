@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { ThemeProvider } from "mobile-ui/contexts/ThemeProvider";
+import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
 import useCachedResources from './hooks/useCachedResources';
 import RootNavigator from './router/components/RootNavigator';
 import TrpcProvider from './contexts/TrpcProvider';

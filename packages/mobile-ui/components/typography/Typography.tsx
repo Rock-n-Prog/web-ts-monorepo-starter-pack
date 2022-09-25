@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native';
 import { fonts } from '../../styles/fonts';
-import type { Theme } from "../../styles/theme";
+import type { Theme } from '../../styles/theme';
 
 const Typography = styled.Text(
   ({ theme }: { readonly theme: Theme }) => css`

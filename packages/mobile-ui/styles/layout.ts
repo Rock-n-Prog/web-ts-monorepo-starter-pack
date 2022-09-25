@@ -1,4 +1,4 @@
-import { Dimensions, PixelRatio, Platform } from "react-native";
+import { Dimensions, PixelRatio, Platform } from 'react-native';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -15,10 +15,11 @@ const layout = {
 const scale = width / 320;
 
 function normalize(size: number) {
-  const newSize = size * scale
-  const normalized = Platform.OS === "ios"
-    ? Math.round(PixelRatio.roundToNearestPixel(newSize))
-    : Math.round(PixelRatio.roundToNearestPixel(newSize)) - 2;
+  const newSize = size * scale;
+  const normalized =
+    Platform.OS === 'ios'
+      ? Math.round(PixelRatio.roundToNearestPixel(newSize))
+      : Math.round(PixelRatio.roundToNearestPixel(newSize)) - 2;
   return `${normalized}px`;
 }
 

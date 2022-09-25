@@ -1,4 +1,4 @@
-import { normalize } from "./layout";
+import { normalize } from './layout';
 
 const spacing = {
   xxs: normalize(4),

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ScreenTitle, SubTitle } from "mobile-ui/components/typography";
-import { Button } from "mobile-ui/components/inputs";
-import { useThemeContext } from "mobile-ui/hooks/useThemeContext";
-import { Screen } from "mobile-ui/components/layouts";
+import { ScreenTitle, SubTitle } from 'mobile-ui/components/typography';
+import { Button } from 'mobile-ui/components/inputs';
+import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
+import { Screen } from 'mobile-ui/components/layouts';
 import useRootStackNavigation from '../../router/hooks/useRootStackNavigation';
 
 function HomeScreen() {

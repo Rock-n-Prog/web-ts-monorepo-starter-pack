@@ -1,4 +1,4 @@
-import { normalize } from "./layout";
+import { normalize } from './layout';
 
 const sizes = {
   xxs: normalize(10),
