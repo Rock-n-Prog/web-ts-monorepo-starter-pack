@@ -3,4 +3,7 @@ module.exports = {
   settings: {
     'import/ignore': ['react-native'],
   },
+  rules: {
+    'import/no-unresolved': 'off'
+  }
 };
