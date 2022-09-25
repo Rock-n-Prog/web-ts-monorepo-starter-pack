@@ -2,5 +2,7 @@
   "extends": "tsconfig/expo.json",
   "compilerOptions": {
     "strict": true
-  }
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules", ".storybook", "**/__stories__"]
 }
