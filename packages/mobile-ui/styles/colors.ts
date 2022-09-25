@@ -20,6 +20,8 @@ type Colors = typeof lightColors;
 
 const lightColors = {
   text: '#000',
+  background: '#fff',
+  tint: palette.primary.main,
   surface: '#fafafa',
   onSurface: '#000',
   border: '#b8c2ca',
@@ -49,6 +51,8 @@ const lightColors = {
 
 const darkColors = {
   text: '#fff',
+  background: '#000',
+  tint: palette.primary.main,
   surface: '#222222',
   onSurface: '#fff',
   border: '#b8c2ca',

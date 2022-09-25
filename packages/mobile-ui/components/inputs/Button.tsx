@@ -21,7 +21,7 @@ const ButtonTypography = css`
   font-weight: ${fonts.weights.regular};
   font-size: ${fonts.sizes.s};
   text-transform: uppercase;
-  line-height: 1.75;
+  line-height: ${fonts.lineHeights.s};
 `;
 
 // TODO: How to use palette here?

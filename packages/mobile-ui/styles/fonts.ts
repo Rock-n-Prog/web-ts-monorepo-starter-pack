@@ -10,6 +10,10 @@ const sizes = {
   xxl: normalize(48),
 };
 
+const lineHeights = {
+  s: normalize(1.75),
+};
+
 const weights = {
   light: '300',
   regular: '400',
@@ -26,6 +30,6 @@ const emphasis = {
   disabled: 0.38,
 };
 
-const fonts = { sizes, weights, emphasis };
+const fonts = { sizes, lineHeights, weights, emphasis };
 
 export { fonts };
