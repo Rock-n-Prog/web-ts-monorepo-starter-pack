@@ -13,7 +13,6 @@ function ThemeProvider({ children }: React.PropsWithChildren) {
 
   const theme = React.useMemo(() => {
     const theme = getTheme(mode);
-    // TODO: Maybe lighter/darker background for nav bar?
     NavigationBar.setBackgroundColorAsync(theme.colors.background);
     return theme;
   }, [mode]);
