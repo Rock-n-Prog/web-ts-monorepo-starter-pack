@@ -41,7 +41,6 @@ type StyledButtonProps = {
   readonly theme: Theme;
 } & RNButtonProps;
 
-// TODO: Disabled button should be gray
 const StyledButton = styled.Button<Omit<StyledButtonProps, 'theme'>>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
     ${ButtonTypography};
