@@ -1,12 +1,13 @@
-// TODO: rem or px?
+import { normalize } from "./layout";
+
 const sizes = {
-  xxs: '.625rem', // 10 px
-  xs: '.75rem', // 12 px
-  s: '.875rem', // 14 px
-  m: '1rem', // 16 px
-  l: '1.5rem', // 24 px
-  xl: '2.25rem', // 36 px
-  xxl: '3rem', // 48 px
+  xxs: normalize(10),
+  xs: normalize(12),
+  s: normalize(14),
+  m: normalize(16),
+  l: normalize(24),
+  xl: normalize(36),
+  xxl: normalize(48),
 };
 
 const weights = {

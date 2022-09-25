@@ -1,6 +1,5 @@
 import * as React from 'react';
 import type { ButtonProps as RNButtonProps } from 'react-native';
-import { Button as RNButton } from 'react-native';
 // TODO: Error in SC Native imports?
 import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
@@ -58,7 +57,7 @@ type StyledButtonProps = {
 
 // TODO: Disabled button should be gray
 // color: ${theme.colors.palette.primary.main};
-const StyledButton = styled(RNButton)<Omit<StyledButtonProps, 'theme'>>(
+const StyledButton = styled.Button<Omit<StyledButtonProps, 'theme'>>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
     ${ButtonTypography};
 

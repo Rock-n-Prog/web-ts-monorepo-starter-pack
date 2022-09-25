@@ -1,11 +1,12 @@
-// TODO: rem or px?
+import { normalize } from "./layout";
+
 const spacing = {
-  xxs: '.25rem', // 4 px
-  xs: '.5rem', // 8 px
-  s: '.75rem', // 12 px
-  m: '1rem', // 16 px
-  l: '1.5rem', // 24 px
-  xl: '2.25rem', // 36 px
+  xxs: normalize(4),
+  xs: normalize(8),
+  s: normalize(12),
+  m: normalize(16),
+  l: normalize(24),
+  xl: normalize(36),
 };
 
 export { spacing };

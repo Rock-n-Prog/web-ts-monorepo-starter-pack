@@ -1,9 +1,8 @@
-import { Text as RNText } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import { fonts } from '../../styles/fonts';
 import type { Theme } from "../../styles/theme";
 
-const Typography = styled(RNText)(
+const Typography = styled.Text(
   ({ theme }: { readonly theme: Theme }) => css`
     color: ${theme.text};
     font-size: ${fonts.sizes.s};
