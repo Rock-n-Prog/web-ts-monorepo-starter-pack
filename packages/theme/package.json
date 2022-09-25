@@ -2,6 +2,8 @@
   "name": "theme",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "index.ts",
+  "types": "index.ts",
   "scripts": {
     "lint": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint ./*.{js,jsx,ts,tsx}"

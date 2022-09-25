@@ -103,6 +103,7 @@ importers:
       react-dom: ^18.2.0
       react-query: ^3.39.2
       superjson: ^1.10.0
+      theme: workspace:*
       trpc: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.3
@@ -118,6 +119,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
       superjson: 1.10.0
+      theme: link:../../packages/theme
       trpc: link:../../packages/trpc
       web-ui: link:../../packages/web-ui
     devDependencies:
