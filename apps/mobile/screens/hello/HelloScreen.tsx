@@ -7,8 +7,6 @@ import { trpc } from '../../utils/trpc';
 function HelloScreen() {
   const { data } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
-  // TODO: SafeAreaView in Screen?
-  // TODO: Screen background color not working
   return (
     <Screen>
       <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
