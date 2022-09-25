@@ -1,7 +1,6 @@
 import type { ThemeMode } from './theme';
 
-// TODO: How to use palette in RN?
-// TODO: Move palette to its own package (theme)
+// TODO: Move palette + shared colors to its own package (theme)
 // https://coolors.co/c046d3-b118c8-7b108c-374766-061a40-04122c
 const palette = {
   primary: {
@@ -19,12 +18,14 @@ const palette = {
 type Colors = typeof lightColors;
 
 const lightColors = {
-  text: '#000',
+  palette,
   background: '#fff',
-  tint: palette.primary.main,
   surface: '#fafafa',
+  onPrimary: '#fff',
+  onSecondary: '#fff',
+  onVariant: '#fff',
+  onBackground: '#000',
   onSurface: '#000',
-  border: '#b8c2ca',
   variants: {
     success: {
       main: '#4CAF50',
@@ -50,12 +51,14 @@ const lightColors = {
 };
 
 const darkColors = {
-  text: '#fff',
-  background: '#000',
-  tint: palette.primary.main,
+  palette,
+  background: '#121212',
   surface: '#222222',
+  onPrimary: '#fff',
+  onSecondary: '#fff',
+  onVariant: '#fff',
+  onBackground: '#fff',
   onSurface: '#fff',
-  border: '#b8c2ca',
   variants: {
     success: {
       main: '#66bb6a',

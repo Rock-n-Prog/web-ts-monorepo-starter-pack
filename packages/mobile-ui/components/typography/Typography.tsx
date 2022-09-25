@@ -4,7 +4,7 @@ import type { Theme } from '../../styles/theme';
 
 const Typography = styled.Text(
   ({ theme }: { readonly theme: Theme }) => css`
-    color: ${theme.text};
+    color: ${theme.colors.onBackground};
     font-size: ${fonts.sizes.s};
     font-weight: ${fonts.weights.medium};
     opacity: ${fonts.emphasis.high};

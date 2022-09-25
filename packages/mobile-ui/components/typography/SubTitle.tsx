@@ -1,10 +1,12 @@
-import styled from 'styled-components/native';
-import { fonts } from '../../styles/fonts';
+import styled, { css } from 'styled-components/native';
 import { Typography } from './Typography';
+import { Theme } from "../../styles/theme";
 
-const SubTitle = styled(Typography)`
-  font-size: ${fonts.sizes.m};
-  font-weight: ${fonts.weights.semiBold};
-`;
+const SubTitle = styled(Typography)(
+  ({ theme }: { readonly theme: Theme }) => css`
+    font-size: ${theme.fonts.sizes.m};
+    font-weight: ${theme.fonts.weights.semiBold};
+  `,
+);
 
 export { SubTitle };

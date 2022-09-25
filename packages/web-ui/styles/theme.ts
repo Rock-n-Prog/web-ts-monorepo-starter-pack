@@ -1,7 +1,8 @@
 import { modeToColors } from './colors';
-import spacing from './spacing';
-import fonts from './fonts';
+import { spacing } from './spacing';
+import { fonts } from './fonts';
 
+// TODO: Put ThemeMode in theme package
 type ThemeMode = 'light' | 'dark';
 type Theme = ReturnType<typeof getTheme>;
 
