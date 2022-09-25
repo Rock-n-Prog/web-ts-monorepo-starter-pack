@@ -4,10 +4,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint ./*.{js,jsx,ts,tsx}",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
-    "storybook:smoke-test": "start-storybook --smoke-test"
+    "lint:fix": "eslint ./*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
     "expo-navigation-bar": "^1.3.0",
