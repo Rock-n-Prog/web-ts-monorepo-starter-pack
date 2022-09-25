@@ -7,12 +7,14 @@ on:
       - main
       - develop
     paths:
+      - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
+      - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
 
 jobs:

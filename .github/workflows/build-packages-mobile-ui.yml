@@ -7,12 +7,14 @@ on:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-mobile-ui.yml'
       - 'packages/mobile-ui/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-mobile-ui.yml'
       - 'packages/mobile-ui/**'
 
 jobs:
@@ -44,7 +46,3 @@ jobs:
       # TODO(#40): Add storybook smoke tests
       # - name: Storybook smoke test
       #   run: pnpm --filter mobile-ui storybook:smoke-test
-
-      # TODO: Wait... there is no build script? Same for web-ui
-      - name: Build
-        run: pnpm --filter mobile-ui build

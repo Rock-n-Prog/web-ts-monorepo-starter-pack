@@ -7,12 +7,14 @@ on:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-trpc.yml'
       - 'packages/trpc/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-trpc.yml'
       - 'packages/trpc/**'
 
 jobs:
