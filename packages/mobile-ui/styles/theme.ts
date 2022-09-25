@@ -1,9 +1,8 @@
-import { modeToColors } from './colors';
+import type { ThemeMode } from 'theme';
 import { fonts } from "./fonts";
 import { spacing } from "./spacing";
+import { modeToColors } from "./colors";
 
-// TODO: Put ThemeMode in theme package
-type ThemeMode = 'light' | 'dark';
 type Theme = ReturnType<typeof getTheme>;
 
 function getTheme(mode: ThemeMode) {

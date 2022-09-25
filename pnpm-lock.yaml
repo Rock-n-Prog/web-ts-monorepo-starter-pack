@@ -163,6 +163,7 @@ importers:
       react-native: ^0.70.1
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
+      theme: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
@@ -171,9 +172,22 @@ importers:
       react-native: 0.70.1_react@18.2.0
       styled-components: 5.3.5_react@18.2.0
       styled-theming: 2.2.0
+      theme: link:../theme
     devDependencies:
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      tsconfig: link:../tsconfig
+      typescript: 4.8.3
+
+  packages/theme:
+    specifiers:
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    devDependencies:
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       tsconfig: link:../tsconfig
@@ -5374,7 +5388,7 @@ packages:
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 5.3.5_react@18.2.0
+      styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
     dev: false
 
   /babel-plugin-syntax-jsx/6.18.0:
