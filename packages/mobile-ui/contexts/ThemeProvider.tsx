@@ -2,15 +2,12 @@ import * as React from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components/native';
 import * as NavigationBar from 'expo-navigation-bar';
 import type { ThemeMode } from 'theme';
+import { defaultThemeMode } from 'theme';
 import type { Theme } from '../styles/theme';
 import { getTheme } from '../styles/theme';
 
-// TODO: Move default mode to theme package (same for web-ui)
-const defaultMode = 'dark';
-const defaultTheme = getTheme(defaultMode);
-
 function ThemeProvider({ children }: React.PropsWithChildren) {
-  const [mode, setMode] = React.useState<ThemeMode>(defaultMode);
+  const [mode, setMode] = React.useState<ThemeMode>(defaultThemeMode);
 
   const theme = React.useMemo(() => {
     const theme = getTheme(mode);
@@ -34,6 +31,6 @@ const ThemeContext = React.createContext<{
   readonly mode: ThemeMode;
   readonly setMode: (mode: ThemeMode) => void;
   readonly switchMode: () => void;
-}>({ theme: defaultTheme, mode: defaultMode, setMode: () => undefined, switchMode: () => undefined });
+}>({ theme: getTheme(defaultThemeMode), mode: defaultThemeMode, setMode: () => undefined, switchMode: () => undefined });
 
 export { ThemeContext, ThemeProvider };

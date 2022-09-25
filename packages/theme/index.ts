@@ -1,4 +1,5 @@
 type ThemeMode = 'light' | 'dark';
+const defaultThemeMode = 'dark';
 
 // https://coolors.co/c046d3-b118c8-7b108c-374766-061a40-04122c
 const palette = {
@@ -81,4 +82,4 @@ const darkColors = {
 };
 
 export type { ThemeMode };
-export { lightColors, darkColors };
+export { defaultThemeMode, lightColors, darkColors };
