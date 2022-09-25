@@ -1,2 +1,2 @@
 export * from './config/context';
-export * from './routers/_app';
+export * from './routers/app';

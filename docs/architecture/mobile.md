@@ -2,6 +2,10 @@
 
 App is located at [`apps/mobile`](../../apps/mobile).
 
+This app uses shared packages. For more info, read their docs:
+
+- [`trpc`](./trpc.md)
+
 ## Software architecture
 
 A simple Expo (React Native) app built in TypeScript. File structure explains pretty well the software architecture.

@@ -9,6 +9,7 @@
     "next.js"
   ],
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "eslint": "^8.23.1",
     "eslint-config-next": "^12.3.1",
     "eslint-config-prettier": "^8.5.0",
