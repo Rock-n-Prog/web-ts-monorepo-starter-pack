@@ -46,6 +46,10 @@ const lightColors = {
       onBackground: '#5F2120',
     },
   },
+  disabled: {
+    onBackground: 'rgba(0, 0, 0, 0.26)',
+    background: 'rgba(0, 0, 0, 0.12)',
+  },
 };
 
 const darkColors = {
@@ -78,6 +82,10 @@ const darkColors = {
       background: '#160b0b',
       onBackground: '#f4c7c7',
     },
+  },
+  disabled: {
+    onBackground: 'rgba(255, 255, 255, 0.3)',
+    background: 'rgba(255, 255, 255, 0.12)',
   },
 };
 

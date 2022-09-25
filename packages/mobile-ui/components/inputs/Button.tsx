@@ -48,7 +48,6 @@ const StyledButton = styled.Button<Omit<StyledButtonProps, 'theme'>>(
 
     display: flex;
     border-radius: ${theme.spacing.xxs};
-    cursor: pointer;
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
     outline: 0;
     border: 0;
