@@ -3,6 +3,7 @@ import { ThemeProvider as SCThemeProvider } from 'styled-components/native';
 import type { ThemeMode } from '../styles/theme';
 import { getTheme } from '../styles/theme';
 
+// TODO: Move default mode to theme package (same for web-ui)
 const defaultMode = 'dark';
 
 function ThemeProvider({ children }: React.PropsWithChildren) {
