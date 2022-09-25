@@ -1,6 +1,5 @@
 import * as React from 'react';
 import type { ButtonProps as RNButtonProps } from 'react-native';
-// TODO: Error in SC Native imports?
 import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
 
