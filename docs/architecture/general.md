@@ -15,5 +15,6 @@ For more info, see Turborepo file structure.
 - `packages`: Running apps
   - `trpc`: tRPC routes and context definitions (see [its docs](./trpc.md))
   - `web-ui`: Web UI library (see [its docs](./web-ui.md))
+  - `mobile-ui`: Mobile UI library (see [its docs](./mobile-ui.md))
   - `eslint-config-custom`: Set of eslint configs for given technologies
   - `tesconfig`: Set of TypeScript configs for given technologies

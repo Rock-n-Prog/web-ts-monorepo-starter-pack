@@ -1,5 +1,7 @@
 import type { ThemeMode } from './theme';
 
+// TODO: How to use palette in RN?
+// TODO: Move palette to its own package (theme)
 // https://coolors.co/c046d3-b118c8-7b108c-374766-061a40-04122c
 const palette = {
   primary: {
@@ -17,23 +19,10 @@ const palette = {
 type Colors = typeof lightColors;
 
 const lightColors = {
-  palette,
-  background: '#fff',
+  text: '#000',
   surface: '#fafafa',
-  onPrimary: '#fff',
-  onSecondary: '#fff',
-  onVariant: '#fff',
-  onBackground: '#000',
   onSurface: '#000',
-  tooltip: {
-    background: '#1e1e1e',
-    onBackground: '#fff',
-  },
-  border: {
-    main: '#b8c2ca',
-    hovered: '#000',
-    focused: palette.primary.main,
-  },
+  border: '#b8c2ca',
   variants: {
     success: {
       main: '#4CAF50',
@@ -59,23 +48,10 @@ const lightColors = {
 };
 
 const darkColors = {
-  palette,
-  background: '#121212',
+  text: '#fff',
   surface: '#222222',
-  onPrimary: '#fff',
-  onSecondary: '#fff',
-  onVariant: '#fff',
-  onBackground: '#fff',
   onSurface: '#fff',
-  tooltip: {
-    background: '#e3e3e3',
-    onBackground: '#000',
-  },
-  border: {
-    main: '#b8c2ca',
-    hovered: '#fff',
-    focused: palette.primary.main,
-  },
+  border: '#b8c2ca',
   variants: {
     success: {
       main: '#66bb6a',

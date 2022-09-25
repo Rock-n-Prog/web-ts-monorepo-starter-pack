@@ -4,6 +4,7 @@ App is located at [`apps/mobile`](../../apps/mobile).
 
 This app uses shared packages. For more info, read their docs:
 
+- [`mobile-ui`](./mobile-ui.md)
 - [`trpc`](./trpc.md)
 
 ## Software architecture

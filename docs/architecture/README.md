@@ -7,6 +7,7 @@ infrastructure and software architecture.
 - [Web](web.md)
 - [Mobile](mobile.md)
 - [Web UI](web-ui.md)
+- [Mobile UI](mobile-ui.md)
 - [tRPC](trpc.md)
 - Database (TODO: missing documentation)
 - Data relationships (TODO: missing documentation)

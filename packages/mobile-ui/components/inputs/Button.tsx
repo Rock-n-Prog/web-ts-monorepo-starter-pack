@@ -1,46 +1,41 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components';
-import { Tooltip } from '../data';
-import { Theme } from '../../styles/theme';
+import type { ButtonProps as RNButtonProps } from 'react-native';
+import { Button as RNButton } from 'react-native';
+// TODO: Error in SC Native imports?
+import styled, { css } from 'styled-components/native';
+import type { Theme } from '../../styles/theme';
+import { fonts } from "../../styles/fonts";
+import { spacing } from "../../styles/spacing";
 
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
 type ButtonProps = {
-  readonly tooltipText?: string;
   readonly variant?: ButtonVariant;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & RNButtonProps;
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, tooltipText, disabled = false, type = 'button', variant = 'outlined', ...props }, ref) => {
-    const inner = (
-      <div>
-        <StyledButton $variant={variant} type={type} disabled={disabled} ref={ref} {...props}>
-          {children}
-        </StyledButton>
-      </div>
-    );
+function Button({ disabled = false, variant = 'outlined', ...props  }: ButtonProps) {
+  return <StyledButton $variant={variant} disabled={disabled} {...props} />;
+}
 
-    return tooltipText ? <Tooltip title={tooltipText}>{inner}</Tooltip> : inner;
-  },
-);
+const ButtonTypography = css`
+  font-family: sans-serif;
+  font-weight: ${fonts.weights.regular};
+  font-size: ${fonts.sizes.s};
+  text-transform: uppercase;
+  line-height: 1.75;
+`;
 
-const ButtonTypography = css(
-  ({ theme }: { readonly theme: Theme }) => css`
-    font-family: sans-serif;
-    font-weight: ${theme.fonts.weights.regular};
-    font-size: ${theme.fonts.sizes.s};
-    text-transform: uppercase;
-    line-height: 1.75;
-  `,
-);
-
+// TODO: How to use palette here?
 const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
   text: _ => '',
+  contained: _ => '',
+  outlined: _ => '',
+  /*
   contained: theme =>
     `
     color: ${theme.colors.onPrimary};
     background-color: ${theme.colors.palette.primary.main};
-    
+
     :hover {
       background-color: ${theme.colors.palette.primary.light};
     }
@@ -53,36 +48,32 @@ const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
       background-color: ${theme.colors.surface};
     }
   `,
+   */
 };
 
 type StyledButtonProps = {
   readonly $variant: ButtonVariant;
   readonly theme: Theme;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & RNButtonProps;
 
 // TODO: Disabled button should be gray
-const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
+// color: ${theme.colors.palette.primary.main};
+const StyledButton = styled(RNButton)<Omit<StyledButtonProps, 'theme'>>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
     ${ButtonTypography};
 
     display: flex;
-    border-radius: ${theme.spacing.xxs};
+    border-radius: ${spacing.xxs};
     cursor: pointer;
-    padding: ${theme.spacing.xxs} ${theme.spacing.xs};
+    padding: ${spacing.xxs} ${spacing.xs};
     outline: 0;
     border: 0;
-    color: ${theme.colors.palette.primary.main};
     background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
     ${variantToStyles[$variant](theme)}
-
-    ${disabled &&
-    `
-    cursor: not-allowed;
-  `}
   `,
 );
 
