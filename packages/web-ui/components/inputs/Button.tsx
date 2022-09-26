@@ -34,23 +34,49 @@ const ButtonTypography = css(
   `,
 );
 
-const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
-  text: _ => '',
-  contained: theme =>
-    `
-    color: ${theme.colors.onPrimary};
-    background-color: ${theme.colors.palette.primary.main};
-    
+type VariantToStylesParams = {
+  theme: Theme;
+  disabled: boolean;
+};
+
+const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
+  text: ({ theme, disabled }) =>
+    disabled
+      ? `color: ${theme.colors.disabled.onBackground};`
+      : `
+    color: ${theme.colors.palette.primary.main};
+
     :hover {
-      background-color: ${theme.colors.palette.primary.light};
+      color: ${theme.colors.palette.primary.light};
     }
   `,
-  outlined: theme =>
+  contained: ({ theme, disabled }) =>
+    disabled
+      ? `
+      color: ${theme.colors.disabled.onBackground};
+      background-color: ${theme.colors.disabled.background};
     `
+      : `
+      color: ${theme.colors.onPrimary};
+      background-color: ${theme.colors.palette.primary.main};
+
+      :hover {
+        background-color: ${theme.colors.palette.primary.light};
+      }
+    `,
+  outlined: ({ theme, disabled }) =>
+    disabled
+      ? `
+    color: ${theme.colors.disabled.onBackground};
+    border: 1px solid ${theme.colors.disabled.background};
+  `
+      : `
+    color: ${theme.colors.palette.primary.main};
     border: 1px solid ${theme.colors.palette.primary.main};
 
     :hover {
-      background-color: ${theme.colors.surface};
+      color: ${theme.colors.onPrimary};
+      background-color: ${theme.colors.palette.primary.main};
     }
   `,
 };
@@ -58,7 +84,8 @@ const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
 type StyledButtonProps = {
   readonly $variant: ButtonVariant;
   readonly theme: Theme;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+  readonly disabled: boolean;
+};
 
 const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
@@ -66,22 +93,16 @@ const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
 
     display: flex;
     border-radius: ${theme.spacing.xxs};
-    cursor: pointer;
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
     outline: 0;
     border: 0;
-    color: ${theme.colors.palette.primary.main};
     background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
       color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-    ${variantToStyles[$variant](theme)}
-
-    ${disabled &&
-    `
-    cursor: not-allowed;
-  `}
+    ${variantToStyles[$variant]({ theme, disabled })}
   `,
 );
 

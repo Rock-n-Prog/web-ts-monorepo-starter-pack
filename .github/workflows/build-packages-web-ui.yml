@@ -7,12 +7,14 @@ on:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
+      - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
 
 jobs:
@@ -43,6 +45,3 @@ jobs:
 
       - name: Storybook smoke test
         run: pnpm --filter web-ui storybook:smoke-test
-
-      - name: Build
-        run: pnpm --filter web-ui build

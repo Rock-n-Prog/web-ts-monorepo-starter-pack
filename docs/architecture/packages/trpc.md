@@ -1,8 +1,8 @@
 # tRPC
 
-Library is located at [`packages/trpc`](../../packages/trpc).
+Library is located at [`packages/trpc`](../../../packages/trpc).
 
-This library is used by a web app. For more info, read [its docs](./web.md).
+This library is used by a web app. For more info, read [its docs](../apps/web.md).
 
 ## Software architecture
 

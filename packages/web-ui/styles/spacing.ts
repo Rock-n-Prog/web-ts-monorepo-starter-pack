@@ -11,4 +11,4 @@ const spacing = {
   tooltip: '7.5rem', // 120px
 };
 
-export default spacing;
+export { spacing };

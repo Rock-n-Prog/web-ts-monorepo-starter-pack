@@ -1,8 +1,10 @@
 # Web UI
 
-Library is located at [`packages/web-ui`](../../packages/web-ui).
+Library is located at [`packages/web-ui`](../../../packages/web-ui).
 
-This library is used by a web app. For more info, read [its docs](./web.md).
+This library is used by a web app. For more info, read [its docs](../apps/web.md).
+
+Theme definition has its own documentation, see [its docs](./theme.md)
 
 ## Software architecture
 

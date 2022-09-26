@@ -10,10 +10,12 @@
     "storybook:smoke-test": "start-storybook --smoke-test"
   },
   "dependencies": {
+    "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-is": "^18.2.0",
     "styled-components": "^5.3.5",
-    "styled-theming": "^2.2.0"
+    "styled-theming": "^2.2.0",
+    "theme": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -28,7 +30,6 @@
     "@types/styled-theming": "^2.2.5",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
     "require-from-string": "^2.0.2",
     "storybook-dark-mode": "^1.1.2",
     "tsconfig": "workspace:*",

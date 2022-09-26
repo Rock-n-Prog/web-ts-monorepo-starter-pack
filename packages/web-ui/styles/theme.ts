@@ -1,8 +1,8 @@
+import type { ThemeMode } from 'theme';
 import { modeToColors } from './colors';
-import spacing from './spacing';
-import fonts from './fonts';
+import { spacing } from './spacing';
+import { fonts } from './fonts';
 
-type ThemeMode = 'light' | 'dark';
 type Theme = ReturnType<typeof getTheme>;
 
 function getTheme(mode: ThemeMode) {
@@ -15,4 +15,4 @@ function getTheme(mode: ThemeMode) {
 }
 
 export { getTheme };
-export type { Theme, ThemeMode };
+export type { Theme };

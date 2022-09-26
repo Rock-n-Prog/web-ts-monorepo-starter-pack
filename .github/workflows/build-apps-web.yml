@@ -7,12 +7,14 @@ on:
       - main
       - develop
     paths:
+      - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
+      - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
 
 jobs:
@@ -40,5 +42,6 @@ jobs:
       - name: Lint
         run: pnpm --filter web lint
 
-      - name: Build
-        run: pnpm --filter web build
+      # TODO(#52): Re-active build
+      # - name: Build
+      #   run: pnpm --filter web build

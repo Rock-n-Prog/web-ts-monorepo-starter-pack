@@ -34,4 +34,4 @@ const emphasis = {
 
 const fonts = { sizes, weights, emphasis };
 
-export default fonts;
+export { fonts };
