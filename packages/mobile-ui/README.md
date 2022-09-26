@@ -10,6 +10,23 @@ pnpm install
 
 ## Available scripts
 
+### Start storybook
+
+Storybook will be running on [http://localhost:6007](http://localhost:6007);
+
+```bash
+pnpm storybook
+
+# For smoke-testing
+pnpm storybook:smoke-test
+```
+
+### Build storybook
+
+```bash
+pnpm storybook:build
+```
+
 ### Lint app
 
 ```bash

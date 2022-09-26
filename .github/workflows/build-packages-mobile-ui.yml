@@ -43,6 +43,5 @@ jobs:
       # - name: Lint
       #   run: pnpm --filter mobile-ui lint
 
-      # TODO(#40): Add storybook smoke tests
-      # - name: Storybook smoke test
-      #   run: pnpm --filter mobile-ui storybook:smoke-test
+      - name: Storybook smoke test
+        run: pnpm --filter mobile-ui storybook:smoke-test
