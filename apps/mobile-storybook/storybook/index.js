@@ -6,7 +6,8 @@ import './rn-addons';
 // TODO: Configure same addons as web-ui
 // addDecorator(withKnobs);
 
-// TODO: Use @storybook/react-native-server (helps development)
+// TODO: Get @storybook/react-native-server to work (helps development) -> Stories not showing, addons needing to be commented
+//       Update: lol might not be that simple -> https://github.com/storybookjs/react-native/issues/55
 // TODO: Dark mode?
 // TODO: Toolbar addon that switches current theme?
 configure(() => {
