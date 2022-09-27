@@ -23,7 +23,8 @@
     "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
-    "storybook:web-ui": "turbo run storybook --scope web-ui --no-deps",
+    "storybook:mobile": "turbo run dev --scope mobile-storybook --no-deps",
+    "storybook:web": "turbo run storybook --scope web-ui --no-deps",
     "yeet": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {

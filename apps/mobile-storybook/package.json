@@ -1,12 +1,15 @@
 {
-  "name": "treeview-mobile-storybook",
+  "name": "mobile-storybook",
   "version": "1.0.0",
   "main": "./index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "build": "expo export --platform all",
+    "dev": "expo start",
+    "dev:android": "expo start --android",
+    "dev:ios": "expo start --ios",
+    "dev:web": "expo start --web",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
     "expo": "^46.0.13",
@@ -27,6 +30,9 @@
     "@types/react": "^18.0.21",
     "@types/react-native": "^0.70.3",
     "babel-loader": "^8.2.5",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
   },
   "private": true

@@ -53,11 +53,20 @@ pnpm dev:mobile
 
 ### Start storybook
 
+#### Web UI Library
+
 Storybook will be running on [http://localhost:6006](http://localhost:6006);
 
 ```bash
-# For Web UI library
-pnpm storybook:web-ui
+pnpm storybook:web
+```
+
+#### Mobile UI Library
+
+Storybook will be running on [Expo Go](https://expo.dev/client).
+
+```bash
+pnpm storybook:mobile
 ```
 
 ### Build apps
