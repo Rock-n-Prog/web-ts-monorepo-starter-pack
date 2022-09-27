@@ -9,18 +9,12 @@
     "dev:ios": "expo start --ios",
     "dev:web": "expo start --web",
     "lint": "eslint --ext js,jsx,ts,tsx .",
-    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx .",
-    "storybook": "start-storybook -p 7007 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook",
-    "storybook:smoke-test": "start-storybook --smoke-test -c .storybook"
+    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
     "expo": "^46.0.13",
-    "expo-status-bar": "^1.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "^0.70.1",
-    "react-native-web": "^0.18.9"
+    "react-native": "^0.70.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -30,7 +24,6 @@
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.26",
     "@storybook/react-native": "^5.3.25",
-    "@storybook/react-native-server": "^5.3.23",
     "@types/react": "^18.0.21",
     "@types/react-native": "^0.70.3",
     "babel-loader": "^8.2.5",
