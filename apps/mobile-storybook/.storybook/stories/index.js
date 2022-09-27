@@ -1,4 +1,4 @@
-import './Button/Button.stories';
+import './inputs';
 import './Welcome/Welcome.stories';
 
-// TODO: Implement actual component stories
+// TODO: Implement remaining component stories

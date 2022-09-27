@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "expo": "^46.0.13",
+    "mobile-ui": "workspace:*",
     "react": "^18.2.0",
     "react-native": "^0.70.1"
   },
