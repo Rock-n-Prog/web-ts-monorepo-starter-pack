@@ -10,10 +10,9 @@
     "dev:web": "expo start --web",
     "lint": "eslint --ext js,jsx,ts,tsx .",
     "lint:fix": "eslint --fix --ext js,jsx,ts,tsx .",
-    "storybook": "start-storybook -p 7007",
-    "@storybook/react-native": "^5.3.25",
-    "storybook:build": "build-storybook",
-    "storybook:smoke-test": "start-storybook --smoke-test"
+    "storybook": "start-storybook -p 7007 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook",
+    "storybook:smoke-test": "start-storybook --smoke-test -c .storybook"
   },
   "dependencies": {
     "expo": "^46.0.13",
