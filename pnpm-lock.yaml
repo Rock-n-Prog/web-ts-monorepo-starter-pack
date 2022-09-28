@@ -267,10 +267,7 @@ importers:
   packages/web-ui:
     specifiers:
       '@babel/core': ^7.19.1
-      '@storybook/addon-actions': ^6.5.12
-      '@storybook/addon-docs': ^6.5.12
       '@storybook/addon-essentials': ^6.5.12
-      '@storybook/addon-links': ^6.5.12
       '@storybook/react': ^6.5.12
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
@@ -298,10 +295,7 @@ importers:
       theme: link:../theme
     devDependencies:
       '@babel/core': 7.19.1
-      '@storybook/addon-actions': 6.5.12_biqbaboplfbrettd7655fr4n2y
-      '@storybook/addon-docs': 6.5.12_3glaga62vdbhn3j2rgi6hqvhay
       '@storybook/addon-essentials': 6.5.12_3glaga62vdbhn3j2rgi6hqvhay
-      '@storybook/addon-links': 6.5.12_biqbaboplfbrettd7655fr4n2y
       '@storybook/react': 6.5.12_tyklhqqtbjrtigqxoqzujoezca
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
@@ -3475,33 +3469,6 @@ packages:
     transitivePeerDependencies:
       - react-dom
       - regenerator-runtime
-    dev: true
-
-  /@storybook/addon-links/6.5.12_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Dyt922J5nTBwM/9KtuuDIt3sX8xdTkKh+aXSoOX6OzT04Xwm5NumFOvuQ2YA00EM+3Ihn7Ayc3urvxnHTixmKg==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@storybook/addons': 6.5.12_biqbaboplfbrettd7655fr4n2y
-      '@storybook/client-logger': 6.5.12
-      '@storybook/core-events': 6.5.12
-      '@storybook/csf': 0.0.2--canary.4566f4d.1
-      '@storybook/router': 6.5.12_biqbaboplfbrettd7655fr4n2y
-      '@types/qs': 6.9.7
-      core-js: 3.25.2
-      global: 4.4.0
-      prop-types: 15.8.1
-      qs: 6.11.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      regenerator-runtime: 0.13.9
-      ts-dedent: 2.2.0
     dev: true
 
   /@storybook/addon-measure/6.5.12_biqbaboplfbrettd7655fr4n2y:

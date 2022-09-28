@@ -52,9 +52,6 @@ const StyledButton = styled.Button<Omit<StyledButtonProps, 'theme'>>(
     border: 0;
     color: ${theme.colors.palette.primary.main};
     background-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
     ${variantToStyles[$variant](theme)}
   `,

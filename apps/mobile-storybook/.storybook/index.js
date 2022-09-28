@@ -11,7 +11,7 @@ addDecorator(withKnobs);
 // TODO: Dark mode?
 // TODO: Toolbar addon that switches current theme?
 configure(() => {
-  require('./stories');
+  require('../stories');
 }, module);
 
 const StorybookUIRoot = getStorybookUI({
