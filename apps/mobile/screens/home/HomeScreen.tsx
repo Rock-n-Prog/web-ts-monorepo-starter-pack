@@ -10,6 +10,7 @@ function HomeScreen() {
   const { goToHelloScreen } = useRootStackNavigation();
   const { switchMode } = useThemeContext();
 
+  // TODO: Why are buttons full-width?
   return (
     <Screen>
       <SafeAreaView>

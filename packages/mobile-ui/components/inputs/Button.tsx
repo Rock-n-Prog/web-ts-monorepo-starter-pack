@@ -12,7 +12,7 @@ type ButtonProps = {
   readonly variant?: ButtonVariant;
 } & TouchableOpacityProps;
 
-function Button({ text, variant = 'outlined', disabled = false, ...props }: ButtonProps) {
+function Button({ text, variant = 'contained', disabled = false, ...props }: ButtonProps) {
   return (
     <StyledTouchableOpacity $variant={variant} disabled={disabled} {...props}>
       <ButtonText $variant={variant} $disabled={disabled}>
@@ -104,6 +104,7 @@ const StyledTouchableOpacity = styled.TouchableOpacity(
     display: flex;
     border-radius: ${theme.spacing.xxs};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
+    margin-top: ${theme.spacing.s};
     outline: 0;
     border: 0;
     color: ${theme.colors.palette.primary.main};

@@ -45,6 +45,9 @@
     "apps/mobile/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/mobile/**/*.{js,jsx,ts,tsx}"
     ],
+    "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
+    ],
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ]
