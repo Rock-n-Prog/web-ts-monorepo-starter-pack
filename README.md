@@ -2,6 +2,7 @@
 
 [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)
 [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)
+[![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)
 [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)
 [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)
 [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
@@ -53,11 +54,20 @@ pnpm dev:mobile
 
 ### Start storybook
 
+#### Web UI Library
+
 Storybook will be running on [http://localhost:6006](http://localhost:6006);
 
 ```bash
-# For Web UI library
-pnpm storybook:web-ui
+pnpm storybook:web
+```
+
+#### Mobile UI Library
+
+Storybook will be running on [Expo Go](https://expo.dev/client).
+
+```bash
+pnpm storybook:mobile
 ```
 
 ### Build apps

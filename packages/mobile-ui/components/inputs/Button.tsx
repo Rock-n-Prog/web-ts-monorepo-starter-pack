@@ -1,64 +1,85 @@
 import * as React from 'react';
-import type { ButtonProps as RNButtonProps } from 'react-native';
+import type { TouchableOpacityProps } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
+import { Typography } from '../typography';
 
-type ButtonVariant = 'contained' | 'outlined' | 'text';
+const buttonVariants = ['contained', 'outlined', 'text'] as const;
+type ButtonVariant = typeof buttonVariants[number];
 
 type ButtonProps = {
+  readonly text: string;
   readonly variant?: ButtonVariant;
-} & RNButtonProps;
+} & TouchableOpacityProps;
 
-function Button({ disabled = false, variant = 'outlined', ...props }: ButtonProps) {
-  return <StyledButton $variant={variant} disabled={disabled} {...props} />;
+function Button({ text, variant = 'contained', disabled = false, ...props }: ButtonProps) {
+  return (
+    <StyledTouchableOpacity $variant={variant} disabled={disabled} {...props}>
+      <ButtonText $variant={variant} $disabled={disabled}>
+        {text}
+      </ButtonText>
+    </StyledTouchableOpacity>
+  );
 }
 
-const ButtonTypography = css(
-  ({ theme }: { readonly theme: Theme }) => css`
+type VariantToStylesParams = {
+  theme: Theme;
+  disabled: boolean;
+};
+
+const variantToButtonTextStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
+  text: ({ theme, disabled }) =>
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.palette.primary.main};`,
+  contained: ({ theme, disabled }) =>
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.onPrimary};`,
+  outlined: ({ theme, disabled }) =>
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.palette.primary.main};`,
+};
+
+type ButtonTextProps = {
+  readonly $variant: ButtonVariant;
+  readonly $disabled: boolean;
+  readonly theme: Theme;
+};
+
+const ButtonText = styled(Typography)(
+  ({ $variant, $disabled, theme }: ButtonTextProps) => css`
     font-family: sans-serif;
     font-weight: ${theme.fonts.weights.regular};
     font-size: ${theme.fonts.sizes.s};
     text-transform: uppercase;
-    line-height: ${theme.fonts.lineHeights.s};
+
+    ${variantToButtonTextStyles[$variant]({ theme, disabled: $disabled })}
   `,
 );
 
-const variantToStyles: Record<ButtonVariant, (theme: Theme) => string> = {
-  text: _ => '',
-  contained: theme =>
-    `
-    color: ${theme.colors.onPrimary};
-    background-color: ${theme.colors.palette.primary.main};
-  `,
-  outlined: theme =>
-    `
-    border: 1px solid ${theme.colors.palette.primary.main};
-  `,
+const variantToTouchableOpacityStyles: Partial<Record<ButtonVariant, (params: VariantToStylesParams) => string>> = {
+  contained: ({ theme, disabled }) =>
+    `background-color: ${disabled ? theme.colors.disabled.background : theme.colors.palette.primary.main};`,
+  outlined: ({ theme, disabled }) =>
+    `border: 1px solid ${disabled ? theme.colors.disabled.background : theme.colors.palette.primary.main};`,
 };
 
-type StyledButtonProps = {
+type StyledTouchableOpacityProps = {
   readonly $variant: ButtonVariant;
   readonly theme: Theme;
-} & RNButtonProps;
+  readonly disabled: boolean;
+} & TouchableOpacityProps;
 
-const StyledButton = styled.Button<Omit<StyledButtonProps, 'theme'>>(
-  ({ $variant, theme, disabled }: StyledButtonProps) => css`
-    ${ButtonTypography};
-
+const StyledTouchableOpacity = styled.TouchableOpacity(
+  ({ $variant, theme, disabled }: StyledTouchableOpacityProps) => css`
     display: flex;
     border-radius: ${theme.spacing.xxs};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
+    margin-top: ${theme.spacing.s};
     outline: 0;
     border: 0;
     color: ${theme.colors.palette.primary.main};
     background-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-    ${variantToStyles[$variant](theme)}
+    ${variantToTouchableOpacityStyles[$variant]?.({ theme, disabled })}
   `,
 );
 
-export { Button };
+export { Button, buttonVariants };
 export type { ButtonProps, ButtonVariant };

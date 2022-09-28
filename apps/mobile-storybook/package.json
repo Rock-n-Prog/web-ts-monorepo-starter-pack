@@ -1,0 +1,36 @@
+{
+  "name": "mobile-storybook",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "build": "expo export --platform all",
+    "dev": "expo start",
+    "dev:android": "expo start --android",
+    "dev:ios": "expo start --ios",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx ."
+  },
+  "dependencies": {
+    "expo": "^46.0.13",
+    "mobile-ui": "workspace:*",
+    "react": "^18.2.0",
+    "react-native": "^0.70.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.21",
+    "@storybook/addon-links": "^5.3.21",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.26",
+    "@storybook/react-native": "^5.3.25",
+    "@types/react": "^18.0.21",
+    "@types/react-native": "^0.70.3",
+    "babel-loader": "^8.2.5",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3"
+  },
+  "private": true
+}

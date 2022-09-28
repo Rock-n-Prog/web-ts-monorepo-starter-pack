@@ -1,6 +1,6 @@
-# TreeView Mobile App
+# TreeView Mobile Storybook App
 
-Expo app for TreeView.
+Storybook Expo app for TreeView.
 
 ## Setup
 

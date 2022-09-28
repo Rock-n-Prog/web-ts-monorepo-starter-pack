@@ -48,6 +48,10 @@ const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => 
 
     :hover {
       color: ${theme.colors.palette.primary.light};
+      
+      :active {
+        color: ${theme.colors.palette.primary.main};
+      }
     }
   `,
   contained: ({ theme, disabled }) =>
@@ -62,6 +66,10 @@ const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => 
 
       :hover {
         background-color: ${theme.colors.palette.primary.light};
+        
+        :active {
+          background-color: ${theme.colors.palette.primary.main};
+        }
       }
     `,
   outlined: ({ theme, disabled }) =>
@@ -75,8 +83,12 @@ const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => 
     border: 1px solid ${theme.colors.palette.primary.main};
 
     :hover {
-      color: ${theme.colors.onPrimary};
       background-color: ${theme.colors.palette.primary.main};
+      color: ${theme.colors.onPrimary};
+      
+      :active {
+        background-color: ${theme.colors.palette.primary.light};
+      }
     }
   `,
 };
@@ -96,11 +108,9 @@ const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
     outline: 0;
-    border: 0;
+    // Makes "outline" buttons same dimension as others
+    border: solid 1px transparent;
     background-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
     ${variantToStyles[$variant]({ theme, disabled })}
   `,
