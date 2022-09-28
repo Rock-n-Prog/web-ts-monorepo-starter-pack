@@ -63,7 +63,6 @@ const variantToTouchableOpacityStyles: Partial<Record<ButtonVariant, (params: Va
 type StyledTouchableOpacityProps = {
   readonly $variant: ButtonVariant;
   readonly theme: Theme;
-  // TODO: Could also do this: https://stackoverflow.com/questions/61912019/how-to-make-specific-props-non-nullable-in-typescript
   readonly disabled: boolean;
 } & TouchableOpacityProps;
 
