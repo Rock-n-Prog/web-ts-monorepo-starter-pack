@@ -11,28 +11,28 @@ storiesOf('Inputs/Button', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Contained', () => (
     <Button
-      title={text('Text', 'Button text')}
-      onPress={action('onPress')}
+      text={text('Text', 'Button text')}
       variant="contained"
       disabled={boolean('Disabled', false)}
+      onPress={action('onPress')}
     />
   ))
   .add('Outlined', () => (
     <Button
-      title={text('Text', 'Button text')}
-      onPress={action('onPress')}
+      text={text('Text', 'Button text')}
       variant="outlined"
       disabled={boolean('Disabled', false)}
+      onPress={action('onPress')}
     />
   ))
   .add('Text', () => (
     <Button
-      title={text('Text', 'Button text')}
-      onPress={action('onPress')}
+      text={text('Text', 'Button text')}
       variant="text"
       disabled={boolean('Disabled', false)}
+      onPress={action('onPress')}
     />
   ))
   .add('Disabled', () => (
-    <Button title={text('Text', 'Button text')} onPress={action('onPress')} disabled={boolean('Disabled', true)} />
+    <Button text={text('Text', 'Button text')} disabled={boolean('Disabled', true)} onPress={action('onPress')} />
   ));
