@@ -12,11 +12,11 @@ function HomeScreen() {
 
   return (
     <Screen>
-      <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <SafeAreaView>
         <ScreenTitle>Home!</ScreenTitle>
         <SubTitle>Page to test navigation and theme</SubTitle>
-        <Button title="Go to hello screen" onPress={goToHelloScreen} />
-        <Button title="Switch mode" onPress={switchMode} />
+        <Button text="Go to hello screen" onPress={goToHelloScreen} />
+        <Button text="Switch mode" onPress={switchMode} />
       </SafeAreaView>
     </Screen>
   );

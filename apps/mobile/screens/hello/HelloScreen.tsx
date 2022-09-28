@@ -9,7 +9,7 @@ function HelloScreen() {
 
   return (
     <Screen>
-      <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <SafeAreaView>
         <ScreenTitle>Hello!</ScreenTitle>
         <SubTitle>Page to test tRPC data</SubTitle>
         <Body1>We got data: {data?.greeting ?? ''}</Body1>
