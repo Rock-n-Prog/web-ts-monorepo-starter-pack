@@ -1,12 +1,14 @@
 import * as React from 'react';
+import { StatusBar, View } from "react-native";
 import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
 import Storybook from './.storybook';
 
-// TODO: Same SafeAreaView as mobile app? (storybook can't be used properly)
 function App() {
   return (
     <ThemeProvider>
-      <Storybook />
+      <View style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <Storybook />
+      </View>
     </ThemeProvider>
   );
 }
