@@ -3,8 +3,12 @@
 [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)
 [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)
 [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)
+
 [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)
+[![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)
+[![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)
 [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)
+
 [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
 
 Task management app, with a focus on tree view.
@@ -21,7 +25,13 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 - [`apps/web`](apps/docs): Next.js web app
 - [`apps/mobile`](apps/mobile): Expo mobile app
+- [`apps/mobile-storybook`](apps/mobile-storybook): Expo mobile app for Storybook
+
+## Packages
+
 - [`packages/web-ui`](packages/web-ui): React components for web app
+- [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
+- [`packages/theme`](packages/theme): Theme definition
 - [`packages/trpc`](packages/trpc): tRPC routes and context definitions
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
