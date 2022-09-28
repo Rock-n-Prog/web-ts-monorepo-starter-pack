@@ -4,7 +4,7 @@ import './rn-addons';
 import { StoryContainer } from '../components/StoryContainer';
 
 addDecorator(withKnobs);
-addDecorator((Story) => (
+addDecorator(Story => (
   <StoryContainer>
     <Story />
   </StoryContainer>
