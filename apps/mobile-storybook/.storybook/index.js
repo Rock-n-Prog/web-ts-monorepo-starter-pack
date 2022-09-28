@@ -10,9 +10,6 @@ addDecorator(Story => (
   </StoryContainer>
 ));
 
-// TODO: Get @storybook/react-native-server to work (helps development) -> Stories not showing, addons needing to be commented
-//       Update: lol might not be that simple -> https://github.com/storybookjs/react-native/issues/55
-//       Might be for a future upgrade
 configure(() => {
   require('../stories');
 }, module);
