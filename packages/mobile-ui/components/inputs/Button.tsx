@@ -4,7 +4,8 @@ import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
 import { Typography } from '../typography';
 
-type ButtonVariant = 'contained' | 'outlined' | 'text';
+const buttonVariants = ['contained', 'outlined', 'text'] as const;
+type ButtonVariant = typeof buttonVariants[number];
 
 type ButtonProps = {
   readonly text: string;
@@ -112,5 +113,5 @@ const StyledTouchableOpacity = styled.TouchableOpacity(
   `,
 );
 
-export { Button };
+export { Button, buttonVariants };
 export type { ButtonProps, ButtonVariant };

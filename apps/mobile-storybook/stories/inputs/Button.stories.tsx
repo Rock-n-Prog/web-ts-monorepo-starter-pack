@@ -1,15 +1,14 @@
+import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { text, boolean } from '@storybook/addon-knobs';
+import { text, boolean, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import React from 'react';
-import { Button } from 'mobile-ui/components/inputs';
+import { Button, buttonVariants } from 'mobile-ui/components/inputs';
 
-// TODO: Variants as knobs? Might only be possible with addon control
 storiesOf('Inputs/Button', module)
   .add('Contained', () => (
     <Button
       text={text('Text', 'Button text')}
-      variant="contained"
+      variant={select('Variant', buttonVariants, 'contained')}
       disabled={boolean('Disabled', false)}
       onPress={action('onPress')}
     />
@@ -17,7 +16,7 @@ storiesOf('Inputs/Button', module)
   .add('Outlined', () => (
     <Button
       text={text('Text', 'Button text')}
-      variant="outlined"
+      variant={select('Variant', buttonVariants, 'outlined')}
       disabled={boolean('Disabled', false)}
       onPress={action('onPress')}
     />
@@ -25,7 +24,7 @@ storiesOf('Inputs/Button', module)
   .add('Text', () => (
     <Button
       text={text('Text', 'Button text')}
-      variant="text"
+      variant={select('Variant', buttonVariants, 'text')}
       disabled={boolean('Disabled', false)}
       onPress={action('onPress')}
     />
