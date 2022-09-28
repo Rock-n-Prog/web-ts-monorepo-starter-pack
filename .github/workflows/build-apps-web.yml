@@ -9,6 +9,8 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
+      - 'packages/eslint-config-custom/**'
+      - 'packages/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -16,6 +18,8 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
+      - 'packages/eslint-config-custom/**'
+      - 'packages/tsconfig/**'
 
 jobs:
   build:
@@ -42,6 +46,5 @@ jobs:
       - name: Lint
         run: pnpm --filter web lint
 
-      # TODO(#52): Re-active build
-      # - name: Build
-      #   run: pnpm --filter web build
+      - name: Build
+        run: pnpm --filter web build
