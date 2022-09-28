@@ -29,27 +29,11 @@ type VariantToStylesParams = {
 
 const variantToButtonTextStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
   text: ({ theme, disabled }) =>
-    disabled
-      ? `color: ${theme.colors.disabled.onBackground};`
-      : `
-    color: ${theme.colors.palette.primary.main};
-
-    :active {
-      color: ${theme.colors.palette.primary.light};
-    }
-  `,
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.palette.primary.main};`,
   contained: ({ theme, disabled }) =>
-    disabled ? `color: ${theme.colors.disabled.onBackground};` : `color: ${theme.colors.onPrimary};`,
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.onPrimary};`,
   outlined: ({ theme, disabled }) =>
-    disabled
-      ? `color: ${theme.colors.disabled.onBackground};`
-      : `
-    color: ${theme.colors.palette.primary.main};
-
-    :active {
-      color: ${theme.colors.onPrimary};
-    }
-  `,
+    `color: ${disabled ? theme.colors.disabled.onBackground : theme.colors.palette.primary.main};`,
 };
 
 type ButtonTextProps = {
@@ -71,25 +55,9 @@ const ButtonText = styled(Typography)(
 
 const variantToTouchableOpacityStyles: Partial<Record<ButtonVariant, (params: VariantToStylesParams) => string>> = {
   contained: ({ theme, disabled }) =>
-    disabled
-      ? `background-color: ${theme.colors.disabled.background};`
-      : `
-      background-color: ${theme.colors.palette.primary.main};
-
-      :active {
-        background-color: ${theme.colors.palette.primary.light};
-      }
-    `,
+    `background-color: ${disabled ? theme.colors.disabled.background : theme.colors.palette.primary.main};`,
   outlined: ({ theme, disabled }) =>
-    disabled
-      ? `border: 1px solid ${theme.colors.disabled.background};`
-      : `
-    border: 1px solid ${theme.colors.palette.primary.main};
-
-    :active {
-      background-color: ${theme.colors.palette.primary.main};
-    }
-  `,
+    `border: 1px solid ${disabled ? theme.colors.disabled.background : theme.colors.palette.primary.main};`,
 };
 
 type StyledTouchableOpacityProps = {

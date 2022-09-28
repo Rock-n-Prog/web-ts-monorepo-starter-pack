@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StatusBar, View } from "react-native";
+import { StatusBar, View } from 'react-native';
 import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
 import Storybook from './.storybook';
 
