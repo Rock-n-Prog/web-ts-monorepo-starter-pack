@@ -63,7 +63,6 @@ const ButtonText = styled(Typography)(
     font-weight: ${theme.fonts.weights.regular};
     font-size: ${theme.fonts.sizes.s};
     text-transform: uppercase;
-    line-height: ${theme.fonts.lineHeights.s};
 
     ${variantToButtonTextStyles[$variant]({ theme, disabled: $disabled })}
   `,
@@ -92,8 +91,6 @@ const variantToTouchableOpacityStyles: Partial<Record<ButtonVariant, (params: Va
   `,
 };
 
-// TODO: Disabled not appearing?
-// TODO: Text not appearing?
 type StyledTouchableOpacityProps = {
   readonly $variant: ButtonVariant;
   readonly theme: Theme;
