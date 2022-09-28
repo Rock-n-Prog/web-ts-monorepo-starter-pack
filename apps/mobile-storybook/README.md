@@ -10,7 +10,15 @@ pnpm install
 
 ## Available scripts
 
-TODO: Add available scripts
+### Run app
+
+```bash
+pnpm dev
+
+# For device-specific runs
+pnpm dev:android
+pnpm dev:ios
+```
 
 ### Build app
 

@@ -14,7 +14,6 @@ Closes #{issue number}
 
 🚨 Please review the guidelines for contributing (`CONTRIBUTING.md`) to this repository.
 
-- [ ] Pass CI (build, tests, lint, ...)
 - [ ] Add tests for new domain logic
 - [ ] Update documentation (remember that changes to the file structure must be explained)
 - [ ] Make sure PR author is listed in contributors

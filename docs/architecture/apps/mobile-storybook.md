@@ -1,17 +1,16 @@
-# Mobile
+# Mobile Storybook
 
-App is located at [`apps/mobile`](../../../apps/mobile).
+This app is the storybook Expo app for showcasing `mobile-ui` components.
+
+App is located at [`apps/mobile-storybook`](../../../apps/mobile-storybook).
 
 This app uses shared packages. For more info, read their docs:
 
 - [`mobile-ui`](../packages/mobile-ui.md)
-- [`trpc`](../packages/trpc.md)
 
 ## Software architecture
 
 A simple Expo (React Native) app built in TypeScript. File structure explains pretty well the software architecture.
-
-TODO: How the frontend communicates with the backend
 
 ## File structure
 

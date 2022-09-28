@@ -18,7 +18,6 @@ pnpm dev
 # For device-specific runs
 pnpm dev:android
 pnpm dev:ios
-pnpm dev:web
 ```
 
 ### Build app
