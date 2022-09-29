@@ -12,9 +12,9 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "dev:mobile": "turbo run dev --scope mobile...",
-    "dev:web": "turbo run dev --scope web...",
+    "dev": "turbo run dev --parallel --filter web... --filter mobile...",
+    "dev:mobile": "turbo run dev --filter web... --filter mobile...",
+    "dev:web": "turbo run dev --filter web...",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
