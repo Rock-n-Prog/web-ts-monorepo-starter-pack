@@ -43,9 +43,8 @@ jobs:
       - name: Install dependencies
         run: pnpm --filter web-ui... install
 
-      # TODO(#35): Re-add this
-      # - name: Lint
-      #   run: pnpm --filter web-ui lint
+      - name: Lint
+        run: pnpm --filter web-ui lint
 
       - name: Storybook smoke test
         run: pnpm --filter web-ui storybook:smoke-test

@@ -1,4 +1,5 @@
 module.exports = {
   root: true,
-  extends: ['custom/base.js'],
+  parser: 'babel-eslint',
+  extends: ['custom/node.js'],
 };

@@ -43,9 +43,8 @@ jobs:
       - name: Install dependencies
         run: pnpm --filter trpc install
 
-      # TODO(#35): Re-add this
-      # - name: Lint
-      #   run: pnpm --filter trpc lint
+      - name: Lint
+        run: pnpm --filter trpc lint
 
       - name: Build
         run: pnpm --filter trpc build
