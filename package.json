@@ -48,6 +48,18 @@
     "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
     ],
+    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    ],
+    "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+    ],
+    "packages/theme/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/theme/**/*.{js,ts}"
+    ],
+    "packages/trpc/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/trpc/**/*.{js,ts}"
+    ],
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ]
