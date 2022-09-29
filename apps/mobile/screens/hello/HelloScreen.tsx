@@ -8,13 +8,13 @@ function HelloScreen() {
   const { data } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
   return (
-    <Screen>
-      <SafeAreaView>
+    <SafeAreaView>
+      <Screen>
         <ScreenTitle>Hello!</ScreenTitle>
         <SubTitle>Page to test tRPC data</SubTitle>
         <Body1>We got data: {data?.greeting ?? ''}</Body1>
-      </SafeAreaView>
-    </Screen>
+      </Screen>
+    </SafeAreaView>
   );
 }
 
