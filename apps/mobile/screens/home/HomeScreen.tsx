@@ -11,14 +11,14 @@ function HomeScreen() {
   const { switchMode } = useThemeContext();
 
   return (
-    <Screen>
-      <SafeAreaView>
+    <SafeAreaView>
+      <Screen>
         <ScreenTitle>Home!</ScreenTitle>
         <SubTitle>Page to test navigation and theme</SubTitle>
         <Button text="Go to hello screen" onPress={goToHelloScreen} />
         <Button text="Switch mode" onPress={switchMode} />
-      </SafeAreaView>
-    </Screen>
+      </Screen>
+    </SafeAreaView>
   );
 }
 
