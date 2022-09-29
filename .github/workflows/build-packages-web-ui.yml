@@ -9,6 +9,8 @@ on:
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
+      - 'packages/eslint-config-custom/**'
+      - 'packages/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -16,6 +18,8 @@ on:
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
+      - 'packages/eslint-config-custom/**'
+      - 'packages/tsconfig/**'
 
 jobs:
   build:
