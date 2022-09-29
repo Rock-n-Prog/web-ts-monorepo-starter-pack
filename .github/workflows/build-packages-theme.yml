@@ -43,6 +43,5 @@ jobs:
       - name: Install dependencies
         run: pnpm --filter theme install
 
-      # TODO(#35): Re-add this
-      # - name: Lint
-      #   run: pnpm --filter theme lint
+      - name: Lint
+        run: pnpm --filter theme lint
