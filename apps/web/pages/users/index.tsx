@@ -1,4 +1,3 @@
-import type { User } from 'database';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 import { trpc } from '../../utils/trpc';
@@ -10,7 +9,7 @@ function Users() {
     <>
       <Header1>TreeView</Header1>
       <Header2>Users</Header2>
-      {data && data.map((user: User) => <Body1 key={user.id}>{user.name}</Body1>)}
+      {data && data.map((user) => <Body1 key={user.id}>{user.name}</Body1>)}
     </>
   );
 }
@@ -18,8 +17,7 @@ function Users() {
 async function getStaticProps() {
   const ssg = createTrpcProxySSGHelpers();
 
-  // TODO: Input?
-  await ssg.users.all.fetch({});
+  await ssg.users.all.fetch();
 
   return {
     props: {

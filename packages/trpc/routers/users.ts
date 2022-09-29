@@ -1,9 +1,8 @@
-import type { User } from 'database';
 import { prisma } from 'database';
-import { t } from '../trpc';
+import { t } from '../config/trpc';
 
 const usersRouter = t.router({
-  all: t.procedure.query(() => prisma.user.findMany() as Promise<readonly User[] | undefined>),
+  all: t.procedure.query(() => prisma.user.findMany()),
 });
 
 export { usersRouter };
