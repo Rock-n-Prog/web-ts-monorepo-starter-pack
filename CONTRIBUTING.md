@@ -115,5 +115,5 @@ converted to an actual issue.
 
 ## Contributors
 
-- Fabien Roy [ExiledNarwal28](https://github.com/ExiledNarwal28)) and
-  ([froy-at-stratejia](https://github.com/froy-at-stratejia)
+- Fabien Roy ([ExiledNarwal28](https://github.com/ExiledNarwal28) and
+  [froy-at-stratejia](https://github.com/froy-at-stratejia))
