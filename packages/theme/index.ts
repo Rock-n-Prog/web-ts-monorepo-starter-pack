@@ -1,3 +1,4 @@
+// TODO: Remove this file
 type ThemeMode = 'light' | 'dark';
 const defaultThemeMode = 'dark';
 

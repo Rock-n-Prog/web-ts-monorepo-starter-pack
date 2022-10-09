@@ -1,0 +1,4 @@
+/* TODO: Do we need this file in web? Or just web-ui? */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
