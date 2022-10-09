@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import { Tooltip } from '../data';
 import { Theme } from '../../styles/theme';
 
+// TODO: Use Tailwind
+
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
 type ButtonProps = {

@@ -1,4 +1,7 @@
-// TODO: Remove this file
+type ColorScheme = 'light' | 'dark';
+const defaultColorScheme = 'dark';
+
+// TODO: Remove below this file
 type ThemeMode = 'light' | 'dark';
 const defaultThemeMode = 'dark';
 
@@ -90,5 +93,5 @@ const darkColors = {
   },
 };
 
-export type { ThemeMode };
-export { defaultThemeMode, lightColors, darkColors };
+export type { ThemeMode, ColorScheme };
+export { defaultThemeMode, defaultColorScheme, lightColors, darkColors };

@@ -8,11 +8,12 @@ type TooltipProps = {
 };
 
 function Tooltip({ children, title }: React.PropsWithChildren<TooltipProps>) {
+  // TODO: Still need more class names... lol is Tailwind really an improvement?
   return (
-    <TooltipContainer>
+    <div className="group relative block">
       {children}
-      <TooltipText>{title}</TooltipText>
-    </TooltipContainer>
+      <span className="group-hover:visible typography invisible spacing-tooltip bg-tooltip-background dark:bg-tooltip-background-dark tooltip-on-background dark:tooltip-on-background-dark font-size-xs">{title}</span>
+    </div>
   );
 }
 
@@ -35,15 +36,6 @@ const TooltipText = styled.span(
     z-index: 1;
   `,
 );
-
-const TooltipContainer = styled.div`
-  position: relative;
-  display: inline-block;
-
-  &:hover ${TooltipText} {
-    visibility: visible;
-  }
-`;
 
 export type { TooltipProps };
 export { Tooltip };

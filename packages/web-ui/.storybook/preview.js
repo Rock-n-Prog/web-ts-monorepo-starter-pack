@@ -1,12 +1,10 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from '../styles/GlobalStyle';
-import { getTheme } from '../styles/theme';
+import '../styles/globals.css';
 
 const globalTypes = {
-  theme: {
-    name: 'Theme',
-    description: 'Global theme for components',
+  colorScheme: {
+    name: 'Color Scheme',
+    description: 'Global color scheme for components',
     defaultValue: 'dark',
     toolbar: {
       icon: 'circlehollow',
@@ -30,25 +28,14 @@ const parameters = {
   },
 };
 
-function withGlobalStyle(Story) {
-  return (
-    <>
-      <GlobalStyle />
-      <Story />
-    </>
-  );
-}
-
 function withThemeProvider(Story, context) {
-  const theme = getTheme(context.globals.theme);
-
   return (
-    <ThemeProvider theme={theme}>
+    <div className={context.colorScheme}>
       <Story />
-    </ThemeProvider>
+    </div>
   );
 }
 
-const decorators = [withGlobalStyle, withThemeProvider];
+const decorators = [withThemeProvider];
 
 export { globalTypes, parameters, decorators };

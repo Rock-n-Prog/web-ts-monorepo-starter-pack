@@ -1,0 +1,17 @@
+/* TODO: Use this exact file in web, if possible */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Move elsewhere? */
+@layer components {
+    .typography {
+        margin: 0;
+        font-family: theme('fontFamily.sans'), sans-serif;
+        font-weight: theme('fontWeight.normal');
+        font-size: theme('fontSize.sm');
+        /* TODO: This should change with current theme */
+        color: theme('colors.onBackground');
+        opacity: theme('emphasis.high');
+    }
+}

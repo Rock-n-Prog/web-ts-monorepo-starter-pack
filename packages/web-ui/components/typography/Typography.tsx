@@ -1,6 +1,8 @@
 import { css } from 'styled-components';
 import { Theme } from '../../styles/theme';
 
+// TODO: Use Tailwind (remove, use css)
+
 const Typography = css(
   ({ theme }: { readonly theme: Theme }) => css`
     margin: 0;

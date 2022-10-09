@@ -1,4 +1,4 @@
-const baseConfig = require("theme/tailwind.config");
+const baseConfig = require("web-ui/tailwind.config");
 
 module.exports = {
   ...baseConfig,
