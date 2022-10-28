@@ -66,6 +66,14 @@ cp .env.example packages/database/.env
 docker compose up
 ```
 
+### Seed database
+
+Adds example data
+
+```bash
+pnpm -F database db:seed
+```
+
 ### Run apps
 
 ```bash
