@@ -9,7 +9,7 @@ function Users() {
     <>
       <Header1>TreeView</Header1>
       <Header2>Users</Header2>
-      {data && data.map(user => <Body1 key={user.id}>{user.name}</Body1>)}
+      {data && data.map((user, index) => <Body1 key={user.id}>{user.name}{index !== data.length -1 && ', '}</Body1>)}
     </>
   );
 }
