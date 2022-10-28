@@ -7,6 +7,7 @@ import RootStackNavigator from './RootStackNavigator';
 const screens: Record<RootRoutes, string> = {
   Home: '',
   Hello: 'hello',
+  Users: 'users',
 };
 
 const linking = {
