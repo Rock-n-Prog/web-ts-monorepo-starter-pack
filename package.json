@@ -54,10 +54,13 @@
     "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/theme/**/*.{js,jsx,ts,tsx}": [
+    "packages/theme/**/*.{js,ts}": [
       "eslint --fix packages/theme/**/*.{js,ts}"
     ],
-    "packages/trpc/**/*.{js,jsx,ts,tsx}": [
+    "packages/database/**/*.{js,ts}": [
+      "eslint --fix packages/database/**/*.{js,ts}"
+    ],
+    "packages/trpc/**/*.{js,ts}": [
       "eslint --fix packages/trpc/**/*.{js,ts}"
     ],
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
