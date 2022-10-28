@@ -53,7 +53,7 @@ pnpm prepare
 
 ### Setup database
 
-TODO: Currently have to copy .env.example to packages/database.env. It should be read from root.
+TODO: Currently have to copy .env.example to packages/database/.env. It should be read from root.
 
 ```bash
 # Copy env file
