@@ -10,6 +10,19 @@ pnpm install
 
 ## Available scripts
 
+### Build
+
+```bash
+pnpm build
+
+# To --watch
+pnpm build:watch
+```
+
+```bash
+pnpm -F database generate
+```
+
 ### Generate Prisma client
 
 ```bash
@@ -22,7 +35,7 @@ pnpm -F database generate
 pnpm -F database db:seed
 ```
 
-### Lint apps
+### Lint
 
 ```bash
 pnpm lint

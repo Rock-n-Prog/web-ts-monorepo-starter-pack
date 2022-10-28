@@ -9,6 +9,7 @@ const Typography = css(
     font-size: ${theme.fonts.sizes.m};
     color: ${theme.colors.onBackground};
     opacity: ${theme.fonts.emphasis.high};
+    margin-bottom: ${theme.spacing.xxs};
   `,
 );
 

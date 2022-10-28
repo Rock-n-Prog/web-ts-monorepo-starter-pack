@@ -11,8 +11,8 @@ function UsersScreen() {
     <SafeAreaView>
       <Screen>
         <ScreenTitle>Users</ScreenTitle>
-        <SubTitle>Page to test tRPC data</SubTitle>
-        {data && data.map((user, index) => <Body1 key={user.id}>{user.name}{index !== data.length -1 && ', '}</Body1>)}
+        <SubTitle>Page to test tRPC data, fetched from database</SubTitle>
+        {data && data.map(user => <Body1 key={user.id}>{user.name}</Body1>)}
       </Screen>
     </SafeAreaView>
   );

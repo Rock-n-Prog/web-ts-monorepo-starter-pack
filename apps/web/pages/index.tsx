@@ -6,6 +6,7 @@ import Link from 'next/link';
 function Index() {
   const { switchMode } = useThemeContext();
 
+  // TODO: Create Box (layout) component to support flex and make buttons less ugly
   return (
     <>
       <Header1>TreeView</Header1>

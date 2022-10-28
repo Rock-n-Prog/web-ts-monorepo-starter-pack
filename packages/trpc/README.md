@@ -10,20 +10,20 @@ pnpm install
 
 ## Available scripts
 
-### Run app
-
-```bash
-pnpm dev
-pnpm start # server
-```
-
-### Build app
+### Build
 
 ```bash
 pnpm build
+
+# To --watch
+pnpm build:watch
 ```
 
-### Lint app
+```bash
+pnpm -F database generate
+```
+
+### Lint
 
 ```bash
 pnpm lint

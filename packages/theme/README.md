@@ -10,7 +10,7 @@ pnpm install
 
 ## Available scripts
 
-### Lint app
+### Lint
 
 ```bash
 pnpm lint

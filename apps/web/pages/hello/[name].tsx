@@ -17,6 +17,7 @@ function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
     <>
       <Header1>TreeView</Header1>
       <Header2>Name</Header2>
+      <Body1>Page to test tRPC data, with query and static data</Body1>
       <Body1>We got data: {data?.greeting}</Body1>
       <Button onClick={switchMode}>Switch theme mode!</Button>
     </>

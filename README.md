@@ -81,7 +81,7 @@ pnpm dev:web
 pnpm dev:mobile
 ```
 
-### Start storybook
+### Run storybook
 
 #### Web UI Library
 
@@ -99,13 +99,13 @@ Storybook will be running on [Expo Go](https://expo.dev/client).
 pnpm storybook:mobile
 ```
 
-### Build apps
+### Build all
 
 ```bash
 pnpm build
 ```
 
-### Lint apps
+### Lint all
 
 ```bash
 pnpm lint
