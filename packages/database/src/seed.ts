@@ -1,5 +1,5 @@
-import { prisma } from '.';
 import type { User } from '@prisma/client';
+import { prisma } from '.';
 
 const defaultUsers = [
   {
@@ -10,9 +10,10 @@ const defaultUsers = [
     name: 'Marc du Prelore',
     email: 'timarc@letsgo.com',
   },
-] as Partial<User>[];
+] as readonly Partial<User>[];
 
 (async () => {
+  /* eslint-disable-next-line functional/no-try-statement */
   try {
     await Promise.all(
       defaultUsers.map(user =>
