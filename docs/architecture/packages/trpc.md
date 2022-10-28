@@ -10,7 +10,5 @@ A simple node library to define tRPC routes and context. File structure explains
 
 ## File structure
 
-For more info, see React file structure.
-
 - `config`: tRPC and context definitions
 - `routers`: Available routes

@@ -10,6 +10,18 @@ pnpm install
 
 ## Available scripts
 
+### Generate Prisma client
+
+```bash
+pnpm -F database generate
+```
+
+### Seed example data
+
+```bash
+pnpm -F database db:seed
+```
+
 ### Lint apps
 
 ```bash
@@ -17,7 +29,3 @@ pnpm lint
 # To fix lint
 pnpm lint:fix
 ```
-
-TODO: Add more commands
-
-TODO: Do we want db:migrate:deploy?

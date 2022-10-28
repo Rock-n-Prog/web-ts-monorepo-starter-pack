@@ -56,24 +56,20 @@ pnpm prepare
 TODO: Currently have to copy .env.example to packages/database.env. It should be read from root.
 
 ```bash
+# Copy env file
 cp .env.example packages/database/.env
+
+# Run database
+docker compose up
+
+# Generate Prisma client
+pnpm -F database generate
+
+# If wanted, generate example data
+pnpm -F database db:seed
 ```
 
 ## Available scripts
-
-### Run database
-
-```bash
-docker compose up
-```
-
-### Seed database
-
-Adds example data
-
-```bash
-pnpm -F database db:seed
-```
 
 ### Run apps
 

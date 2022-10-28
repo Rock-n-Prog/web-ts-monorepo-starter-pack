@@ -13,6 +13,7 @@ For more info, see Turborepo file structure.
   - `mobile`: Mobile app (see [its docs](./apps/mobile.md))
 - `docs`: Project documentation
 - `packages`: Running apps
+  - `database`: Prisma schema and client definitions (see [its docs](./packages/database.md))
   - `trpc`: tRPC routes and context definitions (see [its docs](./packages/trpc.md))
   - `web-ui`: Web UI library (see [its docs](./packages/web-ui.md))
   - `mobile-ui`: Mobile UI library (see [its docs](./packages/mobile-ui.md))
