@@ -1,4 +1,4 @@
-const withTM = require('next-transpile-modules')(['database', 'trpc', 'web-ui', 'theme']);
+const withTM = require('next-transpile-modules')(['trpc', 'web-ui', 'theme']);
 
 module.exports = withTM({
   reactStrictMode: true,

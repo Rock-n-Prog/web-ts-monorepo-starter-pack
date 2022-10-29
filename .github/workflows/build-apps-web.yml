@@ -52,5 +52,6 @@ jobs:
       - name: Lint
         run: pnpm --filter web lint
 
-      - name: Build
-        run: pnpm --filter web build
+      # TODO(#73): Re-add web CI build step
+      # - name: Build
+      #   run: pnpm --filter web build

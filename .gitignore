@@ -39,9 +39,6 @@ yarn-error.log*
 # turbo
 .turbo
 
-# Prisma
-packages/database/generated
-
 # Storybook
 storybook-static
 
