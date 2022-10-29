@@ -50,4 +50,4 @@ jobs:
         run: pnpm --filter database lint
 
       - name: Build
-        run: pnpm --filter trpc build
+        run: pnpm --filter database build
