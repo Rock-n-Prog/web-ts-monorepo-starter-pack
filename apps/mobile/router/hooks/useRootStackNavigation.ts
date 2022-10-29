@@ -12,7 +12,11 @@ function useRootStackNavigation() {
     return navigate(RootRoutes.Hello);
   }
 
-  return { goToHelloScreen };
+  function goToUsersScreen() {
+    return navigate(RootRoutes.Users);
+  }
+
+  return { goToHelloScreen, goToUsersScreen };
 }
 
 export default useRootStackNavigation;

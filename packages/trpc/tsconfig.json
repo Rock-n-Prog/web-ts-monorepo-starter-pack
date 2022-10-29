@@ -2,7 +2,10 @@
   "extends": "tsconfig/base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "preserveSymlinks": true
+    "baseUrl": ".",
+    "paths": {
+      "database": ["../../packages/database/src"]
+    }
   },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

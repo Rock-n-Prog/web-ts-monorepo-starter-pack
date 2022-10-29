@@ -10,7 +10,7 @@ pnpm install
 
 ## Available scripts
 
-### Run app
+### Run
 
 ```bash
 pnpm dev
@@ -20,13 +20,13 @@ pnpm dev:android
 pnpm dev:ios
 ```
 
-### Build app
+### Build
 
 ```bash
 pnpm build
 ```
 
-### Lint app
+### Lint
 
 ```bash
 pnpm lint

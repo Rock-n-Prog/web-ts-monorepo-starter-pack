@@ -2,58 +2,101 @@
 
 Here's what we decided to use.
 
-## Languages
+## Build Tools
+
+### Languages
 
 - [TypeScript](https://www.typescriptlang.org)
 
-## Frameworks
+### Frameworks
 
 - [Next.js](https://nextjs.org)
 - [Expo](https://docs.expo.dev)
 - [React](https://reactjs.org)
 - [React Native](https://reactnative.dev)
+
+### Compilers / transpilers
+
+- [Babel](https://babeljs.io)
+
+### Bundlers
+
+- [Webpack](https://webpack.js.org)
+- [Metro](https://facebook.github.io/metro)
+- [tsup](https://github.com/egoist/tsup)
+
+### UI Library
+
+- [Storybook](https://storybook.js.org)
+
+## Apps management
+
+### Monorepo manager
+
 - [Turborepo](https://turborepo.org)
 
-## API Communication
+### Package manager
+
+- [pnpm](https://pnpm.io)
+
+### Code hosting
+
+- [GitHub](https://github.com)
+
+## Architecture
+
+### API Communication
 
 - [tRPC](https://trpc.io)
 - [react-query](https://tanstack.com/query/v4/docs/adapters/react-query)
 
-## UI Library
+### ORM
 
-- [Storybook](https://storybook.js.org)
+- [Prisma](https://www.prisma.io)
 
-## Testing
+### Database
+
+- [MySQL](https://www.mysql.com)
+
+## Infrastructure
+
+### CI/CD workflows
+
+- [GitHub Actions](https://github.com/features/actions)
+
+## Development Tools
+
+### Containers
+
+- [Docker](https://www.docker.com)
+- [Docker Compose](https://docs.docker.com/compose)
+
+### Testing
 
 - [Jest](https://jestjs.io)
 
-## Styling
+### Styling
 
 - [styled-components](https://styled-components.com)
 - [styled-theming](https://www.npmjs.com/package/styled-theming)
 
-## Package manager
-
-- [pnpm](https://pnpm.io)
-
-## Linting
+### Linting
 
 - [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
 
-## Pre-commit checker
+### Pre-commit checker
 
 - [Husky](https://typicode.github.io/husky)
 - [Lint-staged](https://github.com/okonet/lint-staged)
 
-## Code hosting
+## Project Management
 
-- [GitHub](https://github.com)
+### Task management
 
-## CI/CD workflows
+- [GitHub Projects](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards)
 
-- [GitHub Actions](https://github.com/features/actions)
-
-## Documentation
+### Documentation
 
 - [Markdown](https://www.markdownguide.org)
+- [GitHub Pages](https://pages.github.com)

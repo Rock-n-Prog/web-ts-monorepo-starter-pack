@@ -7,6 +7,7 @@
 [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)
 [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)
 [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)
+[![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)
 [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)
 
 [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
@@ -50,6 +51,22 @@ pnpm install
 pnpm prepare
 ```
 
+### Setup database
+
+```bash
+# Copy env file
+cp packages/database/.env.example packages/database/.env
+
+# Run database
+docker compose up
+
+# Generate Prisma client
+pnpm -F database generate
+
+# If wanted, generate example data
+pnpm -F database db:seed
+```
+
 ## Available scripts
 
 ### Run apps
@@ -62,7 +79,7 @@ pnpm dev:web
 pnpm dev:mobile
 ```
 
-### Start storybook
+### Run storybook
 
 #### Web UI Library
 
@@ -80,13 +97,13 @@ Storybook will be running on [Expo Go](https://expo.dev/client).
 pnpm storybook:mobile
 ```
 
-### Build apps
+### Build all
 
 ```bash
 pnpm build
 ```
 
-### Lint apps
+### Lint all
 
 ```bash
 pnpm lint

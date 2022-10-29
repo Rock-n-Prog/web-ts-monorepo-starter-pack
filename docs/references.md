@@ -12,6 +12,10 @@
 - [Next.js + tRPC + Prisma example](https://github.com/trpc/examples-next-prisma-todomvc)
 - [Turborepo + Expo + tRPC example](https://github.com/gunnnnii/turbo-expo-trpc-starter)
 
+## Database
+
+- [Turborepo + prisma example](https://github.com/aiji42/turbo-with-prisma)
+
 ## Pre-commit hooks
 
-- [Diving into husky and lint-staged](https://laurieontech.com/posts/husky/)
+- [Diving into husky and lint-staged](https://laurieontech.com/posts/husky)

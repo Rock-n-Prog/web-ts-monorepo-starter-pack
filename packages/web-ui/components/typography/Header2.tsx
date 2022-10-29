@@ -7,6 +7,7 @@ const Header2 = styled.h2(
     ${Typography};
 
     font-size: ${theme.fonts.sizes.xl};
+    margin-bottom: ${theme.spacing.xs};
   `,
 );
 

@@ -11,7 +11,7 @@ function HelloScreen() {
     <SafeAreaView>
       <Screen>
         <ScreenTitle>Hello!</ScreenTitle>
-        <SubTitle>Page to test tRPC data</SubTitle>
+        <SubTitle>Page to test tRPC data, with query and static data</SubTitle>
         <Body1>We got data: {data?.greeting ?? ''}</Body1>
       </Screen>
     </SafeAreaView>

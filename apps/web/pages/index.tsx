@@ -14,6 +14,9 @@ function Index() {
       <Link href="/hello/MyName">
         <Button>Go to hello page!</Button>
       </Link>
+      <Link href="/users">
+        <Button>Go to users page!</Button>
+      </Link>
     </>
   );
 }

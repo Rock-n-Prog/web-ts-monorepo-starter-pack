@@ -13,6 +13,9 @@
       "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$PORT"],
       "outputs": ["node_modules/.cache/metro/**"]
     },
+    "database#db:migrate:*": {
+      "env": ["DATABASE_URL"]
+    },
     "lint": {
       "outputs": []
     },
