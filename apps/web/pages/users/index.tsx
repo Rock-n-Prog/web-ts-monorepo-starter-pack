@@ -9,7 +9,6 @@ function Users() {
   const { t } = useTranslation('users');
   const { data } = trpc.users.all.useQuery();
 
-  // TODO: Translate page
   return (
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
