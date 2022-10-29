@@ -2,8 +2,7 @@
   "extends": "tsconfig/base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "preserveSymlinks": true,
-    "declaration": true
+    "preserveSymlinks": true
   },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

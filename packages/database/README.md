@@ -2,6 +2,8 @@
 
 MySQL database accessible using Prisma.
 
+**See root's [`README.md`](../../README.md) for info on running and linking a local Docker container for database.**
+
 ## Setup
 
 ```bash

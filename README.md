@@ -53,11 +53,9 @@ pnpm prepare
 
 ### Setup database
 
-TODO: Currently have to copy .env.example to packages/database/.env. It should be read from root.
-
 ```bash
 # Copy env file
-cp .env.example packages/database/.env
+cp packages/database/.env.example packages/database/.env
 
 # Run database
 docker compose up
