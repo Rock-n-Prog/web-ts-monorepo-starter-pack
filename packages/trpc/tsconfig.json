@@ -4,7 +4,7 @@
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "database": ["../../packages/database/src"],
+      "database": ["../../packages/database/src"]
     }
   },
   "include": ["."],
