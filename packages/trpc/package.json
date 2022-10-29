@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "./index.ts",
+  "types": "dist/index.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w && nodemon dist/index.js",
