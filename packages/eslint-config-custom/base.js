@@ -1,11 +1,13 @@
 module.exports = {
   plugins: ['functional'],
   extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prefer-type-alias/recommended',
     'plugin:import/recommended',
     'plugin:functional/recommended',
     'plugin:functional/stylistic',
-    'eslint:recommended',
     'prettier',
     'turbo',
   ],

@@ -1,24 +1,34 @@
 import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2 } from 'web-ui/components/typography';
-import { useThemeContext } from 'web-ui/hooks/useThemeContext';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { WithLocale } from '../types/locales';
+import createServerSideTranslations from '../utils/createServerSideTranslations';
 
 function Index() {
-  const { switchMode } = useThemeContext();
+  const { t } = useTranslation('index');
 
   return (
     <>
-      <Header1>TreeView</Header1>
-      <Header2>Index</Header2>
-      <Button onClick={switchMode}>Switch theme mode!</Button>
+      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header2>{t('index')}</Header2>
       <Link href="/hello/MyName">
-        <Button>Go to hello page!</Button>
+        <Button>{t('goToHelloPage')}</Button>
       </Link>
       <Link href="/users">
-        <Button>Go to users page!</Button>
+        <Button>{t('goToUsersPage')}</Button>
       </Link>
     </>
   );
 }
 
+async function getStaticProps({ locale }: WithLocale<unknown>) {
+  return {
+    props: {
+      ...(await createServerSideTranslations({ locale, namespaces: ['common', 'index'] })),
+    },
+  };
+}
+
+export { getStaticProps };
 export default Index;

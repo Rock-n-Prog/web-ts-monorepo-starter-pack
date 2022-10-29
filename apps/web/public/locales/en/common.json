@@ -1,0 +1,7 @@
+{
+  "treeView": "TreeView",
+  "loading": "Loading...",
+  "weGotError": "We got error: {{error}}",
+  "switchThemeMode": "Switch theme mode!",
+  "switchLocale": "Switch locale!"
+}
