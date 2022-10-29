@@ -46,6 +46,9 @@ jobs:
       - name: Generate prisma client
         run: pnpm --filter database generate
 
+      - name: Install trpc dependencies
+        run: pnpm --filter trpc install
+
       - name: Install dependencies
         run: pnpm --filter web... install
 
