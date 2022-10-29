@@ -40,12 +40,6 @@ jobs:
         with:
           version: 7.9.5
 
-      - name: Install database dependencies
-        run: pnpm --filter database install
-
-      - name: Generate prisma client
-        run: pnpm --filter database generate
-
       - name: Install dependencies
         run: pnpm --filter web... install
 
