@@ -6,4 +6,4 @@ const defaultLocale = 'en';
 type WithLocale<T> = T & { readonly locale: Locale };
 
 export type { Locale, WithLocale };
-export { defaultLocale };
+export { locales, defaultLocale };
