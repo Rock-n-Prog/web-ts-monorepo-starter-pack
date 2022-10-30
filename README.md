@@ -35,6 +35,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/theme`](packages/theme): Theme definition
 - [`packages/trpc`](packages/trpc): tRPC routes and context definitions
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
+- [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
 ## Setup
