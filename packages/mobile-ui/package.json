@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "pnpm lint:code && pnpm lint:style",
+    "lint": "pnpm lint:code && pnpm lint:styles",
     "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:fix": "pnpm lint:code:fix && pnpm lint:style:fix",
+    "lint:fix": "pnpm lint:code:fix && pnpm lint:styles:fix",
     "lint:styles": "stylelint ./**/*.{js,jsx,ts,tsx}",
     "lint:styles:fix": "stylelint --fix ./**/*.{js,jsx,ts,tsx}"
   },
