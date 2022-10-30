@@ -1,0 +1,14 @@
+{
+  "name": "stylelint-config-custom",
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "base.js"
+  ],
+  "devDependencies": {
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard-scss": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  }
+}

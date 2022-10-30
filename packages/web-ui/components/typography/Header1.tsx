@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { Typography } from './Typography';
 import { Theme } from '../../styles/theme';
+import { Typography } from './Typography';
 
 const Header1 = styled.h1(
   ({ theme }: { readonly theme: Theme }) => css`

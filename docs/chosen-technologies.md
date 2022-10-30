@@ -85,6 +85,10 @@ Here's what we decided to use.
 ### Linting
 
 - [ESLint](https://eslint.org)
+- [Stylelint](https://stylelint.io)
+
+### Formatting
+
 - [Prettier](https://prettier.io)
 
 ### Pre-commit checker

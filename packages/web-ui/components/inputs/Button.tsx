@@ -35,8 +35,8 @@ const ButtonTypography = css(
 );
 
 type VariantToStylesParams = {
-  theme: Theme;
-  disabled: boolean;
+  readonly theme: Theme;
+  readonly disabled: boolean;
 };
 
 const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
@@ -108,9 +108,10 @@ const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
     outline: 0;
+    background-color: transparent;
+
     // Makes "outline" buttons same dimension as others
     border: solid 1px transparent;
-    background-color: transparent;
 
     ${variantToStyles[$variant]({ theme, disabled })}
   `,

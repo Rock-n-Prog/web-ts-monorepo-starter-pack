@@ -11,7 +11,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 ## Status
 
 | Name             | Type    | Status                                                                                                                                                                                                                            |
-|------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Format           | General | [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)                                                               |
 | Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                        |
 | Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                               |
@@ -35,6 +35,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/theme`](packages/theme): Theme definition
 - [`packages/trpc`](packages/trpc): tRPC routes and context definitions
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
+- [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 
 ## Setup
