@@ -14,7 +14,7 @@ function Toolbar() {
   }
 
   return (
-    <Flex>
+    <Flex justifyContent="end" margin="m">
       <Button onClick={switchMode}>{t('switchThemeMode')}</Button>
       <Button onClick={switchLocale}>{t('switchLocale')}</Button>
     </Flex>

@@ -1,6 +1,7 @@
 import type { ThemeMode } from 'theme';
 import { modeToColors } from './colors';
 import { spacing } from './spacing';
+import { breakpoints } from './breakpoints';
 import { fonts } from './fonts';
 
 type Theme = ReturnType<typeof getTheme>;
@@ -10,6 +11,7 @@ function getTheme(mode: ThemeMode) {
     mode,
     colors: modeToColors[mode],
     spacing,
+    breakpoints,
     fonts,
   };
 }

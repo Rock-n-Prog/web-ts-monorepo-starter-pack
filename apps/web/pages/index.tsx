@@ -2,9 +2,9 @@ import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2 } from 'web-ui/components/typography';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { Flex } from 'web-ui/components/layout';
 import { WithLocale } from '../types/locales';
 import createServerSideTranslations from '../utils/createServerSideTranslations';
-import { Flex } from "web-ui/components/layout";
 
 function Index() {
   const { t } = useTranslation('index');
