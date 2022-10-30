@@ -1,15 +1,9 @@
-import { z } from 'zod';
 import { t } from '../config/trpc';
+import { helloInput } from '../schemas';
 
 const helloRouter = t.router({
   single: t.procedure
-    .input(
-      z
-        .object({
-          name: z.string().nullish(),
-        })
-        .nullish(),
-    )
+    .input(helloInput.nullish())
     .query(({ input }) => ({
       greeting: `Hello ${input?.name ?? 'world'}!`,
     })),
