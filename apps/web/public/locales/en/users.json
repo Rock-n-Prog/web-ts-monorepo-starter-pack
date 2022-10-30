@@ -1,4 +1,4 @@
 {
-  "users": "Users",
-  "pageToTest": "Page to test tRPC data, fetched from database"
+  "pageToTest": "Page to test tRPC data, fetched from database",
+  "users": "Users"
 }

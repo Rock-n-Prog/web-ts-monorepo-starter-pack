@@ -38,9 +38,3 @@ pnpm lint
 # To fix lint
 pnpm lint:fix
 ```
-
-### Test
-
-```bash
-pnpm test
-```
