@@ -6,8 +6,9 @@ Contains both UI pages and API (all server-side).
 
 This app uses:
 
-- [`packages/web-ui`](../../packages/web-ui): UI library
 - [`packages/trpc`](../../packages/trpc): tRPC routers and configs
+- [`packages/web-ui`](../../packages/web-ui): UI library
+- [`packages/web-locales`](../../packages/web-locales): Locale translations library
 
 ## Setup
 
@@ -37,12 +38,4 @@ pnpm lint
 
 # To fix lint
 pnpm lint:fix
-
-# For code-specific linting
-pnpm lint:code
-pnpm lint:code:fix
-
-# For i18n-specific linting
-pnpm lint:i18n
-pnpm lint:i18n:fix
 ```

@@ -1,0 +1,14 @@
+{
+  "name": "web-locales",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
+    "lint:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-plugin-i18n-json": "^4.0.0"
+  }
+}

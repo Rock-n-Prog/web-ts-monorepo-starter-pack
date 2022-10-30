@@ -21,6 +21,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 | Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                      |
 | Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                   |
 | Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)          |
+| Web Locales      | Package | [![Build Web Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml)    |
 
 ## Apps
 
@@ -30,10 +31,12 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 ## Packages
 
+- [`packages/database`](packages/database): Prisma client and models definitions
+- [`packages/trpc`](packages/trpc): tRPC routes and context definitions
+- [`packages/theme`](packages/theme): Theme definition
 - [`packages/web-ui`](packages/web-ui): React components for web app
 - [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
-- [`packages/theme`](packages/theme): Theme definition
-- [`packages/trpc`](packages/trpc): tRPC routes and context definitions
+- [`packages/web-locales`](packages/web-locales): Locale translations for web app
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig

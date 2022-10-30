@@ -2,6 +2,7 @@
 
 - [Database](./database.md)
 - [tRPC](./trpc.md)
+- [Theme](./theme.md)
 - [Web UI](./web-ui.md)
 - [Mobile UI](./mobile-ui.md)
-- [Theme](./theme.md)
+- [Web Locales](./web-locales.md)
