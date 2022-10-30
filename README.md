@@ -1,26 +1,26 @@
 # TreeView App
 
-[![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)
-[![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)
-[![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)
-
-[![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)
-[![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)
-[![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)
-[![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)
-[![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)
-
-[![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)
-
 Task management app, with a focus on tree view.
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
-This is an official pnpm starter turborepo.
-
 Check the [project board](https://github.com/orgs/treeview-app/projects/1/views/1) for what we want to do next.
 
 To contribute, make sure you have read the [docs](docs) and [contribution guide](CONTRIBUTING.md).
+
+## Status
+
+| Name             | Type    | Status                                                                                                                                                                                                                            |
+|------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Format           | General | [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)                                                               |
+| Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                        |
+| Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                               |
+| Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml) |
+| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)             |
+| tRPC             | Package | [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)                         |
+| Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                      |
+| Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                   |
+| Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)          |
 
 ## Apps
 
