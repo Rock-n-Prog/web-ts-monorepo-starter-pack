@@ -86,6 +86,7 @@ Here's what we decided to use.
 
 - [ESLint](https://eslint.org)
 - [Stylelint](https://stylelint.io)
+- [ls-lint](https://ls-lint.org)
 
 ### Formatting
 

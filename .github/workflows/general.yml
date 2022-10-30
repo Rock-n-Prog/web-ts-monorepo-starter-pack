@@ -1,4 +1,4 @@
-name: Format
+name: General
 
 on:
   workflow_dispatch:
@@ -32,6 +32,13 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --ignore-scripts
+
+      # Weird fix for ls-lint not being installed at previous step
+      - name: Install ls-lint
+        run: pnpm add -g @ls-lint/ls-lint
+
+      - name: Lint file names
+        run: pnpm lint:ls
 
       - name: Format
         run: pnpm format

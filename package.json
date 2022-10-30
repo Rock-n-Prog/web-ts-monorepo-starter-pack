@@ -19,6 +19,7 @@
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
     "lint:fix": "pnpm run lint:root:fix && turbo run lint:fix",
+    "lint:ls": "ls-lint",
     "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
@@ -28,6 +29,7 @@
     "yeet": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
+    "@ls-lint/ls-lint": "^1.11.2",
     "eslint": "^8.23.1",
     "eslint-config-custom": "workspace:*",
     "husky": "^8.0.1",
@@ -36,6 +38,9 @@
     "turbo": "^1.5.1"
   },
   "lint-staged": {
+    "*": [
+      "ls-lint"
+    ],
     "./*.{js,jsx,ts,tsx}": [
       "pnpm lint:root:fix"
     ],

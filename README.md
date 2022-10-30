@@ -12,7 +12,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 | Name             | Type    | Status                                                                                                                                                                                                                            |
 | ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Format           | General | [![Format](https://github.com/treeview-app/treeview/actions/workflows/format.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/format.yml)                                                               |
+| General          | General | [![General](https://github.com/treeview-app/treeview/actions/workflows/general.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/general.yml)                                                            |
 | Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                        |
 | Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                               |
 | Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml) |
@@ -108,11 +108,12 @@ pnpm build
 
 ```bash
 pnpm lint
-pnpm format
 
 # To fix lint
 pnpm lint:fix
-pnpm format:fix
+
+# For file names
+pnpm lint:ls
 
 # To only apply to root
 pnpm lint:root
@@ -120,6 +121,15 @@ pnpm lint:root:fix
 
 # Fix lint on staged files
 pnpm lint:staged
+```
+
+### Format
+
+```bash
+pnpm format
+
+# To fix format
+pnpm format:fix
 ```
 
 ### Cleanup files
