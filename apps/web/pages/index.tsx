@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { WithLocale } from '../types/locales';
 import createServerSideTranslations from '../utils/createServerSideTranslations';
+import { Flex } from "web-ui/components/layout";
 
 function Index() {
   const { t } = useTranslation('index');
@@ -12,12 +13,14 @@ function Index() {
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
       <Header2>{t('index')}</Header2>
-      <Link href="/hello/MyName">
-        <Button>{t('goToHelloPage')}</Button>
-      </Link>
-      <Link href="/users">
-        <Button>{t('goToUsersPage')}</Button>
-      </Link>
+      <Flex direction="column">
+        <Link href="/hello/MyName">
+          <Button>{t('goToHelloPage')}</Button>
+        </Link>
+        <Link href="/users">
+          <Button>{t('goToUsersPage')}</Button>
+        </Link>
+      </Flex>
     </>
   );
 }
