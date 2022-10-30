@@ -99,7 +99,7 @@ type StyledButtonProps = {
   readonly disabled: boolean;
 };
 
-const StyledButton = styled.button<Omit<StyledButtonProps, 'theme'>>(
+const StyledButton = styled.button<StyledButtonProps>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
     ${ButtonTypography};
 

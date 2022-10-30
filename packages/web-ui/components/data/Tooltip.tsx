@@ -20,7 +20,7 @@ const TooltipText = styled.span(
   ({ theme }: { readonly theme: Theme }) => css`
     ${Typography};
     visibility: hidden;
-    min-width: ${theme.spacing.tooltip};
+    min-width: 7.5rem;
     background-color: ${theme.colors.tooltip.background};
     color: ${theme.colors.tooltip.onBackground};
     font-size: ${theme.fonts.sizes.xs};

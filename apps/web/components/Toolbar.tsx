@@ -1,6 +1,7 @@
 import { Button } from 'web-ui/components/inputs';
 import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { useTranslation } from 'next-i18next';
+import { Flex } from 'web-ui/components/layout';
 import { useTranslationContext } from '../hooks/useTranslationContext';
 
 function Toolbar() {
@@ -13,10 +14,10 @@ function Toolbar() {
   }
 
   return (
-    <>
+    <Flex justifyContent="end" margin="m">
       <Button onClick={switchMode}>{t('switchThemeMode')}</Button>
       <Button onClick={switchLocale}>{t('switchLocale')}</Button>
-    </>
+    </Flex>
   );
 }
 

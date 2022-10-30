@@ -2,6 +2,7 @@ import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2 } from 'web-ui/components/typography';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { Flex } from 'web-ui/components/layout';
 import { WithLocale } from '../types/locales';
 import createServerSideTranslations from '../utils/createServerSideTranslations';
 
@@ -12,12 +13,14 @@ function Index() {
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
       <Header2>{t('index')}</Header2>
-      <Link href="/hello/MyName">
-        <Button>{t('goToHelloPage')}</Button>
-      </Link>
-      <Link href="/users">
-        <Button>{t('goToUsersPage')}</Button>
-      </Link>
+      <Flex direction="column">
+        <Link href="/hello/MyName">
+          <Button>{t('goToHelloPage')}</Button>
+        </Link>
+        <Link href="/users">
+          <Button>{t('goToUsersPage')}</Button>
+        </Link>
+      </Flex>
     </>
   );
 }
