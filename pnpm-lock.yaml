@@ -140,7 +140,6 @@ importers:
       '@types/react': 18.0.17
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
-      eslint-plugin-i18n-json: ^4.0.0
       next: ^12.3.1
       next-i18next: ^12.1.0
       next-transpile-modules: 9.0.0
@@ -153,6 +152,7 @@ importers:
       trpc: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.3
+      web-locales: workspace:*
       web-ui: workspace:*
     dependencies:
       '@tanstack/react-query': 4.3.9_biqbaboplfbrettd7655fr4n2y
@@ -169,6 +169,7 @@ importers:
       superjson: 1.10.0
       theme: link:../../packages/theme
       trpc: link:../../packages/trpc
+      web-locales: link:../../packages/web-locales
       web-ui: link:../../packages/web-ui
     devDependencies:
       '@babel/core': 7.19.1
@@ -176,7 +177,6 @@ importers:
       '@types/react': 18.0.17
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
       next-transpile-modules: 9.0.0
       tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
@@ -314,6 +314,16 @@ importers:
 
   packages/tsconfig:
     specifiers: {}
+
+  packages/web-locales:
+    specifiers:
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      eslint-plugin-i18n-json: ^4.0.0
+    devDependencies:
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
 
   packages/web-ui:
     specifiers:

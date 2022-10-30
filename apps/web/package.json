@@ -5,12 +5,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "pnpm lint:code && pnpm lint:i18n",
-    "lint:fix": "pnpm lint:code:fix && pnpm lint:i18n:fix",
-    "lint:code": "next lint",
-    "lint:code:fix": "next lint --fix",
-    "lint:i18n": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js public/locales/",
-    "lint:i18n:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js public/locales/",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "start": "next start",
     "test": "jest"
   },
@@ -29,6 +25,7 @@
     "superjson": "^1.10.0",
     "theme": "workspace:*",
     "trpc": "workspace:*",
+    "web-locales": "workspace:*",
     "web-ui": "workspace:*"
   },
   "devDependencies": {
@@ -37,7 +34,6 @@
     "@types/react": "18.0.17",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "eslint-plugin-i18n-json": "^4.0.0",
     "next-transpile-modules": "9.0.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
