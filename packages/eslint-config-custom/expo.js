@@ -4,8 +4,6 @@ module.exports = {
     'import/ignore': ['react-native'],
   },
   rules: {
-    'no-undef': 'off',
-    'no-unused-vars': 'off',
     'import/no-unresolved': 'off',
   },
 };
