@@ -1,25 +1,30 @@
-import { Button } from 'web-ui/components/inputs';
-import { Header1, Header2, Body1 } from 'web-ui/components/typography';
-import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+import { useTranslation } from 'next-i18next';
+import { Header1, Header2, Body1 } from 'web-ui/components/typography';
+import type { WithLocale } from '../../types/locales';
 import { trpc } from '../../utils/trpc';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
+import createServerSideTranslations from '../../utils/createServerSideTranslations';
 
 type PathProps = {
   readonly name: string;
 };
 
 function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { switchMode } = useThemeContext();
-  const { data } = trpc.hello.single.useQuery({ name });
+  const { t } = useTranslation('hello');
+  const { data, isLoading, error } = trpc.hello.single.useQuery({ name });
 
   return (
     <>
-      <Header1>TreeView</Header1>
-      <Header2>Name</Header2>
-      <Body1>Page to test tRPC data, with query and static data</Body1>
-      <Body1>We got data: {data?.greeting}</Body1>
-      <Button onClick={switchMode}>Switch theme mode!</Button>
+      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header2>{t('helloName', { name })}</Header2>
+      <Body1>{t('pageToTest')}</Body1>
+      {isLoading ? (
+        <Body1>{t('loading', { ns: 'common' })}</Body1>
+      ) : (
+        <Body1>{t('weGotDataGreeting', { greeting: data?.greeting })}</Body1>
+      )}
+      {error && <Body1>{t('weGotError', { ns: 'common', error: JSON.stringify(error) })}</Body1>}
     </>
   );
 }
@@ -31,16 +36,18 @@ function getStaticPaths() {
   };
 }
 
-async function getStaticProps(context: GetStaticPropsContext<PathProps>) {
+// This is an example for fetching data server-side. Remove tRPC things if not needed (like a non-indexed web app page)
+async function getStaticProps({ params, locale }: WithLocale<GetStaticPropsContext<PathProps>>) {
   const ssg = createTrpcProxySSGHelpers();
 
-  const name = context.params?.name ?? 'TreeView';
+  const name = params?.name ?? 'TreeView';
   await ssg.hello.single.fetch({ name });
 
   return {
     props: {
       trpcState: ssg.dehydrate(),
       name,
+      ...(await createServerSideTranslations({ locale, namespaces: ['common', 'hello'] })),
     },
     revalidate: 1,
   };

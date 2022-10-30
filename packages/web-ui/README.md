@@ -2,6 +2,10 @@
 
 React component library and theming necessities for TreeView Web app.
 
+This package uses:
+
+- [`packages/theme`](../theme): Theme definitions
+
 ## Setup
 
 ```bash

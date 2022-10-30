@@ -25,6 +25,12 @@ Here's what we decided to use.
 - [Metro](https://facebook.github.io/metro)
 - [tsup](https://github.com/egoist/tsup)
 
+### Translations
+
+- [i18next](https://www.i18next.com)
+- [react-i18next](https://react.i18next.com)
+- [next-i18next](https://github.com/i18next/next-i18next)
+
 ### UI Library
 
 - [Storybook](https://storybook.js.org)

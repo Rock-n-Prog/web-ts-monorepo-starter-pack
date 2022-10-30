@@ -2,6 +2,10 @@
 
 React Native component library and theming necessities for TreeView Mobile app.
 
+This package uses:
+
+- [`packages/theme`](../theme): Theme definitions
+
 ## Setup
 
 ```bash

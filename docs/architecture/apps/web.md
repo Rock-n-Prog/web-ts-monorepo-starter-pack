@@ -17,12 +17,13 @@ TODO: How the frontend communicates with the backend
 
 For more info, see Next.js file structure.
 
-TODO: Review file structure
-
 - `components`: UI Components
-  - `common`: Components specific to app (not included in UI library)
+- `contexts`: Context providers
+- `hooks`: App hooks
 - `pages`: Pages, routing automatically handled by Next.js
   - `_app.page.tsx`: Application (wrapped by providers)
   - `/**/*.page.tsx`: Pages of the application
-- `server`: Server config and routes
+- `public`: Static files
+  - `locales`: Translations
+- `types`: Type definitions
 - `utils`: Utility values and functions

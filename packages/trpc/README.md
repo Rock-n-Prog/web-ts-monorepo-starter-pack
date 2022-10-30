@@ -2,6 +2,10 @@
 
 tRPC routes and context definitions for TreeView apps.
 
+This package uses:
+
+- [`packages/database`](../database): Prisma client and models definitions
+
 ## Setup
 
 ```bash

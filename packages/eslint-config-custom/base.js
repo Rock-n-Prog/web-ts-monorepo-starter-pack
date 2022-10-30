@@ -1,11 +1,14 @@
 module.exports = {
   plugins: ['functional'],
+  parser: '@typescript-eslint/parser',
   extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prefer-type-alias/recommended',
     'plugin:import/recommended',
     'plugin:functional/recommended',
     'plugin:functional/stylistic',
-    'eslint:recommended',
     'prettier',
     'turbo',
   ],
@@ -31,6 +34,7 @@ module.exports = {
       rules: {
         'functional/no-expression-statement': 'off',
         'functional/immutable-data': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],
