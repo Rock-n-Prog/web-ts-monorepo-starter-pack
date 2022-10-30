@@ -35,8 +35,8 @@ const ButtonTypography = css(
 );
 
 type VariantToStylesParams = {
-  theme: Theme;
-  disabled: boolean;
+  readonly theme: Theme;
+  readonly disabled: boolean;
 };
 
 const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {

@@ -21,4 +21,12 @@ pnpm lint
 
 # To fix lint
 pnpm lint:fix
+
+# For code-specific linting
+pnpm lint:code
+pnpm lint:code:fix
+
+# For styles-specific linting
+pnpm lint:styles
+pnpm lint:styles:fix
 ```
