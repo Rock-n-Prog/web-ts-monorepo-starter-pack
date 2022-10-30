@@ -1,4 +1,4 @@
-name: Format
+name: General
 
 on:
   workflow_dispatch:
