@@ -6,9 +6,8 @@
     "lint": "pnpm lint:code && pnpm lint:styles",
     "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
     "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:fix": "pnpm lint:code:fix && pnpm lint:styles:fix",
+    "lint:fix": "pnpm lint:code:fix",
     "lint:styles": "stylelint ./**/*.{js,jsx,ts,tsx}",
-    "lint:styles:fix": "stylelint --fix ./**/*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "storybook:smoke-test": "start-storybook --smoke-test"

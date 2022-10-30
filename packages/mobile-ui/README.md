@@ -28,5 +28,4 @@ pnpm lint:code:fix
 
 # For styles-specific linting
 pnpm lint:styles
-pnpm lint:styles:fix
 ```
