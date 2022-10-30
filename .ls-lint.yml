@@ -45,5 +45,6 @@ ignore:
   - packages/stylelint-config-custom/node_modules
   - packages/theme/node_modules
   - packages/trpc/node_modules
+  - packages/web-locales/node_modules
   - packages/web-ui/node_modules
   - packages/web-ui/storybook-static
