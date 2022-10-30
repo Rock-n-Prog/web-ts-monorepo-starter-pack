@@ -1,5 +1,6 @@
 module.exports = {
   plugins: ['functional'],
+  parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -33,6 +34,7 @@ module.exports = {
       rules: {
         'functional/no-expression-statement': 'off',
         'functional/immutable-data': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],
