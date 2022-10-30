@@ -19,6 +19,7 @@ const defaultUsers = [
       defaultUsers.map(user =>
         prisma.user.upsert({
           where: {
+            /* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
             email: user.email!,
           },
           update: {
