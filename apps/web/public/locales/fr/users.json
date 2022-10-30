@@ -1,4 +1,4 @@
 {
-  "users": "Utilisateurs",
-  "pageToTest": "Page pour tester des données via tRPC, venant de la base de données"
+  "pageToTest": "Page pour tester des données via tRPC, venant de la base de données",
+  "users": "Utilisateurs"
 }

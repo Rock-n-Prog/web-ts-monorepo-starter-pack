@@ -77,10 +77,6 @@ Here's what we decided to use.
 - [Docker](https://www.docker.com)
 - [Docker Compose](https://docs.docker.com/compose)
 
-### Testing
-
-- [Jest](https://jestjs.io)
-
 ### Styling
 
 - [styled-components](https://styled-components.com)

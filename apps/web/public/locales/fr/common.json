@@ -1,7 +1,7 @@
 {
-  "treeView": "TreeView",
   "loading": "Tapeu...",
-  "weGotError": "On a une erreur: {{error}}",
+  "switchLocale": "Changer la locale!",
   "switchThemeMode": "Changer le thème!",
-  "switchLocale": "Changer la locale!"
+  "treeView": "TreeView",
+  "weGotError": "On a une erreur: {{error}}"
 }

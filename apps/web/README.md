@@ -37,10 +37,12 @@ pnpm lint
 
 # To fix lint
 pnpm lint:fix
-```
 
-### Test
+# For code-specific linting
+pnpm lint:code
+pnpm lint:code:fix
 
-```bash
-pnpm test
+# For i18n-specific linting
+pnpm lint:i18n
+pnpm lint:i18n:fix
 ```
