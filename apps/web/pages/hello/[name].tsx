@@ -18,7 +18,7 @@ function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
       <Header2>{t('helloName', { name })}</Header2>
-      <Body1>{t('pageToTest')}</Body1>
+      <Body1>{t('pageToTestTrpcDataWithQueryAndStaticData')}</Body1>
       {isLoading ? (
         <Body1>{t('loading', { ns: 'common' })}</Body1>
       ) : (

@@ -1,4 +1,7 @@
 {
-  "pageToTest": "Page to test tRPC data, fetched from database",
+  "addUser": "Add User",
+  "goToAddUserPage": "Go to add user page!",
+  "pageToTestTrpcDataFetchedFromDatabase": "Page to test tRPC data, fetched from database",
+  "pageToTestTrpcDataWithMutation": "Page to test tRPC data, with mutation",
   "users": "Users"
 }
