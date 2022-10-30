@@ -2,11 +2,11 @@ import styled, { css } from 'styled-components';
 import type { Theme } from '../../styles/theme';
 
 const breakpointsToMaxWidth: Record<keyof Theme['breakpoints'], string> = {
-  s: '540px',
-  m: '720px',
-  l: '960px',
-  xl: '1140px',
-  xxl: '1320px',
+  s: '33.75rem', // 540px
+  m: '45rem', // 720px
+  l: '60rem', // 960px
+  xl: '71.25rem', // 1140px
+  xxl: '82.5rem', // 1320px
 };
 
 const Container = styled.div<{ readonly theme: Theme }>(
