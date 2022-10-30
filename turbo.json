@@ -6,15 +6,18 @@
       "outputs": ["dist/**"]
     },
     "web#build": {
-      "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$RENDER_INTERNAL_HOSTNAME", "$PORT"],
-      "outputs": [".next/**"]
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"],
+      "env": ["NODE_ENV", "VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "PORT"]
     },
     "mobile#build": {
-      "dependsOn": ["^build", "$NODE_ENV", "$VERCEL_URL", "$PORT"],
-      "outputs": ["node_modules/.cache/metro/**"]
+      "dependsOn": ["^build"],
+      "outputs": ["node_modules/.cache/metro/**"],
+      "env": ["NODE_ENV", "VERCEL_URL", "PORT"]
     },
     "database#db:migrate:*": {
-      "env": ["DATABASE_URL"]
+      "env": ["DATABASE_URL"],
+      "dependsOn": []
     },
     "lint": {
       "outputs": []
