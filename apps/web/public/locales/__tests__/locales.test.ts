@@ -13,10 +13,13 @@ describe('locales', () => {
     });
 
     describe('Given all namespaces', () => {
-      const namespaceFiles = localeDirectories.reduce<Record<string, readonly string[]>>((acc, locale) => ({
-        [locale]: fs.readdirSync(`public/locales/${locale}`),
-        ...acc,
-      }), {});
+      const namespaceFiles = localeDirectories.reduce<Record<string, readonly string[]>>(
+        (acc, locale) => ({
+          [locale]: fs.readdirSync(`public/locales/${locale}`),
+          ...acc,
+        }),
+        {},
+      );
 
       describe('When checking that all namespaces are listed in types', () => {
         test('Then all namespaces are listed in types', () => {
@@ -30,15 +33,12 @@ describe('locales', () => {
         });
       });
 
-      // TODO: Might not work for nested keys
       describe('When checking that all namespaces have the same translation keys', () => {
         const keys = Object.keys(namespaceFiles).reduce<Record<string, Record<string, readonly string[]>>>(
           (accLocales, locale) => ({
             [locale]: namespaceFiles[locale].reduce<Record<string, readonly string[]>>(
               (accNamespaces, namespace) => ({
-                [namespace]: Object.keys(
-                  JSON.parse(fs.readFileSync(`public/locales/${locale}/${namespace}`, 'utf8')),
-                ),
+                [namespace]: Object.keys(JSON.parse(fs.readFileSync(`public/locales/${locale}/${namespace}`, 'utf8'))),
                 ...accNamespaces,
               }),
               {},

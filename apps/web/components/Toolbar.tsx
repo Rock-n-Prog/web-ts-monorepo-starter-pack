@@ -3,7 +3,6 @@ import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { useTranslation } from 'next-i18next';
 import { useTranslationContext } from '../hooks/useTranslationContext';
 
-// TODO: Enhance Toolbar a bit
 function Toolbar() {
   const { switchMode } = useThemeContext();
   const { t } = useTranslation();

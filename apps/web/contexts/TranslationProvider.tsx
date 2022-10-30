@@ -17,7 +17,6 @@ function TranslationProvider({ children }: React.PropsWithChildren) {
     i18n.changeLanguage(locale).then(() => push(asPath, asPath, { locale }));
   }
 
-  // TODO: On first reload, this seems to be flaky
   React.useEffect(() => {
     // Allowing conditional logic so this only triggers when needed
     // eslint-disable-next-line functional/no-conditional-statement
