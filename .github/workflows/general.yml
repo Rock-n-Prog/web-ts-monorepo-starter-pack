@@ -33,8 +33,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --ignore-scripts
 
-      - name: Format
-        run: pnpm format
+      - name: Install ls-lint
+        run: pnpm add -g @ls-lint/ls-lint
 
       - name: Lint file names
         run: pnpm lint:ls
+
+      - name: Format
+        run: pnpm format

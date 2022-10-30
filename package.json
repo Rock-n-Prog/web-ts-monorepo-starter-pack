@@ -38,7 +38,7 @@
     "turbo": "^1.5.1"
   },
   "lint-staged": {
-    "**": [
+    "*": [
       "ls-lint"
     ],
     "./*.{js,jsx,ts,tsx}": [
