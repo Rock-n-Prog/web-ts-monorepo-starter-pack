@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@ls-lint/ls-lint': ^1.11.2
       eslint: ^8.23.1
       eslint-config-custom: workspace:*
       husky: ^8.0.1
@@ -11,6 +12,7 @@ importers:
       prettier: ^2.7.1
       turbo: ^1.5.1
     devDependencies:
+      '@ls-lint/ls-lint': 1.11.2
       eslint: 8.23.1
       eslint-config-custom: link:packages/eslint-config-custom
       husky: 8.0.1
@@ -2707,6 +2709,13 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+
+  /@ls-lint/ls-lint/1.11.2:
+    resolution: {integrity: sha512-kX+CCjgNz+NHCaOcFyJLSBLRgAoyOxN18QFLpgucz5ILvbr60BGjwKaoPYTv/rBV/77L+Oz82lpP24mzJ2wGsQ==}
+    cpu: [x64, arm64]
+    os: [darwin, linux, win32]
+    hasBin: true
+    dev: true
 
   /@mdx-js/mdx/1.6.22:
     resolution: {integrity: sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA==}

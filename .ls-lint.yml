@@ -1,0 +1,49 @@
+ls:
+  # Regex for dotfiles
+  .dir: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
+  # Regex for dotfiles
+  .js: camelCase | kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
+  .jsx: PascalCase
+  .config.js: kebab-case
+  # Regex for thingsLikeTHISYouKnow (ex: URL, SSG, ...)
+  .ts: camelCase | PascalCase | regex:[a-zA-Z]+([A-Za-z]+)+$
+  .tsx: PascalCase
+  .d.ts: kebab-case
+  .stories.tsx: PascalCase
+  # Regex for dotfiles
+  .yml: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
+  .md: kebab-case | SCREAMING_SNAKE_CASE
+  .json: kebab-case
+
+  apps/web/pages:
+    # Regex for _app.tsx
+    # Regex for path props (ex: [name].tsx)
+    .tsx: kebab-case | regex:_app | regex:\[[a-z]+\]
+
+  packages/web-ui:
+    # Regex for dotfiles
+    # Regex for config dirs (ex: __stories__)
+    .dir: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+) | regex:__[a-zA-Z]+__
+
+  .github:
+    .dir: lowercase | SCREAMING_SNAKE_CASE
+
+ignore:
+  - .git
+  - .husky
+  - .idea
+  - node_modules
+  - apps/web/.next
+  - apps/web/node_modules
+  - apps/mobile/.expo
+  - apps/mobile/node_modules
+  - apps/mobile-storybook/node_modules
+  - packages/database/node_modules
+  - packages/database/prisma/migrations
+  - packages/eslint-config-custom/node_modules
+  - packages/mobile-ui/node_modules
+  - packages/stylelint-config-custom/node_modules
+  - packages/theme/node_modules
+  - packages/trpc/node_modules
+  - packages/web-ui/node_modules
+  - packages/web-ui/storybook-static
