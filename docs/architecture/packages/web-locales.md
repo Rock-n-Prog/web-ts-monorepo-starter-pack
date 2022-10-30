@@ -10,8 +10,6 @@ This library only contains JSON files for translations. File structure explains 
 
 ## File structure
 
-For more info, see React file structure.
-
 - `translations`: All locales translations
   - `en`: Translations in english
   - `fr`: Translations in french
