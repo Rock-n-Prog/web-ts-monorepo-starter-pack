@@ -1,10 +1,10 @@
 import { t } from '../config/trpc';
-import { addUserInput } from '../schemas/users';
+import { addUserInputSchema } from '../schemas';
 
 const usersRouter = t.router({
   all: t.procedure.query(({ ctx: { prisma } }) => prisma.user.findMany()),
   add: t.procedure
-    .input(addUserInput)
+    .input(addUserInputSchema)
     .mutation(({ ctx: { prisma }, input }) =>
       prisma.user.create({
         data: input

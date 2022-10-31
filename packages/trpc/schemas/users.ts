@@ -1,8 +1,11 @@
 import { z } from 'zod';
 
-const addUserInput = z.object({
+const addUserInputSchema = z.object({
   name: z.string(),
   email: z.string().email(),
 });
 
-export { addUserInput };
+type AddUserInput = z.infer<typeof addUserInputSchema>;
+
+export type {AddUserInput };
+export { addUserInputSchema };

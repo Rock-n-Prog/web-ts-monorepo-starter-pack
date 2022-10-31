@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-const helloInput = z.object({
+const helloInputSchema = z.object({
   name: z.string().nullish(),
 });
 
-export { helloInput };
+export { helloInputSchema };
