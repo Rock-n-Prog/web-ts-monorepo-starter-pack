@@ -22,7 +22,7 @@ const WithError = Template.bind({}) as any;
 WithError.args = {
   label: 'Label',
   placeholder: 'Placeholder',
-  error: 'Some error message'
+  error: 'Some error message',
 };
 
 export default config;

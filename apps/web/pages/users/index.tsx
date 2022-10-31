@@ -1,5 +1,6 @@
-import { useTranslation } from 'next-i18next';
+import * as React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
 import { Flex } from 'web-ui/components/layout';
 import { Button } from 'web-ui/components/inputs';

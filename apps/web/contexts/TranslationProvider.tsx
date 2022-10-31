@@ -5,6 +5,7 @@ import type { Locale } from '../types/locales';
 import { defaultLocale } from '../types/locales';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
+// TODO: Should this be in `web-locales`?
 function TranslationProvider({ children }: React.PropsWithChildren) {
   const { i18n } = useTranslation();
   const { push, asPath } = useRouter();

@@ -1,13 +1,13 @@
+import * as React from 'react';
 import { useTranslation } from 'next-i18next';
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
 import { TextField } from 'web-ui/components/forms';
 import { Button } from 'web-ui/components/inputs';
-import { Simulate } from "react-dom/test-utils";
-import { Flex } from "web-ui/components/layout";
+import { Flex } from 'web-ui/components/layout';
 import { trpc } from '../../../utils/trpc';
 import createServerSideTranslations from '../../../utils/createServerSideTranslations';
 import type { WithLocale } from '../../../types/locales';
@@ -23,10 +23,21 @@ type UserFormProps = {
 function UserForm({ onSubmit, submitText }: UserFormProps) {
   // TODO: 'form' prefix?
   const { t } = useTranslation('users');
-  const { handleSubmit, control, formState: { isDirty, isValid } } = useForm<AddUserInput>({
+  const {
+    handleSubmit,
+    control,
+    formState: { isDirty, isValid },
+  } = useForm<AddUserInput>({
+    // TODO: mode onChange, show errors on blur?
+    mode: 'onChange',
     resolver: zodResolver(addUserInputSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+    },
   });
 
+  // TODO: Fix TS errors (label and control)
   // TODO: Add translated error messages
   // TODO: Wrap TextField with useController (create TextInput vs TextField)
   return (
@@ -34,10 +45,12 @@ function UserForm({ onSubmit, submitText }: UserFormProps) {
       <Flex direction="column">
         <TextField label={t('form.name')} control={control} name="name" />
         <TextField label={t('form.email')} control={control} name="email" />
-        <Button type="submit" disabled={!isDirty || !isValid}>{submitText}</Button>
+        <Button type="submit" disabled={!isDirty || !isValid}>
+          {submitText}
+        </Button>
       </Flex>
     </form>
-  )
+  );
 }
 
 // TODO: Move to its own file
