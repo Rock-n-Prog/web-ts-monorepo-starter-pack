@@ -1,15 +1,15 @@
 import * as React from 'react';
-import type { TextFieldProps } from '../TextField';
-import { TextField } from '../TextField';
+import type { TextFieldProps } from '../TextInput';
+import { TextInput } from '../TextInput';
 
 const config = {
-  title: 'Inputs/TextField',
-  component: TextField,
+  title: 'Inputs/TextInput',
+  component: TextInput,
   argTypes: { onClick: { action: 'clicked' }, onBlur: { action: 'blurred' } },
 };
 
 function Template(props: TextFieldProps) {
-  return <TextField {...props} />;
+  return <TextInput {...props} />;
 }
 
 const Basic = Template.bind({}) as any;

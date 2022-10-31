@@ -7,5 +7,5 @@ const addUserInputSchema = z.object({
 
 type AddUserInput = z.infer<typeof addUserInputSchema>;
 
-export type {AddUserInput };
+export type { AddUserInput };
 export { addUserInputSchema };

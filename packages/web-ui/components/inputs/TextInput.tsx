@@ -4,12 +4,12 @@ import { InputError, Label } from "../typography";
 import { Flex } from '../layout';
 import type { Theme } from "../../styles/theme";
 
-type TextFieldProps = {
+type TextInputProps = {
   readonly label: string;
   readonly error?: string;
 } & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'id'>;
 
-function TextField({ label, error, ...otherProps }: TextFieldProps) {
+function TextInput({ label, error, ...otherProps }: TextInputProps) {
   const id = React.useId();
 
   // TODO: Maybe no gap in Flex?
@@ -52,5 +52,5 @@ const StyledInput = styled.input(
   `,
 );
 
-export type { TextFieldProps };
-export { TextField };
+export type { TextInputProps };
+export { TextInput };

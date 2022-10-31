@@ -3,5 +3,10 @@
   "goToAddUserPage": "Go to add user page!",
   "pageToTestTrpcDataFetchedFromDatabase": "Page to test tRPC data, fetched from database",
   "pageToTestTrpcDataWithMutation": "Page to test tRPC data, with mutation",
-  "users": "Users"
+  "users": "Users",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "add": "Add"
+  }
 }
