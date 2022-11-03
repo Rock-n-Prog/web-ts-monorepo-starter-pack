@@ -24,6 +24,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   },
 );
 
+// TODO: Fix this eslint rule
+// eslint-disable-next-line functional/immutable-data
+Button.displayName = 'Button';
+
 const ButtonTypography = css(
   ({ theme }: { readonly theme: Theme }) => css`
     font-family: sans-serif;
