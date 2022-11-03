@@ -18,6 +18,13 @@ Basic.args = {
   placeholder: 'Placeholder',
 };
 
+const Required = Template.bind({}) as any;
+Required.args = {
+  label: 'Label',
+  placeholder: 'Placeholder',
+  required: true,
+};
+
 const WithError = Template.bind({}) as any;
 WithError.args = {
   label: 'Label',
@@ -26,4 +33,4 @@ WithError.args = {
 };
 
 export default config;
-export { Basic, WithError };
+export { Basic, Required, WithError };

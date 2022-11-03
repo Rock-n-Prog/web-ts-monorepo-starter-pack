@@ -7,21 +7,22 @@ import type { Theme } from '../../styles/theme';
 type TextInputProps = {
   readonly label: string;
   readonly error?: string;
+  readonly required?: boolean;
 } & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'id'>;
 
-const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({ label, error, ...otherProps }, ref) => {
-  const id = React.useId();
+const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
+  ({ label, error, required = false, ...otherProps }, ref) => {
+    const id = React.useId();
 
-  // TODO: Error message should be on TextField, not TextInput
-  // TODO: Maybe no gap in Flex?
-  return (
-    <Flex direction="column">
-      <Label htmlFor={id}>{label}</Label>
-      <StyledInput ref={ref} id={id} type="text" $isValid={!!error} {...otherProps} />
-      {error && <InputError>{error}</InputError>}
-    </Flex>
-  );
-});
+    return (
+      <Flex direction="column">
+        <Label htmlFor={id}>{required ? `${label}*` : label}</Label>
+        <StyledInput ref={ref} id={id} type="text" $isValid={!!error} {...otherProps} />
+        {error && <InputError>{error}</InputError>}
+      </Flex>
+    );
+  },
+);
 
 // TODO: Solve this eslint problem
 // eslint-disable-next-line functional/immutable-data
@@ -47,6 +48,7 @@ const StyledInput = styled.input(
 
     ::placeholder {
       color: ${theme.colors.onBackground};
+
       // TODO: Place opacity in emphasis.ts?
       opacity: 0.3;
     }

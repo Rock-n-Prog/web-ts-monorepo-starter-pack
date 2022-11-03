@@ -21,8 +21,7 @@ type UserFormProps = {
 
 // TODO: Move to its own file
 function UserForm({ onSubmit, submitText }: UserFormProps) {
-  // TODO: 'form' prefix?
-  const { t } = useTranslation('users');
+  const { t } = useTranslation('users', { keyPrefix: 'form' });
   const {
     handleSubmit,
     control,
@@ -37,14 +36,12 @@ function UserForm({ onSubmit, submitText }: UserFormProps) {
     },
   });
 
-  // TODO: Fix TS errors (label and control)
   // TODO: Add translated error messages
-  // TODO: Wrap TextField with useController (create TextInput vs TextField)
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex direction="column">
-        <TextField label={t('form.name')} control={control} name="name" />
-        <TextField label={t('form.email')} control={control} name="email" />
+        <TextField label={t('name')} control={control} name="name" />
+        <TextField label={t('email')} control={control} name="email" />
         <Button type="submit" disabled={!isDirty || !isValid}>
           {submitText}
         </Button>
@@ -65,7 +62,6 @@ function AddUserForm() {
 function AddUser() {
   const { t } = useTranslation('users');
 
-  // TODO: Create same page and form in mobile app
   return (
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>

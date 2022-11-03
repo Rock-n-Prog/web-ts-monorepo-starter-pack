@@ -7,7 +7,6 @@ type TextFieldProps<
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
 > = TextInputProps & UseControllerProps<TFieldValues, TName>;
 
-// TODO: Stories?
 function TextField<
   TFieldValues extends FieldValues = FieldValues,
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
