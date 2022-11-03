@@ -2,8 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Typography } from '../typography';
 import type { Theme } from '../../styles/theme';
-
-type Severity = 'info' | 'success' | 'warning' | 'error';
+import type { Severity } from '../../types/severity';
 
 type AlertProps = {
   readonly text: string;
