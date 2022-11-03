@@ -7,31 +7,37 @@ type SnackbarRequest = {
   readonly severity: Severity;
 }
 
+type SnackbarRequestWithKey = {
+  readonly key: number;
+} & SnackbarRequest;
+
 const snackbarDuration = 3000; // ms
 
 // TODO: Change display, put snackbars at the bottom and with display absolute
 function SnackbarProvider({ children }: React.PropsWithChildren) {
-  const [requests, setRequests] = React.useState<readonly SnackbarRequest[]>([]);
+  const [requests, setRequests] = React.useState<readonly SnackbarRequestWithKey[]>([]);
+  const [nextKey, setNextKey] = React.useState(1);
 
   function show(request: SnackbarRequest) {
-    setRequests([...requests, request]);
+    setRequests([...requests, { key: nextKey, ...request }]);
+    setNextKey(nextKey + 1);
   }
 
   React.useEffect(() => {
-    // TODO: Doesn't properly remove last requests when spammed
-    console.log(requests);
+    const keyToRemove = requests[0]?.key;
     const timeout = setTimeout(() => {
-      setRequests(requests.slice(1));
+      setRequests(requests.filter((request) => request.key !== keyToRemove));
     }, snackbarDuration);
 
     return () => clearTimeout(timeout);
   }, [requests]);
 
-  // TODO: Reverse list
+  // TODO: Spacing (gap)
+  // TODO: Animation when snackbars are added (shift up previous)
   return (
     <SnackbarContext.Provider value={{ show }}>
       {children}
-      {requests.map((request, index) => <Snackbar key={index} duration={snackbarDuration} {...request} />)}
+      {requests.map((request) => <Snackbar duration={snackbarDuration} {...request} />)}
     </SnackbarContext.Provider>
   );
 }

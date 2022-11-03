@@ -29,8 +29,15 @@ const SnackbarContainer = styled.div<SnackbarContainerProps>(
       90% {
         opacity: 1;
       }
+      99% {
+        // TODO: Weird hack to avoid removed snackbars taking space
+        width: auto;
+        height: auto;
+      }
       100% {
         opacity: 0;
+        width: 0;
+        height: 0;
       }
     }
   `,
