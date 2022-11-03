@@ -20,7 +20,7 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   const [requests, setRequests] = React.useState<readonly SnackbarRequestWithKey[]>([]);
   const [nextKey, setNextKey] = React.useState(1);
 
-  function show(request: SnackbarRequest) {
+  function showSnackbar(request: SnackbarRequest) {
     setRequests([...requests, { key: nextKey, ...request }]);
     setNextKey(nextKey + 1);
   }
@@ -35,7 +35,7 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   }, [requests]);
 
   return (
-    <SnackbarContext.Provider value={{ show }}>
+    <SnackbarContext.Provider value={{ showSnackbar }}>
       <SnackbarProviderContainer>
         {children}
         <SnackbarListContainer>
@@ -64,7 +64,7 @@ const SnackbarListContainer = styled.div<{ readonly theme: Theme}>(
 );
 
 const SnackbarContext = React.createContext<{
-  readonly show: (request: SnackbarRequest) => void;
-}>({ show: () => void 0 });
+  readonly showSnackbar: (request: SnackbarRequest) => void;
+}>({ showSnackbar: () => void 0 });
 
 export { SnackbarContext, SnackbarProvider };

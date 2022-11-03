@@ -6,7 +6,6 @@ type SnackbarProps = {
   readonly duration: number; // ms
 } & AlertProps;
 
-// TODO: Handle duration?
 function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   return <SnackbarContainer $duration={duration}><Alert {...alertProps} /></SnackbarContainer>;
 }
