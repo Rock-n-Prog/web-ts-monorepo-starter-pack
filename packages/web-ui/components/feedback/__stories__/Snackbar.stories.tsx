@@ -11,9 +11,11 @@ const config = {
 
 function InnerTemplate(props: AlertProps) {
   const { show } = useSnackbarContext();
+  const [number, setNumber] = React.useState(1);
 
   function handleClick() {
-    show(props);
+    show({ ...props, text: `${props.text} - ${number}`});
+    setNumber(number + 1);
   }
 
   return <Button onClick={handleClick}>Show snackbar</Button>;

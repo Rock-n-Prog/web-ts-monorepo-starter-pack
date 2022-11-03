@@ -5,3 +5,5 @@ import { Alert, AlertProps } from "./Alert";
 function Snackbar(props: AlertProps) {
   return <Alert {...props} />;
 }
+
+export { Snackbar };
