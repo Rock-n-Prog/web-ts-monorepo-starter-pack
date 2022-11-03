@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { CustomTypeOptions } from "react-i18next";
 import { useTranslation } from 'next-i18next';
 import { FieldPath, FieldValues, useController, UseControllerProps } from 'react-hook-form';
 import { TextInput, TextInputProps } from 'web-ui/components/inputs';
@@ -13,7 +12,10 @@ function TextField<
   TFieldValues extends FieldValues = FieldValues,
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
 >({ label, ...controllerProps }: TextFieldProps<TFieldValues, TName>) {
-  const { field, fieldState: { isTouched, error } } = useController(controllerProps);
+  const {
+    field,
+    fieldState: { isTouched, error },
+  } = useController(controllerProps);
   const { t } = useTranslation('forms');
 
   // TODO: This is dumb, but removes need to type-check error message keys. It should be fixed.
