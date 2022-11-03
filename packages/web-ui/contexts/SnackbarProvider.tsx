@@ -1,6 +1,8 @@
 import * as React from 'react';
+import styled, { css } from "styled-components";
 import type { Severity } from '../types/severity';
 import { Snackbar } from '../components/feedback';
+import { Theme } from '../styles/theme';
 
 type SnackbarRequest = {
   readonly text: string;
@@ -32,15 +34,34 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
     return () => clearTimeout(timeout);
   }, [requests]);
 
-  // TODO: Spacing (gap)
-  // TODO: Animation when snackbars are added (shift up previous)
   return (
     <SnackbarContext.Provider value={{ show }}>
-      {children}
-      {requests.map((request) => <Snackbar duration={snackbarDuration} {...request} />)}
+      <SnackbarProviderContainer>
+        {children}
+        <SnackbarListContainer>
+          {requests.map((request) => <Snackbar duration={snackbarDuration} {...request} />)}
+        </SnackbarListContainer>
+      </SnackbarProviderContainer>
     </SnackbarContext.Provider>
   );
 }
+
+const SnackbarProviderContainer = styled.div`
+  // TODO: In storybook, renders scrollbar
+  height: 100vh;
+  position: relative;
+`;
+
+const SnackbarListContainer = styled.div<{ readonly theme: Theme}>(
+  ({ theme }: { readonly theme: Theme }) => css`
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: ${theme.spacing.xs};
+  `,
+);
 
 const SnackbarContext = React.createContext<{
   readonly show: (request: SnackbarRequest) => void;
