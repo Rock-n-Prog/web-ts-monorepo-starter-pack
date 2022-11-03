@@ -5,7 +5,7 @@ import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
 import { Container } from 'web-ui/components/layout';
 import { TranslationProvider } from '../contexts/TranslationProvider';
 import { trpc } from '../utils/trpc';
-import { Toolbar } from '../components/Toolbar';
+import { Toolbar } from '../components/dev-tools/Toolbar';
 
 function App({ Component, pageProps }: AppProps) {
   return (
