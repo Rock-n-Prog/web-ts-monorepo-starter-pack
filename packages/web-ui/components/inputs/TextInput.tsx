@@ -18,7 +18,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       <Flex direction="column">
         <Label htmlFor={id}>{required ? `${label}*` : label}</Label>
         <StyledInput ref={ref} id={id} type="text" $isValid={!!error} {...otherProps} />
-        {error && <InputError>{error}</InputError>}
+        <InputError>{error}</InputError>
       </Flex>
     );
   },

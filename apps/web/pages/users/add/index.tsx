@@ -5,12 +5,12 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
-import { TextField } from 'web-ui/components/forms';
 import { Button } from 'web-ui/components/inputs';
 import { Flex } from 'web-ui/components/layout';
 import { trpc } from '../../../utils/trpc';
 import createServerSideTranslations from '../../../utils/createServerSideTranslations';
 import type { WithLocale } from '../../../types/locales';
+import { TextField } from '../../../components/forms';
 
 // TODO: Remove this eslint rule
 // eslint-disable-next-line functional/no-mixed-type
@@ -27,7 +27,6 @@ function UserForm({ onSubmit, submitText }: UserFormProps) {
     control,
     formState: { isDirty, isValid },
   } = useForm<AddUserInput>({
-    // TODO: mode onChange, show errors on blur?
     mode: 'onChange',
     resolver: zodResolver(addUserInputSchema),
     defaultValues: {
@@ -36,7 +35,6 @@ function UserForm({ onSubmit, submitText }: UserFormProps) {
     },
   });
 
-  // TODO: Add translated error messages
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex direction="column">
@@ -75,7 +73,7 @@ function AddUser() {
 async function getStaticProps({ locale }: WithLocale) {
   return {
     props: {
-      ...(await createServerSideTranslations({ locale, namespaces: ['common', 'users'] })),
+      ...(await createServerSideTranslations({ locale, namespaces: ['common', 'users', 'forms'] })),
     },
     revalidate: 1,
   };
