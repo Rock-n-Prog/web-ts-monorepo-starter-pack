@@ -7,7 +7,7 @@ type SnackbarRequest = {
   readonly severity: Severity;
 }
 
-const snackbarDuration = 1000; // ms
+const snackbarDuration = 3000; // ms
 
 // TODO: Change display, put snackbars at the bottom and with display absolute
 function SnackbarProvider({ children }: React.PropsWithChildren) {
@@ -18,6 +18,8 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   }
 
   React.useEffect(() => {
+    // TODO: Doesn't properly remove last requests when spammed
+    console.log(requests);
     const timeout = setTimeout(() => {
       setRequests(requests.slice(1));
     }, snackbarDuration);
@@ -29,7 +31,7 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   return (
     <SnackbarContext.Provider value={{ show }}>
       {children}
-      {[...requests].reverse().map((request, index) => <Snackbar key={index} {...request} />)}
+      {requests.map((request, index) => <Snackbar key={index} duration={snackbarDuration} {...request} />)}
     </SnackbarContext.Provider>
   );
 }
