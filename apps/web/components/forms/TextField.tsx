@@ -27,7 +27,6 @@ function TextField<
 
   const errorMessage = isTouched && error ? getErrorMessage(error.message) : undefined;
 
-  // TODO: Should it be named TextInput.errorMessage?
   return <TextInput label={label} error={errorMessage} {...field} />;
 }
 

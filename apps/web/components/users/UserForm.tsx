@@ -8,8 +8,6 @@ import { Button } from 'web-ui/components/inputs';
 import { Flex } from 'web-ui/components/layout';
 import { TextField } from '../forms';
 
-// TODO: Remove this eslint rule
-// eslint-disable-next-line functional/no-mixed-type
 type UserFormProps = {
   readonly onSubmit: (input: AddUserInput) => void;
   readonly submitText: string;

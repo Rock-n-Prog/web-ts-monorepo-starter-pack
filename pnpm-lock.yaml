@@ -344,7 +344,6 @@ importers:
       eslint-config-custom: workspace:*
       react: ^18.2.0
       react-dom: 18.2.0
-      react-hook-form: ^7.38.0
       react-is: ^18.2.0
       require-from-string: ^2.0.2
       storybook-dark-mode: ^1.1.2
@@ -359,7 +358,6 @@ importers:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-hook-form: 7.38.0_react@18.2.0
       react-is: 18.2.0
       styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
       styled-theming: 2.2.0

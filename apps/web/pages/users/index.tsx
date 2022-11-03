@@ -9,7 +9,6 @@ import { trpc } from '../../utils/trpc';
 import createServerSideTranslations from '../../utils/createServerSideTranslations';
 import { WithLocale } from '../../types/locales';
 
-// TODO: Page not working anymore?
 function Users() {
   const { t } = useTranslation('users');
   const { data } = trpc.users.all.useQuery();
