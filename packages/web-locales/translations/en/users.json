@@ -3,7 +3,8 @@
   "form": {
     "add": "Add",
     "email": "Email",
-    "name": "Name"
+    "name": "Name",
+    "newUserAdded": "New user added!"
   },
   "goToAddUserPage": "Go to add user page!",
   "pageToTestTrpcDataFetchedFromDatabase": "Page to test tRPC data, fetched from database",

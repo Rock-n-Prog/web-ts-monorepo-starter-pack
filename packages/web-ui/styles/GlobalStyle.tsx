@@ -10,10 +10,21 @@ const GlobalStyle = createGlobalStyle(
       font-family: sans-serif;
       background-color: ${theme.colors.background};
     }
+
+    html {
+      min-height: 100%;
+      position: relative;
+    }
+
+    body {
+      height: 100%;
+    }
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
     * {
       box-sizing: border-box;
     }

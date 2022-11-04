@@ -5,28 +5,15 @@ import { trpc } from '../../utils/trpc';
 import { UserForm } from './UserForm';
 
 function AddUserForm() {
-  // TODO: Getting users.add is not a mutation...?
-  const { mutate, error, isSuccess } = trpc.users.add.useMutation();
   const { showSnackbar } = useSnackbarContext();
-  const { t } = useTranslation('users');
+  const { t } = useTranslation('users', { keyPrefix: 'form' });
+  // TODO: Getting users.add is not a mutation...?
+  const { mutate } = trpc.users.add.useMutation({
+    onSuccess: () => showSnackbar({ text: t('newUserAdded'), severity: 'success' }),
+    onError: error => showSnackbar({ text: error.message, severity: 'error' }),
+  });
 
-  // TODO: Test this
-  React.useEffect(() => {
-    if (error) {
-      // TODO: Translate text
-      showSnackbar({ text: error.message, severity: 'error' });
-    }
-  }, [showSnackbar, error]);
-
-  // TODO: Test this
-  React.useEffect(() => {
-    if (isSuccess) {
-      // TODO: Translate text
-      showSnackbar({ text: 'New user added!', severity: 'success' });
-    }
-  }, [showSnackbar, isSuccess]);
-
-  return <UserForm onSubmit={mutate} submitText={t('form.add')} />;
+  return <UserForm onSubmit={mutate} submitText={t('add')} />;
 }
 
 export { AddUserForm };

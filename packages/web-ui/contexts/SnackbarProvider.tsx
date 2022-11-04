@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 import type { Severity } from '../types/severity';
 import { Snackbar } from '../components/feedback';
 import { Theme } from '../styles/theme';
@@ -7,13 +7,18 @@ import { Theme } from '../styles/theme';
 type SnackbarRequest = {
   readonly text: string;
   readonly severity: Severity;
-}
+};
 
 type SnackbarRequestWithKey = {
   readonly key: number;
 } & SnackbarRequest;
 
-const snackbarDuration = 3000; // ms
+const snackbarDuration = 5000; // ms
+const errorSnackbarDuration = 10000; // ms
+
+function getDuration(request: SnackbarRequest) {
+  return request?.severity === 'error' ? errorSnackbarDuration : snackbarDuration;
+}
 
 // TODO: Change display, put snackbars at the bottom and with display absolute
 function SnackbarProvider({ children }: React.PropsWithChildren) {
@@ -26,10 +31,10 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   }
 
   React.useEffect(() => {
-    const keyToRemove = requests[0]?.key;
+    const requestToRemove = requests[0];
     const timeout = setTimeout(() => {
-      setRequests(requests.filter((request) => request.key !== keyToRemove));
-    }, snackbarDuration);
+      setRequests(requests.filter(request => request.key !== requestToRemove.key));
+    }, getDuration(requestToRemove));
 
     return () => clearTimeout(timeout);
   }, [requests]);
@@ -39,7 +44,9 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
       <SnackbarProviderContainer>
         {children}
         <SnackbarListContainer>
-          {requests.map((request) => <Snackbar duration={snackbarDuration} {...request} />)}
+          {requests.map(request => (
+            <Snackbar duration={getDuration(request)} {...request} />
+          ))}
         </SnackbarListContainer>
       </SnackbarProviderContainer>
     </SnackbarContext.Provider>
@@ -47,19 +54,23 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
 }
 
 const SnackbarProviderContainer = styled.div`
-  // TODO: In storybook, renders scrollbar
-  height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
-const SnackbarListContainer = styled.div<{ readonly theme: Theme}>(
+const SnackbarListContainer = styled.div<{ readonly theme: Theme }>(
   ({ theme }: { readonly theme: Theme }) => css`
     bottom: 0;
     left: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     gap: ${theme.spacing.xs};
+    margin: ${theme.spacing.s};
   `,
 );
 

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Alert, AlertProps } from '../Alert';
-import { SnackbarProvider } from "../../../contexts/SnackbarProvider";
-import { Button } from "../../inputs";
-import { useSnackbarContext } from "../../../hooks/useSnackbarContext";
+import { SnackbarProvider } from '../../../contexts/SnackbarProvider';
+import { Button } from '../../inputs';
+import { useSnackbarContext } from '../../../hooks/useSnackbarContext';
 
 const config = {
   title: 'Feedback/Snackbar',
@@ -14,7 +14,7 @@ function InnerTemplate(props: AlertProps) {
   const [number, setNumber] = React.useState(1);
 
   function handleClick() {
-    showSnackbar({ ...props, text: `${props.text} - ${number}`});
+    showSnackbar({ ...props, text: `${props.text} - ${number}` });
     setNumber(number + 1);
   }
 
@@ -22,7 +22,11 @@ function InnerTemplate(props: AlertProps) {
 }
 
 function Template(props: AlertProps) {
-  return <SnackbarProvider><InnerTemplate {...props} /></SnackbarProvider>;
+  return (
+    <SnackbarProvider>
+      <InnerTemplate {...props} />
+    </SnackbarProvider>
+  );
 }
 
 const Info = Template.bind({}) as any;

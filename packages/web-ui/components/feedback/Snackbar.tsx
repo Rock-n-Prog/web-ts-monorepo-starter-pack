@@ -7,7 +7,11 @@ type SnackbarProps = {
 } & AlertProps;
 
 function Snackbar({ duration, ...alertProps }: SnackbarProps) {
-  return <SnackbarContainer $duration={duration}><Alert {...alertProps} /></SnackbarContainer>;
+  return (
+    <SnackbarContainer $duration={duration}>
+      <Alert {...alertProps} />
+    </SnackbarContainer>
+  );
 }
 
 type SnackbarContainerProps = {
@@ -17,7 +21,7 @@ type SnackbarContainerProps = {
 const SnackbarContainer = styled.div<SnackbarContainerProps>(
   ({ $duration }: SnackbarContainerProps) => css`
     animation: opacityOn ${$duration}ms forwards;
-    
+
     @keyframes opacityOn {
       0% {
         opacity: 0;

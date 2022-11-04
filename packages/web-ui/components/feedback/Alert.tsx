@@ -7,18 +7,22 @@ import type { Severity } from '../../types/severity';
 type AlertProps = {
   readonly text: string;
   readonly severity: Severity;
-}
+};
 
 // TODO: Create Snackbar and SnackbarProvider which handles Snackbar placement and queue
 // TODO: Maybe add icon?
 function Alert({ text, severity }: AlertProps) {
-  return <AlertContainer $severity={severity}><AlertText $severity={severity}>{text}</AlertText></AlertContainer>;
+  return (
+    <AlertContainer $severity={severity}>
+      <AlertText $severity={severity}>{text}</AlertText>
+    </AlertContainer>
+  );
 }
 
 type AlertContainerProps = {
   readonly $severity: Severity;
   readonly theme: Theme;
-}
+};
 
 const AlertContainer = styled.div<AlertContainerProps>(
   ({ theme, $severity }: AlertContainerProps) => css`
