@@ -7,7 +7,6 @@ import { UserForm } from './UserForm';
 function AddUserForm() {
   const { showSnackbar } = useSnackbarContext();
   const { t } = useTranslation('users', { keyPrefix: 'form' });
-  // TODO: Getting users.add is not a mutation...?
   const { mutate } = trpc.users.add.useMutation({
     onSuccess: () => showSnackbar({ text: t('newUserAdded'), severity: 'success' }),
     onError: error => showSnackbar({ text: error.message, severity: 'error' }),

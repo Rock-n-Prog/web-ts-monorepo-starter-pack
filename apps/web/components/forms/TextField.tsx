@@ -18,7 +18,6 @@ function TextField<
   } = useController(controllerProps);
   const { t } = useTranslation('forms');
 
-  // TODO: This is dumb, but removes need to type-check error message keys. It should be fixed.
   const unsafeT = t as (key: string) => string;
 
   function getErrorMessage(key?: string) {

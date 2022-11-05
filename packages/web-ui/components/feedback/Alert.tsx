@@ -9,7 +9,6 @@ type AlertProps = {
   readonly severity: Severity;
 };
 
-// TODO: Maybe add icon?
 function Alert({ text, severity }: AlertProps) {
   return (
     <AlertContainer $severity={severity}>
