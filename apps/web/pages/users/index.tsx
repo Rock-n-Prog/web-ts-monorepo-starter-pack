@@ -9,7 +9,7 @@ import { trpc } from '../../utils/trpc';
 import createServerSideTranslations from '../../utils/createServerSideTranslations';
 import { WithLocale } from '../../types/locales';
 
-function Users() {
+function UsersPage() {
   const { t } = useTranslation('users');
   const { data } = trpc.users.all.useQuery();
 
@@ -43,4 +43,4 @@ async function getStaticProps({ locale }: WithLocale) {
 }
 
 export { getStaticProps };
-export default Users;
+export default UsersPage;

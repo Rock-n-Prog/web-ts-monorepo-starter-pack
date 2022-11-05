@@ -7,7 +7,7 @@ import { Flex } from 'web-ui/components/layout';
 import { WithLocale } from '../types/locales';
 import createServerSideTranslations from '../utils/createServerSideTranslations';
 
-function Index() {
+function IndexPage() {
   const { t } = useTranslation('index');
 
   return (
@@ -35,4 +35,4 @@ async function getStaticProps({ locale }: WithLocale<unknown>) {
 }
 
 export { getStaticProps };
-export default Index;
+export default IndexPage;

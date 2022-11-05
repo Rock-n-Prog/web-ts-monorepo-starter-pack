@@ -5,7 +5,7 @@ import createServerSideTranslations from '../../../utils/createServerSideTransla
 import type { WithLocale } from '../../../types/locales';
 import { AddUserForm } from '../../../components/users/AddUserForm';
 
-function AddUser() {
+function AddUserPage() {
   const { t } = useTranslation('users');
 
   return (
@@ -28,4 +28,4 @@ async function getStaticProps({ locale }: WithLocale) {
 }
 
 export { getStaticProps };
-export default AddUser;
+export default AddUserPage;

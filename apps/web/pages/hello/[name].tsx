@@ -10,7 +10,7 @@ type PathProps = {
   readonly name: string;
 };
 
-function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
+function NamePage({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation('hello');
   const { data, isLoading, error } = trpc.hello.single.useQuery({ name });
 
@@ -54,4 +54,4 @@ async function getStaticProps({ params, locale }: WithLocale<GetStaticPropsConte
 }
 
 export { getStaticPaths, getStaticProps };
-export default Name;
+export default NamePage;
