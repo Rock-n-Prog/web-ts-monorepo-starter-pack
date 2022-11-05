@@ -20,7 +20,6 @@ function getDuration(request: SnackbarRequest) {
   return request?.severity === 'error' ? errorSnackbarDuration : snackbarDuration;
 }
 
-// TODO: Change display, put snackbars at the bottom and with display absolute
 function SnackbarProvider({ children }: React.PropsWithChildren) {
   const [requests, setRequests] = React.useState<readonly SnackbarRequestWithKey[]>([]);
   const [nextKey, setNextKey] = React.useState(1);

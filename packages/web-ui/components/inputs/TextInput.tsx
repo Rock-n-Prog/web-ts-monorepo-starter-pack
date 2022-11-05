@@ -24,7 +24,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   },
 );
 
-// TODO: Solve this eslint problem
+// Necessary with forwardRef
 // eslint-disable-next-line functional/immutable-data
 TextInput.displayName = 'TextInput';
 

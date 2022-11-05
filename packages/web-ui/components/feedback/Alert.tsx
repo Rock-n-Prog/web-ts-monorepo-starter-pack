@@ -9,7 +9,6 @@ type AlertProps = {
   readonly severity: Severity;
 };
 
-// TODO: Create Snackbar and SnackbarProvider which handles Snackbar placement and queue
 // TODO: Maybe add icon?
 function Alert({ text, severity }: AlertProps) {
   return (

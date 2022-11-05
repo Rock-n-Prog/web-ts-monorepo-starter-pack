@@ -24,7 +24,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   },
 );
 
-// TODO: Fix this eslint rule
+// Necessary with forwardRef
 // eslint-disable-next-line functional/immutable-data
 Button.displayName = 'Button';
 
