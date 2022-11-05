@@ -27,6 +27,7 @@ module.exports = {
     'functional/no-return-void': 'off',
     'functional/no-expression-statement': 'off',
     'functional/functional-parameters': 'off',
+    'functional/no-mixed-type': 'off',
     'turbo/no-undeclared-env-vars': 'off',
   },
   overrides: [

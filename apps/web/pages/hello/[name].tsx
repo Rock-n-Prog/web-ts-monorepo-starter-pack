@@ -10,7 +10,7 @@ type PathProps = {
   readonly name: string;
 };
 
-function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
+function NamePage({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation('hello');
   const { data, isLoading, error } = trpc.hello.single.useQuery({ name });
 
@@ -18,7 +18,7 @@ function Name({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
       <Header2>{t('helloName', { name })}</Header2>
-      <Body1>{t('pageToTest')}</Body1>
+      <Body1>{t('pageToTestTrpcDataWithQueryAndStaticData')}</Body1>
       {isLoading ? (
         <Body1>{t('loading', { ns: 'common' })}</Body1>
       ) : (
@@ -54,4 +54,4 @@ async function getStaticProps({ params, locale }: WithLocale<GetStaticPropsConte
 }
 
 export { getStaticPaths, getStaticProps };
-export default Name;
+export default NamePage;

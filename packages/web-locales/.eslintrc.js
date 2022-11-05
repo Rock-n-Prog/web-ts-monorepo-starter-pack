@@ -23,8 +23,9 @@ module.exports = {
       {
         filePath: {
           'common.json': path.resolve('./translations/en/common.json'),
-          'hello.json': path.resolve('./translations/en/hello.json'),
+          'forms.json': path.resolve('./translations/en/forms.json'),
           'index.json': path.resolve('./translations/en/index.json'),
+          'hello.json': path.resolve('./translations/en/hello.json'),
           'users.json': path.resolve('./translations/en/users.json'),
         },
       },
