@@ -20,9 +20,9 @@ type SnackbarContainerProps = {
 
 const SnackbarContainer = styled.div<SnackbarContainerProps>(
   ({ $duration }: SnackbarContainerProps) => css`
-    animation: opacityOn ${$duration}ms forwards;
+    animation: brief-appear ${$duration}ms forwards;
 
-    @keyframes opacityOn {
+    @keyframes brief-appear {
       0% {
         opacity: 0;
       }

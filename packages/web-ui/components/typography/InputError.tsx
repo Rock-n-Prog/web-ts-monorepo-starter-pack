@@ -11,7 +11,7 @@ const InputError = styled.span(
 
     // Makes input error message take up space, even if not present
     :empty::before {
-      content: '';
+      content: "";
       display: inline-block;
     }
   `,
