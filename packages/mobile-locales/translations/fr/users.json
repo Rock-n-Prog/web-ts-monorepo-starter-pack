@@ -1,0 +1,13 @@
+{
+  "addUser": "Ajout d'utilisateur",
+  "form": {
+    "add": "Ajouter",
+    "email": "Email",
+    "name": "Nom",
+    "newUserAdded": "Nouvel utilisateur ajouté!"
+  },
+  "goToAddUserPage": "Aller à la page d'ajout d'utilisateur!",
+  "pageToTestTrpcDataFetchedFromDatabase": "Page pour tester des données via tRPC, venant de la base de données",
+  "pageToTestTrpcDataWithMutation": "Page pour tester des données via tRPC, avec mutation",
+  "users": "Utilisateurs"
+}

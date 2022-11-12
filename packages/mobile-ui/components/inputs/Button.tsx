@@ -71,7 +71,6 @@ const StyledTouchableOpacity = styled.TouchableOpacity(
     display: flex;
     border-radius: ${theme.spacing.xxs};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
-    margin-top: ${theme.spacing.s};
     outline: 0;
     border: 0;
     color: ${theme.colors.palette.primary.main};

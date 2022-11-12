@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components/native';
 import { Typography } from './Typography';
 import { Theme } from '../../styles/theme';
 
+// TODO: Do we still need this?
 const ScreenTitle = styled(Typography)(
   ({ theme }: { readonly theme: Theme }) => css`
     font-size: ${theme.fonts.sizes.l};
