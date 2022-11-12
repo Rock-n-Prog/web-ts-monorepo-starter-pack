@@ -24,6 +24,7 @@ function HeaderRight() {
   return <Button text="Theme" onPress={switchMode} />;
 }
 
+// TODO: Weird space between page and header? Maybe just change page bg color
 function RootStackNavigator() {
   return (
     <Stack.Navigator
