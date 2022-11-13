@@ -7,7 +7,6 @@ import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function HelloScreen() {
   const { t } = useTranslation('hello');
-  // TODO: Pass TreeView with path props
   const { data, isLoading, error } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
   useNavigationOption({
