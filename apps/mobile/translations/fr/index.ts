@@ -3,9 +3,4 @@ import home from './home.json';
 import hello from './hello.json';
 import users from './users.json';
 
-export {
-  common,
-  home,
-  hello,
-  users,
-}
+export { common, home, hello, users };

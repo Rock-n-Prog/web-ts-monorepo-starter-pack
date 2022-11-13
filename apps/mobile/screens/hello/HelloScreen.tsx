@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Body1, HeaderTitle, SubTitle } from "mobile-ui/components/typography";
+import { Body1, HeaderTitle, SubTitle } from 'mobile-ui/components/typography';
 import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
 import { trpc } from '../../utils/trpc';
-import useNavigationOption from "../../hooks/useNavigationOptions";
+import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function HelloScreen() {
   const { t } = useTranslation('hello');
@@ -12,7 +12,7 @@ function HelloScreen() {
   const { data, isLoading, error } = trpc.hello.single.useQuery({ name: 'TreeView' });
 
   useNavigationOption({
-    headerTitle: () => (<HeaderTitle>{t('helloName', { name: 'TreeView' })}</HeaderTitle>),
+    headerTitle: () => <HeaderTitle>{t('helloName', { name: 'TreeView' })}</HeaderTitle>,
   });
 
   return (

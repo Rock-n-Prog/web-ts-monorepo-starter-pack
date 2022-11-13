@@ -1,22 +1,12 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as Localization from 'expo-localization';
 import type { ModuleType } from 'i18next';
-
-const storeLanguageKey = 'settings.lang';
+import { getStoredLanguage, setStoredLanguage } from '../utils/stored-language';
 
 const languageDetector = {
   type: 'languageDetector' as ModuleType,
   async: true,
   init: () => void 0,
-  detect: (callback: (lang: string) => void) =>
-    AsyncStorage
-      .getItem(storeLanguageKey)
-      .then((language) => callback(language ?? Localization.locale))
-      .catch((error) => console.error("Error reading language", error)),
-  cacheUserLanguage: (language: string) =>
-    AsyncStorage
-      .setItem(storeLanguageKey, language)
-      .catch((error) => console.error("Error setting language", error)),
+  detect: getStoredLanguage,
+  cacheUserLanguage: setStoredLanguage,
 };
 
-export { languageDetector }
+export { languageDetector };

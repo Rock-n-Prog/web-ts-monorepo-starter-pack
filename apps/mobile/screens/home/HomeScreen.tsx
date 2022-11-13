@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HeaderTitle } from "mobile-ui/components/typography";
+import { HeaderTitle } from 'mobile-ui/components/typography';
 import { Button } from 'mobile-ui/components/inputs';
 import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
@@ -12,7 +12,7 @@ function HomeScreen() {
   const { goToHelloScreen, goToUsersScreen } = useRootStackNavigation();
 
   useNavigationOption({
-    headerTitle: () => (<HeaderTitle>{t('home')}</HeaderTitle>),
+    headerTitle: () => <HeaderTitle>{t('home')}</HeaderTitle>,
   });
 
   return (

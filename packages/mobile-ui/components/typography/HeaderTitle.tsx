@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components/native';
 import { Theme } from '../../styles/theme';
 import { Typography } from './Typography';
 
-function HeaderTitle({children}: React.PropsWithChildren) {
+function HeaderTitle({ children }: React.PropsWithChildren) {
   return (
     <Container>
       <StyledHeaderTitle>{children}</StyledHeaderTitle>

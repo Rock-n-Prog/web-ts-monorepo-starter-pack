@@ -5,6 +5,7 @@ import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
 import useCachedResources from './hooks/useCachedResources';
 import RootNavigator from './router/components/RootNavigator';
 import TrpcProvider from './contexts/TrpcProvider';
+import { TranslationProvider } from './contexts/TranslationProvider';
 import './i18n';
 
 function App() {
@@ -12,12 +13,14 @@ function App() {
 
   return isLoadingComplete ? (
     <TrpcProvider>
-      <ThemeProvider>
-        <SafeAreaProvider>
-          <StatusBar style="auto" />
-          <RootNavigator />
-        </SafeAreaProvider>
-      </ThemeProvider>
+      <TranslationProvider>
+        <ThemeProvider>
+          <SafeAreaProvider>
+            <StatusBar style="auto" />
+            <RootNavigator />
+          </SafeAreaProvider>
+        </ThemeProvider>
+      </TranslationProvider>
     </TrpcProvider>
   ) : null;
 }
