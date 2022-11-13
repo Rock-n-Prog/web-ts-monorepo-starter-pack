@@ -1,0 +1,10 @@
+{
+  "back": "Retour",
+  "language": "Langue",
+  "loading": "Tapeu...",
+  "switchLocale": "Changer la locale!",
+  "switchThemeMode": "Changer le thème!",
+  "theme": "Thème",
+  "treeView": "TreeView",
+  "weGotError": "On a une erreur: {{error}}"
+}

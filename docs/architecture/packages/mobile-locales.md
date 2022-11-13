@@ -1,8 +1,8 @@
-# Web Locales
+# Mobile Locales
 
-Library is located at [`packages/web-locales`](../../../packages/web-locales).
+Library is located at [`packages/mobile-locales`](../../../packages/mobile-locales).
 
-This library is used by a web app. For more info, read [its docs](../apps/web.md).
+This library is used by a mobile app. For more info, read [its docs](../apps/mobile.md).
 
 ## Software architecture
 

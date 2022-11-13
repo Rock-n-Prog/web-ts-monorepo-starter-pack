@@ -1,0 +1,5 @@
+{
+  "pageToTestTrpcDataFetchedFromDatabase": "Page to test tRPC data, fetched from database",
+  "pageToTestTrpcDataWithMutation": "Page to test tRPC data, with mutation",
+  "users": "Users"
+}

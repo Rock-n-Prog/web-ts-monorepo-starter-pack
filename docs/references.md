@@ -16,6 +16,11 @@
 
 - [Turborepo + prisma example](https://github.com/aiji42/turbo-with-prisma)
 
+## Translations
+
+- [React Native, i18n, Expo](https://phrase.com/blog/posts/react-native-i18n-with-expo-and-i18next-part-1)
+- [React Native, i18n, TypeScript](https://dev.to/ramonak/react-native-internationalization-with-i18next-568n)
+
 ## Pre-commit hooks
 
 - [Diving into husky and lint-staged](https://laurieontech.com/posts/husky)

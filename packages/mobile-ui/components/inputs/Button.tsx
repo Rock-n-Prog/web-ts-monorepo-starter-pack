@@ -23,8 +23,8 @@ function Button({ text, variant = 'contained', disabled = false, ...props }: But
 }
 
 type VariantToStylesParams = {
-  theme: Theme;
-  disabled: boolean;
+  readonly theme: Theme;
+  readonly disabled: boolean;
 };
 
 const variantToButtonTextStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
@@ -48,6 +48,7 @@ const ButtonText = styled(Typography)(
     font-weight: ${theme.fonts.weights.regular};
     font-size: ${theme.fonts.sizes.s};
     text-transform: uppercase;
+    text-align: center;
 
     ${variantToButtonTextStyles[$variant]({ theme, disabled: $disabled })}
   `,
@@ -71,7 +72,6 @@ const StyledTouchableOpacity = styled.TouchableOpacity(
     display: flex;
     border-radius: ${theme.spacing.xxs};
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
-    margin-top: ${theme.spacing.s};
     outline: 0;
     border: 0;
     color: ${theme.colors.palette.primary.main};

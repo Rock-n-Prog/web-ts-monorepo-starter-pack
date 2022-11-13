@@ -1,20 +1,25 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { Body1, ScreenTitle, SubTitle } from 'mobile-ui/components/typography';
-import { Screen } from 'mobile-ui/components/layouts';
+import { Body1, HeaderTitle, Title } from 'mobile-ui/components/typography';
+import { Screen, Stack } from 'mobile-ui/components/layouts';
+import { useTranslation } from 'react-i18next';
 import { trpc } from '../../utils/trpc';
+import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function UsersScreen() {
+  const { t } = useTranslation('users');
   const { data } = trpc.users.all.useQuery();
 
+  useNavigationOption({
+    headerTitle: () => <HeaderTitle>{t('users')}</HeaderTitle>,
+  });
+
   return (
-    <SafeAreaView>
-      <Screen>
-        <ScreenTitle>Users</ScreenTitle>
-        <SubTitle>Page to test tRPC data, fetched from database</SubTitle>
+    <Screen>
+      <Stack>
+        <Title>{t('pageToTestTrpcDataFetchedFromDatabase')}</Title>
         {data && data.map(user => <Body1 key={user.id}>{user.name}</Body1>)}
-      </Screen>
-    </SafeAreaView>
+      </Stack>
+    </Screen>
   );
 }
 

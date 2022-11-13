@@ -10,18 +10,19 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 ## Status
 
-| Name             | Type    | Status                                                                                                                                                                                                                            |
-| ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| General          | General | [![General](https://github.com/treeview-app/treeview/actions/workflows/general.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/general.yml)                                                            |
-| Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                        |
-| Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                               |
-| Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml) |
-| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)             |
-| tRPC             | Package | [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)                         |
-| Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                      |
-| Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                   |
-| Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)          |
-| Web Locales      | Package | [![Build Web Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml)    |
+| Name             | Type    | Status                                                                                                                                                                                                                                  |
+| ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General          | General | [![General](https://github.com/treeview-app/treeview/actions/workflows/general.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/general.yml)                                                                  |
+| Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                              |
+| Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                                     |
+| Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)       |
+| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)                   |
+| tRPC             | Package | [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)                               |
+| Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                            |
+| Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                         |
+| Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)                |
+| Web Locales      | Package | [![Build Web Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml)          |
+| Mobile Locales   | Package | [![Build Mobile Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml) |
 
 ## Apps
 
@@ -37,6 +38,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/web-ui`](packages/web-ui): React components for web app
 - [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
 - [`packages/web-locales`](packages/web-locales): Locale translations for web app
+- [`packages/mobile-locales`](packages/mobile-locales): Locale translations for mobile app
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig

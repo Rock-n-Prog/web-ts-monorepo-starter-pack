@@ -41,6 +41,7 @@ ignore:
   - packages/database/node_modules
   - packages/database/prisma/migrations
   - packages/eslint-config-custom/node_modules
+  - packages/mobile-locales/node_modules
   - packages/mobile-ui/node_modules
   - packages/stylelint-config-custom/node_modules
   - packages/theme/node_modules

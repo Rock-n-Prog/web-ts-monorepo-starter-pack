@@ -6,3 +6,4 @@
 - [Web UI](./web-ui.md)
 - [Mobile UI](./mobile-ui.md)
 - [Web Locales](./web-locales.md)
+- [Mobile Locales](./mobile-locales.md)

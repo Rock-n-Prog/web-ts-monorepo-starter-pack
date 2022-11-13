@@ -1,9 +1,12 @@
 import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import RootRoutes from '../RootRoutes';
+import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import HomeScreen from '../../screens/home/HomeScreen';
 import HelloScreen from '../../screens/hello/HelloScreen';
 import UsersScreen from '../../screens/users/UsersScreen';
+import RootRoutes from '../RootRoutes';
+import BackButton from './BackButton';
+import Toolbar from './Toolbar';
 
 type RootStackParams = {
   readonly [RootRoutes.Home]: undefined;
@@ -14,14 +17,25 @@ type RootStackParams = {
 const Stack = createNativeStackNavigator<RootStackParams>();
 
 function RootStackNavigator() {
+  const { theme } = useThemeContext();
+
   return (
     <Stack.Navigator
       initialRouteName={RootRoutes.Home}
-      screenOptions={{ headerShown: false, animation: 'fade_from_bottom' }}
+      screenOptions={{
+        headerShown: false,
+        headerBackVisible: false,
+        headerLeft: BackButton,
+        headerRight: Toolbar,
+        animation: 'fade_from_bottom',
+        headerStyle: {
+          backgroundColor: theme.colors.surface,
+        },
+      }}
     >
-      <Stack.Screen name={RootRoutes.Home} component={HomeScreen} />
-      <Stack.Screen name={RootRoutes.Hello} component={HelloScreen} />
-      <Stack.Screen name={RootRoutes.Users} component={UsersScreen} />
+      <Stack.Screen name={RootRoutes.Home} component={HomeScreen} options={{ headerShown: true }} />
+      <Stack.Screen name={RootRoutes.Hello} component={HelloScreen} options={{ headerShown: true }} />
+      <Stack.Screen name={RootRoutes.Users} component={UsersScreen} options={{ headerShown: true }} />
     </Stack.Navigator>
   );
 }
