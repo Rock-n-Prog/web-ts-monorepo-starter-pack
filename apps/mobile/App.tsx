@@ -11,6 +11,7 @@ import './i18n';
 function App() {
   const isLoadingComplete = useCachedResources();
 
+  // TODO: SafeAreaProvider isn't used in screens anymore. Do we actually need it?
   return isLoadingComplete ? (
     <TrpcProvider>
       <TranslationProvider>

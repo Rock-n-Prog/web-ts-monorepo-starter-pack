@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderTitle } from 'mobile-ui/components/typography';
 import { Button } from 'mobile-ui/components/inputs';
 import { Screen, Stack } from 'mobile-ui/components/layouts';
@@ -16,14 +15,12 @@ function HomeScreen() {
   });
 
   return (
-    <SafeAreaView>
-      <Screen>
-        <Stack>
-          <Button text={t('goToHelloScreen')} onPress={goToHelloScreen} />
-          <Button text={t('goToUsersScreen')} onPress={goToUsersScreen} />
-        </Stack>
-      </Screen>
-    </SafeAreaView>
+    <Screen>
+      <Stack>
+        <Button text={t('goToHelloScreen')} onPress={goToHelloScreen} />
+        <Button text={t('goToUsersScreen')} onPress={goToUsersScreen} />
+      </Stack>
+    </Screen>
   );
 }
 

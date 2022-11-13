@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import HomeScreen from '../../screens/home/HomeScreen';
 import HelloScreen from '../../screens/hello/HelloScreen';
 import UsersScreen from '../../screens/users/UsersScreen';
@@ -15,8 +16,9 @@ type RootStackParams = {
 
 const Stack = createNativeStackNavigator<RootStackParams>();
 
-// TODO: Weird space between page and header? Maybe just change page bg color
 function RootStackNavigator() {
+  const { theme } = useThemeContext();
+
   return (
     <Stack.Navigator
       initialRouteName={RootRoutes.Home}
@@ -26,6 +28,9 @@ function RootStackNavigator() {
         headerLeft: BackButton,
         headerRight: Toolbar,
         animation: 'fade_from_bottom',
+        headerStyle: {
+          backgroundColor: theme.colors.surface,
+        },
       }}
     >
       <Stack.Screen name={RootRoutes.Home} component={HomeScreen} options={{ headerShown: true }} />

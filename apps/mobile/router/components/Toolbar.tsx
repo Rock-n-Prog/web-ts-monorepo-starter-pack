@@ -5,7 +5,6 @@ import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import { Stack } from 'mobile-ui/components/layouts';
 import { useTranslationContext } from '../../hooks/useTranslationContext';
 
-// TODO: Toolbar should be a dev tools menu (side panel/blade)
 function Toolbar() {
   const { t } = useTranslation();
   const { locale, changeLocale } = useTranslationContext();
