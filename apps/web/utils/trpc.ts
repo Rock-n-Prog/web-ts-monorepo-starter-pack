@@ -18,7 +18,7 @@ function getLocalhostUrl() {
 }
 
 function getBaseUrl() {
-  return typeof window === 'undefined' ? '' : getVercelUrl() ?? getRenderInternalHostnameUrl() ?? getLocalhostUrl();
+  return typeof window === 'undefined' ? getVercelUrl() ?? getRenderInternalHostnameUrl() ?? getLocalhostUrl() : '';
 }
 
 const trpc = createTRPCNext<AppRouter>({

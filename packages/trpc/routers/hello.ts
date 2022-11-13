@@ -1,8 +1,8 @@
-import { t } from '../config/trpc';
+import { router, publicProcedure } from '../config/trpc';
 import { helloInputSchema } from '../schemas';
 
-const helloRouter = t.router({
-  single: t.procedure.input(helloInputSchema.nullish()).query(({ input }) => ({
+const helloRouter = router({
+  single: publicProcedure.input(helloInputSchema.nullish()).query(({ input }) => ({
     greeting: `Hello ${input?.name ?? 'world'}!`,
   })),
 });
