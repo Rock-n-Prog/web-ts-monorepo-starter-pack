@@ -26,7 +26,7 @@
     "prepare": "husky install",
     "storybook:mobile": "turbo run dev --scope mobile-storybook --no-deps",
     "storybook:web": "turbo run storybook --scope web-ui --no-deps",
-    "yeet": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
     "@ls-lint/ls-lint": "^1.11.2",

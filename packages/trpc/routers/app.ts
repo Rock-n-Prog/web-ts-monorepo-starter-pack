@@ -1,8 +1,8 @@
-import { t } from '../config/trpc';
+import { router } from '../config/trpc';
 import { helloRouter } from './hello';
 import { usersRouter } from './users';
 
-const appRouter = t.router({
+const appRouter = router({
   hello: helloRouter,
   users: usersRouter,
 });
