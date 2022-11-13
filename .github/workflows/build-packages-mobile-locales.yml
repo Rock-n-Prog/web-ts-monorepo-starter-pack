@@ -1,4 +1,4 @@
-name: Build Web Locales Package
+name: Build Mobile Locales Package
 
 on:
   workflow_dispatch:
@@ -7,16 +7,16 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
+      - '.github/workflows/build-packages-mobile-locales.yml'
+      - 'packages/mobile-locales/**'
       - 'packages/eslint-config-custom/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
+      - '.github/workflows/build-packages-mobile-locales.yml'
+      - 'packages/mobile-locales/**'
       - 'packages/eslint-config-custom/**'
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-locales... install
+        run: pnpm --filter mobile-locales... install
 
       - name: Lint
-        run: pnpm --filter web-locales lint
+        run: pnpm --filter mobile-locales lint

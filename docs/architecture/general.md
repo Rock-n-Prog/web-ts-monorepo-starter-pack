@@ -18,5 +18,7 @@ For more info, see Turborepo file structure.
   - `web-ui`: Web UI library (see [its docs](./packages/web-ui.md))
   - `mobile-ui`: Mobile UI library (see [its docs](./packages/mobile-ui.md))
   - `theme`: Theme (color palette) definition (see [its docs](./packages/theme.md))
+  - `web-locale`: Web translations library (see [its docs](./packages/web-locale.md))
+  - `mobile-locale`: Mobile translations library (see [its docs](./packages/mobile-locales.md))
   - `eslint-config-custom`: Set of eslint configs for given technologies
   - `tesconfig`: Set of TypeScript configs for given technologies

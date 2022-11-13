@@ -8,6 +8,7 @@ import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function UsersScreen() {
   const { t } = useTranslation('users');
+  // TODO: Getting "TRPCClientError: No "query"-procedure on path "users.all""
   const { data } = trpc.users.all.useQuery();
 
   useNavigationOption({

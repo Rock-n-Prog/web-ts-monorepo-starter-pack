@@ -1,8 +1,8 @@
 import 'react-i18next';
-import common from './translations/en/common.json';
-import index from './translations/en/index.json';
-import hello from './translations/en/hello.json';
-import users from './translations/en/users.json';
+import common from 'mobile-locales/translations/en/common.json';
+import index from 'mobile-locales/translations/en/index.json';
+import hello from 'mobile-locales/translations/en/hello.json';
+import users from 'mobile-locales/translations/en/users.json';
 
 // TODO: Doesn't seem to type-safe at all
 // If editing here, remember to check defaults in 'types' directory
