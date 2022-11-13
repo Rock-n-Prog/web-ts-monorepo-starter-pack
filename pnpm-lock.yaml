@@ -44,6 +44,7 @@ importers:
       expo-splash-screen: ^0.16.2
       expo-status-bar: ^1.4.0
       i18next: ^22.0.5
+      intl-pluralrules: ^1.3.1
       mobile-ui: workspace:*
       react: ^18.2.0
       react-i18next: ^12.0.0
@@ -70,6 +71,7 @@ importers:
       expo-splash-screen: 0.16.2_scx74wtxac2wxjbs6ttkh3cnc4
       expo-status-bar: 1.4.0
       i18next: 22.0.5
+      intl-pluralrules: 1.3.1
       mobile-ui: link:../../packages/mobile-ui
       react: 18.2.0
       react-i18next: 12.0.0_fin5fcllii5nq4onw7ytb5e37q
@@ -10918,6 +10920,10 @@ packages:
     resolution: {integrity: sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==}
     engines: {node: '>= 0.10'}
     dev: true
+
+  /intl-pluralrules/1.3.1:
+    resolution: {integrity: sha512-sNYPls1Q4fyN0EGLFVJ7TIuaMWln01LupLozfIBt69rHK0DHehghMSz6ejfnSklgRddnyQSEaQPIU6d9TCKH3w==}
+    dev: false
 
   /invariant/2.2.4:
     resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}

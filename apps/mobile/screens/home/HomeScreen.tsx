@@ -19,7 +19,7 @@ function HomeScreen() {
     <SafeAreaView>
       <Screen>
         <Stack>
-          <Button text={t('hoToHelloScreen')} onPress={goToHelloScreen} />
+          <Button text={t('goToHelloScreen')} onPress={goToHelloScreen} />
           <Button text={t('goToUsersScreen')} onPress={goToUsersScreen} />
         </Stack>
       </Screen>
