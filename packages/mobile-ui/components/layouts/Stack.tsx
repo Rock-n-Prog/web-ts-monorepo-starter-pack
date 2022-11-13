@@ -3,15 +3,15 @@ import { View } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import { Theme } from '../../styles/theme';
 
-type Direction = 'row' | 'column';
+const stackDirections = ['row', 'column'] as const;
+type StackDirection = typeof stackDirections[number];
 
 type StackProps = {
   readonly children: readonly React.ReactNode[];
   readonly alignCenter?: boolean;
-  readonly direction?: Direction;
+  readonly direction?: StackDirection;
 };
 
-// TODO: Stories
 function Stack({ children, direction = 'column', alignCenter = true }: StackProps) {
   return (
     <Container $direction={direction} $alignCenter={alignCenter}>
@@ -25,7 +25,7 @@ function Stack({ children, direction = 'column', alignCenter = true }: StackProp
 }
 
 type ContainerProps = {
-  readonly $direction: Direction;
+  readonly $direction: StackDirection;
   readonly $alignCenter: boolean;
   readonly theme: Theme;
 };
@@ -56,7 +56,7 @@ const Container = styled(View)(
 );
 
 type ItemProps = {
-  readonly $direction: Direction;
+  readonly $direction: StackDirection;
   readonly $isFirst: boolean;
   readonly theme: Theme;
 };
@@ -70,4 +70,4 @@ const Item = styled(View)(
   `,
 );
 
-export { Stack };
+export { Stack, stackDirections };

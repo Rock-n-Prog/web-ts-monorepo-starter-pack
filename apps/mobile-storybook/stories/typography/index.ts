@@ -1,4 +1,3 @@
-import './ScreenTitle.stories';
 import './HeaderTitle.stories';
-import './SubTitle.stories';
+import './Title.stories';
 import './Body1.stories';

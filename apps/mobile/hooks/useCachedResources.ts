@@ -10,7 +10,7 @@ function useCachedResources() {
     SplashScreen.preventAutoHideAsync()
       .then(() =>
         Font.loadAsync({
-          // TODO: We don't use the following... keep as an example?
+          // Not used, placed here as an example
           ...FontAwesome.font,
           'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf'),
         }),
