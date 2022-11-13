@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Platform, View } from 'react-native';
 import styled, { css } from 'styled-components/native';
-import { Theme } from '../../styles/theme';
+import type { Theme } from '../../styles/theme';
 import { Typography } from './Typography';
 
 function HeaderTitle({ children }: React.PropsWithChildren) {
