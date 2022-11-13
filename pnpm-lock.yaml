@@ -26,6 +26,7 @@ importers:
       '@babel/preset-env': ^7.19.1
       '@babel/runtime': ^7.19.0
       '@expo/vector-icons': ^13.0.0
+      '@react-native-async-storage/async-storage': ^1.17.11
       '@react-navigation/native': ^6.0.13
       '@react-navigation/native-stack': ^6.9.0
       '@tanstack/react-query': ^4.3.9
@@ -40,6 +41,7 @@ importers:
       expo: ^46.0.10
       expo-constants: ^13.2.4
       expo-font: ^10.2.0
+      expo-localization: ^14.0.0
       expo-modules-autolinking: ^0.10.3
       expo-splash-screen: ^0.16.2
       expo-status-bar: ^1.4.0
@@ -58,6 +60,7 @@ importers:
       typescript: ^4.5.3
     dependencies:
       '@expo/vector-icons': 13.0.0
+      '@react-native-async-storage/async-storage': 1.17.11_react-native@0.70.1
       '@react-navigation/native': 6.0.13_4kk6flxesec7o3ex73cqyfxqsm
       '@react-navigation/native-stack': 6.9.0_kuex2st3iubsugco65hleyw4oq
       '@tanstack/react-query': 4.3.9_4kk6flxesec7o3ex73cqyfxqsm
@@ -67,6 +70,7 @@ importers:
       expo: 46.0.10_@babel+core@7.19.1
       expo-constants: 13.2.4_expo@46.0.10
       expo-font: 10.2.0_expo@46.0.10
+      expo-localization: 14.0.0_expo@46.0.10
       expo-modules-autolinking: 0.10.3
       expo-splash-screen: 0.16.2_scx74wtxac2wxjbs6ttkh3cnc4
       expo-status-bar: 1.4.0
@@ -3037,6 +3041,15 @@ packages:
       react: 18.2.0
       react-lifecycles-compat: 3.0.4
     dev: true
+
+  /@react-native-async-storage/async-storage/1.17.11_react-native@0.70.1:
+    resolution: {integrity: sha512-bzs45n5HNcDq6mxXnSsOHysZWn1SbbebNxldBXCQs8dSvF8Aor9KCdpm+TpnnGweK3R6diqsT8lFhX77VX0NFw==}
+    peerDependencies:
+      react-native: ^0.0.0-0 || 0.60 - 0.71 || 1000.0.0
+    dependencies:
+      merge-options: 3.0.4
+      react-native: 0.70.1_cnhxwiof7sex5r6rlkz3tsu2be
+    dev: false
 
   /@react-native-community/cli-clean/9.1.0:
     resolution: {integrity: sha512-3HznNw8EBQtLsVyV8b8+h76M9EeJcJgYn5wZVGQ5mghAOhqnSWVbwRvpDdb8ITXaiTIXFGNOxXnGKMXsu0CYTw==}
@@ -9474,6 +9487,15 @@ packages:
       expo: 46.0.13_@babel+core@7.19.1
     dev: false
 
+  /expo-localization/14.0.0_expo@46.0.10:
+    resolution: {integrity: sha512-Rx4ZAANTTVuY6EnM3WXjNWn+CSpDUOaJziHPB4Az+lb4r3JMQ1H+go9s8KY9DYP0IiRM3sQhiyFQqSWzsUgvHA==}
+    peerDependencies:
+      expo: '*'
+    dependencies:
+      expo: 46.0.10_@babel+core@7.19.1
+      rtl-detect: 1.0.4
+    dev: false
+
   /expo-modules-autolinking/0.10.3:
     resolution: {integrity: sha512-av9ln2zwUt303g98raX7sDmESgL3SXs1sbbtIjh1rL7R0676XIUacIKgbydR0/4tMbOShWx14Z9fozpk9xIAJA==}
     hasBin: true
@@ -11232,7 +11254,6 @@ packages:
   /is-plain-obj/2.1.0:
     resolution: {integrity: sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==}
     engines: {node: '>=8'}
-    dev: true
 
   /is-plain-object/2.0.4:
     resolution: {integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==}
@@ -12301,6 +12322,13 @@ packages:
   /merge-descriptors/1.0.1:
     resolution: {integrity: sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==}
     dev: true
+
+  /merge-options/3.0.4:
+    resolution: {integrity: sha512-2Sug1+knBjkaMsMgf1ctR1Ujx+Ayku4EdJN4Z+C2+JzoeF7A3OZ9KM2GY0CpQS51NR61LTurMJrRKPhSs3ZRTQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      is-plain-obj: 2.1.0
+    dev: false
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -15495,6 +15523,10 @@ packages:
     resolution: {integrity: sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==}
     engines: {node: 6.* || >= 7.*}
     dev: true
+
+  /rtl-detect/1.0.4:
+    resolution: {integrity: sha512-EBR4I2VDSSYr7PkBmFy04uhycIpDKp+21p/jARYXlCSjQksTBQcJ0HFUPOO79EPPH5JS6VAhiIQbycf0O3JAxQ==}
+    dev: false
 
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
