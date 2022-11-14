@@ -64,6 +64,7 @@ type ItemProps = {
   readonly theme: Theme;
 };
 
+// TODO: Can we use :not(:first-child) instead of $isFirst?
 const Item = styled(View)(
   ({ $direction, $gap, $isFirst, theme }: ItemProps) => css`
     display: flex;
