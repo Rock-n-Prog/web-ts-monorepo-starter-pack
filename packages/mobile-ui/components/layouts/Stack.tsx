@@ -6,17 +6,21 @@ import { Theme } from '../../styles/theme';
 const stackDirections = ['row', 'column'] as const;
 type StackDirection = typeof stackDirections[number];
 
+const stackGaps = ['xxs', 'xs', 's', 'm', 'l', 'xl'] as const;
+type StackGap = typeof stackGaps[number];
+
 type StackProps = {
   readonly children: readonly React.ReactNode[];
-  readonly alignCenter?: boolean;
   readonly direction?: StackDirection;
+  readonly gap?: StackGap;
+  readonly alignCenter?: boolean;
 };
 
-function Stack({ children, direction = 'column', alignCenter = true }: StackProps) {
+function Stack({ children, direction = 'column', gap = 's', alignCenter = true }: StackProps) {
   return (
     <Container $direction={direction} $alignCenter={alignCenter}>
       {children.map((child, key) => (
-        <Item key={key} $direction={direction} $isFirst={key === 0}>
+        <Item key={key} $direction={direction} $gap={gap} $isFirst={key === 0}>
           {child}
         </Item>
       ))}
@@ -57,17 +61,18 @@ const Container = styled(View)(
 
 type ItemProps = {
   readonly $direction: StackDirection;
+  readonly $gap: StackGap;
   readonly $isFirst: boolean;
   readonly theme: Theme;
 };
 
 const Item = styled(View)(
-  ({ $direction, $isFirst, theme }: ItemProps) => css`
+  ({ $direction, $gap, $isFirst, theme }: ItemProps) => css`
     display: flex;
 
-    margin-top: ${!$isFirst && $direction === 'column' ? theme.spacing.s : 0};
-    margin-left: ${!$isFirst && $direction === 'row' ? theme.spacing.s : 0};
+    margin-top: ${!$isFirst && $direction === 'column' ? theme.spacing[$gap] : 0};
+    margin-left: ${!$isFirst && $direction === 'row' ? theme.spacing[$gap] : 0};
   `,
 );
 
-export { Stack, stackDirections };
+export { Stack, stackDirections, stackGaps };

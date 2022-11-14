@@ -11,13 +11,13 @@ type TextInputProps = {
 } & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'id'>;
 
 const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
-  ({ label, error, required = false, ...otherProps }, ref) => {
+  ({ label, error, required = false, ...props }, ref) => {
     const id = React.useId();
 
     return (
       <Flex direction="column">
         <Label htmlFor={id}>{required ? `${label}*` : label}</Label>
-        <StyledInput ref={ref} id={id} type="text" $isValid={!!error} {...otherProps} />
+        <StyledInput ref={ref} id={id} type="text" $isValid={!error} {...props} />
         <InputError>{error}</InputError>
       </Flex>
     );
@@ -53,7 +53,7 @@ const StyledInput = styled.input(
       opacity: 0.3;
     }
 
-    ${$isValid &&
+    ${!$isValid &&
     `
       border-color: ${theme.colors.variants.error.main};
     `}
