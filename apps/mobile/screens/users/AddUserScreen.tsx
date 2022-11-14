@@ -9,7 +9,6 @@ function AddUserScreen() {
   const { t } = useTranslation('users');
 
   useNavigationOption({
-    // TODO: Add translation
     headerTitle: () => <HeaderTitle>{t('addUser')}</HeaderTitle>,
   });
 
