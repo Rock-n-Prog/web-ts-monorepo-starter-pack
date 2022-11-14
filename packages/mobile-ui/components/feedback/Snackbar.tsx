@@ -15,7 +15,6 @@ function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   const fadeInDuration = minFadeInDuration > duration ? 0 : minFadeInDuration;
   const fadeOutDuration = minFadeOutDuration > duration ? 0 : minFadeOutDuration;
 
-  // TODO: Weirdly is the same for all Snackbars? Disappear at the same time
   Animated.sequence([
     Animated.timing(fadeAnim, {
       toValue: 1,
@@ -41,5 +40,7 @@ function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   );
 }
 
+const MemoizedSnackbar = React.memo(Snackbar);
+
 export type { SnackbarProps };
-export { Snackbar };
+export { MemoizedSnackbar as Snackbar };
