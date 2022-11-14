@@ -1,42 +1,50 @@
 import * as React from 'react';
-import { Animated } from 'react-native';
+import styled, { css } from 'styled-components/native';
 import { Alert, AlertProps } from './Alert';
 
 type SnackbarProps = {
   readonly duration: number; // ms
 } & AlertProps;
 
-const minFadeInDuration = 250;
-const minFadeOutDuration = 1000;
-
 function Snackbar({ duration, ...alertProps }: SnackbarProps) {
-  const fadeAnim = React.useRef(new Animated.Value(0)).current;
-
-  const fadeInDuration = minFadeInDuration > duration ? 0 : minFadeInDuration;
-  const fadeOutDuration = minFadeOutDuration > duration ? 0 : minFadeOutDuration;
-
-  // TODO: Animation seems sloppy
-  Animated.sequence([
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: fadeInDuration,
-    }),
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: duration - fadeInDuration - fadeOutDuration,
-    }),
-    Animated.timing(fadeAnim, {
-      toValue: 0,
-      duration: fadeOutDuration,
-    }),
-  ]).start();
-
   return (
-    <Animated.View style={{ opacity: fadeAnim }}>
+    <SnackbarContainer $duration={duration}>
       <Alert {...alertProps} />
-    </Animated.View>
+    </SnackbarContainer>
   );
 }
+
+type SnackbarContainerProps = {
+  readonly $duration: number; // ms
+};
+
+const SnackbarContainer = styled.View<SnackbarContainerProps>(
+  ({ $duration }: SnackbarContainerProps) => css`
+    animation: brief-appear ${$duration}ms forwards;
+
+    @keyframes brief-appear {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      99% {
+        // TODO: Weird hack to avoid removed snackbars taking space
+        width: auto;
+        height: auto;
+      }
+      100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  `,
+);
 
 export type { SnackbarProps };
 export { Snackbar };
