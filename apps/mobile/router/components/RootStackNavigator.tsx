@@ -4,6 +4,7 @@ import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import HomeScreen from '../../screens/home/HomeScreen';
 import HelloScreen from '../../screens/hello/HelloScreen';
 import UsersScreen from '../../screens/users/UsersScreen';
+import AddUserScreen from '../../screens/users/AddUserScreen';
 import RootRoutes from '../RootRoutes';
 import BackButton from './BackButton';
 import Toolbar from './Toolbar';
@@ -12,6 +13,7 @@ type RootStackParams = {
   readonly [RootRoutes.Home]: undefined;
   readonly [RootRoutes.Hello]: undefined;
   readonly [RootRoutes.Users]: undefined;
+  readonly [RootRoutes.AddUser]: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -36,6 +38,7 @@ function RootStackNavigator() {
       <Stack.Screen name={RootRoutes.Home} component={HomeScreen} options={{ headerShown: true }} />
       <Stack.Screen name={RootRoutes.Hello} component={HelloScreen} options={{ headerShown: true }} />
       <Stack.Screen name={RootRoutes.Users} component={UsersScreen} options={{ headerShown: true }} />
+      <Stack.Screen name={RootRoutes.AddUser} component={AddUserScreen} options={{ headerShown: true }} />
     </Stack.Navigator>
   );
 }

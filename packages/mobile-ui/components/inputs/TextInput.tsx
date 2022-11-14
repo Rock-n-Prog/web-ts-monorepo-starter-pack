@@ -56,4 +56,5 @@ const StyledTextInput = styled.TextInput(
   `,
 );
 
+export type { TextInputProps };
 export { TextInput };

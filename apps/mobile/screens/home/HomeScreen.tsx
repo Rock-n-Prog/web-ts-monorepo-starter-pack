@@ -8,7 +8,7 @@ import useRootStackNavigation from '../../router/hooks/useRootStackNavigation';
 
 function HomeScreen() {
   const { t } = useTranslation('home');
-  const { goToHelloScreen, goToUsersScreen } = useRootStackNavigation();
+  const { goToHelloScreen, goToUsersScreen, goToAddUserScreen } = useRootStackNavigation();
 
   useNavigationOption({
     headerTitle: () => <HeaderTitle>{t('home')}</HeaderTitle>,
@@ -19,6 +19,7 @@ function HomeScreen() {
       <Stack>
         <Button text={t('goToHelloScreen')} onPress={goToHelloScreen} />
         <Button text={t('goToUsersScreen')} onPress={goToUsersScreen} />
+        <Button text={t('goToAddUserScreen')} onPress={goToAddUserScreen} />
       </Stack>
     </Screen>
   );
