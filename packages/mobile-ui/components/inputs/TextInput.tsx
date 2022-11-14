@@ -12,7 +12,6 @@ type TextInputProps = {
   readonly required?: boolean;
 } & RNTextInputProps;
 
-// TODO: Input isn't editable??
 const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   ({ label, error, required = false, ...props }, ref) => {
     const { theme } = useThemeContext();

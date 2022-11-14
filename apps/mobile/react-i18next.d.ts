@@ -1,5 +1,6 @@
 import 'react-i18next';
 import common from 'mobile-locales/translations/en/common.json';
+import forms from 'mobile-locales/translations/en/forms.json';
 import index from 'mobile-locales/translations/en/index.json';
 import hello from 'mobile-locales/translations/en/hello.json';
 import users from 'mobile-locales/translations/en/users.json';
@@ -11,6 +12,7 @@ declare module 'react-i18next' {
     readonly defaultNs: 'common';
     readonly resources: {
       readonly common: typeof common;
+      readonly forms: typeof forms & typeof common;
       readonly index: typeof index & typeof common;
       readonly hello: typeof hello & typeof common;
       readonly users: typeof users & typeof common;

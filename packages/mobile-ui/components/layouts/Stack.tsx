@@ -31,14 +31,12 @@ function Stack({ children, direction = 'column', gap = 's', alignCenter = true }
 type ContainerProps = {
   readonly $direction: StackDirection;
   readonly $alignCenter: boolean;
-  readonly theme: Theme;
 };
 
 const Container = styled(View)(
-  ({ $direction, $alignCenter, theme }: ContainerProps) => css`
+  ({ $direction, $alignCenter }: ContainerProps) => css`
     display: flex;
     flex-direction: ${$direction};
-    padding: ${theme.spacing.xxs} ${theme.spacing.m};
 
     ${$alignCenter &&
     `
@@ -72,6 +70,11 @@ const Item = styled(View)(
 
     margin-top: ${!$isFirst && $direction === 'column' ? theme.spacing[$gap] : 0};
     margin-left: ${!$isFirst && $direction === 'row' ? theme.spacing[$gap] : 0};
+
+    ${$direction === 'column' &&
+    `
+        width: 100%;
+      `}
   `,
 );
 

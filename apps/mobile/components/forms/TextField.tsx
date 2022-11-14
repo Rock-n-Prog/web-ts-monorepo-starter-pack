@@ -13,7 +13,7 @@ function TextField<
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
 >({ label, ...controllerProps }: TextFieldProps<TFieldValues, TName>) {
   const {
-    field,
+    field: { onChange, ...field },
     fieldState: { isTouched, error },
   } = useController(controllerProps);
   const { t } = useTranslation('forms');
@@ -25,7 +25,7 @@ function TextField<
 
   const errorMessage = isTouched && error ? getErrorMessage(error.message) : undefined;
 
-  return <TextInput label={label} error={errorMessage} {...field} />;
+  return <TextInput label={label} error={errorMessage} {...field} onChangeText={onChange} />;
 }
 
 export { TextField };

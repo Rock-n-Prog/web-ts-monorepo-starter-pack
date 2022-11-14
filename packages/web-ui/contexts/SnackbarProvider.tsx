@@ -43,8 +43,8 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
       <SnackbarProviderContainer>
         {children}
         <SnackbarListContainer>
-          {requests.map(request => (
-            <Snackbar duration={getDuration(request)} {...request} />
+          {requests.map(({ key, ...request }) => (
+            <Snackbar key={key} duration={getDuration(request)} {...request} />
           ))}
         </SnackbarListContainer>
       </SnackbarProviderContainer>
