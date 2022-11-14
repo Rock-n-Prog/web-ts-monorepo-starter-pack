@@ -44,7 +44,9 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
         {children}
         <SnackbarListContainer>
           {requests.map(({ key, ...request }) => (
-            <Snackbar key={key} duration={getDuration(request)} {...request} />
+            <SnackbarItemContainer key={key} $isFirst={key === 0}>
+              <Snackbar duration={getDuration(request)} {...request} />
+            </SnackbarItemContainer>
           ))}
         </SnackbarListContainer>
       </SnackbarProviderContainer>
@@ -52,17 +54,13 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   );
 }
 
-// TODO: :not(:first-child)
-const SnackbarProviderContainer = styled.View<{ readonly theme: Theme }>(
-  ({ theme }: { readonly theme: Theme }) => css`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: ${theme.spacing.xs};
-  `,
-);
+const SnackbarProviderContainer = styled.View`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+`;
 
 const SnackbarListContainer = styled.View<{ readonly theme: Theme }>(
   ({ theme }: { readonly theme: Theme }) => css`
@@ -73,6 +71,20 @@ const SnackbarListContainer = styled.View<{ readonly theme: Theme }>(
     flex-direction: column;
     overflow: hidden;
     margin: ${theme.spacing.s};
+  `,
+);
+
+type SnackbarItemContainer = {
+  readonly $isFirst: boolean;
+  readonly theme: Theme;
+};
+
+const SnackbarItemContainer = styled.View<SnackbarItemContainer>(
+  ({ $isFirst, theme }) => css`
+    ${!$isFirst &&
+    `
+      margin-top: ${theme.spacing.xs};
+    `}
   `,
 );
 

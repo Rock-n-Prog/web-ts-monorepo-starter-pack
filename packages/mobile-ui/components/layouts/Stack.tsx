@@ -40,19 +40,7 @@ const Container = styled(View)(
 
     ${$alignCenter &&
     `
-      ${
-        $direction === 'column' &&
-        `
-        align-items: center;
-      `
-      }
-
-      ${
-        $direction === 'row' &&
-        `
-        justify-content: center;
-      `
-      }
+      ${$direction === 'column' ? `align-items: center;` : `justify-content: center;`}
     `}
   `,
 );
@@ -64,18 +52,19 @@ type ItemProps = {
   readonly theme: Theme;
 };
 
-// TODO: Can we use :not(:first-child) instead of $isFirst?
 const Item = styled(View)(
   ({ $direction, $gap, $isFirst, theme }: ItemProps) => css`
     display: flex;
-
-    margin-top: ${!$isFirst && $direction === 'column' ? theme.spacing[$gap] : 0};
-    margin-left: ${!$isFirst && $direction === 'row' ? theme.spacing[$gap] : 0};
 
     ${$direction === 'column' &&
     `
         width: 100%;
       `}
+
+    ${!$isFirst &&
+    `
+      ${$direction === 'column' ? `margin-top: ${theme.spacing[$gap]};` : `margin-left: ${theme.spacing[$gap]};`}
+    `}
   `,
 );
 

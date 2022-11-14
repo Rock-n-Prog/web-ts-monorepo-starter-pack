@@ -15,18 +15,22 @@ function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   const fadeInDuration = minFadeInDuration > duration ? 0 : minFadeInDuration;
   const fadeOutDuration = minFadeOutDuration > duration ? 0 : minFadeOutDuration;
 
+  // TODO: Weirdly is the same for all Snackbars? Disappear at the same time
   Animated.sequence([
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: fadeInDuration,
+      useNativeDriver: false,
     }),
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: duration - fadeInDuration - fadeOutDuration,
+      useNativeDriver: false,
     }),
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: fadeOutDuration,
+      useNativeDriver: false,
     }),
   ]).start();
 
