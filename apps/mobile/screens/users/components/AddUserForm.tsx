@@ -13,7 +13,6 @@ import { TextField } from '../../../components/forms';
 function AddUserForm() {
   const { showSnackbar } = useSnackbarContext();
   const { t } = useTranslation('users', { keyPrefix: 'form' });
-  // TODO: Mutate does not work?
   const { mutate } = trpc.users.add.useMutation({
     onSuccess: () => showSnackbar({ text: t('newUserAdded'), severity: 'success' }),
     onError: error => showSnackbar({ text: error.message, severity: 'error' }),
@@ -46,10 +45,10 @@ function AddUserForm() {
         control={control}
         name="email"
         returnKeyType="send"
-        onSubmitEditing={() => handleSubmit(input => mutate(input))}
+        onSubmitEditing={handleSubmit(input => mutate(input))}
         keyboardType="email-address"
       />
-      <Button onPress={() => handleSubmit(input => mutate(input))} disabled={!isDirty || !isValid} text={t('add')} />
+      <Button onPress={handleSubmit(input => mutate(input))} disabled={!isDirty || !isValid} text={t('add')} />
     </Stack>
   );
 }
