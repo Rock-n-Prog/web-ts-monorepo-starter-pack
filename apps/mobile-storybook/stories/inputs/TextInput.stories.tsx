@@ -4,7 +4,6 @@ import { text, boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { TextInput } from 'mobile-ui/components/inputs';
 
-// TODO: Input isn't editable in storybook?
 storiesOf('Inputs/TextInput', module)
   .add('Basic', () => (
     <TextInput
