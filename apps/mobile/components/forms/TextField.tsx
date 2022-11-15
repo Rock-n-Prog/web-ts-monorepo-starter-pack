@@ -11,11 +11,11 @@ type TextFieldProps<
 function TextField<
   TFieldValues extends FieldValues = FieldValues,
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
->({ label, ...controllerProps }: TextFieldProps<TFieldValues, TName>) {
+>({ control, name, ...props }: TextFieldProps<TFieldValues, TName>) {
   const {
     field: { onChange, ...field },
     fieldState: { isTouched, error },
-  } = useController(controllerProps);
+  } = useController({ control, name });
   const { t } = useTranslation('forms');
 
   // TODO: Getting "Required"?
@@ -25,7 +25,7 @@ function TextField<
 
   const errorMessage = isTouched && error ? getErrorMessage(error.message) : undefined;
 
-  return <TextInput label={label} error={errorMessage} {...field} onChangeText={onChange} />;
+  return <TextInput error={errorMessage} {...field} onChangeText={onChange} {...props} />;
 }
 
 export { TextField };

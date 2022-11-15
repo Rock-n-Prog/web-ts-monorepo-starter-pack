@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components/native';
+import styled, { css } from 'styled-components';
 import { Alert, AlertProps } from './Alert';
 
 type SnackbarProps = {
@@ -18,7 +18,7 @@ type SnackbarContainerProps = {
   readonly $duration: number; // ms
 };
 
-const SnackbarContainer = styled.View<SnackbarContainerProps>(
+const SnackbarContainer = styled.div<SnackbarContainerProps>(
   ({ $duration }: SnackbarContainerProps) => css`
     animation: brief-appear ${$duration}ms forwards;
 

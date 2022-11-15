@@ -24,6 +24,7 @@ function AddUserForm() {
     handleSubmit,
     control,
     formState: { isDirty, isValid },
+    setFocus,
   } = useForm<AddUserInput>({
     mode: 'onChange',
     resolver: zodResolver(addUserInputSchema),
@@ -33,11 +34,22 @@ function AddUserForm() {
     },
   });
 
-  // TODO: Next input press? Same in web, with tab? (see: https://stackoverflow.com/questions/32748718/react-native-how-to-select-the-next-textinput-after-pressing-the-next-keyboar)
   return (
     <Stack>
-      <TextField label={t('name')} control={control} name="name" />
-      <TextField label={t('email')} control={control} name="email" />
+      <TextField
+        label={t('name')}
+        control={control}
+        name="name"
+        returnKeyType="next"
+        onSubmitEditing={() => setFocus('email')}
+      />
+      <TextField
+        label={t('email')}
+        control={control}
+        name="email"
+        returnKeyType="send"
+        onSubmitEditing={() => handleSubmit(input => mutate(input))}
+      />
       <Button onPress={() => handleSubmit(input => mutate(input))} disabled={!isDirty || !isValid} text={t('add')} />
     </Stack>
   );
