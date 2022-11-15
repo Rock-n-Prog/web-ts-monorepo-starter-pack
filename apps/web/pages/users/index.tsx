@@ -2,7 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
-import { Flex } from 'web-ui/components/layout';
+import { Flex } from 'web-ui/components/layouts';
 import { Button } from 'web-ui/components/inputs';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 import { trpc } from '../../utils/trpc';

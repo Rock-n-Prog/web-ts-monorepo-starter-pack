@@ -4,7 +4,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
-// TODO: web-ui is "layout" instead of "layouts"
 import { Stack } from 'mobile-ui/components/layouts';
 import { Button } from 'mobile-ui/components/inputs';
 import { useSnackbarContext } from 'mobile-ui/hooks/useSnackbarContext';
