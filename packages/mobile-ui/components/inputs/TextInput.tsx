@@ -16,8 +16,6 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   ({ label, error, required = false, ...props }, ref) => {
     const { theme } = useThemeContext();
 
-    // TODO: emphasis.ts is starting to make sense (talked about in web-ui's TextInput)
-    // TODO: Could we use something better than theme.colors.disabled.onBackground?
     return (
       <Stack alignCenter={false} gap="xs">
         <Label>{required ? `${label}*` : label}</Label>

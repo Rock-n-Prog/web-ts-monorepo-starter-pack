@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { ErrorMessage, Label } from '../typography';
-import { Flex } from '../layout';
+import { Flex } from '../layouts';
 import type { Theme } from '../../styles/theme';
 
 type TextInputProps = {
@@ -47,10 +47,7 @@ const StyledInput = styled.input(
     }
 
     ::placeholder {
-      color: ${theme.colors.onBackground};
-
-      // TODO: Place opacity in emphasis.ts?
-      opacity: 0.3;
+      color: ${theme.colors.disabled.onBackground};
     }
 
     ${!$isValid &&

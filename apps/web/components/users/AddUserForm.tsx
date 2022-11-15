@@ -30,7 +30,6 @@ function AddUserForm() {
     },
   });
 
-  // TODO: Next input with tab? Kinda like form in mobile
   return (
     <form onSubmit={handleSubmit(input => mutate(input))}>
       <Flex direction="column">

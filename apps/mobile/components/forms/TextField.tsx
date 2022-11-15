@@ -18,7 +18,6 @@ function TextField<
   } = useController({ control, name });
   const { t } = useTranslation('forms');
 
-  // TODO: Getting "Required"?
   function getErrorMessage(key?: string) {
     return key ? t(key) : t('invalidField');
   }
