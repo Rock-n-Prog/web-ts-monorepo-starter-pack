@@ -46,4 +46,5 @@ const SnackbarContainer = styled.div<SnackbarContainerProps>(
   `,
 );
 
+export type { SnackbarProps };
 export { Snackbar };

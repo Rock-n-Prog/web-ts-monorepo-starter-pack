@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2 } from 'web-ui/components/typography';
-import { Flex } from 'web-ui/components/layout';
+import { Flex } from 'web-ui/components/layouts';
 import { WithLocale } from '../types/locales';
 import createServerSideTranslations from '../utils/createServerSideTranslations';
 

@@ -8,15 +8,11 @@ type RootStackNavigation = {
 function useRootStackNavigation() {
   const { navigate } = useNavigation<RootStackNavigation>();
 
-  function goToHelloScreen() {
-    return navigate(RootRoutes.Hello);
-  }
-
-  function goToUsersScreen() {
-    return navigate(RootRoutes.Users);
-  }
-
-  return { goToHelloScreen, goToUsersScreen };
+  return {
+    goToHelloScreen: () => navigate(RootRoutes.Hello),
+    goToUsersScreen: () => navigate(RootRoutes.Users),
+    goToAddUserScreen: () => navigate(RootRoutes.AddUser),
+  };
 }
 
 export default useRootStackNavigation;

@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
 import { useSnackbarContext } from 'web-ui/hooks/useSnackbarContext';
-import { Flex } from 'web-ui/components/layout';
+import { Flex } from 'web-ui/components/layouts';
 import { Button } from 'web-ui/components/inputs';
 import { TextField } from '../forms';
 import { trpc } from '../../utils/trpc';

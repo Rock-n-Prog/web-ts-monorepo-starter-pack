@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
+import { SnackbarProvider } from 'mobile-ui/contexts/SnackbarProvider';
 import useCachedResources from './hooks/useCachedResources';
 import RootNavigator from './router/components/RootNavigator';
 import TrpcProvider from './contexts/TrpcProvider';
@@ -16,8 +17,10 @@ function App() {
       <TranslationProvider>
         <ThemeProvider>
           <SafeAreaProvider>
-            <StatusBar style="auto" />
-            <RootNavigator />
+            <SnackbarProvider>
+              <StatusBar style="auto" />
+              <RootNavigator />
+            </SnackbarProvider>
           </SafeAreaProvider>
         </ThemeProvider>
       </TranslationProvider>

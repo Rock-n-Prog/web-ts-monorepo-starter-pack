@@ -1,15 +1,16 @@
 import * as React from 'react';
-import { Alert, AlertProps } from '../Alert';
+import type { SnackbarProps } from '../Snackbar';
+import { Snackbar } from '../Snackbar';
 import { SnackbarProvider } from '../../../contexts/SnackbarProvider';
 import { Button } from '../../inputs';
 import { useSnackbarContext } from '../../../hooks/useSnackbarContext';
 
 const config = {
   title: 'Feedback/Snackbar',
-  component: Alert,
+  component: Snackbar,
 };
 
-function InnerTemplate(props: AlertProps) {
+function InnerTemplate(props: SnackbarProps) {
   const { showSnackbar } = useSnackbarContext();
   const [number, setNumber] = React.useState(1);
 
@@ -21,7 +22,7 @@ function InnerTemplate(props: AlertProps) {
   return <Button onClick={handleClick}>Show snackbar</Button>;
 }
 
-function Template(props: AlertProps) {
+function Template(props: SnackbarProps) {
   return (
     <SnackbarProvider>
       <InnerTemplate {...props} />

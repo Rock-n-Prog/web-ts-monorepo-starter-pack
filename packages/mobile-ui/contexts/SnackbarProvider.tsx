@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/native';
 import type { Severity } from '../types/severity';
 import { Snackbar } from '../components/feedback';
 import { Theme } from '../styles/theme';
@@ -44,7 +44,9 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
         {children}
         <SnackbarListContainer>
           {requests.map(({ key, ...request }) => (
-            <Snackbar key={key} duration={getDuration(request)} {...request} />
+            <SnackbarItemContainer key={key} $isFirst={key === 0}>
+              <Snackbar key={key} duration={getDuration(request)} {...request} />
+            </SnackbarItemContainer>
           ))}
         </SnackbarListContainer>
       </SnackbarProviderContainer>
@@ -52,7 +54,7 @@ function SnackbarProvider({ children }: React.PropsWithChildren) {
   );
 }
 
-const SnackbarProviderContainer = styled.div`
+const SnackbarProviderContainer = styled.View`
   position: absolute;
   top: 0;
   bottom: 0;
@@ -60,7 +62,7 @@ const SnackbarProviderContainer = styled.div`
   right: 0;
 `;
 
-const SnackbarListContainer = styled.div<{ readonly theme: Theme }>(
+const SnackbarListContainer = styled.View<{ readonly theme: Theme }>(
   ({ theme }: { readonly theme: Theme }) => css`
     bottom: 0;
     left: 0;
@@ -68,8 +70,21 @@ const SnackbarListContainer = styled.div<{ readonly theme: Theme }>(
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    gap: ${theme.spacing.xs};
     margin: ${theme.spacing.s};
+  `,
+);
+
+type SnackbarItemContainer = {
+  readonly $isFirst: boolean;
+  readonly theme: Theme;
+};
+
+const SnackbarItemContainer = styled.View<SnackbarItemContainer>(
+  ({ $isFirst, theme }) => css`
+    ${!$isFirst &&
+    `
+      margin-top: ${theme.spacing.xs};
+    `}
   `,
 );
 
