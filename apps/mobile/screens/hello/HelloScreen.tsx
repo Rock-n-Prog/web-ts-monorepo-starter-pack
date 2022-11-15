@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Body1, HeaderTitle, Title } from 'mobile-ui/components/typography';
+import { Alert } from 'mobile-ui/components/feedback';
 import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
 import { trpc } from '../../utils/trpc';
@@ -22,7 +23,7 @@ function HelloScreen() {
         ) : (
           <Body1>{t('weGotDataGreeting', { greeting: data?.greeting })}</Body1>
         )}
-        {error && <Body1>{t('weGotError', { ns: 'common', error: JSON.stringify(error) })}</Body1>}
+        {error && <Alert severity="error" text={t('weGotError', { ns: 'common', error: JSON.stringify(error) })} />}
       </Stack>
     </Screen>
   );

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Body1, HeaderTitle, Title } from 'mobile-ui/components/typography';
+import { Alert } from 'mobile-ui/components/feedback';
 import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
 import { trpc } from '../../utils/trpc';
@@ -7,7 +8,7 @@ import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function UsersScreen() {
   const { t } = useTranslation('users');
-  const { data } = trpc.users.all.useQuery();
+  const { data, isLoading, error } = trpc.users.all.useQuery();
 
   useNavigationOption({
     headerTitle: () => <HeaderTitle>{t('users')}</HeaderTitle>,
@@ -17,7 +18,12 @@ function UsersScreen() {
     <Screen>
       <Stack>
         <Title>{t('pageToTestTrpcDataFetchedFromDatabase')}</Title>
-        {data && data.map(user => <Body1 key={user.id}>{user.name}</Body1>)}
+        {isLoading ? (
+          <Body1>{t('loading', { ns: 'common' })}</Body1>
+        ) : (
+          data?.map(user => <Body1 key={user.id}>{user.name}</Body1>)
+        )}
+        {error && <Alert severity="error" text={t('weGotError', { ns: 'common', error: JSON.stringify(error) })} />}
       </Stack>
     </Screen>
   );

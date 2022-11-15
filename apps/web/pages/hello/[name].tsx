@@ -1,6 +1,7 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { useTranslation } from 'next-i18next';
 import { Header1, Header2, Body1 } from 'web-ui/components/typography';
+import { Alert } from 'web-ui/components/feedback';
 import type { WithLocale } from '../../types/locales';
 import { trpc } from '../../utils/trpc';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
@@ -14,6 +15,7 @@ function NamePage({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation('hello');
   const { data, isLoading, error } = trpc.hello.single.useQuery({ name });
 
+  // Loading state not necessary since we fetch data server-side, kept as an example
   return (
     <>
       <Header1>{t('treeView', { ns: 'common' })}</Header1>
@@ -24,7 +26,7 @@ function NamePage({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
       ) : (
         <Body1>{t('weGotDataGreeting', { greeting: data?.greeting })}</Body1>
       )}
-      {error && <Body1>{t('weGotError', { ns: 'common', error: JSON.stringify(error) })}</Body1>}
+      {error && <Alert severity="error" text={t('weGotError', { ns: 'common', error: JSON.stringify(error) })} />}
     </>
   );
 }
