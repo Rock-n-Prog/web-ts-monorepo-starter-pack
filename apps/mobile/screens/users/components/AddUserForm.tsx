@@ -47,6 +47,7 @@ function AddUserForm() {
         name="email"
         returnKeyType="send"
         onSubmitEditing={() => handleSubmit(input => mutate(input))}
+        keyboardType="email-address"
       />
       <Button onPress={() => handleSubmit(input => mutate(input))} disabled={!isDirty || !isValid} text={t('add')} />
     </Stack>
