@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { InputError, Label } from '../typography';
+import { ErrorMessage, Label } from '../typography';
 import { Flex } from '../layout';
 import type { Theme } from '../../styles/theme';
 
@@ -18,7 +18,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       <Flex direction="column">
         <Label htmlFor={id}>{required ? `${label}*` : label}</Label>
         <StyledInput ref={ref} id={id} type="text" $isValid={!error} {...props} />
-        <InputError>{error}</InputError>
+        <ErrorMessage>{error}</ErrorMessage>
       </Flex>
     );
   },

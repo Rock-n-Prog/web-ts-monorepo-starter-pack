@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import type { Theme } from '../../styles/theme';
 import { Typography } from './Typography';
 
-const InputError = styled.span(
+const ErrorMessage = styled.span(
   ({ theme }: { readonly theme: Theme }) => css`
     ${Typography};
 
@@ -17,4 +17,4 @@ const InputError = styled.span(
   `,
 );
 
-export { InputError };
+export { ErrorMessage };

@@ -3,7 +3,7 @@ import type { TextInputProps as RNTextInputProps } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
 import { useThemeContext } from '../../hooks/useThemeContext';
-import { Label, InputError } from '../typography';
+import { Label, ErrorMessage } from '../typography';
 import { Stack } from '../layouts';
 
 type TextInputProps = {
@@ -27,7 +27,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
           $isValid={!error}
           {...props}
         />
-        <InputError>{error}</InputError>
+        <ErrorMessage>{error}</ErrorMessage>
       </Stack>
     );
   },
