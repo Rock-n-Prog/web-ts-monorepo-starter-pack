@@ -10,7 +10,6 @@ import { useSnackbarContext } from 'mobile-ui/hooks/useSnackbarContext';
 import { trpc } from '../../../utils/trpc';
 import { TextField } from '../../../components/forms';
 
-// TODO: Keyboard avoiding view?
 function AddUserForm() {
   const { showSnackbar } = useSnackbarContext();
   const { t } = useTranslation('users', { keyPrefix: 'form' });
