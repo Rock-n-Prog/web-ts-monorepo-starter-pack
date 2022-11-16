@@ -8,10 +8,11 @@ const screens: Record<RootRoutes, string> = {
   Home: '',
   Hello: 'hello',
   Users: 'users',
+  AddUser: 'users/add',
 };
 
 const linking = {
-  prefixes: ['treeview.dev://'],
+  prefixes: ['treeview.app://'],
   config: {
     screens,
   },

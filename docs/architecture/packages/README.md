@@ -1,5 +1,7 @@
 # Architecture of packages
 
+Configs are omitted, as they are pretty self-explanatory.
+
 - [Database](./database.md)
 - [tRPC](./trpc.md)
 - [Theme](./theme.md)
@@ -10,3 +12,4 @@
 - [Mobile UI](./mobile-ui.md)
 - [Mobile Forms](./mobile-forms.md)
 - [Mobile Locales](./mobile-locales.md)
+- [Mobile Storage](./mobile-storage.md)

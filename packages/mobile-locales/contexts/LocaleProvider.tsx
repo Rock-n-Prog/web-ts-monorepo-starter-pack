@@ -4,7 +4,7 @@ import type { Locale } from '../types/locales';
 import { defaultLocale } from '../types/locales';
 import { setStoredLanguage } from '../utils/storedLanguage';
 
-function TranslationProvider({ children }: React.PropsWithChildren) {
+function LocaleProvider({ children }: React.PropsWithChildren) {
   const { i18n } = useTranslation();
   const locale = React.useMemo(() => i18n.language as Locale, [i18n.language]);
 
@@ -13,10 +13,10 @@ function TranslationProvider({ children }: React.PropsWithChildren) {
     return setStoredLanguage(locale);
   }
 
-  return <TranslationContext.Provider value={{ locale, changeLocale }}>{children}</TranslationContext.Provider>;
+  return <LocaleContext.Provider value={{ locale, changeLocale }}>{children}</LocaleContext.Provider>;
 }
 
-const TranslationContext = React.createContext<{
+const LocaleContext = React.createContext<{
   readonly locale: Locale;
   readonly changeLocale: (locale: Locale) => Promise<unknown>;
 }>({
@@ -24,4 +24,4 @@ const TranslationContext = React.createContext<{
   changeLocale: () => Promise.resolve(),
 });
 
-export { TranslationContext, TranslationProvider };
+export { LocaleContext, LocaleProvider };

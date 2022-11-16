@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
-    "lint:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
+    "lint": "pnpm lint:code && pnpm lint:i18n",
+    "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:fix": "pnpm lint:code:fix && pnpm lint:i18n:fix",
+    "lint:i18n": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
+    "lint:i18n:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
   },
   "dependencies": {
     "i18next": "^22.0.5",

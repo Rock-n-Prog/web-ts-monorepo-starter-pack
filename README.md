@@ -26,6 +26,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 | Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)                |
 | Mobile Forms     | Package | [![Build Mobile Forms Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-forms.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-forms.yml)       |
 | Mobile Locales   | Package | [![Build Mobile Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml) |
+| Mobile Storage   | Package | [![Build Mobile Storage Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-storage.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-storage.yml) |
 
 ## Apps
 
@@ -45,6 +46,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
 - [`packages/mobile-forms`](packages/mobile-forms): React Native form-specific components for forms app
 - [`packages/mobile-locales`](packages/mobile-locales): Locale translations for mobile app
+- [`packages/mobile-storage`](packages/mobile-storage): Storage utilities for mobile app
 - [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
 - [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
