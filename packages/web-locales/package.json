@@ -6,9 +6,23 @@
     "lint": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
     "lint:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
   },
+  "dependencies": {
+    "i18next": "^22.0.5",
+    "next": "^12.3.1",
+    "next-i18next": "^12.1.0",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.0.0",
+    "react-is": "^18.2.0",
+    "web-storage": "workspace:*"
+  },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "eslint-plugin-i18n-json": "^4.0.0"
+    "eslint-plugin-i18n-json": "^4.0.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2",
+    "webpack": "^5.74.0"
   }
 }
