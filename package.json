@@ -44,11 +44,11 @@
     "./*.{js,jsx,ts,tsx}": [
       "pnpm lint:root:fix"
     ],
+    "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
+      "pnpm format:fix"
+    ],
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
-    ],
-    "apps/web/public/locales/**/*.{json}": [
-      "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
     ],
     "apps/mobile/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/mobile/**/*.{js,jsx,ts,tsx}"
@@ -56,23 +56,29 @@
     "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/theme/**/*.{js,ts}": [
-      "eslint --fix packages/theme/**/*.{js,ts}"
-    ],
     "packages/database/**/*.{js,ts}": [
       "eslint --fix packages/database/**/*.{js,ts}"
     ],
     "packages/trpc/**/*.{js,ts}": [
       "eslint --fix packages/trpc/**/*.{js,ts}"
     ],
-    "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
-      "pnpm format:fix"
+    "packages/theme/**/*.{js,ts}": [
+      "eslint --fix packages/theme/**/*.{js,ts}"
+    ],
+    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    ],
+    "packages/web-forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    ],
+    "packages/web-locales/translations/**/*.{json}": [
+      "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
+    ],
+    "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+    ],
+    "packages/mobile-locales/translations/**/*.{json}": [
+      "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
     ]
   }
 }

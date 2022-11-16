@@ -171,6 +171,7 @@ importers:
       trpc: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.3
+      web-forms: workspace:*
       web-locales: workspace:*
       web-ui: workspace:*
     dependencies:
@@ -191,6 +192,7 @@ importers:
       superjson: 1.10.0
       theme: link:../../packages/theme
       trpc: link:../../packages/trpc
+      web-forms: link:../../packages/web-forms
       web-locales: link:../../packages/web-locales
       web-ui: link:../../packages/web-ui
     devDependencies:
@@ -348,6 +350,37 @@ importers:
 
   packages/tsconfig:
     specifiers: {}
+
+  packages/web-forms:
+    specifiers:
+      '@babel/core': ^7.19.1
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      next-i18next: ^12.1.0
+      react: ^18.2.0
+      react-dom: 18.2.0
+      react-is: ^18.2.0
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+      web-ui: workspace:*
+      webpack: ^5.74.0
+    dependencies:
+      next-i18next: 12.1.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-is: 18.2.0
+      web-ui: link:../web-ui
+    devDependencies:
+      '@babel/core': 7.19.1
+      '@types/react': 18.0.21
+      '@types/react-dom': 18.0.6
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      tsconfig: link:../tsconfig
+      typescript: 4.8.3
+      webpack: 5.74.0
 
   packages/web-locales:
     specifiers:
@@ -13095,6 +13128,26 @@ packages:
       i18next: 21.9.2
       i18next-fs-backend: 1.1.5
       next: 12.3.1_ir3quccc6i62x6qn6jjhyjjiey
+      react: 18.2.0
+      react-i18next: 11.18.6_ulhmqqxshznzmtuvahdi5nasbq
+    transitivePeerDependencies:
+      - react-dom
+      - react-native
+    dev: false
+
+  /next-i18next/12.1.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-rhos/PVULmZPdC0jpec2MDBQMXdGZ3+Mbh/tZfrDtjgnVN3ucdq7k8BlwsJNww6FnqC8AC31n6dSYuqVzYsGsw==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      next: '>= 10.0.0'
+      react: '>= 16.8.0'
+    dependencies:
+      '@babel/runtime': 7.19.0
+      '@types/hoist-non-react-statics': 3.3.1
+      core-js: 3.25.2
+      hoist-non-react-statics: 3.3.2
+      i18next: 21.9.2
+      i18next-fs-backend: 1.1.5
       react: 18.2.0
       react-i18next: 11.18.6_ulhmqqxshznzmtuvahdi5nasbq
     transitivePeerDependencies:

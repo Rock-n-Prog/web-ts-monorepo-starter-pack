@@ -18,10 +18,8 @@ function TextField<
   } = useController(controllerProps);
   const { t } = useTranslation('forms');
 
-  const unsafeT = t as (key: string) => string;
-
   function getErrorMessage(key?: string) {
-    return key ? unsafeT(key) : t('invalidField');
+    return t(key ?? 'invalidField');
   }
 
   const errorMessage = isTouched && error ? getErrorMessage(error.message) : undefined;

@@ -14,7 +14,7 @@ pnpm install
 
 ## Available scripts
 
-### Start
+### Start Storybook
 
 Storybook will be running on [http://localhost:6006](http://localhost:6006);
 
@@ -25,7 +25,7 @@ pnpm storybook
 pnpm storybook:smoke-test
 ```
 
-### Build
+### Build Storybook
 
 ```bash
 pnpm storybook:build
