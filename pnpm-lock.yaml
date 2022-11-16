@@ -48,6 +48,7 @@ importers:
       expo-status-bar: ^1.4.0
       i18next: ^22.0.5
       intl-pluralrules: ^1.3.1
+      mobile-forms: workspace:*
       mobile-locales: workspace:*
       mobile-ui: workspace:*
       react: ^18.2.0
@@ -80,6 +81,7 @@ importers:
       expo-status-bar: 1.4.0
       i18next: 22.0.5
       intl-pluralrules: 1.3.1
+      mobile-forms: link:../../packages/mobile-forms
       mobile-locales: link:../../packages/mobile-locales
       mobile-ui: link:../../packages/mobile-ui
       react: 18.2.0
@@ -250,6 +252,39 @@ importers:
       eslint-plugin-prefer-type-alias: 0.1.0
       eslint-plugin-react: 7.31.8_eslint@8.23.1
       eslint-plugin-storybook: 0.6.6_irgkl5vooow2ydyo6aokmferha
+      typescript: 4.8.3
+
+  packages/mobile-forms:
+    specifiers:
+      '@types/react': ^18.0.21
+      '@types/react-native': ^0.70.3
+      '@types/styled-components': ^5.1.26
+      '@types/styled-components-react-native': ^5.1.3
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      mobile-ui: workspace:*
+      react: ^18.2.0
+      react-i18next: ^12.0.0
+      react-native: ^0.70.1
+      stylelint: ^14.14.0
+      stylelint-config-custom: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    dependencies:
+      mobile-ui: link:../mobile-ui
+      react: 18.2.0
+      react-i18next: 12.0.0_4kk6flxesec7o3ex73cqyfxqsm
+      react-native: 0.70.1_react@18.2.0
+    devDependencies:
+      '@types/react': 18.0.21
+      '@types/react-native': 0.70.3
+      '@types/styled-components': 5.1.26
+      '@types/styled-components-react-native': 5.1.3
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      stylelint: 14.14.0
+      stylelint-config-custom: link:../stylelint-config-custom
+      tsconfig: link:../tsconfig
       typescript: 4.8.3
 
   packages/mobile-locales:
@@ -5382,7 +5417,7 @@ packages:
     resolution: {integrity: sha512-KuKJ9Z6xb93uJiIyxo/+ksS7yLjS1KzG6iv5i78dhVg/X3u5t1H7juRWqVmodIdz6wGVaIApo1u01kmFRdJHVw==}
     dependencies:
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.20
+      '@types/react': 18.0.21
       csstype: 3.1.1
     dev: true
 
@@ -14748,6 +14783,25 @@ packages:
       i18next: 21.9.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-i18next/12.0.0_4kk6flxesec7o3ex73cqyfxqsm:
+    resolution: {integrity: sha512-/O7N6aIEAl1FaWZBNvhdIo9itvF/MO/nRKr9pYqRc9LhuC1u21SlfwpiYQqvaeNSEW3g3qUXLREOWMt+gxrWbg==}
+    peerDependencies:
+      i18next: '>= 19.0.0'
+      react: '>= 16.8.0'
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.19.0
+      html-parse-stringify: 3.0.1
+      react: 18.2.0
+      react-native: 0.70.1_react@18.2.0
     dev: false
 
   /react-i18next/12.0.0_fin5fcllii5nq4onw7ytb5e37q:

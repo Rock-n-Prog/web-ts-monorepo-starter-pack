@@ -20,8 +20,6 @@ TODO: Once Storybook is deployed, link it here.
 
 ## File structure
 
-For more info, see React file structure.
-
 - `components`: UI Components
 - `contexts`: Theme context providers
 - `hooks`: Theme hooks

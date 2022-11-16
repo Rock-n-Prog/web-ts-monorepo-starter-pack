@@ -20,6 +20,7 @@ For more info, see Turborepo file structure.
   - `web-forms`: Web forms library (see [its docs](./packages/web-forms.md))
   - `web-locales`: Web translations library (see [its docs](./packages/web-locale.md))
   - `mobile-ui`: Mobile UI library (see [its docs](./packages/mobile-ui.md))
+  - `mobile-forms`: Mobile forms library (see [its docs](./packages/mobile-forms.md))
   - `mobile-locales`: Mobile translations library (see [its docs](./packages/mobile-locales.md))
   - `eslint-config-custom`: Set of eslint configs for given technologies
   - `tesconfig`: Set of TypeScript configs for given technologies

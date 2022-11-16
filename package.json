@@ -77,6 +77,9 @@
     "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
     ],
+    "packages/mobile-forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+    ],
     "packages/mobile-locales/translations/**/*.{json}": [
       "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
     ]

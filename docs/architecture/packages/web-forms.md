@@ -12,6 +12,4 @@ A simple React library built in TypeScript. File structure explains pretty well 
 
 ## File structure
 
-For more info, see React file structure.
-
 - `components`: UI Components
