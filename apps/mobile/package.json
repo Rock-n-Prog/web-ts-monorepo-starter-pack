@@ -13,6 +13,7 @@
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@hookform/resolvers": "^2.9.10",
+    "@react-native-async-storage/async-storage": "^1.17.11",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.0",
     "@tanstack/react-query": "^4.3.9",
@@ -49,6 +50,7 @@
     "babel-preset-expo": "^9.2.0",
     "eslint": "7.32.0",
     "eslint-config-custom": "workspace:*",
+    "expo-cli": "^6.0.8",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
