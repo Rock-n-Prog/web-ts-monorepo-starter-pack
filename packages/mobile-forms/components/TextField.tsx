@@ -19,7 +19,7 @@ function TextField<
   const { t } = useTranslation('forms');
 
   function getErrorMessage(key?: string) {
-    return key ? t(key) : t('invalidField');
+    return t(key ?? 'invalidField');
   }
 
   const errorMessage = isTouched && error ? getErrorMessage(error.message) : undefined;

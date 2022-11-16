@@ -6,6 +6,7 @@ This app uses shared packages. For more info, read their docs:
 
 - [`trpc`](../packages/trpc.md)
 - [`web-ui`](../packages/web-ui.md)
+- [`web-forms`](../packages/web-forms.md)
 - [`web-locales`](../packages/web-locales.md)
 
 ## Software architecture
@@ -24,7 +25,5 @@ For more info, see Next.js file structure.
 - `pages`: Pages, routing automatically handled by Next.js
   - `_app.page.tsx`: Application (wrapped by providers)
   - `/**/*.page.tsx`: Pages of the application
-- `public`: Static files
-  - `locales`: Translations
 - `types`: Type definitions
 - `utils`: Utility values and functions

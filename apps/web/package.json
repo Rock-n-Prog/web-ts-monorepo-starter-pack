@@ -28,6 +28,7 @@
     "superjson": "^1.10.0",
     "theme": "workspace:*",
     "trpc": "workspace:*",
+    "web-forms": "workspace:*",
     "web-locales": "workspace:*",
     "web-ui": "workspace:*"
   },
