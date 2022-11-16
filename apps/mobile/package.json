@@ -51,6 +51,7 @@
     "babel-preset-expo": "^9.2.0",
     "eslint": "7.32.0",
     "eslint-config-custom": "workspace:*",
+    "expo-cli": "^6.0.8",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
