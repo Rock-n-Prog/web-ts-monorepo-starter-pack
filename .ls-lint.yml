@@ -41,11 +41,14 @@ ignore:
   - packages/database/node_modules
   - packages/database/prisma/migrations
   - packages/eslint-config-custom/node_modules
+  - packages/mobile-forms/node_modules
   - packages/mobile-locales/node_modules
   - packages/mobile-ui/node_modules
   - packages/stylelint-config-custom/node_modules
   - packages/theme/node_modules
+  - packages/trpc/dist
   - packages/trpc/node_modules
+  - packages/web-forms/node_modules
   - packages/web-locales/node_modules
   - packages/web-ui/node_modules
   - packages/web-ui/storybook-static
