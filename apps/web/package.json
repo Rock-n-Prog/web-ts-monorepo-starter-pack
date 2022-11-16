@@ -30,6 +30,7 @@
     "trpc": "workspace:*",
     "web-forms": "workspace:*",
     "web-locales": "workspace:*",
+    "web-storage": "workspace:*",
     "web-ui": "workspace:*"
   },
   "devDependencies": {

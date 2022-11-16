@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "eslint-plugin-i18n-json": "^4.0.0",

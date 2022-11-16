@@ -175,6 +175,7 @@ importers:
       typescript: ^4.5.3
       web-forms: workspace:*
       web-locales: workspace:*
+      web-storage: workspace:*
       web-ui: workspace:*
     dependencies:
       '@hookform/resolvers': 2.9.10_react-hook-form@7.38.0
@@ -196,6 +197,7 @@ importers:
       trpc: link:../../packages/trpc
       web-forms: link:../../packages/web-forms
       web-locales: link:../../packages/web-locales
+      web-storage: link:../../packages/web-storage
       web-ui: link:../../packages/web-ui
     devDependencies:
       '@babel/core': 7.19.1
@@ -420,6 +422,8 @@ importers:
   packages/web-locales:
     specifiers:
       '@babel/core': ^7.19.1
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       eslint-plugin-i18n-json: ^4.0.0
@@ -445,6 +449,8 @@ importers:
       web-storage: link:../web-storage
     devDependencies:
       '@babel/core': 7.19.1
+      '@types/react': 18.0.21
+      '@types/react-dom': 18.0.6
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
