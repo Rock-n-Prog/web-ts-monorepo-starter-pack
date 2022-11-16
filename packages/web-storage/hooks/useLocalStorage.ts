@@ -1,26 +1,9 @@
 import * as React from 'react';
-
-type GetItemFromLocaleStorageParams<T> = {
-  readonly key: string;
-  readonly initialValue: T;
-};
-
-type SetItemInLocaleStorageParams<T> = {
-  readonly key: string;
-  readonly value: T;
-};
+import type { GetItemFromLocaleStorageParams } from '../utils/getItemFromLocalStorage';
+import getItemFromLocaleStorage from '../utils/getItemFromLocalStorage';
+import setItemInLocaleStorage from '../utils/setItemInLocalStorage';
 
 type UseLocaleStorageOutput<T> = readonly [T, (value: T) => void];
-
-function getItemFromLocaleStorage<T>({ key, initialValue }: GetItemFromLocaleStorageParams<T>) {
-  const item = window?.localStorage.getItem(key);
-  return Promise.resolve(item ? (JSON.parse(item) as T) : initialValue);
-}
-
-function setItemInLocaleStorage<T>({ key, value }: SetItemInLocaleStorageParams<T>) {
-  window?.localStorage.setItem(key, JSON.stringify(value));
-  return Promise.resolve();
-}
 
 // Defining a return type because type inference is rough here
 function useLocalStorage<T>({ key, initialValue }: GetItemFromLocaleStorageParams<T>): UseLocaleStorageOutput<T> {

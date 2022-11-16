@@ -1,4 +1,4 @@
-name: Build Web Locales Package
+name: Build Web Storage Package
 
 on:
   workflow_dispatch:
@@ -7,8 +7,8 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
+      - '.github/workflows/build-packages-web-storage.yml'
+      - 'packages/web-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -16,8 +16,8 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
+      - '.github/workflows/build-packages-web-storage.yml'
+      - 'packages/web-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -41,7 +41,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-locales... install
+        run: pnpm --filter web-storage... install
 
       - name: Lint
-        run: pnpm --filter web-locales lint
+        run: pnpm --filter web-storage lint

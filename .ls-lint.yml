@@ -50,5 +50,6 @@ ignore:
   - packages/trpc/node_modules
   - packages/web-forms/node_modules
   - packages/web-locales/node_modules
+  - packages/web-storage/node_modules
   - packages/web-ui/node_modules
   - packages/web-ui/storybook-static

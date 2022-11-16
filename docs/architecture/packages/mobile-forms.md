@@ -6,6 +6,10 @@ This library is used by a mobile app. For more info, read [its docs](../apps/mob
 
 The main goal is to list components and behaviors with the responsibility of handling mobile forms.
 
+This package uses:
+
+- [`packages/mobile-ui`](./mobile-ui.md): UI Components
+
 ## Software architecture
 
 A simple React library built in TypeScript. File structure explains pretty well the software architecture.
