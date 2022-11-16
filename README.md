@@ -23,8 +23,8 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 | Web Forms        | Package | [![Build Web Forms Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-forms.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-forms.yml)                |
 | Web Locales      | Package | [![Build Web Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-locales.yml)          |
 | Mobile UI        | Package | [![Build Mobile UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-ui.yml)                |
-| Mobile Locales   | Package | [![Build Mobile Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml) |
 | Mobile Forms     | Package | [![Build Mobile Forms Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-forms.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-forms.yml)       |
+| Mobile Locales   | Package | [![Build Mobile Locales Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-mobile-locales.yml) |
 
 ## Apps
 
