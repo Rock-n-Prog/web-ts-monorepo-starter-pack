@@ -47,7 +47,7 @@ jobs:
         run: pnpm --filter database generate
 
       - name: Install dependencies
-        run: pnpm --filter trpc install
+        run: pnpm --filter trpc... install
 
       - name: Lint
         run: pnpm --filter trpc lint
