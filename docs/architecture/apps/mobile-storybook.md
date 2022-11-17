@@ -1,12 +1,12 @@
 # Mobile Storybook
 
-This app is the storybook Expo app for showcasing `mobile-ui` components.
+This app is the storybook Expo app for showcasing `@acme/mobile-ui` components.
 
 App is located at [`apps/mobile-storybook`](../../../apps/mobile-storybook).
 
 This app uses shared packages. For more info, read their docs:
 
-- [`mobile-ui`](../packages/mobile-ui.md)
+- [`mobile/ui`](../packages/mobile/ui.md)
 
 ## Software architecture
 

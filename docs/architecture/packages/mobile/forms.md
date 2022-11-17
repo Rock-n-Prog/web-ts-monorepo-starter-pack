@@ -1,14 +1,14 @@
 # Mobile Forms
 
-Library is located at [`packages/mobile-forms`](../../../packages/mobile-forms).
+Library is located at [`packages/mobile/forms`](../../../../packages/mobile/forms).
 
-This library is used by a mobile app. For more info, read [its docs](../apps/mobile.md).
+This library is used by a mobile app. For more info, read [its docs](../../apps/mobile.md).
 
 The main goal is to list components and behaviors with the responsibility of handling mobile forms.
 
 This package uses:
 
-- [`packages/mobile-ui`](./mobile-ui.md): UI Components
+- [`packages/ui`](./ui.md): UI Components
 
 ## Software architecture
 

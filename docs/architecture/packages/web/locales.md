@@ -1,12 +1,12 @@
-# Mobile Locales
+# Web Locales
 
-Library is located at [`packages/mobile-locales`](../../../packages/mobile-locales).
+Library is located at [`packages/web/locales`](../../../../packages/web/locales).
 
-This library is used by a mobile app. For more info, read [its docs](../apps/mobile.md).
+This library is used by a web app. For more info, read [its docs](../../apps/web.md).
 
 This package uses:
 
-- [`packages/mobile-storage`](./mobile-storage.md): Storage utilities
+- [`packages/web/storage`](./storage.md): Storage utilities
 
 ## Software architecture
 
@@ -17,7 +17,6 @@ architecture.
 
 - `contexts`: Context providers
 - `hooks`: Hooks
-- `plugins`: i18n plugins
 - `translations`: All locales translations
   - `en`: Translations in English
   - `fr`: Translations in French

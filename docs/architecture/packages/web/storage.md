@@ -1,6 +1,6 @@
 # Web Storage
 
-Library is located at [`packages/web-storage`](../../../packages/web-storage).
+Library is located at [`packages/web/storage`](../../../../packages/web/storage).
 
 ## Software architecture
 

@@ -1,8 +1,8 @@
 # Database
 
-Library is located at [`packages/database`](../../../packages/database).
+Library is located at [`packages/db`](../../../packages/db).
 
-This library is used the tRPC package. For more info, read [its docs](./trpc.md).
+This library is used the API package. For more info, read [its docs](./api.md).
 
 ## Software architecture
 

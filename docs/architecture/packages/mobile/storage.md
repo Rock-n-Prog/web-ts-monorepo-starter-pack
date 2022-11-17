@@ -1,6 +1,6 @@
 # Mobile Storage
 
-Library is located at [`packages/mobile-storage`](../../../packages/mobile-storage).
+Library is located at [`packages/mobile/storage`](../../../../packages/mobile/storage).
 
 ## Software architecture
 
