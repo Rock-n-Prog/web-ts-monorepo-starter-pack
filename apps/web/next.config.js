@@ -4,7 +4,7 @@ const withTM = require('next-transpile-modules')([
   'theme',
   '@acme/web-ui',
   '@acme/web-forms',
-  'web-locales',
+  '@acme/web-locales',
   '@acme/web-storage',
 ]);
 

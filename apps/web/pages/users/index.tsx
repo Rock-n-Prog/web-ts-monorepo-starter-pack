@@ -5,8 +5,8 @@ import { Body1, Header1, Header2 } from '@acme/web-ui/components/typography';
 import { Flex } from '@acme/web-ui/components/layouts';
 import { Button } from '@acme/web-ui/components/inputs';
 import { Alert } from '@acme/web-ui/components/feedback';
-import type { WithLocale } from 'web-locales/types/locales';
-import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
+import type { WithLocale } from '@acme/web-locales/types/locales';
+import createServerSideTranslations from '@acme/web-locales/utils/createServerSideTranslations';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 import { trpc } from '../../utils/trpc';
 

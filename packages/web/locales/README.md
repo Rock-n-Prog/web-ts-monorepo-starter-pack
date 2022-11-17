@@ -1,12 +1,12 @@
-# TreeView Web Locales library
+# ACME Web Locales library
 
-Locale translations for TreeView Web app.
+Locale translations for ACME Web app.
 
 Also contains utilities contexts and hooks for translation context.
 
 This package uses:
 
-- [`packages/web-storage`](../web-storage): Storage utilities
+- [`packages/web#storage`](../storage): Storage utilities
 
 ## Setup
 

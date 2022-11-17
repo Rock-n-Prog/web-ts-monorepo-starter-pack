@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@acme/web-forms": "workspace:*",
+    "@acme/web-locales": "workspace:*",
     "@acme/web-storage": "workspace:*",
     "@acme/web-ui": "workspace:*",
     "@hookform/resolvers": "^2.9.10",
@@ -30,8 +31,7 @@
     "react-query": "^3.39.2",
     "superjson": "^1.10.0",
     "theme": "workspace:*",
-    "trpc": "workspace:*",
-    "web-locales": "workspace:*"
+    "trpc": "workspace:*"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",

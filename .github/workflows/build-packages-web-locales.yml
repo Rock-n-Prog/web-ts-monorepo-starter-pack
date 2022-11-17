@@ -8,18 +8,21 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/web/storage/**'
+      - 'packages/web/locales/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
+
   pull_request:
     branches:
       - main
       - develop
     paths:
       - '.github/workflows/build-packages-web-locales.yml'
-      - 'packages/web-locales/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/web/storage/**'
+      - 'packages/web/locales/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
@@ -41,7 +44,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-locales... install
+        run: pnpm --filter @acme/web-locales... install
 
       - name: Lint
-        run: pnpm --filter web-locales lint
+        run: pnpm --filter @acme/web-locales lint
