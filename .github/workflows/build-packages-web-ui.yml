@@ -8,20 +8,20 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
-      - 'packages/web-ui/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/theme/**'
+      - 'packages/web/ui/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
-      - 'packages/web-ui/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/theme/**'
+      - 'packages/web/ui/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
@@ -43,10 +43,10 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-ui... install
+        run: pnpm --filter @acme/web-ui... install
 
       - name: Lint
-        run: pnpm --filter web-ui lint
+        run: pnpm --filter @acme/web-ui lint
 
       - name: Storybook smoke test
-        run: pnpm --filter web-ui storybook:smoke-test
+        run: pnpm --filter @acme/web-ui storybook:smoke-test

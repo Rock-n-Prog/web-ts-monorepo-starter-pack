@@ -1,6 +1,6 @@
-# TreeView Web UI library
+# ACME Web UI library
 
-React component library and theming necessities for TreeView Web app.
+React component library and theming necessities for ACME Web app.
 
 This package uses:
 

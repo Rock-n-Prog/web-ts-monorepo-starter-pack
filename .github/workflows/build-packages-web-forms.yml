@@ -8,8 +8,9 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-forms.yml'
-      - 'packages/web/forms/**'
+      - 'packages/theme/**'
       - 'packages/web/ui/**'
+      - 'packages/web/forms/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
   pull_request:
@@ -18,8 +19,9 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-forms.yml'
-      - 'packages/web/forms/**'
+      - 'packages/theme/**'
       - 'packages/web/ui/**'
+      - 'packages/web/forms/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
 
