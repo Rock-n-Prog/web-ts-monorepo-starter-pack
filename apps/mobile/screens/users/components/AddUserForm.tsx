@@ -5,9 +5,9 @@ import { useForm } from 'react-hook-form';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
 import { TextField } from '@acme/mobile-forms/components';
-import { Stack } from 'mobile-ui/components/layouts';
-import { Button } from 'mobile-ui/components/inputs';
-import { useSnackbarContext } from 'mobile-ui/hooks/useSnackbarContext';
+import { Stack } from '@acme/mobile-ui/components/layouts';
+import { Button } from '@acme/mobile-ui/components/inputs';
+import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
 import { trpc } from '../../../utils/trpc';
 
 function AddUserForm() {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
+import { useThemeContext } from '@acme/mobile-ui/hooks/useThemeContext';
 import HomeScreen from '../../screens/home/HomeScreen';
 import HelloScreen from '../../screens/hello/HelloScreen';
 import UsersScreen from '../../screens/users/UsersScreen';

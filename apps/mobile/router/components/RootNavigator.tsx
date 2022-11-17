@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DefaultTheme, DarkTheme, NavigationContainer } from '@react-navigation/native';
-import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
+import { useThemeContext } from '@acme/mobile-ui/hooks/useThemeContext';
 import RootRoutes from '../RootRoutes';
 import RootStackNavigator from './RootStackNavigator';
 

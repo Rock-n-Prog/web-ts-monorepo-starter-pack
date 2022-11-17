@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Screen } from 'mobile-ui/components/layouts';
-import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
+import { Screen } from '@acme/mobile-ui/components/layouts';
+import { useThemeContext } from '@acme/mobile-ui/hooks/useThemeContext';
 import { View } from 'react-native';
 import { ThemeSwitcher } from './ThemeSwitcher';
 
