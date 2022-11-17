@@ -5,8 +5,8 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "lint": "eslint --ext js,ts .",
-    "lint:fix": "eslint --fix --ext js,ts ."
+    "lint": "eslint --max-warnings 0 --ext js,ts .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts ."
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

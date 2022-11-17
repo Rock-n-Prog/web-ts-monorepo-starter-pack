@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext js,jsx,ts,tsx .",
-    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx ."
+    "lint": "eslint --max-warnings 0 --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
     "mobile-ui": "workspace:*",

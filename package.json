@@ -20,8 +20,8 @@
     "lint": "pnpm run lint:root && turbo run lint",
     "lint:fix": "pnpm run lint:root:fix && turbo run lint:fix",
     "lint:ls": "ls-lint",
-    "lint:root": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:root:fix": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:root": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
+    "lint:root:fix": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
     "storybook:mobile": "turbo run dev --scope mobile-storybook --no-deps",
@@ -48,52 +48,52 @@
       "pnpm format:fix"
     ],
     "apps/web/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix apps/web/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix apps/web/**/*.{js,jsx,ts,tsx}"
     ],
     "apps/mobile/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix apps/mobile/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix apps/mobile/**/*.{js,jsx,ts,tsx}"
     ],
     "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/database/**/*.{js,ts}": [
-      "eslint --fix packages/database/**/*.{js,ts}"
+      "eslint --max-warnings 0 --fix packages/database/**/*.{js,ts}"
     ],
     "packages/trpc/**/*.{js,ts}": [
-      "eslint --fix packages/trpc/**/*.{js,ts}"
+      "eslint --max-warnings 0 --fix packages/trpc/**/*.{js,ts}"
     ],
     "packages/theme/**/*.{js,ts}": [
-      "eslint --fix packages/theme/**/*.{js,ts}"
+      "eslint --max-warnings 0 --fix packages/theme/**/*.{js,ts}"
     ],
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web-locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/web-locales/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/web-locales/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web-locales/translations/**/*.{json}": [
-      "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
+      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
     ],
     "packages/web-storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/web-storage/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/web-storage/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/mobile-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/mobile-locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/mobile-locales/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/mobile-locales/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/mobile-locales/translations/**/*.{json}": [
-      "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
+      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
     ],
     "packages/mobile-storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix packages/mobile-storage/**/*.{js,jsx,ts,tsx}"
+      "eslint --max-warnings 0 --fix packages/mobile-storage/**/*.{js,jsx,ts,tsx}"
     ]
   }
 }
