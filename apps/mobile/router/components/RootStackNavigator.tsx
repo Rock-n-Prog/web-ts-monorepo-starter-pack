@@ -7,7 +7,7 @@ import UsersScreen from '../../screens/users/UsersScreen';
 import AddUserScreen from '../../screens/users/AddUserScreen';
 import RootRoutes from '../RootRoutes';
 import BackButton from './BackButton';
-import Toolbar from './Toolbar';
+import DevTools from './DevTools';
 
 type RootStackParams = {
   readonly [RootRoutes.Home]: undefined;
@@ -28,7 +28,7 @@ function RootStackNavigator() {
         headerShown: false,
         headerBackVisible: false,
         headerLeft: BackButton,
-        headerRight: Toolbar,
+        headerRight: DevTools,
         animation: 'fade_from_bottom',
         headerStyle: {
           backgroundColor: theme.colors.surface,

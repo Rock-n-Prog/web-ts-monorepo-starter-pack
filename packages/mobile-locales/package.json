@@ -3,12 +3,23 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
-    "lint:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
+    "lint": "pnpm lint:code && pnpm lint:i18n",
+    "lint:code": "eslint --max-warnings 0 --ext js,jsx,ts,tsx .",
+    "lint:code:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx .",
+    "lint:fix": "pnpm lint:code:fix && pnpm lint:i18n:fix",
+    "lint:i18n": "eslint --max-warnings 0 --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
+    "lint:i18n:fix": "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
+  },
+  "dependencies": {
+    "expo-localization": "^14.0.0",
+    "mobile-storage": "workspace:*",
+    "react": "^18.1.0",
+    "react-native": "^0.70.5"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "eslint-plugin-i18n-json": "^4.0.0"
+    "eslint-plugin-i18n-json": "^4.0.0",
+    "tsconfig": "workspace:*"
   }
 }

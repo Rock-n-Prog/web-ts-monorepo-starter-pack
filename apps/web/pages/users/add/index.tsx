@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import { Body1, Header1, Header2 } from 'web-ui/components/typography';
-import createServerSideTranslations from '../../../utils/createServerSideTranslations';
-import type { WithLocale } from '../../../types/locales';
+import type { WithLocale } from 'web-locales/types/locales';
+import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
 import { AddUserForm } from '../../../components/users/AddUserForm';
 
 function AddUserPage() {

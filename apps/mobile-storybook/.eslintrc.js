@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['custom/expo.js', 'custom/storybook.js'],
+  extends: ['custom/react-native.js', 'custom/storybook.js'],
 };

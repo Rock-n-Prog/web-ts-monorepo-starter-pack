@@ -5,10 +5,10 @@ import { Body1, Header1, Header2 } from 'web-ui/components/typography';
 import { Flex } from 'web-ui/components/layouts';
 import { Button } from 'web-ui/components/inputs';
 import { Alert } from 'web-ui/components/feedback';
+import type { WithLocale } from 'web-locales/types/locales';
+import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 import { trpc } from '../../utils/trpc';
-import createServerSideTranslations from '../../utils/createServerSideTranslations';
-import { WithLocale } from '../../types/locales';
 
 function UsersPage() {
   const { t } = useTranslation('users');

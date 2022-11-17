@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# turbo
+.turbo
+
+# node
+dist
+
+# expo
+.expo

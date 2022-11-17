@@ -16,8 +16,8 @@
     "db:seed": "tsx src/seed.ts",
     "format": "prisma format",
     "generate": "prisma generate",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src",
+    "lint": "eslint --max-warnings 0 --ext js,ts .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts .",
     "prebuild": "pnpm run generate",
     "predev": "pnpm run generate",
     "studio": "prisma studio"

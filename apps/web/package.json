@@ -5,8 +5,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "next lint --max-warnings 0",
+    "lint:fix": "next lint --max-warnings 0 --fix",
     "start": "next start",
     "test": "jest"
   },
@@ -30,6 +30,7 @@
     "trpc": "workspace:*",
     "web-forms": "workspace:*",
     "web-locales": "workspace:*",
+    "web-storage": "workspace:*",
     "web-ui": "workspace:*"
   },
   "devDependencies": {

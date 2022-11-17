@@ -4,13 +4,13 @@ import { appWithTranslation } from 'next-i18next';
 import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
 import { Container } from 'web-ui/components/layouts';
 import { SnackbarProvider } from 'web-ui/contexts/SnackbarProvider';
-import { TranslationProvider } from '../contexts/TranslationProvider';
+import { LocaleProvider } from 'web-locales/contexts/LocaleProvider';
 import { trpc } from '../utils/trpc';
 import { Toolbar } from '../components/dev-tools/Toolbar';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <TranslationProvider>
+    <LocaleProvider>
       <ThemeProvider>
         <SnackbarProvider>
           <Toolbar />
@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
           </Container>
         </SnackbarProvider>
       </ThemeProvider>
-    </TranslationProvider>
+    </LocaleProvider>
   );
 }
 

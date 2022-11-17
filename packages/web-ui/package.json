@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "pnpm lint:code && pnpm lint:styles",
-    "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:code": "eslint --max-warnings 0 --ext js,jsx,ts,tsx .",
+    "lint:code:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx .",
     "lint:fix": "pnpm lint:code:fix",
     "lint:styles": "stylelint ./**/*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",

@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint --fix ./*.{js,jsx,ts,tsx}"
+    "lint": "eslint --max-warnings 0 --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
     "mobile-ui": "workspace:*",
-    "react": "^18.2.0",
+    "react": "^18.1.0",
     "react-i18next": "^12.0.0",
-    "react-native": "^0.70.1"
+    "react-native": "^0.70.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
@@ -19,7 +19,6 @@
     "@types/styled-components-react-native": "^5.1.3",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
     "stylelint": "^14.14.0",
     "stylelint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",

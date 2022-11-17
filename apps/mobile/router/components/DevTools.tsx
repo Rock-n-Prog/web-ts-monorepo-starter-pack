@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'mobile-ui/components/inputs';
 import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import { Stack } from 'mobile-ui/components/layouts';
-import { useTranslationContext } from '../../hooks/useTranslationContext';
+import { useLocaleContext } from 'mobile-locales/hooks/useLocaleContext';
 
-function Toolbar() {
+function DevTools() {
   const { t } = useTranslation();
-  const { locale, changeLocale } = useTranslationContext();
+  const { locale, changeLocale } = useLocaleContext();
   const { switchMode } = useThemeContext();
 
   function switchLocale() {
@@ -22,4 +22,4 @@ function Toolbar() {
   );
 }
 
-export default Toolbar;
+export default DevTools;

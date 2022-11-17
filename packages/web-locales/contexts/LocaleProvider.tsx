@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
+import { useLocalStorage } from 'web-storage/hooks/useLocalStorage';
 import type { Locale } from '../types/locales';
 import { defaultLocale } from '../types/locales';
-import { useLocalStorage } from '../hooks/useLocalStorage';
 
-function TranslationProvider({ children }: React.PropsWithChildren) {
+function LocaleProvider({ children }: React.PropsWithChildren) {
   const { i18n } = useTranslation();
   const { push, asPath } = useRouter();
   const [storedLocale, setStoredLocale] = useLocalStorage({ key: 'locale', initialValue: i18n.language });
@@ -26,12 +26,15 @@ function TranslationProvider({ children }: React.PropsWithChildren) {
         .then(() => push(asPath, asPath, { locale: storedLocale }))
         .then(() => console.log(`Changed locale using local storage (from '${i18n.language}' to '${storedLocale}')`));
     }
+
+    // Necessary to trigger only when needed
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storedLocale]);
 
-  return <TranslationContext.Provider value={{ locale, changeLocale }}>{children}</TranslationContext.Provider>;
+  return <LocaleContext.Provider value={{ locale, changeLocale }}>{children}</LocaleContext.Provider>;
 }
 
-const TranslationContext = React.createContext<{
+const LocaleContext = React.createContext<{
   readonly locale: Locale;
   readonly changeLocale: (locale: Locale) => void;
 }>({
@@ -39,4 +42,4 @@ const TranslationContext = React.createContext<{
   changeLocale: () => void 0,
 });
 
-export { TranslationContext, TranslationProvider };
+export { LocaleContext, LocaleProvider };

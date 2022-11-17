@@ -43,6 +43,7 @@ ignore:
   - packages/eslint-config-custom/node_modules
   - packages/mobile-forms/node_modules
   - packages/mobile-locales/node_modules
+  - packages/mobile-storage/node_modules
   - packages/mobile-ui/node_modules
   - packages/stylelint-config-custom/node_modules
   - packages/theme/node_modules
@@ -50,5 +51,6 @@ ignore:
   - packages/trpc/node_modules
   - packages/web-forms/node_modules
   - packages/web-locales/node_modules
+  - packages/web-storage/node_modules
   - packages/web-ui/node_modules
   - packages/web-ui/storybook-static

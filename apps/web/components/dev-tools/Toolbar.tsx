@@ -2,12 +2,12 @@ import { Button } from 'web-ui/components/inputs';
 import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { useTranslation } from 'next-i18next';
 import { Flex } from 'web-ui/components/layouts';
-import { useTranslationContext } from '../../hooks/useTranslationContext';
+import { useLocaleContext } from 'web-locales/hooks/useLocaleContext';
 
 function Toolbar() {
   const { switchMode } = useThemeContext();
   const { t } = useTranslation();
-  const { locale, changeLocale } = useTranslationContext();
+  const { locale, changeLocale } = useLocaleContext();
 
   function switchLocale() {
     changeLocale(locale === 'en' ? 'fr' : 'en');

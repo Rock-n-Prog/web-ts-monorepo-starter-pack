@@ -4,8 +4,8 @@ import { useTranslation } from 'next-i18next';
 import { Button } from 'web-ui/components/inputs';
 import { Header1, Header2 } from 'web-ui/components/typography';
 import { Flex } from 'web-ui/components/layouts';
-import { WithLocale } from '../types/locales';
-import createServerSideTranslations from '../utils/createServerSideTranslations';
+import type { WithLocale } from 'web-locales/types/locales';
+import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
 
 function IndexPage() {
   const { t } = useTranslation('index');

@@ -2,10 +2,10 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { useTranslation } from 'next-i18next';
 import { Header1, Header2, Body1 } from 'web-ui/components/typography';
 import { Alert } from 'web-ui/components/feedback';
-import type { WithLocale } from '../../types/locales';
+import type { WithLocale } from 'web-locales/types/locales';
+import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
 import { trpc } from '../../utils/trpc';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
-import createServerSideTranslations from '../../utils/createServerSideTranslations';
 
 type PathProps = {
   readonly name: string;

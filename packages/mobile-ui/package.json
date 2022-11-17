@@ -4,15 +4,15 @@
   "license": "MIT",
   "scripts": {
     "lint": "pnpm lint:code && pnpm lint:styles",
-    "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:code": "eslint --max-warnings 0 --ext js,jsx,ts,tsx .",
+    "lint:code:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx .",
     "lint:fix": "pnpm lint:code:fix",
     "lint:styles": "stylelint ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
     "expo-navigation-bar": "^1.3.0",
-    "react": "^18.2.0",
-    "react-native": "^0.70.1",
+    "react": "^18.1.0",
+    "react-native": "^0.70.5",
     "styled-components": "^5.3.5",
     "styled-theming": "^2.2.0",
     "theme": "workspace:*"
@@ -24,7 +24,6 @@
     "@types/styled-components-react-native": "^5.1.3",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
     "stylelint": "^14.14.0",
     "stylelint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",

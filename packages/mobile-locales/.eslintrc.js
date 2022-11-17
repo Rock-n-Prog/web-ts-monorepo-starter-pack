@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   root: true,
-  extends: ['custom/base.js', 'plugin:i18n-json/recommended'],
+  extends: ['custom/react-native-library.js', 'plugin:i18n-json/recommended'],
   rules: {
     'i18n-json/valid-message-syntax': [
       'error',

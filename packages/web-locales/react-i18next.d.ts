@@ -1,9 +1,9 @@
 import 'react-i18next';
-import common from 'mobile-locales/translations/en/common.json';
-import forms from 'mobile-locales/translations/en/forms.json';
-import index from 'mobile-locales/translations/en/index.json';
-import hello from 'mobile-locales/translations/en/hello.json';
-import users from 'mobile-locales/translations/en/users.json';
+import common from './translations/en/common.json';
+import forms from './translations/en/forms.json';
+import index from './translations/en/index.json';
+import hello from './translations/en/hello.json';
+import users from './translations/en/users.json';
 
 // If editing here, remember to check defaults in 'types' directory
 declare module 'react-i18next' {
