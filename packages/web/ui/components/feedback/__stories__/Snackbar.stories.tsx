@@ -1,6 +1,5 @@
 import * as React from 'react';
-import type { SnackbarProps } from '../Snackbar';
-import { Snackbar } from '../Snackbar';
+import { Snackbar, type SnackbarProps } from '../Snackbar';
 import { SnackbarProvider } from '../../../contexts/SnackbarProvider';
 import { Button } from '../../inputs';
 import { useSnackbarContext } from '../../../hooks/useSnackbarContext';

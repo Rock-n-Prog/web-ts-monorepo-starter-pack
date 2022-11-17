@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Locale } from '../types/locales';
-import { defaultLocale } from '../types/locales';
+import { defaultLocale, type Locale } from '../types/locales';
 import { setStoredLanguage } from '../utils/storedLanguage';
 
 function LocaleProvider({ children }: React.PropsWithChildren) {

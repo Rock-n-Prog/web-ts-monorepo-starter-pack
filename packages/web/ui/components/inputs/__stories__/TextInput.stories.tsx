@@ -1,6 +1,5 @@
 import * as React from 'react';
-import type { TextFieldProps } from '../TextInput';
-import { TextInput } from '../TextInput';
+import { TextInput, type TextInputProps } from '../TextInput';
 
 const config = {
   title: 'Inputs/TextInput',
@@ -8,7 +7,7 @@ const config = {
   argTypes: { onClick: { action: 'clicked' }, onBlur: { action: 'blurred' } },
 };
 
-function Template(props: TextFieldProps) {
+function Template(props: TextInputProps) {
   return <TextInput {...props} />;
 }
 

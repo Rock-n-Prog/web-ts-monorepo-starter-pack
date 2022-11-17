@@ -1,6 +1,6 @@
-# TreeView Theme Definition
+# ACME Theme Definition
 
-Theme palette for TreeView apps.
+Theme palette for ACME apps.
 
 ## Setup
 

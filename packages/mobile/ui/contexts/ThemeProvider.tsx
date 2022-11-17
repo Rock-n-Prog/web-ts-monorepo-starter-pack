@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components/native';
 import * as NavigationBar from 'expo-navigation-bar';
-import type { ThemeMode } from 'theme';
-import { defaultThemeMode } from 'theme';
-import type { Theme } from '../styles/theme';
-import { getTheme } from '../styles/theme';
+import { defaultThemeMode, type ThemeMode } from '@acme/theme';
+import { getTheme, type Theme } from '../styles/theme';
 
 function ThemeProvider({ children }: React.PropsWithChildren) {
   const [mode, setMode] = React.useState<ThemeMode>(defaultThemeMode);

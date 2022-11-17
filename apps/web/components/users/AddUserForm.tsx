@@ -6,8 +6,7 @@ import { useSnackbarContext } from '@acme/web-ui/hooks/useSnackbarContext';
 import { Flex } from '@acme/web-ui/components/layouts';
 import { Button } from '@acme/web-ui/components/inputs';
 import { TextField } from '@acme/web-forms/components';
-import type { AddUserInput } from 'trpc/schemas';
-import { addUserInputSchema } from 'trpc/schemas';
+import { addUserInputSchema, type AddUserInput } from 'trpc/schemas';
 import { trpc } from '../../utils/trpc';
 
 function AddUserForm() {

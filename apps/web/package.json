@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@acme/theme": "workspace:*",
     "@acme/web-forms": "workspace:*",
     "@acme/web-locales": "workspace:*",
     "@acme/web-storage": "workspace:*",
@@ -30,7 +31,6 @@
     "react-i18next": "^11.18.6",
     "react-query": "^3.39.2",
     "superjson": "^1.10.0",
-    "theme": "workspace:*",
     "trpc": "workspace:*"
   },
   "devDependencies": {

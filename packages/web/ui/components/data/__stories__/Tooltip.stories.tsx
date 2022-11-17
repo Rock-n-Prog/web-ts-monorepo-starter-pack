@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Body1 } from '../../typography';
-import type { TooltipProps } from '../Tooltip';
-import { Tooltip } from '../Tooltip';
+import { Tooltip, type TooltipProps } from '../Tooltip';
 
 const config = {
   title: 'Data/Tooltip',

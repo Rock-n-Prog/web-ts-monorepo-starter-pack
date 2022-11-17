@@ -9,8 +9,8 @@ on:
     paths:
       - '.github/workflows/build-packages-theme.yml'
       - 'packages/theme/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -18,8 +18,8 @@ on:
     paths:
       - '.github/workflows/build-packages-theme.yml'
       - 'packages/theme/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
@@ -41,7 +41,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter theme install
+        run: pnpm --filter @acme/theme install
 
       - name: Lint
-        run: pnpm --filter theme lint
+        run: pnpm --filter @acme/theme lint
