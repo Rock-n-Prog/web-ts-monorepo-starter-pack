@@ -1,6 +1,6 @@
-# TreeView Web Forms library
+# ACME Web Forms library
 
-React form-specific component library and necessities for TreeView Web app.
+React form-specific component library and necessities for ACME Web app.
 
 This package uses:
 

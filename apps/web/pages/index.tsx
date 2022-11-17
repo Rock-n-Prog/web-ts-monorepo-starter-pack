@@ -12,7 +12,7 @@ function IndexPage() {
 
   return (
     <>
-      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header1>{t('acme', { ns: 'common' })}</Header1>
       <Header2>{t('index')}</Header2>
       <Flex direction="column">
         <Link href="/hello/MyName">

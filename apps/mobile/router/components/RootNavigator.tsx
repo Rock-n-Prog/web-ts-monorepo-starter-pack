@@ -12,7 +12,7 @@ const screens: Record<RootRoutes, string> = {
 };
 
 const linking = {
-  prefixes: ['treeview.app://'],
+  prefixes: ['acme.app://'],
   config: {
     screens,
   },

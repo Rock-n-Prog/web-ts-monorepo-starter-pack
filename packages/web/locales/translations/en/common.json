@@ -1,7 +1,7 @@
 {
+  "acme": "ACME",
   "loading": "Loading...",
   "switchLocale": "Switch locale!",
   "switchThemeMode": "Switch theme mode!",
-  "treeView": "TreeView",
   "weGotError": "We got error: {{error}}"
 }

@@ -1,6 +1,6 @@
 # ACME Mobile App
 
-Expo app for TreeView.
+Expo app for ACME.
 
 This app uses:
 
