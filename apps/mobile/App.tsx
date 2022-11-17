@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { LocaleProvider } from '@acme/mobile-locales/contexts/LocaleProvider';
 import { ThemeProvider } from 'mobile-ui/contexts/ThemeProvider';
 import { SnackbarProvider } from 'mobile-ui/contexts/SnackbarProvider';
-import { LocaleProvider } from 'mobile-locales/contexts/LocaleProvider';
 import useCachedResources from './hooks/useCachedResources';
 import RootNavigator from './router/components/RootNavigator';
 import TrpcProvider from './contexts/TrpcProvider';

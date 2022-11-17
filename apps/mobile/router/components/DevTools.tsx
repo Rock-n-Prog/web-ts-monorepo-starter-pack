@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocaleContext } from '@acme/mobile-locales/hooks/useLocaleContext';
 import { Button } from 'mobile-ui/components/inputs';
 import { useThemeContext } from 'mobile-ui/hooks/useThemeContext';
 import { Stack } from 'mobile-ui/components/layouts';
-import { useLocaleContext } from 'mobile-locales/hooks/useLocaleContext';
 
 function DevTools() {
   const { t } = useTranslation();
