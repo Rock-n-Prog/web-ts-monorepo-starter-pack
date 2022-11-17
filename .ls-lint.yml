@@ -20,7 +20,7 @@ ls:
     # Regex for path props (ex: [name].tsx)
     .tsx: kebab-case | regex:_app | regex:\[[a-z]+\]
 
-  packages/web-ui:
+  packages/web/ui:
     # Regex for dotfiles
     # Regex for config dirs (ex: __stories__)
     .dir: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+) | regex:__[a-zA-Z]+__
@@ -38,19 +38,19 @@ ignore:
   - apps/mobile/.expo
   - apps/mobile/node_modules
   - apps/mobile-storybook/node_modules
-  - packages/database/node_modules
-  - packages/database/prisma/migrations
-  - packages/eslint-config-custom/node_modules
-  - packages/mobile-forms/node_modules
-  - packages/mobile-locales/node_modules
-  - packages/mobile-storage/node_modules
-  - packages/mobile-ui/node_modules
-  - packages/stylelint-config-custom/node_modules
+  - packages/api/dist
+  - packages/api/node_modules
+  - packages/db/node_modules
+  - packages/db/prisma/migrations
+  - packages/config/eslint/node_modules
+  - packages/config/stylelint/node_modules
+  - packages/mobile/forms/node_modules
+  - packages/mobile/locales/node_modules
+  - packages/mobile/storage/node_modules
+  - packages/mobile/ui/node_modules
   - packages/theme/node_modules
-  - packages/trpc/dist
-  - packages/trpc/node_modules
-  - packages/web-forms/node_modules
-  - packages/web-locales/node_modules
-  - packages/web-storage/node_modules
-  - packages/web-ui/node_modules
-  - packages/web-ui/storybook-static
+  - packages/web/forms/node_modules
+  - packages/web/locales/node_modules
+  - packages/web/storage/node_modules
+  - packages/web/ui/node_modules
+  - packages/web/ui/storybook-static
