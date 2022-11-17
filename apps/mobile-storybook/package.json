@@ -11,10 +11,10 @@
     "lint:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
-    "expo": "^46.0.13",
+    "expo": "^47.0.6",
     "mobile-ui": "workspace:*",
-    "react": "^18.2.0",
-    "react-native": "^0.70.1"
+    "react": "^18.1.0",
+    "react-native": "^0.70.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
