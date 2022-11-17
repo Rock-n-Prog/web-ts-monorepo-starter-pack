@@ -5,7 +5,7 @@ const withTM = require('next-transpile-modules')([
   'web-ui',
   'web-forms',
   'web-locales',
-  'web-storage',
+  '@acme/web-storage',
 ]);
 
 module.exports = withTM({

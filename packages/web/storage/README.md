@@ -1,6 +1,6 @@
-# TreeView Web Storage library
+# aCME Web Storage library
 
-Utilities for accessing local storage for TreeView Web app.
+Utilities for accessing local storage for ACME Web app.
 
 TODO: Review package.json deps
 
