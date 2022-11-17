@@ -18,6 +18,7 @@
     "theme": "workspace:*"
   },
   "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
     "@types/react": "^18.0.21",
     "@types/react-native": "^0.70.3",
     "@types/styled-components": "^5.1.26",
@@ -26,7 +27,6 @@
     "eslint-config-custom": "workspace:*",
     "stylelint": "^14.14.0",
     "stylelint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*",
     "typescript": "^4.5.2"
   }
 }

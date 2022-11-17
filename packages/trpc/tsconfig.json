@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/node.json",
+  "extends": "@acme/tsconfig/node.json",
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": ".",

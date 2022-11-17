@@ -21,13 +21,13 @@
     "web-storage": "workspace:*"
   },
   "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
     "@babel/core": "^7.19.1",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "eslint-plugin-i18n-json": "^4.0.0",
-    "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "webpack": "^5.74.0"
   }
