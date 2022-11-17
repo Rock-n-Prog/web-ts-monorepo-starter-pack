@@ -42,11 +42,11 @@ jobs:
         with:
           version: 7.9.5
 
-      - name: Install database dependencies
-        run: pnpm --filter database install
+      - name: Install db dependencies
+        run: pnpm --filter @acme/db install
 
       - name: Generate prisma client
-        run: pnpm --filter database generate
+        run: pnpm --filter @acme/db generate
 
       - name: Install dependencies
         run: pnpm --filter @acme/api install

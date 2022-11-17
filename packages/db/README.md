@@ -1,4 +1,4 @@
-# TreeView Database
+# ACME Database
 
 MySQL database accessible using Prisma.
 
@@ -22,19 +22,19 @@ pnpm build:watch
 ```
 
 ```bash
-pnpm -F database generate
+pnpm generate
 ```
 
 ### Generate Prisma client
 
 ```bash
-pnpm -F database generate
+pnpm generate
 ```
 
 ### Seed example data
 
 ```bash
-pnpm -F database db:seed
+pnpm db:seed
 ```
 
 ### Lint

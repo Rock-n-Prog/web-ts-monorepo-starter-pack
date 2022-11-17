@@ -24,7 +24,7 @@ pnpm build:watch
 ```
 
 ```bash
-pnpm -F database generate
+pnpm -F @acme/db generate
 ```
 
 ### Lint
