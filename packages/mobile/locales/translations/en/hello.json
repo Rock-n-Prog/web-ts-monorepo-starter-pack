@@ -1,0 +1,5 @@
+{
+  "helloName": "Hello {{name}}",
+  "pageToTestTrpcDataWithQueryAndStaticData": "Page to test tRPC data, with query and static data",
+  "weGotDataGreeting": "We got data: {{greeting}}"
+}

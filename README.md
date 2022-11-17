@@ -1,7 +1,7 @@
 # ACME App
 
-Feature-heavy example monorepo for web and mobile apps, packed with tons of reusable code snippets and defined through
-a strong software architecture.
+Feature-heavy example monorepo for web and mobile apps, packed with tons of reusable code snippets and defined through a
+strong software architecture.
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
@@ -12,7 +12,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 ## Status
 
 | Name             | Type    | Status                                                                                                                                                                                                                                  |
-|------------------| ------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | General          | General | [![General](https://github.com/treeview-app/treeview/actions/workflows/general.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/general.yml)                                                                  |
 | Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                              |
 | Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                                     |

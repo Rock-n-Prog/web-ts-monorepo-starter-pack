@@ -2,11 +2,11 @@ import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import { addUserInputSchema, type AddUserInput } from '@acme/api/schemas';
 import { useSnackbarContext } from '@acme/web-ui/hooks/useSnackbarContext';
 import { Flex } from '@acme/web-ui/components/layouts';
 import { Button } from '@acme/web-ui/components/inputs';
 import { TextField } from '@acme/web-forms/components';
-import { addUserInputSchema, type AddUserInput } from 'trpc/schemas';
 import { trpc } from '../../utils/trpc';
 
 function AddUserForm() {
