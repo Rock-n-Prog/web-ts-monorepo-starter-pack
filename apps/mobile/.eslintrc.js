@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['custom/react-native.js'],
+  extends: ['@acme/eslint-config/react-native.js'],
 };

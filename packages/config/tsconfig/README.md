@@ -1,3 +1,3 @@
-# TreeView tsconfig
+# ACME tsconfig
 
-Shared tsconfig for TreeView apps
+Shared tsconfig for ACME apps
