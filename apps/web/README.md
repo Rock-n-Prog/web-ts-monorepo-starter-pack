@@ -1,13 +1,14 @@
-# TreeView Web App
+# ACME Web App
 
-Next.js app for TreeView.
+Next.js app for ACME.
 
 Contains both UI pages and API (all server-side).
 
 This app uses:
 
-- [`packages/trpc`](../../packages/trpc): tRPC routers and configs
+- [`packages/api`](../../packages/api): tRPC routers and configs
 - [`packages/web/ui`](../../packages/web/ui): UI library
+- [`packages/web/forms`](../../packages/web/forms): Form components
 - [`packages/web/locales`](../../packages/web/locales): Locale translations library
 
 ## Setup

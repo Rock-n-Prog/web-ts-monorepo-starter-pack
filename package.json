@@ -1,10 +1,13 @@
 {
-  "name": "treeview",
+  "name": "acme",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "packages/config/*",
+    "packages/web/*",
+    "packages/mobile/*"
   ],
   "engines": {
     "node": ">=14.0.0"
@@ -12,9 +15,9 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel --filter web... --filter mobile...",
-    "dev:mobile": "turbo run dev --filter web... --filter mobile...",
-    "dev:web": "turbo run dev --filter web...",
+    "dev": "turbo run dev --parallel --filter @acme/web... --filter mobile...",
+    "dev:mobile": "turbo run dev --filter @acme/web... --filter mobile...",
+    "dev:web": "turbo run dev --filter @acme/web...",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
@@ -24,7 +27,7 @@
     "lint:root:fix": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
-    "storybook:mobile": "turbo run dev --scope mobile-storybook --no-deps",
+    "storybook:mobile": "turbo run dev --scope @acme/mobile-storybook --no-deps",
     "storybook:web": "turbo run storybook --scope @acme/web-ui --no-deps",
     "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
@@ -56,8 +59,8 @@
     "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/database/**/*.{js,ts}": [
-      "eslint --max-warnings 0 --fix packages/database/**/*.{js,ts}"
+    "packages/db/**/*.{js,ts}": [
+      "eslint --max-warnings 0 --fix packages/db/**/*.{js,ts}"
     ],
     "packages/trpc/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/trpc/**/*.{js,ts}"
@@ -65,35 +68,35 @@
     "packages/theme/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/theme/**/*.{js,ts}"
     ],
-    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/web/ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/web-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/web/forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/forms/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/web-locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-locales/**/*.{js,jsx,ts,tsx}"
+    "packages/web/locales/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/locales/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/web-locales/translations/**/*.{json}": [
-      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
+    "packages/web/locales/translations/**/*.{json}": [
+      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/web/locales/"
     ],
-    "packages/web-storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-storage/**/*.{js,jsx,ts,tsx}"
+    "packages/web/storage/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/storage/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/forms/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-locales/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/locales/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/locales/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-locales/translations/**/*.{json}": [
-      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js apps/web/public/locales/"
+    "packages/mobile/locales/translations/**/*.{json}": [
+      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/mobile/locales/"
     ],
-    "packages/mobile-storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-storage/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/storage/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/storage/**/*.{js,jsx,ts,tsx}"
     ]
   }
 }

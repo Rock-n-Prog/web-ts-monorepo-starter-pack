@@ -45,10 +45,10 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile... install
+        run: pnpm --filter @acme/mobile... install
 
       - name: Lint
-        run: pnpm --filter mobile lint
+        run: pnpm --filter @acme/mobile lint
 
       - name: Build
-        run: pnpm --filter mobile build
+        run: pnpm --filter @acme/mobile build

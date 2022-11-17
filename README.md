@@ -1,6 +1,7 @@
-# TreeView App
+# ACME App
 
-Task management app, with a focus on tree view.
+Feature-heavy example monorepo for web and mobile apps, packed with tons of reusable code snippets and defined through
+a strong software architecture.
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
@@ -11,13 +12,13 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 ## Status
 
 | Name             | Type    | Status                                                                                                                                                                                                                                  |
-| ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|------------------| ------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | General          | General | [![General](https://github.com/treeview-app/treeview/actions/workflows/general.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/general.yml)                                                                  |
 | Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                              |
 | Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                                     |
 | Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)       |
-| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)                   |
-| tRPC             | Package | [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)                               |
+| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-db-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-db.yml)                               |
+| API              | Package | [![Build API Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-api.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-api.yml)                                  |
 | Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                            |
 | Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                         |
 | Web Forms        | Package | [![Build Web Forms Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-forms.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-forms.yml)                |
@@ -36,20 +37,20 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 ## Packages
 
-- [`packages/database`](packages/database): Prisma client and models definitions
-- [`packages/trpc`](packages/trpc): tRPC routes and context definitions
+- [`packages/db`](packages/db): Prisma client and models definitions
+- [`packages/api`](packages/api): tRPC routes and context definitions
 - [`packages/theme`](packages/theme): Theme definition
-- [`packages/web-ui`](packages/web-ui): React components for web app
-- [`packages/web-forms`](packages/web-forms): React form-specific components for forms app
-- [`packages/web-locales`](packages/web-locales): Locale translations for web app
-- [`packages/web-storage`](packages/web-storage): Storage utilities for web app
-- [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
-- [`packages/mobile-forms`](packages/mobile-forms): React Native form-specific components for forms app
-- [`packages/mobile-locales`](packages/mobile-locales): Locale translations for mobile app
-- [`packages/mobile-storage`](packages/mobile-storage): Storage utilities for mobile app
-- [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
-- [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
-- [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
+- [`packages/web/ui`](packages/web/ui): React components for web app
+- [`packages/web/forms`](packages/web/forms): React form-specific components for forms app
+- [`packages/web/locales`](packages/web/locales): Locale translations for web app
+- [`packages/web/storage`](packages/web/storage): Storage utilities for web app
+- [`packages/mobile-ui`](packages/mobile/ui): React Native components for mobile app
+- [`packages/mobile-forms`](packages/mobile/forms): React Native form-specific components for forms app
+- [`packages/mobile-locales`](packages/mobile/locales): Locale translations for mobile app
+- [`packages/mobile-storage`](packages/mobile/storage): Storage utilities for mobile app
+- [`packages/config/eslint`](packages/config/eslint): Shared eslint config
+- [`packages/config/stylelint`](packages/config/stylelint): Shared stylelint config
+- [`packages/config/tsconfig`](packages/config/tsconfig): Shared tsconfig
 
 ## Setup
 
@@ -69,16 +70,16 @@ pnpm prepare
 
 ```bash
 # Copy env file
-cp packages/database/.env.example packages/database/.env
+cp packages/db/.env.example packages/db/.env
 
 # Run database
 docker compose up
 
 # Generate Prisma client
-pnpm -F database generate
+pnpm -F @acme/db generate
 
 # If wanted, generate example data
-pnpm -F database db:seed
+pnpm -F @acme/db db:seed
 ```
 
 ## Available scripts

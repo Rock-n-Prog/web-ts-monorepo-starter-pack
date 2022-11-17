@@ -1,5 +1,5 @@
 {
-  "name": "mobile-storybook",
+  "name": "@acme/mobile-storybook",
   "version": "1.0.0",
   "main": "./index.js",
   "scripts": {

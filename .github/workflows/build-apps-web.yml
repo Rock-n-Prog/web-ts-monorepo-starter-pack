@@ -53,11 +53,11 @@ jobs:
         run: pnpm --filter @acme/db generate
 
       - name: Install dependencies
-        run: pnpm --filter web... install
+        run: pnpm --filter @acme/web... install
 
       - name: Lint
-        run: pnpm --filter web lint
+        run: pnpm --filter @acme/web lint
 
       # TODO(#73): Re-add web CI build step
       # - name: Build
-      #   run: pnpm --filter web build
+      #   run: pnpm --filter @acme/web build

@@ -1,10 +1,13 @@
-# TreeView Mobile App
+# ACME Mobile App
 
 Expo app for TreeView.
 
 This app uses:
 
-- [`packages/mobile-ui`](../../packages/mobile-ui): UI library
+- [`packages/api`](../../packages/api): tRPC routers and configs
+- [`packages/mobile/ui`](../../packages/mobile/ui): UI library
+- [`packages/mobile/forms`](../../packages/mobile/forms): Form components
+- [`packages/mobile/locales`](../../packages/mobile/locales): Locale translations library
 
 ## Setup
 

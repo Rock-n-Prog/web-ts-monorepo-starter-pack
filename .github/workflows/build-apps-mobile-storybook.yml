@@ -43,10 +43,10 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile-storybook... install
+        run: pnpm --filter @acme/mobile-storybook... install
 
       - name: Lint
-        run: pnpm --filter mobile-storybook lint
+        run: pnpm --filter @acme/mobile-storybook lint
 
       - name: Build
-        run: pnpm --filter mobile-storybook build
+        run: pnpm --filter @acme/mobile-storybook build
