@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import * as i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import 'intl-pluralrules';
 import * as en from 'mobile-locales/translations/en';

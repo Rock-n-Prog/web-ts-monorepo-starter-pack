@@ -24,10 +24,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   },
 );
 
-// Necessary with forwardRef
-// eslint-disable-next-line functional/immutable-data
-Button.displayName = 'Button';
-
 const ButtonTypography = css(
   ({ theme }: { readonly theme: Theme }) => css`
     font-family: sans-serif;

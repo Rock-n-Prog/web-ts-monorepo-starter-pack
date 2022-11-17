@@ -31,9 +31,6 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   },
 );
 
-// eslint-disable-next-line functional/immutable-data
-TextInput.displayName = 'TextInput';
-
 type StyledTextInputProps = {
   readonly $isValid: boolean;
   readonly theme: Theme;

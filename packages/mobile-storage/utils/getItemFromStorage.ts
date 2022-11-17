@@ -1,9 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type GetItemInStorageParams = {
-  key: string;
-  initialValue?: string;
-  callback?: (value: string) => unknown;
+  readonly key: string;
+  readonly initialValue: string;
+  readonly callback?: (value: string) => unknown;
 };
 
 function getItemFromStorage({ key, initialValue, callback }: GetItemInStorageParams) {

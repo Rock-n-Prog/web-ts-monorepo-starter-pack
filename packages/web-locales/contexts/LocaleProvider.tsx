@@ -26,6 +26,9 @@ function LocaleProvider({ children }: React.PropsWithChildren) {
         .then(() => push(asPath, asPath, { locale: storedLocale }))
         .then(() => console.log(`Changed locale using local storage (from '${i18n.language}' to '${storedLocale}')`));
     }
+
+    // Necessary to trigger only when needed
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storedLocale]);
 
   return <LocaleContext.Provider value={{ locale, changeLocale }}>{children}</LocaleContext.Provider>;

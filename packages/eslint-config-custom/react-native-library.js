@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ['./react.js'],
+  extends: ['./react-native.js'],
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ts', '.tsx'],
+        extensions: ['.js', '.ts', '.tsx', '.native.js'],
       },
     },
   },

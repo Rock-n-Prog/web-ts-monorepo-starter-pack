@@ -1,8 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type SetItemInStorageParams = {
-  key: string;
-  value: string;
+  readonly key: string;
+  readonly value: string;
 };
 
 function setItemInStorage({ key, value }: SetItemInStorageParams) {

@@ -6,4 +6,8 @@ module.exports = {
       version: 'detect',
     },
   },
+  rules: {
+    'react/display-name': 'off',
+    'react/prop-types': 'off',
+  },
 };

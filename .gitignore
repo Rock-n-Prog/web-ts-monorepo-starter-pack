@@ -5,6 +5,12 @@ node_modules
 .pnp
 .pnp.js
 
+# node
+dist/
+
+# turbo
+.turbo
+
 # testing
 coverage
 
@@ -15,9 +21,6 @@ build/
 
 # expo
 .expo/
-
-# node
-dist/
 
 # misc
 .DS_Store
@@ -36,9 +39,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 packages/database/.env
-
-# turbo
-.turbo
 
 # Storybook
 storybook-static

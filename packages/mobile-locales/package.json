@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "pnpm lint:code && pnpm lint:i18n",
-    "lint:code": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:code:fix": "eslint ./*.{js,jsx,ts,tsx}",
+    "lint:code": "eslint --ext js,jsx,ts,tsx .",
+    "lint:code:fix": "eslint --fix --ext js,jsx,ts,tsx .",
     "lint:fix": "pnpm lint:code:fix && pnpm lint:i18n:fix",
     "lint:i18n": "eslint --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/",
     "lint:i18n:fix": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"

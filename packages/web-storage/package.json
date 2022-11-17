@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint ./*.{js,jsx,ts,tsx}"
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
     "react": "^18.2.0",
