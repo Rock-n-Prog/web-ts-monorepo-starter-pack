@@ -11,8 +11,8 @@
     "lint:i18n:fix": "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js translations/"
   },
   "dependencies": {
+    "@acme/mobile-storage": "workspace:*",
     "expo-localization": "^14.0.0",
-    "mobile-storage": "workspace:*",
     "react": "^18.1.0",
     "react-native": "^0.70.5"
   },

@@ -1,6 +1,6 @@
-# TreeView Mobile Storage library
+# ACME Mobile Storage library
 
-Utilities for accessing storage for TreeView Mobile app.
+Utilities for accessing storage for ACME Mobile app.
 
 TODO: Review package.json deps
 

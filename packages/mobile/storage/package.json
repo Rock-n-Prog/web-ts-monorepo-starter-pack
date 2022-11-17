@@ -1,5 +1,5 @@
 {
-  "name": "mobile-storage",
+  "name": "@acme/mobile-storage",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
