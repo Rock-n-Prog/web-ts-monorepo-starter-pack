@@ -154,6 +154,7 @@ importers:
     specifiers:
       '@acme/eslint-config': workspace:*
       '@acme/tsconfig': workspace:*
+      '@acme/web-forms': workspace:*
       '@acme/web-storage': workspace:*
       '@babel/core': ^7.0.0
       '@hookform/resolvers': ^2.9.10
@@ -178,10 +179,10 @@ importers:
       theme: workspace:*
       trpc: workspace:*
       typescript: ^4.5.3
-      web-forms: workspace:*
       web-locales: workspace:*
       web-ui: workspace:*
     dependencies:
+      '@acme/web-forms': link:../../packages/web/forms
       '@acme/web-storage': link:../../packages/web/storage
       '@hookform/resolvers': 2.9.10_react-hook-form@7.38.0
       '@tanstack/react-query': 4.3.9_biqbaboplfbrettd7655fr4n2y
@@ -200,7 +201,6 @@ importers:
       superjson: 1.10.0
       theme: link:../../packages/theme
       trpc: link:../../packages/trpc
-      web-forms: link:../../packages/web-forms
       web-locales: link:../../packages/web-locales
       web-ui: link:../../packages/web-ui
     devDependencies:
@@ -426,37 +426,6 @@ importers:
       typescript: 4.8.3
       zod: 3.19.1
 
-  packages/web-forms:
-    specifiers:
-      '@acme/eslint-config': workspace:*
-      '@acme/tsconfig': workspace:*
-      '@babel/core': ^7.19.1
-      '@types/react': ^18.0.17
-      '@types/react-dom': ^18.0.6
-      eslint: ^7.32.0
-      next-i18next: ^12.1.0
-      react: ^18.2.0
-      react-dom: 18.2.0
-      react-is: ^18.2.0
-      typescript: ^4.5.2
-      web-ui: workspace:*
-      webpack: ^5.74.0
-    dependencies:
-      next-i18next: 12.1.0_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-is: 18.2.0
-      web-ui: link:../web-ui
-    devDependencies:
-      '@acme/eslint-config': link:../config/eslint
-      '@acme/tsconfig': link:../config/tsconfig
-      '@babel/core': 7.19.1
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
-      eslint: 7.32.0
-      typescript: 4.8.3
-      webpack: 5.74.0
-
   packages/web-locales:
     specifiers:
       '@acme/eslint-config': workspace:*
@@ -542,6 +511,37 @@ importers:
       require-from-string: 2.0.2
       storybook-dark-mode: 1.1.2_biqbaboplfbrettd7655fr4n2y
       stylelint: 14.14.0
+      typescript: 4.8.3
+      webpack: 5.74.0
+
+  packages/web/forms:
+    specifiers:
+      '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
+      '@babel/core': ^7.19.1
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      eslint: ^7.32.0
+      next-i18next: ^12.1.0
+      react: ^18.2.0
+      react-dom: 18.2.0
+      react-is: ^18.2.0
+      typescript: ^4.5.2
+      web-ui: workspace:*
+      webpack: ^5.74.0
+    dependencies:
+      next-i18next: 12.1.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-is: 18.2.0
+      web-ui: link:../../web-ui
+    devDependencies:
+      '@acme/eslint-config': link:../../config/eslint
+      '@acme/tsconfig': link:../../config/tsconfig
+      '@babel/core': 7.20.2
+      '@types/react': 18.0.21
+      '@types/react-dom': 18.0.6
+      eslint: 7.32.0
       typescript: 4.8.3
       webpack: 5.74.0
 

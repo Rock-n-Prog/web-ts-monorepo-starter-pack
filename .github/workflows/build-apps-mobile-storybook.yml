@@ -9,8 +9,9 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile-storybook.yml'
       - 'apps/mobile-storybook/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/mobile/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -18,8 +19,9 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile-storybook.yml'
       - 'apps/mobile-storybook/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/mobile/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:

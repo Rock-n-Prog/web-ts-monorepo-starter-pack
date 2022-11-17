@@ -9,8 +9,11 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/db/**'
+      - 'packages/trpc/**'
+      - 'packages/web/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -18,8 +21,11 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/db/**'
+      - 'packages/trpc/**'
+      - 'packages/web/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:

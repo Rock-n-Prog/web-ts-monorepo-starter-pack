@@ -9,8 +9,10 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/trpc/**'
+      - 'packages/mobile/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -18,8 +20,10 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - 'packages/trpc/**'
+      - 'packages/mobile/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
