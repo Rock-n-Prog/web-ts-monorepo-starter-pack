@@ -1,4 +1,4 @@
-name: Build tRPC Package
+name: Build API Package
 
 on:
   workflow_dispatch:
@@ -7,19 +7,21 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-trpc.yml'
-      - 'packages/trpc/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - '.github/workflows/build-packages-api.yml'
+      - 'packages/db/**'
+      - 'packages/api/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-trpc.yml'
-      - 'packages/trpc/**'
-      - 'packages/eslint-config-custom/**'
-      - 'packages/tsconfig/**'
+      - '.github/workflows/build-packages-api.yml'
+      - 'packages/db/**'
+      - 'packages/api/**'
+      - 'packages/config/eslint/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
@@ -47,10 +49,10 @@ jobs:
         run: pnpm --filter database generate
 
       - name: Install dependencies
-        run: pnpm --filter trpc install
+        run: pnpm --filter @acme/api install
 
       - name: Lint
-        run: pnpm --filter trpc lint
+        run: pnpm --filter @acme/api lint
 
       - name: Build
-        run: pnpm --filter trpc build
+        run: pnpm --filter @acme/api build

@@ -9,7 +9,7 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
-      - 'packages/trpc/**'
+      - 'packages/api/**'
       - 'packages/mobile/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
@@ -20,7 +20,7 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
-      - 'packages/trpc/**'
+      - 'packages/api/**'
       - 'packages/mobile/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'

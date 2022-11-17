@@ -1,6 +1,6 @@
 import { createTRPCReact } from '@trpc/react';
 import Constants from 'expo-constants';
-import type { AppRouter } from 'trpc';
+import type { AppRouter } from '@acme/api';
 
 const trpc = createTRPCReact<AppRouter>();
 

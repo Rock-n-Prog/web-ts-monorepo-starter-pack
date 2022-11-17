@@ -1,5 +1,4 @@
-import type { ThemeMode } from 'theme';
-import { lightColors, darkColors } from 'theme';
+import { lightColors, darkColors, type ThemeMode } from '@acme/theme';
 
 const webLightColors = {
   ...lightColors,

@@ -1,10 +1,10 @@
-# TreeView tRPC routers and configs
+# ACME tRPC routers and configs
 
-tRPC routes and context definitions for TreeView apps.
+tRPC routes and context definitions for ACME apps.
 
 This package uses:
 
-- [`packages/database`](../database): Prisma client and models definitions
+- [`packages/db`](../db): Prisma client and models definitions
 
 ## Setup
 
