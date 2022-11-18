@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { addUserInputSchema, type AddUserInput } from 'trpc/schemas';
+import { addUserInputSchema, type AddUserInput } from '@acme/api/schemas';
 import { TextField } from '@acme/mobile-forms/components';
 import { Stack } from '@acme/mobile-ui/components/layouts';
 import { Button } from '@acme/mobile-ui/components/inputs';
