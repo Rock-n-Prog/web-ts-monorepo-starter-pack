@@ -13,8 +13,8 @@
   "dependencies": {
     "@acme/mobile-ui": "workspace:*",
     "expo": "^47.0.6",
-    "react": "^18.1.0",
-    "react-native": "^0.70.5"
+    "react": "^18.2.0",
+    "react-native": "^0.70.6"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
@@ -27,7 +27,7 @@
     "@storybook/addon-ondevice-knobs": "^5.3.26",
     "@storybook/react-native": "^5.3.25",
     "@types/react": "^18.0.21",
-    "@types/react-native": "^0.70.3",
+    "@types/react-native": "^0.70.6",
     "babel-loader": "^8.2.5",
     "eslint": "7.32.0",
     "typescript": "^4.8.3"

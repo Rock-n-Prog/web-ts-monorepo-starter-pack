@@ -13,8 +13,8 @@
   "dependencies": {
     "@acme/mobile-storage": "workspace:*",
     "expo-localization": "^14.0.0",
-    "react": "^18.1.0",
-    "react-native": "^0.70.5"
+    "react": "^18.2.0",
+    "react-native": "^0.70.6"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
