@@ -3,8 +3,8 @@ import { useTranslation } from 'next-i18next';
 import { Header1, Header2, Body1 } from '@acme/web-ui/components/typography';
 import { Alert } from '@acme/web-ui/components/feedback';
 import type { WithLocale } from '@acme/web-locales/types/locales';
-import createServerSideTranslations from '@acme/web-locales/utils/createServerSideTranslations';
 import { trpc } from '../../utils/trpc';
+import createServerSideTranslations from '../../utils/createServerSideTranslations';
 import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
 
 type PathProps = {

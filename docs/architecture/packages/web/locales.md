@@ -21,4 +21,3 @@ architecture.
   - `en`: Translations in English
   - `fr`: Translations in French
 - `types`: Type definitions
-- `utils`: Utilities

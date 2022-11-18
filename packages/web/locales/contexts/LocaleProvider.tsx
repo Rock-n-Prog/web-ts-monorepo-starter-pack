@@ -17,9 +17,10 @@ function LocaleProvider({ children }: React.PropsWithChildren) {
   }
 
   React.useEffect(() => {
+    // TODO: We shouldn't check if i18n.changeLanguage exists.. it's weird
     // Allowing conditional logic so this only triggers when needed
     // eslint-disable-next-line functional/no-conditional-statement
-    if (storedLocale !== locale) {
+    if (i18n.changeLanguage && storedLocale !== locale) {
       i18n
         .changeLanguage(storedLocale)
         .then(() => push(asPath, asPath, { locale: storedLocale }))
