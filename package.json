@@ -15,8 +15,10 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel --filter @acme/web... --filter mobile...",
-    "dev:mobile": "turbo run dev --filter @acme/web... --filter mobile...",
+    "db:generate": "turbo run generate --scope @acme/db",
+    "db:seed": "turbo run seed --scope @acme/db",
+    "dev": "turbo run dev --parallel --filter @acme/web... --filter @acme/mobile...",
+    "dev:mobile": "turbo run dev --filter @acme/mobile",
     "dev:web": "turbo run dev --filter @acme/web...",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",

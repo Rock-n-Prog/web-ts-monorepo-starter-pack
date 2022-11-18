@@ -21,10 +21,6 @@ pnpm build
 pnpm build:watch
 ```
 
-```bash
-pnpm generate
-```
-
 ### Generate Prisma client
 
 ```bash
@@ -34,7 +30,7 @@ pnpm generate
 ### Seed example data
 
 ```bash
-pnpm db:seed
+pnpm seed
 ```
 
 ### Lint

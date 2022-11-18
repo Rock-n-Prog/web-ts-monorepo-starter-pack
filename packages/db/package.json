@@ -10,16 +10,16 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
-    "db:migrate:deploy": "prisma migrate deploy",
-    "db:migrate:dev": "prisma migrate dev",
-    "db:push": "prisma db push",
-    "db:seed": "tsx src/seed.ts",
     "format": "prisma format",
     "generate": "prisma generate",
     "lint": "eslint --max-warnings 0 --ext js,ts .",
     "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts .",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:dev": "prisma migrate dev",
     "prebuild": "pnpm run generate",
     "predev": "pnpm run generate",
+    "push": "prisma db push",
+    "seed": "tsx src/seed.ts",
     "studio": "prisma studio"
   },
   "dependencies": {

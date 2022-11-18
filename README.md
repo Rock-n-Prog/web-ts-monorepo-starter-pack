@@ -76,10 +76,10 @@ cp packages/db/.env.example packages/db/.env
 docker compose up
 
 # Generate Prisma client
-pnpm -F @acme/db generate
+pnpm db:generate
 
 # If wanted, generate example data
-pnpm -F @acme/db db:seed
+pnpm db:seed
 ```
 
 ## Available scripts
