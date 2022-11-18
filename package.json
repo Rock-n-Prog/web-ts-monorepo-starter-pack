@@ -15,11 +15,11 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "build": "turbo run build",
-    "db:generate": "turbo run generate --scope @acme/db",
-    "db:seed": "turbo run seed --scope @acme/db",
-    "dev": "turbo run dev --parallel --filter @acme/web... --filter @acme/mobile...",
+    "db:generate": "turbo run generate --filter @acme/db",
+    "db:seed": "turbo run seed --filter @acme/db",
+    "dev": "turbo run dev --parallel --filter @acme/web --filter @acme/mobile",
     "dev:mobile": "turbo run dev --filter @acme/mobile",
-    "dev:web": "turbo run dev --filter @acme/web...",
+    "dev:web": "turbo run dev --filter @acme/web",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",
@@ -29,8 +29,8 @@
     "lint:root:fix": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
-    "storybook:mobile": "turbo run dev --scope @acme/mobile-storybook --no-deps",
-    "storybook:web": "turbo run storybook --scope @acme/web-ui --no-deps",
+    "storybook:mobile": "turbo run dev --filter @acme/mobile-storybook --no-deps",
+    "storybook:web": "turbo run storybook --filter @acme/web-ui --no-deps",
     "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
