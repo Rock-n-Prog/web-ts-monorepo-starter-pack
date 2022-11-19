@@ -19,4 +19,9 @@ TODO: How the frontend communicates with the backend
 
 For more info, see Expo file structure.
 
-TODO: File structure
+- `assets`: File assets
+- `contexts`: Context providers
+- `hooks`: Hooks
+- `router`: Routing and navigation config
+- `screens`: Screens
+- `utils`: Utility functions
