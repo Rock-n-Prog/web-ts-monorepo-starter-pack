@@ -15,7 +15,7 @@ on:
       - 'packages/mobile/forms/**'
       - 'packages/mobile/locales/**'
       - 'packages/mobile/storage/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -30,7 +30,7 @@ on:
       - 'packages/mobile/forms/**'
       - 'packages/mobile/locales/**'
       - 'packages/mobile/storage/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
 
 jobs:

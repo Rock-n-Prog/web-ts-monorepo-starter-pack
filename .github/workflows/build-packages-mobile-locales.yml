@@ -10,7 +10,7 @@ on:
       - '.github/workflows/build-packages-mobile-locales.yml'
       - 'packages/mobile/storage/**'
       - 'packages/mobile/locales/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -20,7 +20,7 @@ on:
       - '.github/workflows/build-packages-mobile-locales.yml'
       - 'packages/mobile/storage/**'
       - 'packages/mobile/locales/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
 
 jobs:

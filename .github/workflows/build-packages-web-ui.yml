@@ -9,7 +9,7 @@ on:
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -19,7 +19,7 @@ on:
     paths:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
 

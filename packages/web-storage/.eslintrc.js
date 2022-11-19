@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['custom/react-library.js', 'custom/storybook.js'],
+  extends: ['@acme/eslint-config/react-library.js', '@acme/eslint-config/storybook.js'],
 };

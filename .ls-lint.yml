@@ -40,9 +40,9 @@ ignore:
   - apps/mobile-storybook/node_modules
   - packages/api/dist
   - packages/api/node_modules
+  - packages/config/eslint/node_modules
   - packages/db/node_modules
   - packages/db/prisma/migrations
-  - packages/eslint-config-custom/node_modules
   - packages/mobile/forms/node_modules
   - packages/mobile/locales/node_modules
   - packages/mobile/storage/node_modules

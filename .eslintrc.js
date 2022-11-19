@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['custom/base.js'],
+  extends: ['@acme/eslint-config/base.js'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/'],

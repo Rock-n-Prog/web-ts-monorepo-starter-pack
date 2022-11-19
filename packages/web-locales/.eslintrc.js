@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   root: true,
-  extends: ['custom/react-library.js', 'custom/next.js', 'plugin:i18n-json/recommended'],
+  extends: ['@acme/eslint-config/react-library.js', '@acme/eslint-config/next.js', 'plugin:i18n-json/recommended'],
   rules: {
     'i18n-json/valid-message-syntax': [
       'error',

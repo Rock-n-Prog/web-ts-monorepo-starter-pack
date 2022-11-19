@@ -44,6 +44,7 @@
     "superjson": "^1.10.0"
   },
   "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
     "@babel/runtime": "^7.20.1",
@@ -51,7 +52,6 @@
     "@types/react-native": "^0.70.3",
     "babel-preset-expo": "^9.2.2",
     "eslint": "7.32.0",
-    "eslint-config-custom": "workspace:*",
     "expo-cli": "^6.0.8",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"

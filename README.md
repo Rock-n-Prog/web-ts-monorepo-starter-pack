@@ -48,9 +48,9 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/mobile/forms`](packages/mobile/forms): React Native form-specific components for forms app
 - [`packages/mobile/locales`](packages/mobile/locales): Locale translations for mobile app
 - [`packages/mobile/storage`](packages/mobile/storage): Storage utilities for mobile app
-- [`packages/eslint-config-custom`](packages/eslint-config-custom): Shared eslint config
-- [`packages/stylelint-config-custom`](packages/stylelint-config-custom): Shared stylelint config
 - [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
+- [`packages/config/eslint/`](packages/config/eslint): Shared eslint config
+- [`packages/confgi/stylelint`](packages/config/stylelint): Shared stylelint config
 
 ## Setup
 

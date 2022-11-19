@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['custom/next.js'],
+  extends: ['@acme/eslint-config/next.js'],
 };
