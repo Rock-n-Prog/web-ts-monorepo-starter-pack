@@ -1,4 +1,4 @@
-import type { ThemeMode } from 'theme';
+import type { ThemeMode } from '@acme/theme';
 import { fonts } from './fonts';
 import { spacing } from './spacing';
 import { modeToColors } from './colors';
