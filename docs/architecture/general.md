@@ -24,8 +24,8 @@ For more info, see Turborepo file structure.
   - `web-storage`: Web storage library (see [its docs](./packages/web-storage.md))
   - `mobile`: Mobile libraries
     - `ui`: Mobile UI library (see [its docs](./packages/mobile/ui.md))
+    - `forms`: Mobile forms library (see [its docs](./packages/mobile/forms.md))
     - `storage`: Mobile storage library (see [its docs](./packages/mobile/storage.md))
-  - `mobile-forms`: Mobile forms library (see [its docs](./packages/mobile-forms.md))
   - `mobile-locales`: Mobile translations library (see [its docs](./packages/mobile-locales.md))
   - `stylelint-config-custom`: Set of stylelint configs for given technologies
   - `eslint-config-custom`: Set of eslint configs for given technologies

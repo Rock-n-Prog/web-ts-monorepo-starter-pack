@@ -84,8 +84,8 @@
     "packages/mobile/ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/mobile/ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-forms/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/forms/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/mobile-locales/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/mobile-locales/**/*.{js,jsx,ts,tsx}"
