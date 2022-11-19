@@ -53,7 +53,7 @@
     "babel-preset-expo": "^9.2.2",
     "eslint": "7.32.0",
     "expo-cli": "^6.0.8",
-    "tsconfig": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
 }

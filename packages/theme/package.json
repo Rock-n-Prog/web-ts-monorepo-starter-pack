@@ -12,7 +12,7 @@
     "@acme/eslint-config": "workspace:*",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
-    "tsconfig": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.2"
   }
 }

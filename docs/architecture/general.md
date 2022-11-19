@@ -30,4 +30,4 @@ For more info, see Turborepo file structure.
   - `config`: Shared config
     - `eslint`: Set of eslint configs for given technologies
     - `stylelint`: Set of stylelint configs for given technologies
-  - `tsconfig`: Set of TypeScript configs for given technologies
+    - `tsconfig`: Set of TypeScript configs for given technologies

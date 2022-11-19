@@ -40,7 +40,7 @@
     "@types/react": "18.0.17",
     "eslint": "^7.32.0",
     "next-transpile-modules": "9.0.0",
-    "tsconfig": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
 }

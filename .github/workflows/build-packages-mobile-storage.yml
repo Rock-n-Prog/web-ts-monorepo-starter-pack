@@ -10,7 +10,7 @@ on:
       - '.github/workflows/build-packages-mobile-storage.yml'
       - 'packages/mobile/storage/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -19,7 +19,7 @@ on:
       - '.github/workflows/build-packages-mobile-storage.yml'
       - 'packages/mobile/storage/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:
