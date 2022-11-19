@@ -38,7 +38,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 ## Packages
 
 - [`packages/db`](packages/db): Prisma client and models definitions
-- [`packages/trpc`](packages/trpc): tRPC routes and context definitions
+- [`packages/api`](packages/api): tRPC routes and context definitions
 - [`packages/theme`](packages/theme): Theme definition
 - [`packages/web-ui`](packages/web-ui): React components for web app
 - [`packages/web-forms`](packages/web-forms): React form-specific components for forms app
@@ -48,9 +48,9 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/mobile/forms`](packages/mobile/forms): React Native form-specific components for forms app
 - [`packages/mobile/locales`](packages/mobile/locales): Locale translations for mobile app
 - [`packages/mobile/storage`](packages/mobile/storage): Storage utilities for mobile app
-- [`packages/tsconfig`](packages/tsconfig): Shared tsconfig
 - [`packages/config/eslint/`](packages/config/eslint): Shared eslint config
 - [`packages/confgi/stylelint`](packages/config/stylelint): Shared stylelint config
+- [`packages/config/tsconfig`](packages/config/tsconfig): Shared tsconfig
 
 ## Setup
 

@@ -17,7 +17,7 @@ on:
       - 'packages/web-locales/**'
       - 'packages/web-storage/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -33,7 +33,7 @@ on:
       - 'packages/web-locales/**'
       - 'packages/web-storage/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:

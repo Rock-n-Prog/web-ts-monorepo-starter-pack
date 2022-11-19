@@ -12,7 +12,7 @@ on:
       - 'packages/mobile/ui/**'
       - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -23,7 +23,7 @@ on:
       - 'packages/mobile/ui/**'
       - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:

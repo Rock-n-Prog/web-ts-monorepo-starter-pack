@@ -28,6 +28,7 @@ importers:
       '@acme/mobile-locales': workspace:*
       '@acme/mobile-storage': workspace:*
       '@acme/mobile-ui': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.20.2
       '@babel/preset-env': ^7.20.2
       '@babel/runtime': ^7.20.1
@@ -62,7 +63,6 @@ importers:
       react-native-screens: ^3.18.0
       react-navigation: ^4.4.4
       superjson: ^1.10.0
-      tsconfig: workspace:*
       typescript: ^4.5.3
     dependencies:
       '@acme/api': link:../../packages/api
@@ -98,6 +98,7 @@ importers:
       superjson: 1.10.0
     devDependencies:
       '@acme/eslint-config': link:../../packages/config/eslint
+      '@acme/tsconfig': link:../../packages/config/tsconfig
       '@babel/core': 7.20.2
       '@babel/preset-env': 7.20.2_@babel+core@7.20.2
       '@babel/runtime': 7.20.1
@@ -106,13 +107,13 @@ importers:
       babel-preset-expo: 9.2.2_@babel+core@7.20.2
       eslint: 7.32.0
       expo-cli: 6.0.8_dxxr3gpgvpiz7k2lqdytmffjv4
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
 
   apps/mobile-storybook:
     specifiers:
       '@acme/eslint-config': workspace:*
       '@acme/mobile-ui': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.12.9
       '@storybook/addon-actions': ^5.3.21
       '@storybook/addon-knobs': ^5.3.21
@@ -127,7 +128,6 @@ importers:
       expo: ^47.0.6
       react: ^18.1.0
       react-native: ^0.70.5
-      tsconfig: workspace:*
       typescript: ^4.8.3
     dependencies:
       '@acme/mobile-ui': link:../../packages/mobile/ui
@@ -136,6 +136,7 @@ importers:
       react-native: 0.70.6_react@18.2.0
     devDependencies:
       '@acme/eslint-config': link:../../packages/config/eslint
+      '@acme/tsconfig': link:../../packages/config/tsconfig
       '@babel/core': 7.19.1
       '@storybook/addon-actions': 5.3.21_@types+react@18.0.21
       '@storybook/addon-knobs': 5.3.21_iapumuv4e6jcjznwuxpf4tt22e
@@ -147,7 +148,6 @@ importers:
       '@types/react-native': 0.70.3
       babel-loader: 8.2.5_@babel+core@7.19.1
       eslint: 7.32.0
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
 
   apps/web:
@@ -155,6 +155,7 @@ importers:
       '@acme/api': workspace:*
       '@acme/eslint-config': workspace:*
       '@acme/theme': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.0.0
       '@hookform/resolvers': ^2.9.10
       '@tanstack/react-query': ^4.3.9
@@ -175,7 +176,6 @@ importers:
       react-i18next: ^11.18.6
       react-query: ^3.39.2
       superjson: ^1.10.0
-      tsconfig: workspace:*
       typescript: ^4.5.3
       web-forms: workspace:*
       web-locales: workspace:*
@@ -205,23 +205,23 @@ importers:
       web-ui: link:../../packages/web-ui
     devDependencies:
       '@acme/eslint-config': link:../../packages/config/eslint
+      '@acme/tsconfig': link:../../packages/config/tsconfig
       '@babel/core': 7.19.1
       '@types/node': 17.0.45
       '@types/react': 18.0.17
       eslint: 7.32.0
       next-transpile-modules: 9.0.0
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
 
   packages/api:
     specifiers:
       '@acme/db': workspace:*
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@trpc/server': ^10.0.0-rc.7
       eslint: ^7.32.0
       nodemon: ^2.0.20
       superjson: ^1.10.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
       zod: ^3.19.1
     dependencies:
@@ -229,10 +229,10 @@ importers:
       '@trpc/server': 10.0.0-rc.7
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       eslint: 7.32.0
       nodemon: 2.0.20
       superjson: 1.10.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
       zod: 3.19.1
 
@@ -272,9 +272,13 @@ importers:
       stylelint-config-styled-components: 0.1.1
       stylelint-processor-styled-components: 1.10.0
 
+  packages/config/tsconfig:
+    specifiers: {}
+
   packages/db:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@prisma/client': ^4.3.1
       '@types/node': ^18.7.18
       config: ^3.3.8
@@ -287,6 +291,7 @@ importers:
       '@prisma/client': 4.4.0_prisma@4.4.0
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       '@types/node': 18.7.23
       config: 3.3.8
       eslint: 8.23.1
@@ -299,13 +304,13 @@ importers:
     specifiers:
       '@acme/eslint-config': workspace:*
       '@acme/mobile-ui': workspace:*
+      '@acme/tsconfig': workspace:*
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
       eslint: ^7.32.0
       react: ^18.1.0
       react-i18next: ^12.0.0
       react-native: ^0.70.5
-      tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
       '@acme/mobile-ui': link:../ui
@@ -314,22 +319,22 @@ importers:
       react-native: 0.70.6_react@18.2.0
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
+      '@acme/tsconfig': link:../../config/tsconfig
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
       eslint: 7.32.0
-      tsconfig: link:../../tsconfig
       typescript: 4.8.3
 
   packages/mobile/locales:
     specifiers:
       '@acme/eslint-config': workspace:*
       '@acme/mobile-storage': workspace:*
+      '@acme/tsconfig': workspace:*
       eslint: ^7.32.0
       eslint-plugin-i18n-json: ^4.0.0
       expo-localization: ^14.0.0
       react: ^18.1.0
       react-native: ^0.70.5
-      tsconfig: workspace:*
     dependencies:
       '@acme/mobile-storage': link:../storage
       expo-localization: 14.0.0
@@ -337,20 +342,20 @@ importers:
       react-native: 0.70.6_react@18.2.0
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
+      '@acme/tsconfig': link:../../config/tsconfig
       eslint: 7.32.0
       eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
-      tsconfig: link:../../tsconfig
 
   packages/mobile/storage:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@react-native-async-storage/async-storage': ^1.17.11
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
       eslint: ^7.32.0
       react: ^18.1.0
       react-native: ^0.70.5
-      tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
       '@react-native-async-storage/async-storage': 1.17.11_react-native@0.70.6
@@ -358,10 +363,10 @@ importers:
       react-native: 0.70.6_react@18.2.0
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
+      '@acme/tsconfig': link:../../config/tsconfig
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
       eslint: 7.32.0
-      tsconfig: link:../../tsconfig
       typescript: 4.8.3
 
   packages/mobile/ui:
@@ -369,6 +374,7 @@ importers:
       '@acme/eslint-config': workspace:*
       '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
+      '@acme/tsconfig': workspace:*
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
       '@types/styled-components': ^5.1.26
@@ -380,7 +386,6 @@ importers:
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
       stylelint: ^14.14.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
       '@acme/theme': link:../../theme
@@ -392,35 +397,33 @@ importers:
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
       '@acme/stylelint-config': link:../../config/stylelint
+      '@acme/tsconfig': link:../../config/tsconfig
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
       '@types/styled-components': 5.1.26
       '@types/styled-components-react-native': 5.1.3
       eslint: 7.32.0
       stylelint: 14.14.0
-      tsconfig: link:../../tsconfig
       typescript: 4.8.3
 
   packages/theme:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       babel-eslint: ^10.1.0
       eslint: ^7.32.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       babel-eslint: 10.1.0_eslint@7.32.0
       eslint: 7.32.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
-
-  packages/tsconfig:
-    specifiers: {}
 
   packages/web-forms:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.19.1
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
@@ -429,7 +432,6 @@ importers:
       react: ^18.2.0
       react-dom: 18.2.0
       react-is: ^18.2.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
       web-ui: workspace:*
       webpack: ^5.74.0
@@ -441,17 +443,18 @@ importers:
       web-ui: link:../web-ui
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       '@babel/core': 7.19.1
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       eslint: 7.32.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
       webpack: 5.74.0
 
   packages/web-locales:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.19.1
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
@@ -464,7 +467,6 @@ importers:
       react-dom: 18.2.0
       react-i18next: ^12.0.0
       react-is: ^18.2.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
       web-storage: workspace:*
       webpack: ^5.74.0
@@ -479,18 +481,19 @@ importers:
       web-storage: link:../web-storage
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       '@babel/core': 7.19.1
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       eslint: 7.32.0
       eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
       webpack: 5.74.0
 
   packages/web-storage:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.19.1
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
@@ -498,7 +501,6 @@ importers:
       react: ^18.2.0
       react-dom: 18.2.0
       react-is: ^18.2.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
       webpack: ^5.74.0
     dependencies:
@@ -507,11 +509,11 @@ importers:
       react-is: 18.2.0
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
+      '@acme/tsconfig': link:../config/tsconfig
       '@babel/core': 7.19.1
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       eslint: 7.32.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
       webpack: 5.74.0
 
@@ -520,6 +522,7 @@ importers:
       '@acme/eslint-config': workspace:*
       '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
+      '@acme/tsconfig': workspace:*
       '@babel/core': ^7.19.1
       '@storybook/addon-essentials': ^6.5.12
       '@storybook/react': ^6.5.12
@@ -536,7 +539,6 @@ importers:
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
       stylelint: ^14.14.0
-      tsconfig: workspace:*
       typescript: ^4.5.2
       webpack: ^5.74.0
     dependencies:
@@ -549,6 +551,7 @@ importers:
     devDependencies:
       '@acme/eslint-config': link:../config/eslint
       '@acme/stylelint-config': link:../config/stylelint
+      '@acme/tsconfig': link:../config/tsconfig
       '@babel/core': 7.19.1
       '@storybook/addon-essentials': 6.5.12_3glaga62vdbhn3j2rgi6hqvhay
       '@storybook/react': 6.5.12_tyklhqqtbjrtigqxoqzujoezca
@@ -560,7 +563,6 @@ importers:
       require-from-string: 2.0.2
       storybook-dark-mode: 1.1.2_biqbaboplfbrettd7655fr4n2y
       stylelint: 14.14.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.3
       webpack: 5.74.0
 

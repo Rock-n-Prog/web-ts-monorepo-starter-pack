@@ -11,7 +11,7 @@ on:
       - 'packages/mobile/storage/**'
       - 'packages/mobile/locales/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
@@ -21,7 +21,7 @@ on:
       - 'packages/mobile/storage/**'
       - 'packages/mobile/locales/**'
       - 'packages/config/eslint/**'
-      - 'packages/tsconfig/**'
+      - 'packages/config/tsconfig/**'
 
 jobs:
   build:

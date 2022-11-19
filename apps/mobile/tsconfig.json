@@ -1,6 +1,3 @@
 {
-  "extends": "tsconfig/expo.json",
-  "compilerOptions": {
-    "strict": true
-  }
+  "extends": "@acme/tsconfig/expo.json"
 }

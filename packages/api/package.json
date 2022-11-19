@@ -20,7 +20,7 @@
     "eslint": "^7.32.0",
     "nodemon": "^2.0.20",
     "superjson": "^1.10.0",
-    "tsconfig": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "zod": "^3.19.1"
   }

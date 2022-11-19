@@ -1,10 +1,10 @@
 {
-  "extends": "tsconfig/node.json",
+  "extends": "@acme/tsconfig/node.json",
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "@acme/db": ["../../packages/db/src"]
+      "@acme/db": ["../db/src"]
     }
   },
   "include": ["."],
