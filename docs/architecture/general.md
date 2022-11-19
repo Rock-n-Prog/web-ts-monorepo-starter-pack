@@ -18,7 +18,8 @@ For more info, see Turborepo file structure.
   - `db`: Prisma schema and client definitions (see [its docs](./packages/db.md))
   - `api`: tRPC routes and context definitions (see [its docs](./packages/api.md))
   - `theme`: Theme (color palette) definition (see [its docs](./packages/theme.md))
-  - `web-ui`: Web UI library (see [its docs](./packages/web-ui.md))
+  - `web`: Web libraries
+    - `ui`: Web UI library (see [its docs](./packages/web/ui.md))
   - `web-forms`: Web forms library (see [its docs](./packages/web-forms.md))
   - `web-locales`: Web translations library (see [its docs](./packages/web-locale.md))
   - `web-storage`: Web storage library (see [its docs](./packages/web-storage.md))

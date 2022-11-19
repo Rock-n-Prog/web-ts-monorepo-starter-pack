@@ -8,6 +8,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-forms.yml'
+      - 'packages/web/ui/**'
       - 'packages/web-forms/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
@@ -17,6 +18,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-forms.yml'
+      - 'packages/web/ui/**'
       - 'packages/web-forms/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'

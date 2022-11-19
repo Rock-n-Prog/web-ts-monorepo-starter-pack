@@ -1,7 +1,7 @@
-import { Button } from 'web-ui/components/inputs';
-import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { useTranslation } from 'next-i18next';
-import { Flex } from 'web-ui/components/layouts';
+import { Button } from '@acme/web-ui/components/inputs';
+import { useThemeContext } from '@acme/web-ui/hooks/useThemeContext';
+import { Flex } from '@acme/web-ui/components/layouts';
 import { useLocaleContext } from 'web-locales/hooks/useLocaleContext';
 
 function Toolbar() {

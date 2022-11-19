@@ -40,7 +40,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/db`](packages/db): Prisma client and models definitions
 - [`packages/api`](packages/api): tRPC routes and context definitions
 - [`packages/theme`](packages/theme): Theme definition
-- [`packages/web-ui`](packages/web-ui): React components for web app
+- [`packages/web/ui`](packages/web/ui): React components for web app
 - [`packages/web-forms`](packages/web-forms): React form-specific components for forms app
 - [`packages/web-locales`](packages/web-locales): Locale translations for web app
 - [`packages/web-storage`](packages/web-storage): Storage utilities for web app

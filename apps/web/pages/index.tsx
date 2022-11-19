@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import { Button } from 'web-ui/components/inputs';
-import { Header1, Header2 } from 'web-ui/components/typography';
-import { Flex } from 'web-ui/components/layouts';
+import { Button } from '@acme/web-ui/components/inputs';
+import { Header1, Header2 } from '@acme/web-ui/components/typography';
+import { Flex } from '@acme/web-ui/components/layouts';
 import type { WithLocale } from 'web-locales/types/locales';
 import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
 

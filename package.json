@@ -6,6 +6,7 @@
     "apps/*",
     "packages/*",
     "packages/config/*",
+    "packages/web/*",
     "packages/mobile/*"
   ],
   "engines": {
@@ -29,7 +30,7 @@
     "lint:staged": "lint-staged",
     "prepare": "husky install",
     "storybook:mobile": "turbo run dev --filter mobile-storybook --no-deps",
-    "storybook:web": "turbo run storybook --filter web-ui --no-deps",
+    "storybook:web": "turbo run storybook --filter @acme/web-ui --no-deps",
     "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
@@ -69,8 +70,8 @@
     "packages/theme/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/theme/**/*.{js,ts}"
     ],
-    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/web/ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web-forms/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/web-forms/**/*.{js,jsx,ts,tsx}"
