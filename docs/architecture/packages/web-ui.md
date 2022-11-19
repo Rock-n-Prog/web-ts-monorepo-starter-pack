@@ -4,7 +4,10 @@ Library is located at [`packages/web-ui`](../../../packages/web-ui).
 
 This library is used by a web app. For more info, read [its docs](../apps/web.md).
 
-Theme definition has its own documentation, see [its docs](./theme.md)
+This package uses:
+
+- [`packages/theme`](./theme.md): Theme definition
+- [`packages/mobile/storage`](./web/storage.md): Storage utilities
 
 ## Software architecture
 

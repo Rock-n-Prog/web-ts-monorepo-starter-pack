@@ -5,6 +5,7 @@ React Native component library and theming necessities for ACME Mobile app.
 This package uses:
 
 - [`packages/theme`](../../theme): Theme definitions
+- [`packages/mobile/storage`](../storage): Storage utilities
 
 ## Setup
 

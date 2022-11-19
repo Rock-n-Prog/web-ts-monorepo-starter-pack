@@ -4,9 +4,10 @@ import * as NavigationBar from 'expo-navigation-bar';
 import { defaultThemeMode, type ThemeMode } from '@acme/theme';
 import type { Theme } from '../styles/theme';
 import { getTheme } from '../styles/theme';
+import { useStoredThemeMode } from '../hooks/useStoredThemeMode';
 
 function ThemeProvider({ children }: React.PropsWithChildren) {
-  const [mode, setMode] = React.useState<ThemeMode>(defaultThemeMode);
+  const [mode, setMode] = useStoredThemeMode(defaultThemeMode);
 
   const theme = React.useMemo(() => {
     const theme = getTheme(mode);
