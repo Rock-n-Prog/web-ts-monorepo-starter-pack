@@ -17,7 +17,7 @@ function UsersPage() {
   // Loading state not necessary since we fetch data server-side, kept as an example
   return (
     <>
-      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header1>{t('acme', { ns: 'common' })}</Header1>
       <Header2>{t('users')}</Header2>
       <Body1>{t('pageToTestTrpcDataFetchedFromDatabase')}</Body1>
       <Flex direction="column">

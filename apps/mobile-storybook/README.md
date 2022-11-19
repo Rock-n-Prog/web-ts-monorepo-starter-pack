@@ -1,6 +1,6 @@
-# TreeView Mobile Storybook App
+# ACME Mobile Storybook App
 
-Storybook Expo app for TreeView.
+Storybook Expo app for ACME.
 
 This app uses:
 

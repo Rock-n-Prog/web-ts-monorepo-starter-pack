@@ -8,10 +8,10 @@ import useNavigationOption from '../../hooks/useNavigationOptions';
 
 function HelloScreen() {
   const { t } = useTranslation('hello');
-  const { data, isLoading, error } = trpc.hello.single.useQuery({ name: 'TreeView' });
+  const { data, isLoading, error } = trpc.hello.single.useQuery({ name: 'ACME' });
 
   useNavigationOption({
-    headerTitle: () => <HeaderTitle>{t('helloName', { name: 'TreeView' })}</HeaderTitle>,
+    headerTitle: () => <HeaderTitle>{t('helloName', { name: 'ACME' })}</HeaderTitle>,
   });
 
   return (
