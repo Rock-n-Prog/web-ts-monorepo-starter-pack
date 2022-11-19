@@ -2,7 +2,7 @@ import * as React from 'react';
 import { boolean, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { Stack, stackDirections, stackGaps } from '@acme/mobile-ui/components/layouts';
-import { Body1 } from 'm@acme/obile-ui/components/typography';
+import { Body1 } from '@acme/mobile-ui/components/typography';
 
 storiesOf('Layouts/Stack', module)
   .add('Column', () => (

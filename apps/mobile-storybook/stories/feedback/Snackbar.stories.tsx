@@ -2,7 +2,8 @@ import * as React from 'react';
 import { text, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { severities } from '@acme/mobile-ui/types/severity';
-import { Button, type SnackbarProps } from '@acme/mobile-ui/components/inputs';
+import type { SnackbarProps } from '@acme/mobile-ui/components/feedback';
+import { Button } from '@acme/mobile-ui/components/inputs';
 import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
 import { SnackbarProvider } from '@acme/mobile-ui/contexts/SnackbarProvider';
 
