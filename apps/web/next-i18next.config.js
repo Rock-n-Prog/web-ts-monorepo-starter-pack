@@ -6,5 +6,5 @@ module.exports = {
     locales: ['en', 'fr'],
   },
   defaultNS: 'common',
-  localePath: 'node_modules/web-locales/translations',
+  localePath: 'node_modules/@acme/web-locales/translations',
 };

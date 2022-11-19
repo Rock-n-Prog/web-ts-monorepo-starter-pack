@@ -9,7 +9,7 @@ This app uses:
 - [`packages/trpc`](../../packages/trpc): tRPC routers and configs
 - [`packages/web-ui`](../../packages/web-ui): UI library
 - [`packages/web-forms`](../../packages/web-forms): Form field logic
-- [`packages/web-locales`](../../packages/web-locales): Locale translations library
+- [`packages/web/locales`](../../packages/web/locales): Locale translations library
 
 ## Setup
 
