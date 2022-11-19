@@ -4,7 +4,10 @@ Library is located at [`packages/mobile/ui`](../../../../packages/mobile/ui).
 
 This library is used by a mobile app. For more info, read [its docs](../../apps/mobile.md).
 
-Theme definition has its own documentation, see [its docs](../theme.md)
+This package uses:
+
+- [`packages/theme`](../theme.md): Theme definition
+- [`packages/mobile/storage`](./storage.md): Storage utilities
 
 ## Software architecture
 
