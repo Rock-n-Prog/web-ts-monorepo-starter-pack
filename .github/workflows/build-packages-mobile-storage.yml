@@ -8,7 +8,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-storage.yml'
-      - 'packages/mobile-storage/**'
+      - 'packages/mobile/storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -17,7 +17,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-storage.yml'
-      - 'packages/mobile-storage/**'
+      - 'packages/mobile/storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -41,7 +41,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile-storage... install
+        run: pnpm --filter @acme/mobile-storage install
 
       - name: Lint
-        run: pnpm --filter mobile-storage lint
+        run: pnpm --filter @acme/mobile-storage lint

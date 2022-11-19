@@ -1,6 +1,6 @@
 import * as Localization from 'expo-localization';
-import getItemFromStorage from 'mobile-storage/utils/getItemFromStorage';
-import setItemInStorage from 'mobile-storage/utils/setItemInStorage';
+import getItemFromStorage from '@acme/mobile-storage/utils/getItemFromStorage';
+import setItemInStorage from '@acme/mobile-storage/utils/setItemInStorage';
 
 const storeLanguageKey = 'settings.lang';
 

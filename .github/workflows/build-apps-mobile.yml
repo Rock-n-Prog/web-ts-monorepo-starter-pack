@@ -14,7 +14,7 @@ on:
       - 'packages/mobile/ui/**'
       - 'packages/mobile-forms/**'
       - 'packages/mobile-locales/**'
-      - 'packages/mobile-storage/**'
+      - 'packages/mobile/storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -29,7 +29,7 @@ on:
       - 'packages/mobile/ui/**'
       - 'packages/mobile-forms/**'
       - 'packages/mobile-locales/**'
-      - 'packages/mobile-storage/**'
+      - 'packages/mobile/storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 

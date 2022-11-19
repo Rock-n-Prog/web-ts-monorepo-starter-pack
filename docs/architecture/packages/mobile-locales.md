@@ -6,7 +6,7 @@ This library is used by a mobile app. For more info, read [its docs](../apps/mob
 
 This package uses:
 
-- [`packages/mobile-storage`](./mobile-storage.md): Storage utilities
+- [`packages/mobile/storage`](./mobile/storage.md): Storage utilities
 
 ## Software architecture
 
