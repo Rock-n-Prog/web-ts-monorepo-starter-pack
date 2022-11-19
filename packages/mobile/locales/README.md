@@ -1,12 +1,12 @@
-# TreeView Mobile Locales library
+# ACME Mobile Locales library
 
-Locale translations for TreeView mobile app.
+Locale translations for ACME mobile app.
 
 Also contains utilities contexts and hooks for translation context.
 
 This package uses:
 
-- [`packages/mobile-storage`](../mobile-storage): Storage utilities
+- [`packages/mobile/storage`](../storage): Storage utilities
 
 ## Setup
 

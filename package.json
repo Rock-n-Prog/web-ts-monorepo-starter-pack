@@ -87,11 +87,11 @@
     "packages/mobile/forms/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/mobile/forms/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-locales/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/locales/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/locales/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/mobile-locales/translations/**/*.{json}": [
-      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/mobile-locales/translations/"
+    "packages/mobile/locales/translations/**/*.{json}": [
+      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/mobile/locales/translations/"
     ],
     "packages/mobile/storage/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/mobile/storage/**/*.{js,jsx,ts,tsx}"
