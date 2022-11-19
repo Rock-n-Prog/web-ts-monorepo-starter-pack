@@ -3,7 +3,7 @@ function getThemeMatchingMedia() {
 }
 
 function getSystemThemeMode() {
-  return window ? getThemeMatchingMedia() : undefined;
+  return typeof window === 'undefined' ? undefined : getThemeMatchingMedia();
 }
 
 export { getSystemThemeMode };
