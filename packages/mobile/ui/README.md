@@ -1,10 +1,10 @@
-# TreeView Mobile UI library
+# ACME Mobile UI library
 
-React Native component library and theming necessities for TreeView Mobile app.
+React Native component library and theming necessities for ACME Mobile app.
 
 This package uses:
 
-- [`packages/theme`](../theme): Theme definitions
+- [`packages/theme`](../../theme): Theme definitions
 
 ## Setup
 

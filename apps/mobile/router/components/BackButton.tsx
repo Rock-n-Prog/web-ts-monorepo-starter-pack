@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import type { HeaderButtonProps } from '@react-navigation/native-stack/src/types';
-import { Button } from 'mobile-ui/components/inputs';
+import { Button } from '@acme/mobile-ui/components/inputs';
 import { useTranslation } from 'react-i18next';
 
 function BackButton({ canGoBack }: HeaderButtonProps) {

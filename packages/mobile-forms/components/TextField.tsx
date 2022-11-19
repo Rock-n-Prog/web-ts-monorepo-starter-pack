@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FieldPath, FieldValues, useController, UseControllerProps } from 'react-hook-form';
-import { TextInput, TextInputProps } from 'mobile-ui/components/inputs';
+import { TextInput, TextInputProps } from '@acme/mobile-ui/components/inputs';
 
 type TextFieldProps<
   TFieldValues extends FieldValues = FieldValues,

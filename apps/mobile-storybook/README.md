@@ -4,7 +4,7 @@ Storybook Expo app for TreeView.
 
 This app uses:
 
-- [`packages/mobile-ui`](../../packages/mobile-ui): UI library
+- [`packages/mobile/ui`](../../packages/mobile/ui): UI library
 
 ## Setup
 

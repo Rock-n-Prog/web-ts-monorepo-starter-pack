@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { text, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { severities } from 'mobile-ui/types/severity';
-import type { SnackbarProps } from 'mobile-ui/components/feedback';
-import { Button } from 'mobile-ui/components/inputs';
-import { useSnackbarContext } from 'mobile-ui/hooks/useSnackbarContext';
-import { SnackbarProvider } from 'mobile-ui/contexts/SnackbarProvider';
+import { severities } from '@acme/mobile-ui/types/severity';
+import { Button, type SnackbarProps } from '@acme/mobile-ui/components/inputs';
+import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
+import { SnackbarProvider } from '@acme/mobile-ui/contexts/SnackbarProvider';
 
 type TemplateProps = Omit<SnackbarProps, 'duration'>;
 
