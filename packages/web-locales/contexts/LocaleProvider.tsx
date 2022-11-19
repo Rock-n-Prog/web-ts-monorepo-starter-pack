@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { useLocalStorage } from 'web-storage/hooks/useLocalStorage';
+import { useLocalStorage } from '@acme/web-storage/hooks/useLocalStorage';
 import type { Locale } from '../types/locales';
 import { defaultLocale } from '../types/locales';
 

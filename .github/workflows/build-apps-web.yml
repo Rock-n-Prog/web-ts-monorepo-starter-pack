@@ -15,7 +15,7 @@ on:
       - 'packages/web-ui/**'
       - 'packages/web-forms/**'
       - 'packages/web-locales/**'
-      - 'packages/web-storage/**'
+      - 'packages/web/storage/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
   pull_request:
@@ -31,7 +31,7 @@ on:
       - 'packages/web-ui/**'
       - 'packages/web-forms/**'
       - 'packages/web-locales/**'
-      - 'packages/web-storage/**'
+      - 'packages/web/storage/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
 
