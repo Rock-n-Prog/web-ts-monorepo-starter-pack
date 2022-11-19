@@ -10,7 +10,7 @@ function AddUserPage() {
 
   return (
     <>
-      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header1>{t('acme', { ns: 'common' })}</Header1>
       <Header2>{t('addUser')}</Header2>
       <Body1>{t('pageToTestTrpcDataWithMutation')}</Body1>
       <AddUserForm />

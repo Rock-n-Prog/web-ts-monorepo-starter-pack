@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "treeview-mobile-storybook",
-    "slug": "treeview-mobile-storybook",
+    "name": "acme-mobile-storybook",
+    "slug": "acme-mobile-storybook",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

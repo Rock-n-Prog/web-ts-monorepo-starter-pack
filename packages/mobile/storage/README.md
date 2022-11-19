@@ -1,6 +1,6 @@
 # ACME Mobile Storage library
 
-Utilities for accessing storage for TreeView ACME app.
+Utilities for accessing storage for ACME ACME app.
 
 ## Setup
 

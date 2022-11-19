@@ -18,7 +18,7 @@ function NamePage({ name }: InferGetStaticPropsType<typeof getStaticProps>) {
   // Loading state not necessary since we fetch data server-side, kept as an example
   return (
     <>
-      <Header1>{t('treeView', { ns: 'common' })}</Header1>
+      <Header1>{t('acme', { ns: 'common' })}</Header1>
       <Header2>{t('helloName', { name })}</Header2>
       <Body1>{t('pageToTestTrpcDataWithQueryAndStaticData')}</Body1>
       {isLoading ? (
@@ -42,7 +42,7 @@ function getStaticPaths() {
 async function getStaticProps({ params, locale }: WithLocale<GetStaticPropsContext<PathProps>>) {
   const ssg = createTrpcProxySSGHelpers();
 
-  const name = params?.name ?? 'TreeView';
+  const name = params?.name ?? 'ACME';
   await ssg.hello.single.fetch({ name });
 
   return {
