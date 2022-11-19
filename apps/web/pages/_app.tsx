@@ -4,9 +4,9 @@ import { appWithTranslation } from 'next-i18next';
 import { ThemeProvider } from '@acme/web-ui/contexts/ThemeProvider';
 import { Container } from '@acme/web-ui/components/layouts';
 import { SnackbarProvider } from '@acme/web-ui/contexts/SnackbarProvider';
-import { LocaleProvider } from 'web-locales/contexts/LocaleProvider';
-import { trpc } from '../utils/trpc';
+import { LocaleProvider } from '../contexts/LocaleProvider';
 import { Toolbar } from '../components/dev-tools/Toolbar';
+import { trpc } from '../utils/trpc';
 
 function App({ Component, pageProps }: AppProps) {
   return (

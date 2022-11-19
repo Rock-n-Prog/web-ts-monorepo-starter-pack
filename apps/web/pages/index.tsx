@@ -5,7 +5,7 @@ import { Button } from '@acme/web-ui/components/inputs';
 import { Header1, Header2 } from '@acme/web-ui/components/typography';
 import { Flex } from '@acme/web-ui/components/layouts';
 import type { WithLocale } from 'web-locales/types/locales';
-import createServerSideTranslations from 'web-locales/utils/createServerSideTranslations';
+import createServerSideTranslations from '../utils/createServerSideTranslations';
 
 function IndexPage() {
   const { t } = useTranslation('index');
