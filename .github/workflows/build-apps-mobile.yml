@@ -9,6 +9,11 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
+      - 'packages/trpc/**'
+      - 'packages/mobile-ui/**'
+      - 'packages/mobile-forms/**'
+      - 'packages/mobile-locales/**'
+      - 'packages/mobile-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -18,6 +23,11 @@ on:
     paths:
       - '.github/workflows/build-apps-mobile.yml'
       - 'apps/mobile/**'
+      - 'packages/trpc/**'
+      - 'packages/mobile-ui/**'
+      - 'packages/mobile-forms/**'
+      - 'packages/mobile-locales/**'
+      - 'packages/mobile-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -41,10 +51,10 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile... install
+        run: pnpm --filter @acme/mobile install
 
       - name: Lint
-        run: pnpm --filter mobile lint
+        run: pnpm --filter @acme/mobile lint
 
       - name: Build
-        run: pnpm --filter mobile build
+        run: pnpm --filter @acme/mobile build

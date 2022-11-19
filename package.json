@@ -12,8 +12,8 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel --filter @acme/web --filter mobile",
-    "dev:mobile": "turbo run dev --filter web... --filter mobile",
+    "dev": "turbo run dev --parallel --filter @acme/web --filter @acme/mobile",
+    "dev:mobile": "turbo run dev --filter @acme/mobile",
     "dev:web": "turbo run dev --filter @acme/web",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
@@ -24,8 +24,8 @@
     "lint:root:fix": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
-    "storybook:mobile": "turbo run dev --scope mobile-storybook --no-deps",
-    "storybook:web": "turbo run storybook --scope web-ui --no-deps",
+    "storybook:mobile": "turbo run dev --filter mobile-storybook --no-deps",
+    "storybook:web": "turbo run storybook --filter web-ui --no-deps",
     "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
