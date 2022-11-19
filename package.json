@@ -5,6 +5,7 @@
   "workspaces": [
     "apps/*",
     "packages/*",
+    "packages/config/*",
     "packages/mobile/*"
   ],
   "engines": {

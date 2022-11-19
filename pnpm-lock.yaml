@@ -236,6 +236,18 @@ importers:
       typescript: 4.8.3
       zod: 3.19.1
 
+  packages/config/stylelint:
+    specifiers:
+      stylelint: ^14.14.0
+      stylelint-config-standard-scss: ^6.0.0
+      stylelint-config-styled-components: ^0.1.1
+      stylelint-processor-styled-components: ^1.10.0
+    devDependencies:
+      stylelint: 14.14.0
+      stylelint-config-standard-scss: 6.0.0_stylelint@14.14.0
+      stylelint-config-styled-components: 0.1.1
+      stylelint-processor-styled-components: 1.10.0
+
   packages/db:
     specifiers:
       '@prisma/client': ^4.3.1
@@ -288,15 +300,11 @@ importers:
       '@acme/mobile-ui': workspace:*
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
-      '@types/styled-components': ^5.1.26
-      '@types/styled-components-react-native': ^5.1.3
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       react: ^18.1.0
       react-i18next: ^12.0.0
       react-native: ^0.70.5
-      stylelint: ^14.14.0
-      stylelint-config-custom: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
@@ -307,12 +315,8 @@ importers:
     devDependencies:
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
-      '@types/styled-components': 5.1.26
-      '@types/styled-components-react-native': 5.1.3
       eslint: 7.32.0
       eslint-config-custom: link:../../eslint-config-custom
-      stylelint: 14.14.0
-      stylelint-config-custom: link:../../stylelint-config-custom
       tsconfig: link:../../tsconfig
       typescript: 4.8.3
 
@@ -362,6 +366,7 @@ importers:
 
   packages/mobile/ui:
     specifiers:
+      '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
@@ -375,7 +380,6 @@ importers:
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
       stylelint: ^14.14.0
-      stylelint-config-custom: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.2
     dependencies:
@@ -386,6 +390,7 @@ importers:
       styled-components: 5.3.5_react@18.2.0
       styled-theming: 2.2.0
     devDependencies:
+      '@acme/stylelint-config': link:../../config/stylelint
       '@types/react': 18.0.21
       '@types/react-native': 0.70.3
       '@types/styled-components': 5.1.26
@@ -393,21 +398,8 @@ importers:
       eslint: 7.32.0
       eslint-config-custom: link:../../eslint-config-custom
       stylelint: 14.14.0
-      stylelint-config-custom: link:../../stylelint-config-custom
       tsconfig: link:../../tsconfig
       typescript: 4.8.3
-
-  packages/stylelint-config-custom:
-    specifiers:
-      stylelint: ^14.14.0
-      stylelint-config-standard-scss: ^6.0.0
-      stylelint-config-styled-components: ^0.1.1
-      stylelint-processor-styled-components: ^1.10.0
-    devDependencies:
-      stylelint: 14.14.0
-      stylelint-config-standard-scss: 6.0.0_stylelint@14.14.0
-      stylelint-config-styled-components: 0.1.1
-      stylelint-processor-styled-components: 1.10.0
 
   packages/theme:
     specifiers:
@@ -525,6 +517,7 @@ importers:
 
   packages/web-ui:
     specifiers:
+      '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
       '@babel/core': ^7.19.1
       '@storybook/addon-essentials': ^6.5.12
@@ -543,7 +536,6 @@ importers:
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
       stylelint: ^14.14.0
-      stylelint-config-custom: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.2
       webpack: ^5.74.0
@@ -555,6 +547,7 @@ importers:
       styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
       styled-theming: 2.2.0
     devDependencies:
+      '@acme/stylelint-config': link:../config/stylelint
       '@babel/core': 7.19.1
       '@storybook/addon-essentials': 6.5.12_3glaga62vdbhn3j2rgi6hqvhay
       '@storybook/react': 6.5.12_tyklhqqtbjrtigqxoqzujoezca
@@ -567,7 +560,6 @@ importers:
       require-from-string: 2.0.2
       storybook-dark-mode: 1.1.2_biqbaboplfbrettd7655fr4n2y
       stylelint: 14.14.0
-      stylelint-config-custom: link:../stylelint-config-custom
       tsconfig: link:../tsconfig
       typescript: 4.8.3
       webpack: 5.74.0
@@ -20261,8 +20253,8 @@ packages:
   /stylelint-processor-styled-components/1.10.0:
     resolution: {integrity: sha512-g4HpN9rm0JD0LoHuIOcd/FIjTZCJ0ErQ+dC3VTxp+dSvnkV+MklKCCmCQEdz5K5WxF4vPuzfVgdbSDuPYGZhoA==}
     dependencies:
-      '@babel/parser': 7.19.1
-      '@babel/traverse': 7.19.1
+      '@babel/parser': 7.20.3
+      '@babel/traverse': 7.20.1
       micromatch: 4.0.5
       postcss: 7.0.39
     transitivePeerDependencies:

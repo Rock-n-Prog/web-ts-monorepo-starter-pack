@@ -11,7 +11,7 @@ on:
       - 'packages/theme/**'
       - 'packages/mobile/ui/**'
       - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
+      - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -22,7 +22,7 @@ on:
       - 'packages/theme/**'
       - 'packages/mobile/ui/**'
       - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
+      - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
 
 jobs:

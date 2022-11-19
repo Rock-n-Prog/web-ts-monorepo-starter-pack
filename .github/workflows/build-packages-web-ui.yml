@@ -10,7 +10,7 @@ on:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
       - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
+      - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -20,7 +20,7 @@ on:
       - '.github/workflows/build-packages-web-ui.yml'
       - 'packages/web-ui/**'
       - 'packages/eslint-config-custom/**'
-      - 'packages/stylelint-config-custom/**'
+      - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
 
 jobs:
