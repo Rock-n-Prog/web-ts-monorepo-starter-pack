@@ -28,7 +28,7 @@ Here's what we decided to use.
 ### Form management
 
 - [zod](https://github.com/colinhacks/zod)
-- [react-hook-form](https://react-hook-form.com/)
+- [React Hook Form](https://react-hook-form.com/)
 
 ### Translations
 
@@ -100,7 +100,7 @@ Here's what we decided to use.
 ### Pre-commit checker
 
 - [Husky](https://typicode.github.io/husky)
-- [Lint-staged](https://github.com/okonet/lint-staged)
+- [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Project Management
 

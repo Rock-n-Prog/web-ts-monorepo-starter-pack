@@ -1,14 +1,13 @@
-# ACME App
+# Web-TS Monorepo Starter Pack
 
-Feature-heavy example monorepo for web and mobile apps, packed with tons of reusable code snippets and defined through a
-strong software architecture.
+Feature-heavy monorepo boilerplate for web and mobile apps, packed with tons of reusable code snippets and defined
+through a strong software architecture. Kind of inspired by [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
+
+**See the [docs](./docs/README.md), for list of features, guides, explanations.**
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 Check the [project board](https://github.com/orgs/treeview-app/projects/1/views/1) for what we want to do next.
-
-To contribute, make sure you have read the [docs](https://treeview-app.github.io/treeview) and
-[contribution guide](CONTRIBUTING.md).
 
 ## Status
 
