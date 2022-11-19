@@ -7,5 +7,4 @@ Configs are omitted, as they are pretty self-explanatory.
 - [Theme](./theme.md)
 - [Web libraries](./web/README.md)
 - [Web UI](./web-ui.md)
-- [Web Forms](./web-forms.md)
 - [Mobile libraries](./mobile/README.md)

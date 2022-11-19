@@ -3,7 +3,7 @@ const withTM = require('next-transpile-modules')([
   '@acme/api',
   '@acme/theme',
   'web-ui',
-  'web-forms',
+  '@acme/web-forms',
   '@acme/web-locales',
   '@acme/web-storage',
 ]);
