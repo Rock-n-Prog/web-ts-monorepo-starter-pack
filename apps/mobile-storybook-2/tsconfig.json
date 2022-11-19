@@ -1,0 +1,6 @@
+{
+  "extends": "@acme/tsconfig/expo.json",
+  "compilerOptions": {
+    "strict": true
+  }
+}
