@@ -23,6 +23,7 @@ importers:
   apps/mobile:
     specifiers:
       '@acme/mobile-forms': workspace:*
+      '@acme/mobile-locales': workspace:*
       '@acme/mobile-storage': workspace:*
       '@acme/mobile-ui': workspace:*
       '@babel/core': ^7.20.2
@@ -52,7 +53,6 @@ importers:
       expo-status-bar: ^1.4.2
       i18next: ^22.0.5
       intl-pluralrules: ^1.3.1
-      mobile-locales: workspace:*
       react: ^18.1.0
       react-hook-form: ^7.39.3
       react-i18next: ^12.0.0
@@ -66,6 +66,7 @@ importers:
       typescript: ^4.5.3
     dependencies:
       '@acme/mobile-forms': link:../../packages/mobile/forms
+      '@acme/mobile-locales': link:../../packages/mobile/locales
       '@acme/mobile-storage': link:../../packages/mobile/storage
       '@acme/mobile-ui': link:../../packages/mobile/ui
       '@expo/vector-icons': 13.0.0
@@ -86,7 +87,6 @@ importers:
       expo-status-bar: 1.4.2
       i18next: 22.0.5
       intl-pluralrules: 1.3.1
-      mobile-locales: link:../../packages/mobile-locales
       react: 18.2.0
       react-hook-form: 7.39.3_react@18.2.0
       react-i18next: 12.0.0_np35duuwl2axg4yj5jt36jkk5a
@@ -260,27 +260,6 @@ importers:
       eslint-plugin-storybook: 0.6.6_irgkl5vooow2ydyo6aokmferha
       typescript: 4.8.3
 
-  packages/mobile-locales:
-    specifiers:
-      '@acme/mobile-storage': workspace:*
-      eslint: ^7.32.0
-      eslint-config-custom: workspace:*
-      eslint-plugin-i18n-json: ^4.0.0
-      expo-localization: ^14.0.0
-      react: ^18.1.0
-      react-native: ^0.70.5
-      tsconfig: workspace:*
-    dependencies:
-      '@acme/mobile-storage': link:../mobile/storage
-      expo-localization: 14.0.0
-      react: 18.2.0
-      react-native: 0.70.6_react@18.2.0
-    devDependencies:
-      eslint: 7.32.0
-      eslint-config-custom: link:../eslint-config-custom
-      eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
-      tsconfig: link:../tsconfig
-
   packages/mobile/forms:
     specifiers:
       '@acme/mobile-ui': workspace:*
@@ -313,6 +292,27 @@ importers:
       stylelint-config-custom: link:../../stylelint-config-custom
       tsconfig: link:../../tsconfig
       typescript: 4.8.3
+
+  packages/mobile/locales:
+    specifiers:
+      '@acme/mobile-storage': workspace:*
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      eslint-plugin-i18n-json: ^4.0.0
+      expo-localization: ^14.0.0
+      react: ^18.1.0
+      react-native: ^0.70.5
+      tsconfig: workspace:*
+    dependencies:
+      '@acme/mobile-storage': link:../storage
+      expo-localization: 14.0.0
+      react: 18.2.0
+      react-native: 0.70.6_react@18.2.0
+    devDependencies:
+      eslint: 7.32.0
+      eslint-config-custom: link:../../eslint-config-custom
+      eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
+      tsconfig: link:../../tsconfig
 
   packages/mobile/storage:
     specifiers:
@@ -12686,7 +12686,7 @@ packages:
     engines: {node: '>=8'}
 
   /fresh/0.5.2:
-    resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
+    resolution: {integrity: sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=}
     engines: {node: '>= 0.6'}
 
   /from2/2.3.0:
@@ -21454,7 +21454,7 @@ packages:
     dev: true
 
   /utils-merge/1.0.1:
-    resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
+    resolution: {integrity: sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=}
     engines: {node: '>= 0.4.0'}
 
   /uuid-browser/3.1.0:
