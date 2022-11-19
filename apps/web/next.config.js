@@ -1,6 +1,6 @@
 const { i18n } = require('./next-i18next.config');
 const withTM = require('next-transpile-modules')([
-  'trpc',
+  '@acme/api',
   'theme',
   'web-ui',
   'web-forms',

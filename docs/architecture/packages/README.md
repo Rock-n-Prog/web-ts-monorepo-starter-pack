@@ -3,7 +3,7 @@
 Configs are omitted, as they are pretty self-explanatory.
 
 - [Database](./db.md)
-- [tRPC](./trpc.md)
+- [API](./api.md)
 - [Theme](./theme.md)
 - [Web UI](./web-ui.md)
 - [Web Forms](./web-forms.md)

@@ -62,8 +62,8 @@
     "packages/db/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/db/**/*.{js,ts}"
     ],
-    "packages/trpc/**/*.{js,ts}": [
-      "eslint --max-warnings 0 --fix packages/trpc/**/*.{js,ts}"
+    "packages/api/**/*.{js,ts}": [
+      "eslint --max-warnings 0 --fix packages/api/**/*.{js,ts}"
     ],
     "packages/theme/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/theme/**/*.{js,ts}"
