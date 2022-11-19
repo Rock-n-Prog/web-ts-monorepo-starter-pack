@@ -10,4 +10,3 @@ Configs are omitted, as they are pretty self-explanatory.
 - [Web Locales](./web-locales.md)
 - [Web Storage](./web-storage.md)
 - [Mobile libraries](./mobile/README.md)
-- [Mobile Locales](./mobile-locales.md)

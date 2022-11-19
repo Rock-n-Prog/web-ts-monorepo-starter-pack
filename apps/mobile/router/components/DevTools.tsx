@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@acme/mobile-ui/components/inputs';
 import { useThemeContext } from '@acme/mobile-ui/hooks/useThemeContext';
 import { Stack } from '@acme/mobile-ui/components/layouts';
-import { useLocaleContext } from 'mobile-locales/hooks/useLocaleContext';
+import { useLocaleContext } from '@acme/mobile-locales/hooks/useLocaleContext';
 
 function DevTools() {
   const { t } = useTranslation();

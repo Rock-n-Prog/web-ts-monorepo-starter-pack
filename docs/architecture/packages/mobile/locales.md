@@ -1,12 +1,12 @@
 # Mobile Locales
 
-Library is located at [`packages/mobile-locales`](../../../packages/mobile-locales).
+Library is located at [`packages/mobile/locales`](../../../../packages/mobile/locales).
 
-This library is used by a mobile app. For more info, read [its docs](../apps/mobile.md).
+This library is used by a mobile app. For more info, read [its docs](../../apps/mobile.md).
 
 This package uses:
 
-- [`packages/mobile/storage`](./mobile/storage.md): Storage utilities
+- [`packages/mobile/storage`](./storage.md): Storage utilities
 
 ## Software architecture
 

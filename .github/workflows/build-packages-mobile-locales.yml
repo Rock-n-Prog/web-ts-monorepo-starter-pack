@@ -8,7 +8,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-locales.yml'
-      - 'packages/mobile-locales/**'
+      - 'packages/mobile/storage/**'
+      - 'packages/mobile/locales/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -17,7 +18,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-locales.yml'
-      - 'packages/mobile-locales/**'
+      - 'packages/mobile/storage/**'
+      - 'packages/mobile/locales/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -41,7 +43,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile-locales... install
+        run: pnpm --filter @acme/mobile-locales install
 
       - name: Lint
-        run: pnpm --filter mobile-locales lint
+        run: pnpm --filter @acme/mobile-locales lint
