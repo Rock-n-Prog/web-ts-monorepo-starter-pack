@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/native';
 import type { Theme } from '../../styles/theme';
 import { Typography } from './Typography';
 
