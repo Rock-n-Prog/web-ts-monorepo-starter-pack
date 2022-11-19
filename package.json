@@ -73,8 +73,8 @@
     "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
     ],
-    "packages/web-forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-forms/**/*.{js,jsx,ts,tsx}"
+    "packages/web/forms/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/forms/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web/locales/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/web/locales/**/*.{js,jsx,ts,tsx}"
