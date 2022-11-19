@@ -1,4 +1,4 @@
-# Style Guide
+# Code style
 
 General style guide for this project.
 
@@ -9,4 +9,4 @@ Everything here should be supported by linters. Otherwise, create an issue.
 - [TypeScript](typescript.md)
 - [Styling](styling.md)
 
-For tests, please refer to the [in-depth testing guide](../development/testing/README.md).
+For tests, please refer to the [in-depth testing guide](../testing/README.md).

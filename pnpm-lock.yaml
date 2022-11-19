@@ -213,7 +213,7 @@ importers:
       tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
 
-  packages/database:
+  packages/db:
     specifiers:
       '@prisma/client': ^4.3.1
       '@types/node': ^18.7.18
@@ -402,8 +402,8 @@ importers:
 
   packages/trpc:
     specifiers:
+      '@acme/db': workspace:*
       '@trpc/server': ^10.0.0-rc.7
-      database: workspace:*
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       nodemon: ^2.0.20
@@ -412,8 +412,8 @@ importers:
       typescript: ^4.5.2
       zod: ^3.19.1
     dependencies:
+      '@acme/db': link:../db
       '@trpc/server': 10.0.0-rc.7
-      database: link:../database
     devDependencies:
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom

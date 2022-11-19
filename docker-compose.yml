@@ -8,12 +8,12 @@ services:
   mysql:
     platform: linux/amd64
     image: mysql:8.0.28
-    container_name: treeview_mysql
+    container_name: acme_mysql
     restart: always
     ports:
       - 3306:3306
     environment:
-      MYSQL_DATABASE: treeview
+      MYSQL_DATABASE: acme
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
     volumes:
       - database:/var/lib/mysql

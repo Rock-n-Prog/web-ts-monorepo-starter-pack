@@ -15,9 +15,15 @@
       "outputs": ["node_modules/.cache/metro/**"],
       "env": ["NODE_ENV", "VERCEL_URL", "PORT"]
     },
-    "database#db:migrate:*": {
+    "@acme/db#@migrate:*": {
       "env": ["DATABASE_URL"],
       "dependsOn": []
+    },
+    "generate": {
+      "outputs": []
+    },
+    "seed": {
+      "outputs": []
     },
     "lint": {
       "outputs": []
