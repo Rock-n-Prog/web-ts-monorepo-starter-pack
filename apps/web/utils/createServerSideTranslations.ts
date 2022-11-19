@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { Locale } from '../types/locales';
-import { defaultLocale } from '../types/locales';
-import type { Namespace } from '../types/namespaces';
+import type { Locale } from '@acme/web-locales/types/locales';
+import { defaultLocale } from '@acme/web-locales/types/locales';
+import type { Namespace } from '@acme/web-locales/types/namespaces';
 
 type CreateServerSideTranslationsParams = {
   readonly locale: Locale;

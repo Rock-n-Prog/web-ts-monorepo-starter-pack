@@ -4,7 +4,7 @@ import { appWithTranslation } from 'next-i18next';
 import { ThemeProvider } from 'web-ui/contexts/ThemeProvider';
 import { Container } from 'web-ui/components/layouts';
 import { SnackbarProvider } from 'web-ui/contexts/SnackbarProvider';
-import { LocaleProvider } from 'web-locales/contexts/LocaleProvider';
+import { LocaleProvider } from '../contexts/LocaleProvider';
 import { trpc } from '../utils/trpc';
 import { Toolbar } from '../components/dev-tools/Toolbar';
 

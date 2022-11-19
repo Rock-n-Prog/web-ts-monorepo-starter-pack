@@ -1,12 +1,12 @@
 # Web Locales
 
-Library is located at [`packages/web-locales`](../../../packages/web-locales).
+Library is located at [`packages/web/locales`](../../../../packages/web/locales).
 
-This library is used by a web app. For more info, read [its docs](../apps/web.md).
+This library is used by a web app. For more info, read [its docs](../../apps/web.md).
 
 This package uses:
 
-- [`packages/web-storage`](./web-storage.md): Storage utilities
+- [`packages/web/storage`](./storage.md): Storage utilities
 
 ## Software architecture
 
@@ -15,10 +15,7 @@ architecture.
 
 ## File structure
 
-- `contexts`: Context providers
-- `hooks`: Hooks
 - `translations`: All locales translations
   - `en`: Translations in English
   - `fr`: Translations in French
 - `types`: Type definitions
-- `utils`: Utilities

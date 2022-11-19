@@ -13,6 +13,7 @@
   "dependencies": {
     "@acme/api": "workspace:*",
     "@acme/theme": "workspace:*",
+    "@acme/web-locales": "workspace:*",
     "@acme/web-storage": "workspace:*",
     "@hookform/resolvers": "^2.9.10",
     "@tanstack/react-query": "^4.3.9",
@@ -30,7 +31,6 @@
     "react-query": "^3.39.2",
     "superjson": "^1.10.0",
     "web-forms": "workspace:*",
-    "web-locales": "workspace:*",
     "web-ui": "workspace:*"
   },
   "devDependencies": {

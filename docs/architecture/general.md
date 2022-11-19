@@ -19,10 +19,10 @@ For more info, see Turborepo file structure.
   - `api`: tRPC routes and context definitions (see [its docs](./packages/api.md))
   - `theme`: Theme (color palette) definition (see [its docs](./packages/theme.md))
   - `web`: Web libraries
+    - `locales`: Web translations library (see [its docs](./packages/web/locale.md))
     - `storage`: Web storage library (see [its docs](./packages/web/storage.md))
   - `web-ui`: Web UI library (see [its docs](./packages/web-ui.md))
   - `web-forms`: Web forms library (see [its docs](./packages/web-forms.md))
-  - `web-locales`: Web translations library (see [its docs](./packages/web-locale.md))
   - `mobile`: Mobile libraries
     - `ui`: Mobile UI library (see [its docs](./packages/mobile/ui.md))
     - `forms`: Mobile forms library (see [its docs](./packages/mobile/forms.md))
