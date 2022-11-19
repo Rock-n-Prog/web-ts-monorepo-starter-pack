@@ -5,7 +5,7 @@
   "workspaces": [
     "apps/*",
     "packages/*",
-    "packages/packages/*"
+    "packages/mobile/*"
   ],
   "engines": {
     "node": ">=14.0.0"
@@ -93,8 +93,8 @@
     "packages/mobile-locales/translations/**/*.{json}": [
       "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/mobile-locales/translations/"
     ],
-    "packages/mobile-storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile-storage/**/*.{js,jsx,ts,tsx}"
+    "packages/mobile/storage/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/mobile/storage/**/*.{js,jsx,ts,tsx}"
     ]
   }
 }

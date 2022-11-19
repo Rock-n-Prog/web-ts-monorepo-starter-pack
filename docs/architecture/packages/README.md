@@ -12,4 +12,3 @@ Configs are omitted, as they are pretty self-explanatory.
 - [Mobile libraries](./mobile/README.md)
 - [Mobile Forms](./mobile-forms.md)
 - [Mobile Locales](./mobile-locales.md)
-- [Mobile Storage](./mobile-storage.md)
