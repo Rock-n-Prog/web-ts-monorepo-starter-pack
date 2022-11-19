@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Body1, HeaderTitle, Title } from 'mobile-ui/components/typography';
-import { Alert } from 'mobile-ui/components/feedback';
-import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
+import { Body1, HeaderTitle, Title } from '@acme/mobile-ui/components/typography';
+import { Alert } from '@acme/mobile-ui/components/feedback';
+import { Screen, Stack } from '@acme/mobile-ui/components/layouts';
 import { trpc } from '../../utils/trpc';
 import useNavigationOption from '../../hooks/useNavigationOptions';
 

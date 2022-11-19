@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { HeaderTitle, Title } from 'mobile-ui/components/typography';
-import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
+import { HeaderTitle, Title } from '@acme/mobile-ui/components/typography';
+import { Screen, Stack } from '@acme/mobile-ui/components/layouts';
 import useNavigationOption from '../../hooks/useNavigationOptions';
 import { AddUserForm } from './components/AddUserForm';
 

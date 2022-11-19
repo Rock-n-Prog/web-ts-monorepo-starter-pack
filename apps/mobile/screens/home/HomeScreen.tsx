@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { HeaderTitle } from 'mobile-ui/components/typography';
-import { Button } from 'mobile-ui/components/inputs';
-import { Screen, Stack } from 'mobile-ui/components/layouts';
 import { useTranslation } from 'react-i18next';
+import { HeaderTitle } from '@acme/mobile-ui/components/typography';
+import { Button } from '@acme/mobile-ui/components/inputs';
+import { Screen, Stack } from '@acme/mobile-ui/components/layouts';
 import useNavigationOption from '../../hooks/useNavigationOptions';
 import useRootStackNavigation from '../../router/hooks/useRootStackNavigation';
 

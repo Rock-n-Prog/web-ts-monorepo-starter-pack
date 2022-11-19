@@ -8,7 +8,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-ui.yml'
-      - 'packages/mobile-ui/**'
+      - 'packages/theme/**'
+      - 'packages/mobile/ui/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/stylelint-config-custom/**'
       - 'packages/tsconfig/**'
@@ -18,7 +19,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-ui.yml'
-      - 'packages/mobile-ui/**'
+      - 'packages/theme/**'
+      - 'packages/mobile/ui/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/stylelint-config-custom/**'
       - 'packages/tsconfig/**'
@@ -43,7 +45,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile-ui... install
+        run: pnpm --filter @acme/mobile-ui install
 
       - name: Lint
-        run: pnpm --filter mobile-ui lint
+        run: pnpm --filter @acme/mobile-ui lint

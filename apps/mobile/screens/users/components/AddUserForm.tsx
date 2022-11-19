@@ -4,9 +4,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import type { AddUserInput } from 'trpc/schemas';
 import { addUserInputSchema } from 'trpc/schemas';
-import { Stack } from 'mobile-ui/components/layouts';
-import { Button } from 'mobile-ui/components/inputs';
-import { useSnackbarContext } from 'mobile-ui/hooks/useSnackbarContext';
+import { Stack } from '@acme/mobile-ui/components/layouts';
+import { Button } from '@acme/mobile-ui/components/inputs';
+import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
 import { TextField } from 'mobile-forms/components';
 import { trpc } from '../../../utils/trpc';
 

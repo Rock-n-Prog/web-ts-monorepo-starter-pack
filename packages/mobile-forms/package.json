@@ -7,7 +7,7 @@
     "lint:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
-    "mobile-ui": "workspace:*",
+    "@acme/mobile-ui": "workspace:*",
     "react": "^18.1.0",
     "react-i18next": "^12.0.0",
     "react-native": "^0.70.5"

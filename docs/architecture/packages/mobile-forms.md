@@ -8,7 +8,7 @@ The main goal is to list components and behaviors with the responsibility of han
 
 This package uses:
 
-- [`packages/mobile-ui`](./mobile-ui.md): UI Components
+- [`packages/mobile/ui`](./mobile/ui.md): UI Components
 
 ## Software architecture
 

@@ -44,7 +44,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 - [`packages/web-forms`](packages/web-forms): React form-specific components for forms app
 - [`packages/web-locales`](packages/web-locales): Locale translations for web app
 - [`packages/web-storage`](packages/web-storage): Storage utilities for web app
-- [`packages/mobile-ui`](packages/mobile-ui): React Native components for mobile app
+- [`packages/mobile/ui`](packages/mobile/ui): React Native components for mobile app
 - [`packages/mobile-forms`](packages/mobile-forms): React Native form-specific components for forms app
 - [`packages/mobile-locales`](packages/mobile-locales): Locale translations for mobile app
 - [`packages/mobile-storage`](packages/mobile-storage): Storage utilities for mobile app

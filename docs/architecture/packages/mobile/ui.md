@@ -1,10 +1,10 @@
 # Mobile UI
 
-Library is located at [`packages/mobile-ui`](../../../packages/mobile-ui).
+Library is located at [`packages/mobile/ui`](../../../../packages/mobile/ui).
 
-This library is used by a mobile app. For more info, read [its docs](../apps/mobile.md).
+This library is used by a mobile app. For more info, read [its docs](../../apps/mobile.md).
 
-Theme definition has its own documentation, see [its docs](./theme.md)
+Theme definition has its own documentation, see [its docs](../theme.md)
 
 ## Software architecture
 
@@ -24,3 +24,4 @@ TODO: Once Storybook is deployed, link it here.
 - `contexts`: Theme context providers
 - `hooks`: Theme hooks
 - `styles`: Theme definition
+- `types`: Type definitions

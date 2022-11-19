@@ -4,7 +4,7 @@ React Native form-specific component library and necessities for TreeView Mobile
 
 This package uses:
 
-- [`packages/mobile-ui`](../mobile-ui): UI Components
+- [`packages/mobile/ui`](../mobile/ui): UI Components
 
 ## Setup
 
