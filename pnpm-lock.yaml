@@ -153,6 +153,7 @@ importers:
   apps/web:
     specifiers:
       '@acme/api': workspace:*
+      '@acme/db': workspace:*
       '@acme/eslint-config': workspace:*
       '@acme/theme': workspace:*
       '@acme/tsconfig': workspace:*
@@ -183,6 +184,7 @@ importers:
       web-ui: workspace:*
     dependencies:
       '@acme/api': link:../../packages/api
+      '@acme/db': link:../../packages/db
       '@acme/theme': link:../../packages/theme
       '@acme/web-forms': link:../../packages/web/forms
       '@acme/web-locales': link:../../packages/web/locales

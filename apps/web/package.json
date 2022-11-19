@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@acme/api": "workspace:*",
+    "@acme/db": "workspace:*",
     "@acme/theme": "workspace:*",
     "@acme/web-forms": "workspace:*",
     "@acme/web-locales": "workspace:*",
