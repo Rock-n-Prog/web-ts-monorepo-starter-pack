@@ -4,14 +4,17 @@ import { defaultThemeMode, type ThemeMode } from '@acme/theme';
 import { useLocalStorage } from '@acme/web-storage/hooks/useLocalStorage';
 import { getTheme } from '../styles/theme';
 import GlobalStyle from '../styles/GlobalStyle';
+import { getSystemThemeMode } from '../utils/getSystemThemeMode';
 
 type Props = {
   readonly initialMode?: ThemeMode;
 };
 
 function ThemeProvider({ children }: React.PropsWithChildren<Props>) {
-  // TODO: Implement web theme detection
-  const [mode, setMode] = useLocalStorage<ThemeMode>({ key: 'thememode', initialValue: defaultThemeMode });
+  const [mode, setMode] = useLocalStorage<ThemeMode>({
+    key: 'thememode',
+    initialValue: getSystemThemeMode() ?? defaultThemeMode,
+  });
 
   const theme = React.useMemo(() => getTheme(mode), [mode]);
 
