@@ -10,7 +10,7 @@
       "outputs": [".next/**"],
       "env": ["NODE_ENV", "VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "PORT"]
     },
-    "mobile#build": {
+    "@acme/mobile#build": {
       "dependsOn": ["^build"],
       "outputs": ["node_modules/.cache/metro/**"],
       "env": ["NODE_ENV", "VERCEL_URL", "PORT"]
