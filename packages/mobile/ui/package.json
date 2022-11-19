@@ -10,6 +10,7 @@
     "lint:styles": "stylelint ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
+    "@acme/mobile-storage": "workspace:*",
     "@acme/theme": "workspace:*",
     "expo-navigation-bar": "^1.3.0",
     "react": "^18.1.0",

@@ -4,9 +4,17 @@ import * as NavigationBar from 'expo-navigation-bar';
 import { defaultThemeMode, type ThemeMode } from '@acme/theme';
 import type { Theme } from '../styles/theme';
 import { getTheme } from '../styles/theme';
+import {getStoredThemeMode, setStoredThemeMode} from "../utils/storedThemeMode";
 
 function ThemeProvider({ children }: React.PropsWithChildren) {
   const [mode, setMode] = React.useState<ThemeMode>(defaultThemeMode);
+
+  React.useEffect(() => {
+    getStoredThemeMode({
+      fallbackValue: defaultThemeMode,
+      callback: (storedMode) => setMode(storedMode),
+    });
+  }, []);
 
   const theme = React.useMemo(() => {
     const theme = getTheme(mode);
@@ -14,12 +22,17 @@ function ThemeProvider({ children }: React.PropsWithChildren) {
     return theme;
   }, [mode]);
 
+  function setAndStoreMode(themeMode: ThemeMode) {
+    setMode(themeMode);
+    setStoredThemeMode(themeMode);
+  }
+
   function switchMode() {
-    setMode(mode === 'light' ? 'dark' : 'light');
+    setAndStoreMode(mode === 'light' ? 'dark' : 'light');
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, mode, setMode, switchMode }}>
+    <ThemeContext.Provider value={{ theme, mode, setMode: setAndStoreMode, switchMode }}>
       <SCThemeProvider theme={theme}>{children}</SCThemeProvider>
     </ThemeContext.Provider>
   );

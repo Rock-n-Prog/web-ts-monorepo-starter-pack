@@ -1,18 +1,19 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-type GetItemInStorageParams = {
+type GetItemInStorageParams<T extends string> = {
   readonly key: string;
-  readonly initialValue: string;
-  readonly callback?: (value: string) => unknown;
+  readonly initialValue: T;
+  readonly callback: (value: T) => unknown;
 };
 
-function getItemFromStorage({ key, initialValue, callback }: GetItemInStorageParams) {
+function getItemFromStorage<T extends string>({ key, initialValue, callback }: GetItemInStorageParams<T>) {
   return AsyncStorage.getItem(key)
     .then(value => {
-      const foundValue = value ?? initialValue;
-      return callback ? callback(foundValue) : foundValue;
+      const foundValue = value as T ?? initialValue;
+      callback(foundValue);
     })
     .catch(error => console.error('Error getting item from storage', error));
 }
 
+export type { GetItemInStorageParams };
 export default getItemFromStorage;

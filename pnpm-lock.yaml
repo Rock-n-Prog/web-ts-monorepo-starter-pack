@@ -374,6 +374,7 @@ importers:
   packages/mobile/ui:
     specifiers:
       '@acme/eslint-config': workspace:*
+      '@acme/mobile-storage': workspace:*
       '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
       '@acme/tsconfig': workspace:*
@@ -390,6 +391,7 @@ importers:
       stylelint: ^14.14.0
       typescript: ^4.5.2
     dependencies:
+      '@acme/mobile-storage': link:../storage
       '@acme/theme': link:../../theme
       expo-navigation-bar: 1.3.0
       react: 18.2.0
