@@ -5,7 +5,7 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "web#build": {
+    "@acme/web#build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"],
       "env": ["NODE_ENV", "VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "PORT"]
