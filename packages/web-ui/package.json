@@ -21,6 +21,7 @@
     "styled-theming": "^2.2.0"
   },
   "devDependencies": {
+    "@acme/stylelint-config": "workspace:*",
     "@babel/core": "^7.19.1",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/react": "^6.5.12",
@@ -33,7 +34,6 @@
     "require-from-string": "^2.0.2",
     "storybook-dark-mode": "^1.1.2",
     "stylelint": "^14.14.0",
-    "stylelint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "webpack": "^5.74.0"

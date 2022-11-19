@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['stylelint-config-custom/base.js'],
+  extends: ['@acme/stylelint-config/base.js'],
   ignoreFiles: ['./node_modules/**/*', './.turbo/**/*', './*.js'],
 };
