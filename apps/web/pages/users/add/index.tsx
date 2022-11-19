@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useTranslation } from 'next-i18next';
-import { Body1, Header1, Header2 } from 'web-ui/components/typography';
+import { Body1, Header1, Header2 } from '@acme/web-ui/components/typography';
 import type { WithLocale } from '@acme/web-locales/types/locales';
 import createServerSideTranslations from '../../../utils/createServerSideTranslations';
 import { AddUserForm } from '../../../components/users/AddUserForm';

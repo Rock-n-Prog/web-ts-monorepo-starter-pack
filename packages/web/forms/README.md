@@ -4,7 +4,7 @@ React form-specific component library and necessities for ACME Web app.
 
 This package uses:
 
-- [`packages/web-ui`](../../web-ui): UI Components
+- [`packages/web/ui`](../ui): UI Components
 
 ## Setup
 

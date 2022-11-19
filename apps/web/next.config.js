@@ -2,7 +2,7 @@ const { i18n } = require('./next-i18next.config');
 const withTM = require('next-transpile-modules')([
   '@acme/api',
   '@acme/theme',
-  'web-ui',
+  '@acme/web-ui',
   '@acme/web-forms',
   '@acme/web-locales',
   '@acme/web-storage',

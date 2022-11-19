@@ -8,7 +8,7 @@ The main goal is to list components and behaviors with the responsibility of han
 
 This package uses:
 
-- [`packages/web-ui`](../web-ui.md): UI Components
+- [`packages/web/ui`](./ui.md): UI Components
 
 ## Software architecture
 

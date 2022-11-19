@@ -20,7 +20,7 @@ ls:
     # Regex for path props (ex: [name].tsx)
     .tsx: kebab-case | regex:_app | regex:\[[a-z]+\]
 
-  packages/web-ui:
+  packages/web/ui:
     # Regex for dotfiles
     # Regex for config dirs (ex: __stories__)
     .dir: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+) | regex:__[a-zA-Z]+__
@@ -52,5 +52,5 @@ ignore:
   - packages/web/forms/node_modules
   - packages/web/locales/node_modules
   - packages/web/storage/node_modules
-  - packages/web-ui/node_modules
-  - packages/web-ui/storybook-static
+  - packages/web/ui/node_modules
+  - packages/web/ui/storybook-static

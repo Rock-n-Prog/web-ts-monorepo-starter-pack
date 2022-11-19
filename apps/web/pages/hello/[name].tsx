@@ -1,7 +1,7 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { useTranslation } from 'next-i18next';
-import { Header1, Header2, Body1 } from 'web-ui/components/typography';
-import { Alert } from 'web-ui/components/feedback';
+import { Header1, Header2, Body1 } from '@acme/web-ui/components/typography';
+import { Alert } from '@acme/web-ui/components/feedback';
 import type { WithLocale } from '@acme/web-locales/types/locales';
 import { trpc } from '../../utils/trpc';
 import createServerSideTranslations from '../../utils/createServerSideTranslations';

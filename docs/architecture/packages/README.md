@@ -6,5 +6,4 @@ Configs are omitted, as they are pretty self-explanatory.
 - [API](./api.md)
 - [Theme](./theme.md)
 - [Web libraries](./web/README.md)
-- [Web UI](./web-ui.md)
 - [Mobile libraries](./mobile/README.md)
