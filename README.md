@@ -7,7 +7,7 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 Check the [project board](https://github.com/orgs/treeview-app/projects/1/views/1) for what we want to do next.
 
-To contribute, make sure you have read the [docs](docs) and [contribution guide](CONTRIBUTING.md).
+To contribute, make sure you have read the [docs](https://treeview-app.github.io/treeview) and [contribution guide](CONTRIBUTING.md).
 
 ## Status
 
