@@ -17,7 +17,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 | Web              | App     | [![Build Web App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-web.yml)                                              |
 | Mobile           | App     | [![Build Mobile App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile.yml)                                     |
 | Mobile Storybook | App     | [![Build Mobile Storybook App](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-apps-mobile-storybook.yml)       |
-| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-database.yml)                   |
+| Database         | Package | [![Build Database Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-db.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-db.yml)                               |
 | tRPC             | Package | [![Build tRPC Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-trpc.yml)                               |
 | Theme            | Package | [![Build Theme Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-theme.yml)                            |
 | Web UI           | Package | [![Build Web UI Package](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml/badge.svg)](https://github.com/treeview-app/treeview/actions/workflows/build-packages-web-ui.yml)                         |
@@ -37,7 +37,7 @@ To contribute, make sure you have read the [docs](docs) and [contribution guide]
 
 ## Packages
 
-- [`packages/database`](packages/database): Prisma client and models definitions
+- [`packages/db`](packages/db): Prisma client and models definitions
 - [`packages/trpc`](packages/trpc): tRPC routes and context definitions
 - [`packages/theme`](packages/theme): Theme definition
 - [`packages/web-ui`](packages/web-ui): React components for web app
@@ -70,16 +70,16 @@ pnpm prepare
 
 ```bash
 # Copy env file
-cp packages/database/.env.example packages/database/.env
+cp packages/db/.env.example packages/db/.env
 
 # Run database
 docker compose up
 
 # Generate Prisma client
-pnpm -F database generate
+pnpm db:generate
 
 # If wanted, generate example data
-pnpm -F database db:seed
+pnpm db:seed
 ```
 
 ## Available scripts

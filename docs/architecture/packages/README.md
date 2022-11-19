@@ -2,7 +2,7 @@
 
 Configs are omitted, as they are pretty self-explanatory.
 
-- [Database](./database.md)
+- [Database](./db.md)
 - [tRPC](./trpc.md)
 - [Theme](./theme.md)
 - [Web UI](./web-ui.md)

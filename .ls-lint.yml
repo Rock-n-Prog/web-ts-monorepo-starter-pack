@@ -38,8 +38,8 @@ ignore:
   - apps/mobile/.expo
   - apps/mobile/node_modules
   - apps/mobile-storybook/node_modules
-  - packages/database/node_modules
-  - packages/database/prisma/migrations
+  - packages/db/node_modules
+  - packages/db/prisma/migrations
   - packages/eslint-config-custom/node_modules
   - packages/mobile/forms/node_modules
   - packages/mobile/locales/node_modules

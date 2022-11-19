@@ -6,5 +6,4 @@ Here is our documentation!
 - [Chosen Technologies](chosen-technologies.md)
 - [Architecture](architecture/README.md)
 - [Development](development/README.md)
-- [Style Guide](style-guide/README.md)
 - [References](references.md)

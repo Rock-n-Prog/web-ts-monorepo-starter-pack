@@ -9,7 +9,7 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
-      - 'packages/database/**'
+      - 'packages/db/**'
       - 'packages/trpc/**'
       - 'packages/theme/**'
       - 'packages/web-ui/**'
@@ -25,7 +25,7 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
-      - 'packages/database/**'
+      - 'packages/db/**'
       - 'packages/trpc/**'
       - 'packages/theme/**'
       - 'packages/web-ui/**'
@@ -55,10 +55,10 @@ jobs:
           version: 7.9.5
 
       - name: Install database dependencies
-        run: pnpm --filter database install
+        run: pnpm --filter @acme/db install
 
       - name: Generate prisma client
-        run: pnpm --filter database generate
+        run: pnpm --filter @acme/db generate
 
       - name: Install dependencies
         run: pnpm --filter @acme/web install
