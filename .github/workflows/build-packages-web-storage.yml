@@ -8,7 +8,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-storage.yml'
-      - 'packages/web-storage/**'
+      - 'packages/web/storage/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
   pull_request:
@@ -17,7 +17,7 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-web-storage.yml'
-      - 'packages/web-storage/**'
+      - 'packages/web/storage/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
 
@@ -41,7 +41,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter web-storage... install
+        run: pnpm --filter @acme/web-storage install
 
       - name: Lint
-        run: pnpm --filter web-storage lint
+        run: pnpm --filter @acme/web-storage lint
