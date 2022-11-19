@@ -9,7 +9,7 @@ type GetItemInStorageParams<T extends string> = {
 function getItemFromStorage<T extends string>({ key, initialValue, callback }: GetItemInStorageParams<T>) {
   return AsyncStorage.getItem(key)
     .then(value => {
-      const foundValue = value as T ?? initialValue;
+      const foundValue = (value as T) ?? initialValue;
       callback(foundValue);
     })
     .catch(error => console.error('Error getting item from storage', error));
