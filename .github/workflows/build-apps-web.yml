@@ -9,6 +9,12 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
+      - 'packages/database/**'
+      - 'packages/trpc/**'
+      - 'packages/web-ui/**'
+      - 'packages/web-forms/**'
+      - 'packages/web-locales/**'
+      - 'packages/web-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -18,6 +24,12 @@ on:
     paths:
       - '.github/workflows/build-apps-web.yml'
       - 'apps/web/**'
+      - 'packages/database/**'
+      - 'packages/trpc/**'
+      - 'packages/web-ui/**'
+      - 'packages/web-forms/**'
+      - 'packages/web-locales/**'
+      - 'packages/web-storage/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -47,11 +59,11 @@ jobs:
         run: pnpm --filter database generate
 
       - name: Install dependencies
-        run: pnpm --filter web... install
+        run: pnpm --filter @acme/web install
 
       - name: Lint
-        run: pnpm --filter web lint
+        run: pnpm --filter @acme/web lint
 
       # TODO(#73): Re-add web CI build step
       # - name: Build
-      #   run: pnpm --filter web build
+      #   run: pnpm --filter @acme/web build

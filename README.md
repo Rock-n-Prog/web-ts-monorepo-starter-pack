@@ -1,6 +1,7 @@
-# TreeView App
+# ACME App
 
-Task management app, with a focus on tree view.
+Feature-heavy example monorepo for web and mobile apps, packed with tons of reusable code snippets and defined through a
+strong software architecture.
 
 Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 

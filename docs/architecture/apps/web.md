@@ -20,10 +20,7 @@ TODO: How the frontend communicates with the backend
 For more info, see Next.js file structure.
 
 - `components`: UI Components
-- `contexts`: Context providers
-- `hooks`: App hooks
 - `pages`: Pages, routing automatically handled by Next.js
   - `_app.page.tsx`: Application (wrapped by providers)
   - `/**/*.page.tsx`: Pages of the application
-- `types`: Type definitions
 - `utils`: Utility values and functions
