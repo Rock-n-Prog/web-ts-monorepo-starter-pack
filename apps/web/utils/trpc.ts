@@ -1,7 +1,7 @@
 import { httpBatchLink, loggerLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
 import superjson from 'superjson';
-import type { AppRouter } from 'trpc';
+import type { AppRouter } from '@acme/api';
 
 function getVercelUrl() {
   return process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;

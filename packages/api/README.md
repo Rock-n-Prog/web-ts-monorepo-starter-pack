@@ -1,6 +1,6 @@
-# TreeView tRPC routers and configs
+# ACME tRPC routers and configs
 
-tRPC routes and context definitions for TreeView apps.
+tRPC routes and context definitions for ACME apps.
 
 This package uses:
 

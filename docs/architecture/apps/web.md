@@ -4,7 +4,7 @@ App is located at [`apps/web`](../../../apps/web).
 
 This app uses shared packages. For more info, read their docs:
 
-- [`trpc`](../packages/trpc.md)
+- [`trpc`](../packages/api.md)
 - [`web-ui`](../packages/web-ui.md)
 - [`web-forms`](../packages/web-forms.md)
 - [`web-locales`](../packages/web-locales.md)

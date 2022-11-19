@@ -11,6 +11,7 @@
     "lint:fix": "eslint --max-warnings 0 --fix --ext js,jsx,ts,tsx ."
   },
   "dependencies": {
+    "@acme/api": "workspace:*",
     "@acme/mobile-forms": "workspace:*",
     "@acme/mobile-locales": "workspace:*",
     "@acme/mobile-storage": "workspace:*",
@@ -40,8 +41,7 @@
     "react-native-safe-area-context": "^4.4.1",
     "react-native-screens": "^3.18.0",
     "react-navigation": "^4.4.4",
-    "superjson": "^1.10.0",
-    "trpc": "workspace:*"
+    "superjson": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",

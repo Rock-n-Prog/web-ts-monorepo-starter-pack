@@ -38,6 +38,8 @@ ignore:
   - apps/mobile/.expo
   - apps/mobile/node_modules
   - apps/mobile-storybook/node_modules
+  - packages/api/dist
+  - packages/api/node_modules
   - packages/db/node_modules
   - packages/db/prisma/migrations
   - packages/eslint-config-custom/node_modules
@@ -47,8 +49,6 @@ ignore:
   - packages/mobile/ui/node_modules
   - packages/stylelint-config-custom/node_modules
   - packages/theme/node_modules
-  - packages/trpc/dist
-  - packages/trpc/node_modules
   - packages/web-forms/node_modules
   - packages/web-locales/node_modules
   - packages/web-storage/node_modules
