@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { useLocalStorage } from '@acme/web-storage/hooks/useLocalStorage';
-import type { Locale } from '../types/locales';
-import { defaultLocale } from '../types/locales';
+import type { Locale } from '@acme/web-locales/types/locales';
+import { defaultLocale } from '@acme/web-locales/types/locales';
 
 function LocaleProvider({ children }: React.PropsWithChildren) {
   const { i18n } = useTranslation();

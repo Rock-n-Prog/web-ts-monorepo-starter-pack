@@ -2,7 +2,7 @@ import { Button } from 'web-ui/components/inputs';
 import { useThemeContext } from 'web-ui/hooks/useThemeContext';
 import { useTranslation } from 'next-i18next';
 import { Flex } from 'web-ui/components/layouts';
-import { useLocaleContext } from '@acme/web-locales/hooks/useLocaleContext';
+import { useLocaleContext } from '../../hooks/useLocaleContext';
 
 function Toolbar() {
   const { switchMode } = useThemeContext();

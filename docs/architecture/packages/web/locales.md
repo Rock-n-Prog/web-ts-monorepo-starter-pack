@@ -15,10 +15,7 @@ architecture.
 
 ## File structure
 
-- `contexts`: Context providers
-- `hooks`: Hooks
 - `translations`: All locales translations
   - `en`: Translations in English
   - `fr`: Translations in French
 - `types`: Type definitions
-- `utils`: Utilities
