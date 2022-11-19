@@ -9,7 +9,7 @@ on:
     paths:
       - '.github/workflows/build-packages-db.yml'
       - 'packages/db/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -18,7 +18,7 @@ on:
     paths:
       - '.github/workflows/build-packages-db.yml'
       - 'packages/db/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
 
 jobs:

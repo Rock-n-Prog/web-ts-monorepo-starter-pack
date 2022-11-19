@@ -28,6 +28,6 @@ For more info, see Turborepo file structure.
     - `locales`: Mobile translations library (see [its docs](./packages/mobile/locales.md))
     - `storage`: Mobile storage library (see [its docs](./packages/mobile/storage.md))
   - `config`: Shared config
+    - `eslint`: Set of eslint configs for given technologies
     - `stylelint`: Set of stylelint configs for given technologies
-  - `eslint-config-custom`: Set of eslint configs for given technologies
   - `tsconfig`: Set of TypeScript configs for given technologies

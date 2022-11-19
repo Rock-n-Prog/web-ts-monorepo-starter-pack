@@ -10,7 +10,7 @@ on:
       - '.github/workflows/build-packages-mobile-ui.yml'
       - 'packages/theme/**'
       - 'packages/mobile/ui/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -21,7 +21,7 @@ on:
       - '.github/workflows/build-packages-mobile-ui.yml'
       - 'packages/theme/**'
       - 'packages/mobile/ui/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/config/stylelint/**'
       - 'packages/tsconfig/**'
 

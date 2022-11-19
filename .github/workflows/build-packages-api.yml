@@ -10,7 +10,7 @@ on:
       - '.github/workflows/build-packages-api.yml'
       - 'packages/db/**'
       - 'packages/api/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
   pull_request:
     branches:
@@ -20,7 +20,7 @@ on:
       - '.github/workflows/build-packages-api.yml'
       - 'packages/db/**'
       - 'packages/api/**'
-      - 'packages/eslint-config-custom/**'
+      - 'packages/config/eslint/**'
       - 'packages/tsconfig/**'
 
 jobs:

@@ -17,6 +17,7 @@
     "react-native": "^0.70.5"
   },
   "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
     "@babel/core": "^7.12.9",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.21",
@@ -28,7 +29,6 @@
     "@types/react-native": "^0.70.3",
     "babel-loader": "^8.2.5",
     "eslint": "7.32.0",
-    "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
   },
