@@ -8,7 +8,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-forms.yml'
-      - 'packages/mobile-forms/**'
+      - 'packages/mobile/ui/**'
+      - 'packages/mobile/forms/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
   pull_request:
@@ -17,7 +18,8 @@ on:
       - develop
     paths:
       - '.github/workflows/build-packages-mobile-forms.yml'
-      - 'packages/mobile-forms/**'
+      - 'packages/mobile/ui/**'
+      - 'packages/mobile/forms/**'
       - 'packages/eslint-config-custom/**'
       - 'packages/tsconfig/**'
 
@@ -41,7 +43,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter mobile-forms... install
+        run: pnpm --filter @acme/mobile-forms install
 
       - name: Lint
-        run: pnpm --filter mobile-forms lint
+        run: pnpm --filter @acme/mobile-forms lint

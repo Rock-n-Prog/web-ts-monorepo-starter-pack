@@ -6,7 +6,7 @@ This app uses:
 
 - [`packages/trpc`](../../packages/trpc): tRPC routers and configs
 - [`packages/mobile/ui`](../../packages/mobile/ui): UI library
-- [`packages/mobile-forms`](../../packages/mobile-forms): UI library
+- [`packages/mobile/forms`](../../packages/mobile/forms): Form field logic
 - [`packages/mobile-locales`](../../packages/mobile-locales): Locale translations library
 
 ## Setup

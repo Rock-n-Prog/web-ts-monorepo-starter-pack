@@ -1,5 +1,5 @@
 {
-  "name": "mobile-forms",
+  "name": "@acme/mobile-forms",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
