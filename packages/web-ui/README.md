@@ -5,6 +5,7 @@ React component library and theming necessities for ACME Web app.
 This package uses:
 
 - [`packages/theme`](../theme): Theme definitions
+- [`packages/web/storage`](../web/storage): Storage utilities
 
 ## Setup
 

@@ -13,6 +13,7 @@
     "storybook:smoke-test": "start-storybook --smoke-test"
   },
   "dependencies": {
+    "@acme/web-storage": "workspace:*",
     "@acme/theme": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "18.2.0",

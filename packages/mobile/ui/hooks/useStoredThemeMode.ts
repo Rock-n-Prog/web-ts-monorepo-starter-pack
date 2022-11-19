@@ -4,12 +4,12 @@ import { ThemeMode } from '@acme/theme';
 import getItemFromStorage from '@acme/mobile-storage/utils/getItemFromStorage';
 import setItemInStorage from '@acme/mobile-storage/utils/setItemInStorage';
 
-type UseLocaleStorageOutput = readonly [ThemeMode, (value: ThemeMode) => void];
+type UseStoredThemeOutput = readonly [ThemeMode, (value: ThemeMode) => void];
 
 const storedThemeModeKey = 'settings.thememode';
 
 // Defining a return type because type inference is rough here
-function useStoredThemeMode(initialValue: ThemeMode): UseLocaleStorageOutput {
+function useStoredThemeMode(initialValue: ThemeMode): UseStoredThemeOutput {
   const [storedValue, setStoredValue] = React.useState(initialValue);
 
   React.useEffect(() => {

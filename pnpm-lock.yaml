@@ -430,6 +430,7 @@ importers:
       '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
       '@acme/tsconfig': workspace:*
+      '@acme/web-storage': workspace:*
       '@babel/core': ^7.19.1
       '@storybook/addon-essentials': ^6.5.12
       '@storybook/react': ^6.5.12
@@ -450,6 +451,7 @@ importers:
       webpack: ^5.74.0
     dependencies:
       '@acme/theme': link:../theme
+      '@acme/web-storage': link:../web/storage
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
