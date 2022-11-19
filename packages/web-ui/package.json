@@ -13,12 +13,12 @@
     "storybook:smoke-test": "start-storybook --smoke-test"
   },
   "dependencies": {
+    "@acme/theme": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-is": "^18.2.0",
     "styled-components": "^5.3.5",
-    "styled-theming": "^2.2.0",
-    "theme": "workspace:*"
+    "styled-theming": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",

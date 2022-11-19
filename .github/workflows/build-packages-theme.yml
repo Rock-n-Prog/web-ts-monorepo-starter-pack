@@ -41,7 +41,7 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter theme install
+        run: pnpm --filter @acme/theme install
 
       - name: Lint
-        run: pnpm --filter theme lint
+        run: pnpm --filter @acme/theme lint

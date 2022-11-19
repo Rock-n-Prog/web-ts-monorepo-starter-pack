@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components';
-import type { ThemeMode } from 'theme';
-import { defaultThemeMode } from 'theme';
+import { defaultThemeMode, type ThemeMode } from '@acme/theme';
 import { getTheme } from '../styles/theme';
 import GlobalStyle from '../styles/GlobalStyle';
 

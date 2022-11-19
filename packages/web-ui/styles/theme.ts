@@ -1,4 +1,4 @@
-import type { ThemeMode } from 'theme';
+import type { ThemeMode } from '@acme/theme';
 import { modeToColors } from './colors';
 import { spacing } from './spacing';
 import { breakpoints } from './breakpoints';
