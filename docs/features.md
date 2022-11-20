@@ -2,7 +2,7 @@
 
 Here's a non-exhaustive list of everything this base app has to offer:
 
-- :books: Heavily detailed documentation
+- Heavily detailed documentation
 - Monorepo setup with [Turborepo](https://turbo.build) and [pnpm](https://pnpm.io)
 - [Next.js](https://nextjs.org) ([React](https://reactjs.org)) web app ([`apps/web`](../apps/web))
 - [Expo](https://expo.dev) ([React Native](https://reactnative.dev)) mobile app ([`apps/mobile`](../apps/mobile))
