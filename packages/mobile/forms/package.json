@@ -8,16 +8,19 @@
   },
   "dependencies": {
     "@acme/mobile-ui": "workspace:*",
+    "i18next": "^22.0.6",
     "react": "^18.1.0",
     "react-i18next": "^12.0.0",
     "react-native": "^0.70.5"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "@types/react": "^18.0.21",
     "@types/react-native": "^0.70.3",
     "eslint": "^7.32.0",
-    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.2"
   }
 }
