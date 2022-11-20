@@ -27,7 +27,7 @@ Here's a non-exhaustive list of everything this base app has to offer:
 - Forms, with react-hook-forms and zod resolvers
   - Form handling and validation through [React Hook Form](https://react-hook-form.com) and
     [zod resolvers](https://github.com/react-hook-form/resolvers)
-  - Reusing the zod schemas from the api
+  - Reusing the zod schemas from the API
   - Separation of concerns between inputs and form fields
     - web: [`packages/web/forms`](../packages/web/forms)
     - mobile: [`packages/mobile/forms`](../packages/mobile/forms)
