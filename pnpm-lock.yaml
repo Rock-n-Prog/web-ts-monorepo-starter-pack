@@ -334,19 +334,25 @@ importers:
       '@acme/eslint-config': workspace:*
       '@acme/mobile-storage': workspace:*
       '@acme/tsconfig': workspace:*
+      '@babel/core': ^7.20.2
+      '@babel/preset-env': ^7.20.2
       eslint: ^7.32.0
       eslint-plugin-i18n-json: ^4.0.0
+      expo: ^47.0.6
       expo-localization: ^14.0.0
       react: ^18.1.0
       react-native: ^0.70.5
     dependencies:
       '@acme/mobile-storage': link:../storage
-      expo-localization: 14.0.0
+      expo: 47.0.6_@babel+core@7.20.2
+      expo-localization: 14.0.0_expo@47.0.6
       react: 18.2.0
-      react-native: 0.70.6_react@18.2.0
+      react-native: 0.70.6_gkfvc6x5loptk33ura547aycvm
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
       '@acme/tsconfig': link:../../config/tsconfig
+      '@babel/core': 7.20.2
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.2
       eslint: 7.32.0
       eslint-plugin-i18n-json: 4.0.0_eslint@7.32.0
 
@@ -354,6 +360,8 @@ importers:
     specifiers:
       '@acme/eslint-config': workspace:*
       '@acme/tsconfig': workspace:*
+      '@babel/core': ^7.20.2
+      '@babel/preset-env': ^7.20.2
       '@react-native-async-storage/async-storage': ^1.17.11
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
@@ -364,10 +372,12 @@ importers:
     dependencies:
       '@react-native-async-storage/async-storage': 1.17.11_react-native@0.70.6
       react: 18.2.0
-      react-native: 0.70.6_react@18.2.0
+      react-native: 0.70.6_gkfvc6x5loptk33ura547aycvm
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
       '@acme/tsconfig': link:../../config/tsconfig
+      '@babel/core': 7.20.2
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.2
       '@types/react': 18.0.25
       '@types/react-native': 0.70.6
       eslint: 7.32.0
@@ -380,13 +390,18 @@ importers:
       '@acme/stylelint-config': workspace:*
       '@acme/theme': workspace:*
       '@acme/tsconfig': workspace:*
+      '@babel/core': ^7.20.2
+      '@babel/preset-env': ^7.20.2
       '@types/react': ^18.0.21
       '@types/react-native': ^0.70.3
       '@types/styled-components': ^5.1.26
       '@types/styled-components-react-native': ^5.1.3
       eslint: ^7.32.0
+      expo: ^47.0.6
       expo-navigation-bar: ^1.3.0
       react: ^18.1.0
+      react-dom: ^18.1.0
+      react-is: ^18.1.0
       react-native: ^0.70.5
       styled-components: ^5.3.5
       styled-theming: ^2.2.0
@@ -395,15 +410,20 @@ importers:
     dependencies:
       '@acme/mobile-storage': link:../storage
       '@acme/theme': link:../../theme
-      expo-navigation-bar: 1.3.0
+      expo: 47.0.6_@babel+core@7.20.2
+      expo-navigation-bar: 1.3.0_expo@47.0.6
       react: 18.2.0
-      react-native: 0.70.6_react@18.2.0
-      styled-components: 5.3.6_react@18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-is: 18.2.0
+      react-native: 0.70.6_gkfvc6x5loptk33ura547aycvm
+      styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
       styled-theming: 2.2.0
     devDependencies:
       '@acme/eslint-config': link:../../config/eslint
       '@acme/stylelint-config': link:../../config/stylelint
       '@acme/tsconfig': link:../../config/tsconfig
+      '@babel/core': 7.20.2
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.2
       '@types/react': 18.0.25
       '@types/react-native': 0.70.6
       '@types/styled-components': 5.1.26
@@ -3380,7 +3400,7 @@ packages:
       react-native: ^0.0.0-0 || 0.60 - 0.71 || 1000.0.0
     dependencies:
       merge-options: 3.0.4
-      react-native: 0.70.6_react@18.2.0
+      react-native: 0.70.6_gkfvc6x5loptk33ura547aycvm
     dev: false
 
   /@react-native-community/cli-clean/9.2.1:
@@ -10358,14 +10378,6 @@ packages:
       expo: 47.0.6_@babel+core@7.20.2
     dev: false
 
-  /expo-localization/14.0.0:
-    resolution: {integrity: sha512-Rx4ZAANTTVuY6EnM3WXjNWn+CSpDUOaJziHPB4Az+lb4r3JMQ1H+go9s8KY9DYP0IiRM3sQhiyFQqSWzsUgvHA==}
-    peerDependencies:
-      expo: '*'
-    dependencies:
-      rtl-detect: 1.0.4
-    dev: false
-
   /expo-localization/14.0.0_expo@47.0.6:
     resolution: {integrity: sha512-Rx4ZAANTTVuY6EnM3WXjNWn+CSpDUOaJziHPB4Az+lb4r3JMQ1H+go9s8KY9DYP0IiRM3sQhiyFQqSWzsUgvHA==}
     peerDependencies:
@@ -10404,7 +10416,7 @@ packages:
       invariant: 2.2.4
     dev: false
 
-  /expo-navigation-bar/1.3.0:
+  /expo-navigation-bar/1.3.0_expo@47.0.6:
     resolution: {integrity: sha512-1774/O/yBWF5W3QEFTGCoZWAM9f7zVsxOd1Sfj4vRT6bF5ClEt+fQiXT//hye6hbRZDoveV0BWPUFZQKiOcWRA==}
     peerDependencies:
       expo: '*'
@@ -10412,6 +10424,7 @@ packages:
       '@expo/config-plugins': 5.0.4
       '@react-native/normalize-color': 2.1.0
       debug: 4.3.4
+      expo: 47.0.6_@babel+core@7.20.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -18608,28 +18621,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
-      shallowequal: 1.1.0
-      supports-color: 5.5.0
-    dev: false
-
-  /styled-components/5.3.6_react@18.2.0:
-    resolution: {integrity: sha512-hGTZquGAaTqhGWldX7hhfzjnIYBZ0IXQXkCYdvF1Sq3DsUaLx6+NTHC5Jj1ooM2F68sBiVz3lvhfwQs/S3l6qg==}
-    engines: {node: '>=10'}
-    requiresBuild: true
-    peerDependencies:
-      react: '>= 16.8.0'
-      react-dom: '>= 16.8.0'
-      react-is: '>= 16.8.0'
-    dependencies:
-      '@babel/helper-module-imports': 7.18.6
-      '@babel/traverse': 7.20.1_supports-color@5.5.0
-      '@emotion/is-prop-valid': 1.2.0
-      '@emotion/stylis': 0.8.5
-      '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 2.0.7_styled-components@5.3.6
-      css-to-react-native: 3.0.0
-      hoist-non-react-statics: 3.3.2
-      react: 18.2.0
       shallowequal: 1.1.0
       supports-color: 5.5.0
     dev: false
