@@ -1,6 +1,7 @@
 # Docs
 
-Docs are hosted on [https://treeview-app.github.io/treeview](https://treeview-app.github.io/treeview), if you prefer that.
+Docs are hosted on [https://treeview-app.github.io/treeview](https://treeview-app.github.io/treeview), if you prefer
+that.
 
 Here is our documentation!
 

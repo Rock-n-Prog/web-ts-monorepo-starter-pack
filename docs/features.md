@@ -9,7 +9,8 @@ Here's a non-exhaustive list of everything this base app has to offer:
 - Type-safe end-to-end communication between layers
   - UI-API: [tRPC](https://trpc.io), bundled with [`react-query`](https://tanstack.com/query/v4)
   - API-DB: [Prisma](https://www.prisma.io), which also handles schema definitions and migrations
-- [Docker](https://www.docker.com), with [Docker Compose](https://docs.docker.com/compose) to run the local [MySQL](https://www.mysql.com) database
+- [Docker](https://www.docker.com), with [Docker Compose](https://docs.docker.com/compose) to run the local
+  [MySQL](https://www.mysql.com) database
 - Theming
   - Defined design system (UI library)
     - web: [`packages/web-ui`](../packages/web-ui)
@@ -24,7 +25,8 @@ Here's a non-exhaustive list of everything this base app has to offer:
   - Server-side rendering examples with [`next-i18next`](https://github.com/i18next/next-i18next)
   - Locale handling contexts and hooks
 - Forms, with react-hook-forms and zod resolvers
-  - Form handling and validation through [React Hook Form](https://react-hook-form.com) and [zod resolvers](https://github.com/react-hook-form/resolvers)
+  - Form handling and validation through [React Hook Form](https://react-hook-form.com) and
+    [zod resolvers](https://github.com/react-hook-form/resolvers)
   - Reusing the zod schemas from the api
   - Separation of concerns between inputs and form fields
     - web: [`packages/web/forms`](../packages/web/forms)
@@ -33,7 +35,8 @@ Here's a non-exhaustive list of everything this base app has to offer:
   - Defined routes for both web and mobile apps
   - Example of path params usage
 - Workflows (CI), with [GitHub Actions](), scoped for each app and package
-- Pre-commit hooks with [Husky](https://typicode.github.io/husky) for code formatting using [`lint-staged`](https://github.com/okonet/lint-staged)
+- Pre-commit hooks with [Husky](https://typicode.github.io/husky) for code formatting using
+  [`lint-staged`](https://github.com/okonet/lint-staged)
 - [Storybook](https://storybook.js.org) setup to showcase the design system
   - web: [`packages/web-ui`](../packages/web-ui)
   - mobile: [`apps/mobile-storybook`](../apps/mobile-storybook)
@@ -47,6 +50,7 @@ Here's a non-exhaustive list of everything this base app has to offer:
 ## Okay, but what isn't in here?
 
 - Deployment setup
-  - We don't actually want to deploy this boilerplate. It could be a good example, but dealing with cloud operations is out of scope for now.
+  - We don't actually want to deploy this boilerplate. It could be a good example, but dealing with cloud operations is
+    out of scope for now.
 - Infrastructure as code
   - Same as deployment setup

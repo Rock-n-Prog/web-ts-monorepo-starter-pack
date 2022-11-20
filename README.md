@@ -1,7 +1,8 @@
 # Web-TS Monorepo Starter Pack
 
 Feature-heavy monorepo boilerplate for web and mobile apps, packed with tons of reusable code snippets and defined
-through a strong software architecture. Kind of inspired by [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
+through a strong software architecture. Kind of inspired by
+[create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
 
 **See the [docs](./docs/README.md), for list of features, guides, explanations.**
 
