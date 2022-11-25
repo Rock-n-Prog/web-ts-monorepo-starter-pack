@@ -5,8 +5,8 @@ have to decide some solutions. If you fork or reuse this repo in some way, it's 
 stuff around. It's okay if you do, if you create your own app or boilerplate based on this one.
 
 Please, just make sure to **mention the author, [Fabien Roy](https://github.com/ExiledNarwal28), and this
-[repo](https://github.com/treeview-app/treeview)**. We're using a [MIT license](../LICENSE), so it's the least of things
-<3.
+[repo](https://github.com/rock-n-prog/web-ts-monorepo-starter-pack)**. We're using a [MIT license](../LICENSE), so it's
+the least of things <3.
 
 If you want to contribute, see the [contributing guide](../CONTRIBUTING.md).
 
