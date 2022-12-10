@@ -67,6 +67,7 @@ graph TD;
   packages-mobile-forms -.-> |Uses| packages-mobile-ui
   packages-web-ui -.-> |Uses| packages-web-storage
   packages-mobile-ui -.-> |Uses| packages-mobile-storage
+  packages-mobile-locales -.-> |Uses| packages-mobile-locales
 ```
 
 ## File structure
