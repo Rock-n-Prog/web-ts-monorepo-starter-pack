@@ -100,6 +100,7 @@ For more info, see Turborepo file structure.
 - `apps`: Running apps
   - `web`: Web app (see [its docs](./apps/web.md))
   - `mobile`: Mobile app (see [its docs](./apps/mobile.md))
+  - `mobile-ui-showcase`: Mobile UI Showcase app (see [its docs](./apps/mobile-ui-showcase.md))
 - `docs`: Project documentation
 - `packages`: Libraries
   - `db`: Prisma schema and client definitions (see [its docs](./packages/db.md))
