@@ -6,9 +6,9 @@ import { Flex } from '@acme/web-ui/components/layouts';
 import { Button } from '@acme/web-ui/components/inputs';
 import { Alert } from '@acme/web-ui/components/feedback';
 import type { WithLocale } from '@acme/web-locales/types/locales';
-import { trpc } from '../../utils/trpc';
-import createServerSideTranslations from '../../utils/createServerSideTranslations';
-import createTrpcProxySSGHelpers from '../../utils/createTrpcProxySSGHelpers';
+import { trpc } from 'utils/trpc';
+import createServerSideTranslations from 'utils/createServerSideTranslations';
+import createTrpcProxySSGHelpers from 'utils/createTrpcProxySSGHelpers';
 
 function UsersPage() {
   const { t } = useTranslation('users');
