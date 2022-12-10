@@ -28,7 +28,7 @@ graph TD;
   component-expo-app --> |Communicates to| component-edge-functions
   component-edge-functions --> |Communicates to| component-db
   packages-web-ui --> |Deploys into| component-storybook-web-app
-  apps-mobile-ui-showcase --> |Deploys into| component-expo-ui-showcase-
+  apps-mobile-ui-showcase --> |Deploys into| component-expo-ui-showcase-app
 ```
 
 ### Packages architecture
