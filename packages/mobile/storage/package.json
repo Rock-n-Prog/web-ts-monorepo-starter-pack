@@ -13,10 +13,12 @@
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "@types/react": "^18.0.21",
     "@types/react-native": "^0.70.3",
     "eslint": "^7.32.0",
-    "@acme/tsconfig": "workspace:*",
     "typescript": "^4.5.2"
   }
 }

@@ -8,9 +8,12 @@
   },
   "dependencies": {
     "@acme/web-ui": "workspace:*",
+    "i18next": "^22.0.6",
+    "next": "^13.0.4",
     "next-i18next": "^13.0.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^12.0.0",
     "react-is": "^18.2.0"
   },
   "devDependencies": {

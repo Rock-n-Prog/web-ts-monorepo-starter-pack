@@ -12,14 +12,17 @@
   },
   "dependencies": {
     "@acme/mobile-storage": "workspace:*",
+    "expo": "^47.0.6",
     "expo-localization": "^14.0.0",
     "react": "^18.1.0",
     "react-native": "^0.70.5"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "eslint": "^7.32.0",
-    "eslint-plugin-i18n-json": "^4.0.0",
-    "@acme/tsconfig": "workspace:*"
+    "eslint-plugin-i18n-json": "^4.0.0"
   }
 }
