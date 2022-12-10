@@ -11,13 +11,13 @@
 graph TD;
   apps-web((Web App))
   apps-mobile((Mobile App))
-  apps-mobile-storybook((Mobile Storybook App))
+  apps-mobile-ui-showcase((Mobile UI Showcase App))
   packages-web-ui(Web UI Package)
   component-nextjs-app([Next.js App])
   component-edge-functions([Edge Functions])
   component-expo-app([Expo App])
   component-storybook-web-app([Storybook Web App])
-  component-storybook-mobile-app([Storybook Mobile App])
+  component-expo-ui-showcase-app([Expo UI Showcase App])
   component-db[(Database)]
 
   apps-web --> |Deploys into| component-nextjs-app
@@ -28,7 +28,7 @@ graph TD;
   component-expo-app --> |Communicates to| component-edge-functions
   component-edge-functions --> |Communicates to| component-db
   packages-web-ui --> |Deploys into| component-storybook-web-app
-  apps-mobile-storybook --> |Deploys into| component-storybook-mobile-app
+  apps-mobile-ui-showcase --> |Deploys into| component-expo-ui-showcase-
 ```
 
 ### Packages architecture
@@ -37,7 +37,7 @@ graph TD;
 graph TD;
   apps-web((Web App))
   apps-mobile((Mobile App))
-  apps-mobile-storybook((Mobile Storybook App))
+  apps-mobile-ui-showcase((Mobile UI Showcase App))
   packages-db(DB Package)
   packages-api(API Package)
   packages-theme(Theme Package)
@@ -59,7 +59,7 @@ graph TD;
   apps-mobile -.-> |Uses| packages-mobile-forms
   apps-mobile -.-> |Uses| packages-mobile-locales
   apps-mobile -.-> |Uses| packages-mobile-storage
-  apps-mobile-storybook -.-> |Uses| packages-mobile-ui
+  apps-mobile-ui-showcase -.-> |Uses| packages-mobile-ui
   packages-api -.-> |Uses| packages-db
   packages-web-ui -.-> |Uses| packages-theme
   packages-mobile-ui -.-> |Uses| packages-theme

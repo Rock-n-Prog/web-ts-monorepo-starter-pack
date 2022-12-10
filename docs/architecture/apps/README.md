@@ -2,4 +2,4 @@
 
 - [Web](./web.md)
 - [Mobile](./mobile.md)
-- [Mobile Storybook](./mobile-storybook.md)
+- [Mobile UI Showcase](./mobile-ui-showcase.md)

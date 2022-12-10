@@ -15,9 +15,9 @@ A simple React Native library built in TypeScript. File structure explains prett
 
 ## UI Components
 
-UI Components are documented using via storybook.
+UI Components are documented using a custom app.
 
-To run storybook locally, refer to `mobile-storybook`'s `README.md` file.
+To run the app locally, refer to `mobile-ui-showcase`'s `README.md` file.
 
 ## File structure
 

@@ -37,9 +37,9 @@ Here's a non-exhaustive list of everything this base app has to offer:
 - Workflows (CI), with [GitHub Actions](), scoped for each app and package
 - Pre-commit hooks with [Husky](https://typicode.github.io/husky) for code formatting using
   [`lint-staged`](https://github.com/okonet/lint-staged)
-- [Storybook](https://storybook.js.org) setup to showcase the design system
+- [Storybook](https://storybook.js.org) and custom mobile UI showcase app setup to display the design system
   - web: [`packages/web-ui`](../packages/web-ui)
-  - mobile: [`apps/mobile-storybook`](../apps/mobile-storybook)
+  - mobile: [`apps/mobile-ui-showcase`](../apps/mobile-ui-showcase)
 - Well-defined linter / formatter rules
   - [`eslint`](https://eslint.org)
   - [`prettier`](https://prettier.io)
