@@ -7,7 +7,7 @@ import { useSnackbarContext } from '@acme/web-ui/hooks/useSnackbarContext';
 import { Flex } from '@acme/web-ui/components/layouts';
 import { Button } from '@acme/web-ui/components/inputs';
 import { TextField } from '@acme/web-forms/components';
-import { trpc } from '../../utils/trpc';
+import { trpc } from 'utils/trpc';
 
 function AddUserForm() {
   const { showSnackbar } = useSnackbarContext();

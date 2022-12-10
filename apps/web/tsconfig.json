@@ -1,5 +1,8 @@
 {
   "extends": "@acme/tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": "./src"
+  },
+  "include": ["next-env.d.ts", "src"],
   "exclude": ["node_modules"]
 }

@@ -15,7 +15,7 @@ ls:
   .md: kebab-case | SCREAMING_SNAKE_CASE
   .json: kebab-case
 
-  apps/web/pages:
+  apps/web/src/pages:
     # Regex for _app.tsx
     # Regex for path props (ex: [name].tsx)
     .tsx: kebab-case | regex:_app | regex:\[[a-z]+\]

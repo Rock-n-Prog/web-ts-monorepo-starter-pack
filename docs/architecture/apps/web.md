@@ -19,10 +19,11 @@ Web app (Next.js) communicates with the Web app's edge functions through tRPC.
 
 For more info, see Next.js file structure.
 
-- `components`: UI Components
-- `contexts`: Context providers
-- `hooks`: Hooks
-- `pages`: Pages, routing automatically handled by Next.js
-  - `_app.page.tsx`: Application (wrapped by providers)
-  - `/**/*.page.tsx`: Pages of the application
-- `utils`: Utility functions
+- `src`: Source files
+  - `components`: UI Components
+  - `contexts`: Context providers
+  - `hooks`: Hooks
+  - `pages`: Pages, routing automatically handled by Next.js
+    - `_app.page.tsx`: Application (wrapped by providers)
+    - `/**/*.page.tsx`: Pages of the application
+  - `utils`: Utility functions

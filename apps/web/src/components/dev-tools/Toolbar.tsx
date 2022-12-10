@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { Button } from '@acme/web-ui/components/inputs';
 import { useThemeContext } from '@acme/web-ui/hooks/useThemeContext';
 import { Flex } from '@acme/web-ui/components/layouts';
-import { useLocaleContext } from '../../hooks/useLocaleContext';
+import { useLocaleContext } from 'hooks/useLocaleContext';
 
 function Toolbar() {
   const { switchMode } = useThemeContext();
