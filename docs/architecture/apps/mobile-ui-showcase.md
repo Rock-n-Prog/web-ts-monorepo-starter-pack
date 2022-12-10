@@ -1,8 +1,8 @@
-# Mobile Storybook
+# Mobile UI Showcase
 
-This app is the storybook Expo app for showcasing `mobile-ui` components.
+This app is an Expo app for showcasing `mobile-ui` components.
 
-App is located at [`apps/mobile-storybook`](../../../apps/mobile-storybook).
+App is located at [`apps/mobile-ui-showcase`](../../../apps/mobile-ui-showcase).
 
 This app uses shared packages. For more info, read their docs:
 
@@ -16,7 +16,7 @@ A simple Expo (React Native) app built in TypeScript. File structure explains pr
 
 For more info, see Expo file structure.
 
-- `.storybook`: Storybook configuration
 - `assets`: File assets
-- `components`: Components only used for Storybook app
-- `stories`: UI Components story definitions
+- `hooks`: Hooks
+- `router`: Routing and navigation config
+- `screens`: Screens

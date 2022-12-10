@@ -1,4 +1,4 @@
-name: Build Mobile Storybook App
+name: Build Mobile UI Showcase App
 
 on:
   workflow_dispatch:
@@ -7,8 +7,8 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-apps-mobile-storybook.yml'
-      - 'apps/mobile-storybook/**'
+      - '.github/workflows/build-apps-mobile-ui-showcase.yml'
+      - 'apps/mobile-ui-showcase/**'
       - 'packages/mobile/ui/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
@@ -17,8 +17,8 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-apps-mobile-storybook.yml'
-      - 'apps/mobile-storybook/**'
+      - '.github/workflows/build-apps-mobile-ui-showcase.yml'
+      - 'apps/mobile-ui-showcase/**'
       - 'packages/mobile/ui/**'
       - 'packages/config/eslint/**'
       - 'packages/config/tsconfig/**'
@@ -43,10 +43,10 @@ jobs:
           version: 7.9.5
 
       - name: Install dependencies
-        run: pnpm --filter @acme/mobile-storybook install
+        run: pnpm --filter @acme/mobile-ui-showcase install
 
       - name: Lint
-        run: pnpm --filter @acme/mobile-storybook lint
+        run: pnpm --filter @acme/mobile-ui-showcase lint
 
       - name: Build
-        run: pnpm --filter @acme/mobile-storybook build
+        run: pnpm --filter @acme/mobile-ui-showcase build

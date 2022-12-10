@@ -1,8 +1,0 @@
-# dependencies
-node_modules
-
-# turbo
-.turbo
-
-# expo
-.expo

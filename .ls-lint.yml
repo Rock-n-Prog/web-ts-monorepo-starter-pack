@@ -38,7 +38,6 @@ ignore:
   - apps/mobile/.expo
   - apps/mobile/node_modules
   - apps/mobile-ui-showcase/node_modules
-  - apps/mobile-storybook/node_modules
   - docs/_config.yml
   - packages/api/dist
   - packages/api/node_modules
