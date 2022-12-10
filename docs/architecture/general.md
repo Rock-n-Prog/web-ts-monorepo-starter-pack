@@ -2,6 +2,9 @@
 
 ## Software architecture
 
+**Diagrams might not work in GitHub Pages. If that's the case, see them
+[here](https://github.com/Rock-n-Prog/web-ts-monorepo-starter-pack/blob/main/docs/architecture/general.md).**
+
 ### Components architecture
 
 ```mermaid
