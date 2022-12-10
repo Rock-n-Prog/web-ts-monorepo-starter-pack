@@ -1,12 +1,40 @@
 import * as React from 'react';
-import { Body1 } from '@acme/mobile-ui/components/typography';
+import { Body1, SubTitle } from '@acme/mobile-ui/components/typography';
 import { Screen } from '@acme/mobile-ui/components/layouts';
+import { ScrollView } from 'react-native';
+import { Button, TextInput } from '@acme/mobile-ui/components/inputs';
+import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
 
 function InputsScreen() {
-  // TODO: Add sub-nav
+  const { showSnackbar } = useSnackbarContext();
+
+  function handleButtonPress() {
+    showSnackbar({ text: 'On button press', severity: 'info' });
+  }
+
+  function handleTextInputChange(text: string) {
+    showSnackbar({ text: `On change text: ${text}`, severity: 'info' });
+  }
+
   return (
     <Screen>
-      <Body1>Inputs!</Body1>
+      <ScrollView>
+        <SubTitle>Button</SubTitle>
+        <Body1>Contained</Body1>
+        <Button text="Button text" variant="contained" onPress={handleButtonPress} />
+        <Body1>Outlined</Body1>
+        <Button text="Button text" variant="outlined" onPress={handleButtonPress} />
+        <Body1>Text</Body1>
+        <Button text="Button text" variant="text" onPress={handleButtonPress} />
+        <Body1>Disabled</Body1>
+        <Button text="Button text" disabled onPress={handleButtonPress} />
+
+        <SubTitle>TextInput</SubTitle>
+        <Body1>Basic</Body1>
+        <TextInput label="Label" placeholder="Label" onChangeText={handleTextInputChange} />
+        <Body1>Error</Body1>
+        <TextInput label="Label" placeholder="Label" error="error" onChangeText={handleTextInputChange} />
+      </ScrollView>
     </Screen>
   );
 }
