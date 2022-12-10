@@ -19,8 +19,6 @@ UI Components are documented using via storybook.
 
 To run storybook locally, refer to `web-ui`'s `README.md` file.
 
-TODO: Once Storybook is deployed, link it here.
-
 ## File structure
 
 - `components`: UI Components

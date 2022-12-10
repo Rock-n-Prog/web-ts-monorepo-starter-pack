@@ -2,8 +2,6 @@
 
 Utilities for accessing local storage for ACME Web app.
 
-TODO: Review package.json deps
-
 ## Setup
 
 ```bash
