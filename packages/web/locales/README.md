@@ -4,10 +4,6 @@ Locale translations for ACME Web app.
 
 Also contains utilities contexts and hooks for translation context.
 
-This package uses:
-
-- [`packages/web/storage`](../storage): Storage utilities
-
 ## Setup
 
 ```bash
