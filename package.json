@@ -16,10 +16,12 @@
   "scripts": {
     "build": "turbo run build",
     "db:generate": "turbo run generate --filter @acme/db",
+    "db:migrate:dev": "turbo run migrate:dev --filter @acme/db",
     "db:seed": "turbo run seed --filter @acme/db",
     "dev": "turbo run dev --parallel --filter @acme/web --filter @acme/mobile",
     "dev:mobile": "turbo run dev --filter @acme/mobile",
     "dev:web": "turbo run dev --filter @acme/web",
+    "env:local": "turbo run env:local",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "lint": "pnpm run lint:root && turbo run lint",

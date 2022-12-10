@@ -8,6 +8,9 @@ MySQL database accessible using Prisma.
 
 ```bash
 pnpm install
+
+# Copy env vars
+pnpm env:local
 ```
 
 ## Available scripts
