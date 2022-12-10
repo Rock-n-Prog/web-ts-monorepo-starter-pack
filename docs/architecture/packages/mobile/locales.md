@@ -4,6 +4,10 @@ Library is located at [`packages/mobile/locales`](../../../../packages/mobile/lo
 
 This library is used by a mobile app. For more info, read [its docs](../../apps/mobile.md).
 
+This package uses:
+
+- [`packages/mobile/storage`](./storage.md): Storage utilities
+
 ## Software architecture
 
 This library contains JSON files for translations and other utilities. File structure explains pretty well the software
