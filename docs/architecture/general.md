@@ -19,21 +19,21 @@ graph TD;
   component-storybook-web-app([Storybook Web App])
   component-expo-ui-showcase-app([Expo UI Showcase App])
   component-db[(Database)]
-  
+
   subgraph WEB
     subgraph WEB-UI
       apps-web --> |Deploys into| component-nextjs-app
       apps-web -.-> |Uses| packages-web-ui
       packages-web-ui --> |Deploys into| component-storybook-web-app
     end
-    
+
     subgraph WEB-API
       apps-web --> |Deploys into| component-edge-functions
       component-nextjs-app -.-> |Communicates to| component-edge-functions
       component-edge-functions -.-> |Communicates to| component-db
     end
   end
-  
+
   subgraph MOBILE
     apps-mobile --> |Deploys into| component-expo-app
     component-expo-app -.-> |Communicates to| component-edge-functions
@@ -59,7 +59,7 @@ graph TD;
   packages-mobile-forms(Mobile Forms Package)
   packages-mobile-locales(Mobile Locales Package)
   packages-mobile-storage(Mobile Storage Package)
-  
+
   subgraph WEB
     subgraph WEB-UI
       apps-web -.-> |Uses| packages-web-ui
@@ -69,13 +69,13 @@ graph TD;
       packages-web-forms -.-> |Uses| packages-web-ui
       packages-web-ui -.-> |Uses| packages-web-storage
     end
-    
+
     subgraph WEB-API
       apps-web -.-> |Uses| packages-api
       packages-api -.-> |Uses| packages-db
     end
   end
-  
+
   subgraph MOBILE
     apps-mobile -.-> |Uses| packages-mobile-ui
     apps-mobile -.-> |Uses| packages-mobile-forms
@@ -86,7 +86,7 @@ graph TD;
     packages-mobile-ui -.-> |Uses| packages-mobile-storage
     packages-mobile-locales -.-> |Uses| packages-mobile-storage
   end
-  
+
   packages-web-ui -.-> |Uses| packages-theme
   packages-mobile-ui -.-> |Uses| packages-theme
 ```
