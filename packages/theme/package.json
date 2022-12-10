@@ -2,8 +2,8 @@
   "name": "@acme/theme",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "index.ts",
-  "types": "index.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "scripts": {
     "lint": "eslint --max-warnings 0 --ext js,ts .",
     "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts ."
