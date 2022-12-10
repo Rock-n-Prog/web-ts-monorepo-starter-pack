@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Body1, SubTitle } from '@acme/mobile-ui/components/typography';
+import { Body1, Title } from '@acme/mobile-ui/components/typography';
 import { Alert } from '@acme/mobile-ui/components/feedback';
 import { Screen } from '@acme/mobile-ui/components/layouts';
 import { useSnackbarContext } from '@acme/mobile-ui/hooks/useSnackbarContext';
@@ -19,7 +19,7 @@ function FeedbackScreen() {
   return (
     <Screen>
       <ScrollView>
-        <SubTitle>Alert</SubTitle>
+        <Title>Alert</Title>
         <Body1>Info</Body1>
         <Alert text="Alert text" severity="info" />
         <Body1>Success</Body1>
@@ -29,7 +29,7 @@ function FeedbackScreen() {
         <Body1>Error</Body1>
         <Alert text="Alert text" severity="error" />
 
-        <SubTitle>Snackbar</SubTitle>
+        <Title>Snackbar</Title>
         <Body1>Info</Body1>
         <Button text="Show snackbar" onPress={() => handlePress('info')} />
         <Body1>Success</Body1>

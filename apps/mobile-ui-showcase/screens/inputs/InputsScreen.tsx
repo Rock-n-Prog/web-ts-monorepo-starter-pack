@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Body1, SubTitle } from '@acme/mobile-ui/components/typography';
+import { Body1, Title } from '@acme/mobile-ui/components/typography';
 import { Screen } from '@acme/mobile-ui/components/layouts';
 import { ScrollView } from 'react-native';
 import { Button, TextInput } from '@acme/mobile-ui/components/inputs';
@@ -19,7 +19,7 @@ function InputsScreen() {
   return (
     <Screen>
       <ScrollView>
-        <SubTitle>Button</SubTitle>
+        <Title>Button</Title>
         <Body1>Contained</Body1>
         <Button text="Button text" variant="contained" onPress={handleButtonPress} />
         <Body1>Outlined</Body1>
@@ -29,7 +29,7 @@ function InputsScreen() {
         <Body1>Disabled</Body1>
         <Button text="Button text" disabled onPress={handleButtonPress} />
 
-        <SubTitle>TextInput</SubTitle>
+        <Title>TextInput</Title>
         <Body1>Basic</Body1>
         <TextInput label="Label" placeholder="Label" onChangeText={handleTextInputChange} />
         <Body1>Error</Body1>
