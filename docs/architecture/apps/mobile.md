@@ -13,7 +13,7 @@ This app uses shared packages. For more info, read their docs:
 
 A simple Expo (React Native) app built in TypeScript. File structure explains pretty well the software architecture.
 
-TODO: How the frontend communicates with the backend
+Mobile app communicates with the Web app's edge functions through tRPC.
 
 ## File structure
 

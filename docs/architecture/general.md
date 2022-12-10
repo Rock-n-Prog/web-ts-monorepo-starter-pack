@@ -2,7 +2,67 @@
 
 ## Software architecture
 
-TODO: Missing documentation
+### Components architecture
+
+```mermaid
+graph TD;
+  apps-web((Web App))
+  apps-mobile((Mobile App))
+  apps-mobile-storybook((Mobile Storybook App))
+  packages-web-ui(Web UI Package)
+  component-nextjs-app([Next.js App])
+  component-edge-functions([Edge Functions])
+  component-expo-app([Expo App])
+  component-storybook-web-app([Storybook Web App])
+  component-storybook-mobile-app([Storybook Mobile App])
+  component-db[(Database)]
+
+  apps-web --> |Deploys into| component-nextjs-app
+  apps-web --> |Deploys into| component-edge-functions
+  apps-web -.-> |Uses| packages-web-ui
+  apps-mobile --> |Deploys into| component-expo-app
+  component-nextjs-app --> |Communicates to| component-edge-functions
+  component-expo-app --> |Communicates to| component-edge-functions
+  component-edge-functions --> |Communicates to| component-db
+  packages-web-ui --> |Deploys into| component-storybook-web-app
+  apps-mobile-storybook --> |Deploys into| component-storybook-mobile-app
+```
+
+### Packages architecture
+
+```mermaid
+graph TD;
+  apps-web((Web App))
+  apps-mobile((Mobile App))
+  apps-mobile-storybook((Mobile Storybook App))
+  packages-db(DB Package)
+  packages-api(API Package)
+  packages-theme(Theme Package)
+  packages-web-ui(Web UI Package)
+  packages-web-forms(Web Forms Package)
+  packages-web-locales(Web Locales Package)
+  packages-web-storage(Web Storage Package)
+  packages-mobile-ui(Mobile UI Package)
+  packages-mobile-forms(Mobile Forms Package)
+  packages-mobile-locales(Mobile Locales Package)
+  packages-mobile-storage(Mobile Storage Package)
+
+  apps-web -.-> |Uses| packages-api
+  apps-web -.-> |Uses| packages-web-ui
+  apps-web -.-> |Uses| packages-web-forms
+  apps-web -.-> |Uses| packages-web-locales
+  apps-web -.-> |Uses| packages-web-storage
+  apps-mobile -.-> |Uses| packages-mobile-ui
+  apps-mobile -.-> |Uses| packages-mobile-forms
+  apps-mobile -.-> |Uses| packages-mobile-locales
+  apps-mobile -.-> |Uses| packages-mobile-storage
+  apps-mobile-storybook -.-> |Uses| packages-mobile-ui
+  packages-api -.-> |Uses| packages-db
+  packages-web-ui -.-> |Uses| packages-theme
+  packages-mobile-ui -.-> |Uses| packages-theme
+  packages-web-forms -.-> |Uses| packages-web-ui
+  packages-mobile-forms -.-> |Uses| packages-mobile-ui
+```
 
 ## File structure
 

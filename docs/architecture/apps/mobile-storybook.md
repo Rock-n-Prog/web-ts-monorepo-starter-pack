@@ -16,4 +16,7 @@ A simple Expo (React Native) app built in TypeScript. File structure explains pr
 
 For more info, see Expo file structure.
 
-TODO: File structure
+- `.storybook`: Storybook configuration
+- `assets`: File assets
+- `components`: Components only used for Storybook app
+- `stories`: UI Components story definitions

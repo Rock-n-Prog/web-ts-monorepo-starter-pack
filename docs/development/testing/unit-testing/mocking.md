@@ -5,8 +5,6 @@ your own over time.
 
 ## `import { someFunction } from 'somePath'`
 
-TODO: Review this mocking scenario with actual code from the codebase
-
 ```ts
 // Subject file
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -25,17 +23,11 @@ export default getServerSideTranslations;
 
 // Test file
 import { Namespace } from '../../types/i18n';
+import getServerSideTranslations from '../getServerSideTranslations';
+
+jest.mock('next-i18next/serverSideTranslations');
 
 const stubServerSideTranslations = 'dummyValue';
-const mockServerSideTranslations = jest.fn().mockResolvedValue(stubServerSideTranslations);
-
-jest.mock('next-i18next/serverSideTranslations', () => ({
-  __esModule: true,
-  serverSideTranslations: mockServerSideTranslations,
-}));
-
-// TODO: Necessary for mock to work, but imports should be first
-import getServerSideTranslations from '../getServerSideTranslations';
 
 describe('getServerSideTranslations', () => {
   describe('Given locale and namespaces', () => {
@@ -43,10 +35,12 @@ describe('getServerSideTranslations', () => {
     const namespaces: Namespace[] = ['common'];
 
     test('Then get server side translations', async () => {
+      (getServerSideTranslations as jest.Mock).mockImplementation(() => stubServerSideTranslations);
+
       const serverSideTranslations = await getServerSideTranslations({ locale, namespaces });
 
       expect(serverSideTranslations).toBe(stubServerSideTranslations);
-      expect(mockServerSideTranslations).toHaveBeenCalledWith(locale, namespaces);
+      expect(getServerSideTranslations).toHaveBeenCalledWith(locale, namespaces);
     });
   });
 });

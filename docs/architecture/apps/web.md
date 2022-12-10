@@ -13,7 +13,7 @@ This app uses shared packages. For more info, read their docs:
 
 A simple Next.js (React) app built in TypeScript. File structure explains pretty well the software architecture.
 
-TODO: How the frontend communicates with the backend
+Web app (Next.js) communicates with the Web app's edge functions through tRPC.
 
 ## File structure
 

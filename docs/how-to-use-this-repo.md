@@ -25,4 +25,6 @@ So, here's what you gotta do:
   - Use `peerDependencies` in packages' `package.json` to enforce dependency versions
   - You can then remove triggers for packages dependencies in workflows. Workflows will trigger then used package
     version are updated.
+- Review documentation, see if you want to use `/docs` directory and markdown. If you do, make sure to document missing
+  TODOs. They were left out to allow future template users to document their own way of doing things.
 - When ready, setup your CD.
